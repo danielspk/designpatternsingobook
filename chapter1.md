@@ -1,4 +1,0 @@
-# Sobre Go
-
-En desarrollo.
-
