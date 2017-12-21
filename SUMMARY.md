@@ -2,36 +2,36 @@
 
 * [Introduccion](README.md)
 * [Sobre Go](sobrego.md)
-* [POO en Go](poogo/README.md)
-  * Objetos
-  * Herencia / Composición
-  * S.O.L.I.D
-* [Patrones de Diseño](patronesdisenio/README.md)
-  * GoF
-  * Patrones de Comportamiento
-    * Strategy
-    * Chain of Responsability
-    * Command
-    * Template
-    * Memento
-    * Interpreter
-    * Iterator
-    * Visitor
-    * State
-    * Mediator
-    * Observer
-  * Patrones Creacionales
-    * Singleton
-    * Builder
-    * Factory Method
-    * Abstract Factory
-    * Prototype
-  * Patrones Estructurales
-    * Composite
-    * Adapter
-    * Bridge
-    * Proxy
-    * Decorator
-    * Facade
-    * Flyweight
+* [POO en Go](poo/README.md)
+  * [Objetos](poo/objetos.md)
+  * [Herencia / Composición](poo/composicion.md)
+  * [S.O.L.I.D](poo/solid.md)
+* [Patrones de Diseño](patrones/README.md)
+  * [GoF](patrones/gof.md)
+  * [Patrones de Comportamiento](patrones/comportamiento/README.md)
+    * [Strategy](patrones/comportamiento/strategy.md)
+    * [Chain of Responsability](patrones/comportamiento/chainofresponsability.md)
+    * [Command](patrones/comportamiento/command.md)
+    * [Template](patrones/comportamiento/template.md)
+    * [Memento](patrones/comportamiento/memento.md)
+    * [Interpreter](patrones/comportamiento/interpreter.md)
+    * [Iterator](patrones/comportamiento/iterator.md)
+    * [Visitor](patrones/comportamiento/visitor.md)
+    * [State](patrones/comportamiento/state.md)
+    * [Mediator](patrones/comportamiento/mediator.md)
+    * [Observer](patrones/comportamiento/observer.md)
+  * [Patrones Creacionales](patrones/creacionales/README.md)
+    * [Singleton](patrones/creacionales/singleton.md)
+    * [Builder](patrones/creacionales/builder.md)
+    * [Factory Method](patrones/creacionales/factorymethod.md)
+    * [Abstract Factory](patrones/creacionales/abstractfactory.md)
+    * [Prototype](patrones/creacionales/prototype.md)
+  * [Patrones Estructurales](patrones/estructurales/README.md)
+    * [Composite](patrones/estructurales/composite.md)
+    * [Adapter](patrones/estructurales/adapter.md)
+    * [Bridge](patrones/estructurales/bridge.md)
+    * [Proxy](patrones/estructurales/proxy.md)
+    * [Decorator](patrones/estructurales/decorator.md)
+    * [Facade](patrones/estructurales/facade.md)
+    * [Flyweight](patrones/estructurales/flyweight.md)
 * [Recursos de interes](recursos.md)
