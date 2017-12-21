@@ -6,5 +6,5 @@ Esta web tiene como objetivo discutir sobre la programación orientada a objetos
 
 **Contenido en desarrollo.**
 
-**Autor:** *Daniel M. Spiridione*
-
+**Autor:** [Daniel M. Spiridione](http://www.daniel-spiridione.com.ar
+)
