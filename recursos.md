@@ -1,6 +1,6 @@
 # Recursos de interes
 
-A continuación se exponen recursos de interes sobre la [programación orientada a objetos](https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos), [patrones de diseño](https://es.wikipedia.org/wiki/Patr%C3%B3n_de_dise%C3%B1o) y el [lenguaje de programación Go](https://golang.org/).
+A continuación se exponen recursos de interes sobre la [programación orientada a objetos](https://es.wikipedia.org/wiki/Programación_orientada_a_objetos), [patrones de diseño](https://es.wikipedia.org/wiki/Patrón_de_diseño) y el [lenguaje de programación Go](https://golang.org/).
 
 ## Golang
 
@@ -21,24 +21,34 @@ A continuación se exponen recursos de interes sobre la [programación orientada
 
 ## Libros
 
-* \[\] - The Litte Go Book - Karl Seguin
-* \[\] - Data Structures & Algorithms In Go - Hemant Jain
-* \[\] - Go Bootcamp - Matt Aimonetti
-* \[\] - Go Cookbook - Aaron Torres
-* \[\] - Go Design Patterns - Mario Castro Contreras
-* \[\] - Go: Design Patterns for Real-World Projects - Vladimir Vivien, Mario Castro Contreras, Mat Ryer
-* \[\] - Go In Practice - Matt Butcher, Matt Farina
-* \[\] - 
+* \[9\] - The Litte Go Book - Karl Seguin
+* \[10\] - Data Structures & Algorithms In Go - Hemant Jain
+* \[11\] - Go Bootcamp - Matt Aimonetti
+* \[12\] - Go Cookbook - Aaron Torres
+* \[13\] - Go Design Patterns - Mario Castro Contreras
+* \[14\] - Go: Design Patterns for Real-World Projects - Vladimir Vivien, Mario Castro Contreras, Mat Ryer
+* \[15\] - Go In Practice - Matt Butcher, Matt Farina
+* \[16\] - Go Programming Blueprints - Mat Ryer
+* \[17\] - Go Recipes - Shiju Varghese
+* \[18\] - Go Systems Programming - Mihalis Tsoukalos
+* \[19\] - Go Web Programming - Sau Sheong Chang
+* \[20\] - Learning Go Programming - Vladimir Vivien
+* \[21\] - Learning Go Web Development - Nathan Zozyra
+* \[22\] - Machine Learning With Go - Daniel Whitenack
+* \[23\] - Network Programming with Go - Jan Newmarch
+* \[24\] - Go: Building Web Applications - Nathan Zozyra, Mat Ryer
+* \[25\] - Programming in Go - Mark Summerfield
+* \[26\] - Writing an Interpreter in Go - Thorsten Ball
 
 ## Presentaciones
 
-* [\[8\] - Go for Javaneros](https://talks.golang.org/2014/go4java.slide#1)
+* [\[27\] - Go for Javaneros](https://talks.golang.org/2014/go4java.slide#1)
 
 ## Recursos
 
-* [\[9\] - Librerías, paquetes y framewoks](https://github.com/avelino/awesome-go)
-* [\[10\] - Gophers oficiales](https://golang.org/doc/gopher/)
-* [\[11\] - Gophers libres](https://github.com/golang-samples/gopher-vector)
+* [\[28\] - Librerías, paquetes y framewoks](https://github.com/avelino/awesome-go)
+* [\[29\] - Gophers oficiales](https://golang.org/doc/gopher/)
+* [\[30\] - Gophers libres](https://github.com/golang-samples/gopher-vector)
 
 **Contenido en desarrollo.**
 
