@@ -6,7 +6,7 @@
   * Objetos
   * Herencia / Composición
   * S.O.L.I.D
-* [Patrones de diseño](patronesdisenio/README.md)
+* [Patrones de Diseño](patronesdisenio/README.md)
   * GoF
   * Patrones de Comportamiento
     * Strategy
