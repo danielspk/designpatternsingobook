@@ -34,4 +34,4 @@
     * Decorator
     * Facade
     * Flyweight
-
+* [Recursos de interes](recursos.md)
