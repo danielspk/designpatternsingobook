@@ -2,7 +2,7 @@
 
 <img src="/assets/gopher.png" width="176" height=240 />
 
-Esta web tiene como objetivo demostrar como pueden implementarse los patrones de diseño GoF en Go.
+Esta web tiene como objetivo discutir sobre la programación orientada a objetos en Go y como pueden implementarse los 23 Patrones de Diseño GoF.
 
 **Contenido en desarrollo.**
 
