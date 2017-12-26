@@ -46,6 +46,7 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[27\] - Programming in Go - Mark Summerfield](https://www.amazon.com/Programming-Go-Creating-Applications-Developers/dp/0321774639)
 * [\[28\] - Writing an Interpreter in Go - Thorsten Ball](https://interpreterbook.com/)
 * [\[29\] - Patrones de Diseño - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides - Addison Wesley](https://www.amazon.es/Patrones-diseño-Erich-Gamma/dp/8478290591)
+* [\[39\] - Mastering PHP Design Patterns - Junade Ali - Packt](https://www.packtpub.com/application-development/mastering-php-design-patterns)
 
 ## Presentaciones
 

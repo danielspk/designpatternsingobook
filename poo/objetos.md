@@ -36,13 +36,24 @@ func (p *Persona) Saludar() {
 
 ### Interfaces:
 
-**Contenido en desarrollo.**
+Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación las interfaces en _Go_ son implícitas.
+Cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa.
+
+Ejemplo:
+
+```go
+
+```
+
+[Ejecutar código](https://play.golang.org/p/3uoR7qRs9eV)
 
 ### Los tres pilares de la programación orientada a objetos:
 
+Los tres pilares de la programación orientada a objetos son la _herencia_, el _encapsulamiento_ y el _polimorfismo_.
+
 #### Herencia:
 
-En _Go_ no existe la herencia. Se pueden componer estructuras incrustrando otras estructuras - _más información en el siguiente apartado - [link](composicion.md)_
+Como ya se dijo, en _Go_ no existe la herencia. Las estructuras permiten ampliar/modificar su comportamiento incrustrando otras estructuras - _más información en el siguiente apartado - [link](composicion.md)_
 
 Ejemplo:
 
@@ -90,6 +101,8 @@ Cada estructura incorpora los tipos de datos y comportamientos de la/s estructur
 ## Qué dicen otros autores:
 
 Según Gigi Sayfan [\[4\]](recursos.md) "Go es una extraña mezcla de ideas antiguas y nuevas.", y "Muchas personas ni siquiera están seguras de si Go es un lenguaje orientado a objetos", sin embargo para el "Go es un lenguaje de programación orientado a objetos de buena fe. Permite el modelado basado en objetos y promueve las mejores prácticas de usar interfaces en lugar de tipos concretos de jerarquías. Go tiene algunas elecciones sintácticas inusuales, pero el trabajo general con tipos, métodos e interfaces parece simple, ligero y natural. La incrustración no es muy pura, pero aparentemente estaba en juego el pragmatismo, y se proporcionó una incrustración en lugar de sólo la composición por nombre".
+
+Para Junade Ali [\[39\]](recursos.md) "La programación orientada a objetos es más que solo clases y objetos; es un paradigma de programación basado alrededor de objetos (estructuras de datos) que contienen campos de datos y métodos. Es esencial entender esto; el uso de clases para organizar un grupo de métodos no relacionados no es orientación a objetos". 
 
 **Contenido en desarrollo.**
 
