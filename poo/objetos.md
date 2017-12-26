@@ -77,7 +77,7 @@ Los tres pilares de la programación orientada a objetos son la _herencia_, el _
 
 #### Herencia:
 
-Como ya se dijo, en _Go_ no existe la herencia. Las estructuras permiten ampliar/modificar su comportamiento incrustrando otras estructuras - _más información en el siguiente apartado - [link](composicion.md)_
+Como ya se dijo, en _Go_ no existe la herencia. Las estructuras permiten ampliar/modificar su comportamiento incrustrando otras estructuras. - _más información en el siguiente apartado - [link](composicion.md)_
 
 Ejemplo:
 
@@ -114,7 +114,7 @@ empleado.DatosAdicionales()
 
 Cada estructura incorpora los tipos de datos y comportamientos de la/s estructura/s incrustrada/s.
 
-#### Encapsulación:
+#### Encapsulamiento:
 
 En _Go_ no existen identificadores de privacidad tales como _public_, _protected_ y _privated_ típicos de otros lenguajes de programación. _Go_ encapsula estructuras y funciones a nivel de paquete en base a convenciones de nombres.
 Todos aquellos nombres que empiecen con mayúsculas serán accesibles (visibles) desde otros paquetes. Por el contrario, aquellos que comiencen con minúsculas serán _privados_.
@@ -134,7 +134,7 @@ func (cc CuentaCorriente) calcularIntereses() double {
 
 #### Polimorfismo:
 
-**Contenido en desarrollo.**
+En _Go_ es muy facil implementar el polimorfismo. Dado que las estructuras pueden componerse de otras estructuras, tan sólo se debe reescribir el comportamiento deseado. - _más información en el siguiente apartado - [link](composicion.md)_
 
 ## Qué dicen otros autores:
 
