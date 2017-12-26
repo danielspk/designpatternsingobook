@@ -132,8 +132,6 @@ func (cc CuentaCorriente) calcularIntereses() double {
 }
 ```
 
-**Contenido en desarrollo.**
-
 #### Polimorfismo:
 
 **Contenido en desarrollo.**
