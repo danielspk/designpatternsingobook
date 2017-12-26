@@ -2,7 +2,7 @@
 
 ![](/assets/ref.png)
 
-> Imagen - [\[37\]](recursos.md)
+> Imagen - [\[38\]](recursos.md)
 
 A continuación se exponen los recursos de interes que fueron utilizados como referencia para el desarrollo de esta publicación.
 
@@ -46,19 +46,22 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[27\] - Programming in Go - Mark Summerfield](https://www.amazon.com/Programming-Go-Creating-Applications-Developers/dp/0321774639)
 * [\[28\] - Writing an Interpreter in Go - Thorsten Ball](https://interpreterbook.com/)
 * [\[29\] - Patrones de Diseño - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides - Addison Wesley](https://www.amazon.es/Patrones-diseño-Erich-Gamma/dp/8478290591)
-* [\[39\] - Mastering PHP Design Patterns - Junade Ali - Packt](https://www.packtpub.com/application-development/mastering-php-design-patterns)
+* [\[30\] - Mastering PHP Design Patterns - Junade Ali - Packt](https://www.packtpub.com/application-development/mastering-php-design-patterns)
 
 ## Presentaciones
 
-* [\[30\] - Go for Javaneros](https://talks.golang.org/2014/go4java.slide#1)
-* [\[31\] - Rob Pike - Simplicity is Complicated](https://www.youtube.com/watch?v=rFejpH_tAHM)
-* [\[32\] - Rob Pike - Go Proverbs](https://www.youtube.com/watch?v=PAAkCSZUG1c)
-* [\[33\] - Francesc Campoy - Google Understanding Go Interfaces](https://www.youtube.com/watch?v=F4wUrj6pmSI)
-* [\[34\] - Dave Cheney - SOLID Go Design](https://www.youtube.com/watch?v=zzAdEt3xZ1M)
-* [\[35\] - William Kennedy - Golang OOP - Composition in Go](https://www.youtube.com/watch?v=194blNHDdd0)
+* [\[31\] - Go for Javaneros](https://talks.golang.org/2014/go4java.slide#1)
+* [\[32\] - Rob Pike - Simplicity is Complicated](https://www.youtube.com/watch?v=rFejpH_tAHM)
+* [\[33\] - Rob Pike - Go Proverbs](https://www.youtube.com/watch?v=PAAkCSZUG1c)
+* [\[34\] - Francesc Campoy - Google Understanding Go Interfaces](https://www.youtube.com/watch?v=F4wUrj6pmSI)
+* [\[35\] - Dave Cheney - SOLID Go Design](https://www.youtube.com/watch?v=zzAdEt3xZ1M)
+* [\[36\] - William Kennedy - Golang OOP - Composition in Go](https://www.youtube.com/watch?v=194blNHDdd0)
 
 ## Recursos
 
-* [\[36\] - Librerías, paquetes y framewoks](https://github.com/avelino/awesome-go)
-* [\[37\] - Gophers oficiales](https://golang.org/doc/gopher/)
-* [\[38\] - Gophers libres](https://github.com/golang-samples/gopher-vector)
+* [\[37\] - Librerías, paquetes y framewoks](https://github.com/avelino/awesome-go)
+* [\[38\] - Gophers oficiales](https://golang.org/doc/gopher/)
+* [\[39\] - Gophers libres](https://github.com/golang-samples/gopher-vector)
+
+
+

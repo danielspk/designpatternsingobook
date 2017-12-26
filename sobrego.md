@@ -2,7 +2,7 @@
 
 ![](/assets/appenginegopher.jpg)
 
-> Imagen - [\[37\]](recursos.md)
+> Imagen - [\[38\]](recursos.md)
 
 "Go es un lenguaje de programación de código abierto que facilita la creación de software simple, confiable y eficiente". [\[1\]](recursos.md)
 
@@ -31,3 +31,4 @@ func main() {
 ### Según otros autores:
 
 Para Mark Summerfield [\[27\]](recursos.md) "Go es bastante parecido a C en su espíritu, ya que es un lenguaje pequeño y eficiente con convenientes facilidades de bajo nivel, como punteros. Sin embargo, Go también ofrece muchas características asociadas con lenguajes de alto o muy alto nivel, como cadenas Unicode, potentes estructuras de datos integradas, duck typing, recolección de basura y soporte de concurrencia de alto nivel que utiliza comunicaciones en lugar de datos compartidos y bloqueos. Go también tiene una gran biblioteca estándar de amplio rango".
+
