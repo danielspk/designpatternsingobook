@@ -36,16 +36,40 @@ func (p *Persona) Saludar() {
 
 ### Interfaces:
 
-Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación las interfaces en _Go_ son implícitas.
-Cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa.
+Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación las interfaces en _Go_ son implícitas. Cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa.
 
 Ejemplo:
 
 ```go
+type Felino interface {
+    Caminar()
+    Saltar()
+}
 
+type Leon struct {
+    Nombre string
+}
+
+func (t Leon) Caminar() {
+   fmt.Println("CAMINAR")
+}
+
+func (t Leon) Saltar() {
+   fmt.Println("SALTAR")
+}
+
+func SaltarYCaminar(felino Felino) {
+    felino.Saltar()
+    felino.Caminar()
+}
+
+leon := Leon{"Simba"}
+SaltarYCaminar(leon)
 ```
 
-[Ejecutar código](https://play.golang.org/p/3uoR7qRs9eV)
+[Ejecutar código](https://play.golang.org/p/MD6D893_1KB)
+
+Como se puede observar el método _SaltarYCaminar()_ espera como argumento a un tipo _Felino_ pero se le pasa un tipo _Leon_. Como la estructura _Leon_ implementar los métodos _Caminar()_ y _Saltar()_ implícitamente también es un _Felino_.
 
 ### Los tres pilares de la programación orientada a objetos:
 
@@ -106,7 +130,7 @@ Para Junade Ali [\[39\]](recursos.md) "La programación orientada a objetos es m
 
 **Contenido en desarrollo.**
 
-## Mi conclusión:
+## Mi punto de vista:
 
 Ya que existen otros lenguajes que permiten programar orientado a objetos sin ser realmente orientados a objetos puedo decir que **"**_**Go**_** es un lenguaje no orientado a objetos, que permite que permite la programación orientado a objetos - **_**aunque no de la forma tradicional**_**"**.
 
