@@ -34,6 +34,15 @@ func (p *Persona) Saludar() {
 
 [Ejecutar código](https://play.golang.org/p/3uoR7qRs9eV)
 
+### Herencia:
+
+En _Go_ tampoco existe la herencia. Se pueden componer estructuras con otras estructuras - _más información en el siguiente apartado - [link](composicion.md)_
+
+Ejemplo:
+
+```go
+
+```
 
 **Contenido en desarrollo.**
 
