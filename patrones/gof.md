@@ -1,6 +1,6 @@
 # 23 Patrones de Diseño GoF
 
-## ¿Qué es Gof?
+### ¿Qué es Gof?
 
 **Contenido en desarrollo.**
 
@@ -17,5 +17,27 @@ A pesar de que parezca desalentador lo anteriormente dicho es importante remarca
 Un error que veo muy seguido es la adaptación de un patrón de un lenguaje a otro (como si se tratase de una traducción literal) cuando en realidad no se tienen en cuenta estás características, que hacen a cada lenguaje de programación único, ni el objetivo que intenta resolver el patrón de diseño. **Intentaré no caer yo mismo en este error**.
 
 > _Go_ por sus características particulares puede implementar también otros tipos de patrones distintos a los del libro de Gamma. Por ejemplo hay una gran cantidad de patrones de concurrencia.
+
+### ¿Cómo se documenta un patrón?
+
+Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la siguiente plantilla para especificar un Patrón.
+
+| Sección | Detalle |
+| -- | -- |
+| **Nombre del patrón y clasificación** | El nombre del patrón transmite su esencia. El nombre es vital porque pasa a formar parte de nuestro vocabulario de diseño. Por ejemplo al decir _Singleton_ todos entenderán de que se habla, sin necesidad de explicar el objetivo y los participantes del patrón por ejemplo |
+| **Propósito** | Es una frase breve que responde a las siguientes cuestiones: ¿Qué hace este patrón de diseño?, ¿En que se basa? ¿Cuál es el problema concreto de diseño que resuelve? |
+| **También conocido como** | Son otros nombres, si existen, por los que tambiñen se conoce al patrón |
+| **Motivación** | |
+| **Aplicabilidad** | |
+| **Estructura** | |
+| **Participantes** | |
+| **Colaboradores** | |
+| **Consecuencias** | |
+| **Implementación** | |
+| **Código de ejemplo** | |
+| **Usos conocidos** | |
+| **Patrones relacionados** | |
+
+En esta publicación utilizaremos la misma estructura.
 
 **Contenido en desarrollo.**
