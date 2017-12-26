@@ -116,6 +116,22 @@ Cada estructura incorpora los tipos de datos y comportamientos de la/s estructur
 
 #### Encapsulación:
 
+En _Go_ no existen identificadores de privacidad tales como _public_, _protected_ y _privated_ típicos de otros lenguajes de programación. _Go_ encapsula estructuras y funciones a nivel de paquete en base a convenciones de nombres.
+Todos aquellos nombres que empiecen con mayúsculas serán accesibles (visibles) desde otros paquetes. Por el contrario, aquellos que comiencen con minúsculas serán _privados_.
+Esta es la razón por la que en el código fuente de paquetes y bibliotecas de _Go_ hay estructuras y funciones que pueden comenzar con mayúsculas o minísculas.
+
+```go
+// estructura pública
+type CuentaCorriente struct {
+    //...
+}
+
+// método privado
+func (cc CuentaCorriente) calcularIntereses() double {
+    //...
+}
+```
+
 **Contenido en desarrollo.**
 
 #### Polimorfismo:
