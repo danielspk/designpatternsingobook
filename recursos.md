@@ -4,7 +4,7 @@
 
 > Imagen - [\[37\]](recursos.md)
 
-A continuación se exponen los recursos de interes que fueron utilizados como referencia para el desarrollo de esta web.
+A continuación se exponen los recursos de interes que fueron utilizados como referencia para el desarrollo de esta publicación.
 
 ## Golang
 
