@@ -38,6 +38,8 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 | **Usos conocidos** | |
 | **Patrones relacionados** | |
 
+**Contenido en desarrollo.**
+
 En esta publicación utilizaremos la misma estructura.
 
 **Contenido en desarrollo.**
