@@ -61,6 +61,3 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[36\] - Librerías, paquetes y framewoks](https://github.com/avelino/awesome-go)
 * [\[37\] - Gophers oficiales](https://golang.org/doc/gopher/)
 * [\[38\] - Gophers libres](https://github.com/golang-samples/gopher-vector)
-
-
-

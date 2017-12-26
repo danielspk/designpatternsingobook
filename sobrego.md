@@ -27,4 +27,3 @@ func main() {
 [Ejecutar código](https://play.golang.org/p/vhgR-fZxZv6)
 
 **Contenido en desarrollo.**
-
