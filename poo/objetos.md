@@ -34,15 +34,56 @@ func (p *Persona) Saludar() {
 
 [Ejecutar código](https://play.golang.org/p/3uoR7qRs9eV)
 
-### Herencia:
+### Interfaces:
 
-En _Go_ tampoco existe la herencia. Se pueden componer estructuras con otras estructuras - _más información en el siguiente apartado - [link](composicion.md)_
+**Contenido en desarrollo.**
+
+### Los tres pilares de la programación orientada a objetos:
+
+#### Herencia:
+
+En _Go_ no existe la herencia. Se pueden componer estructuras incrustrando otras estructuras - _más información en el siguiente apartado - [link](composicion.md)_
 
 Ejemplo:
 
 ```go
+type Persona struct {
+    Nombre   string
+    Apellido string
+    Edad     int
+}
+
+type Empleado struct {
+    Persona
+    Legajo string
+}
+
+func (p *Persona) DatosBase() {
+   //...
+}
+
+func (e *Empleado) DatosAdicionales() {
+   //...
+}
+
+empleado := Empleado{
+    Persona{"Jose", "Sánchez", 33},
+    "A1234",
+}
+empleado.DatosBase()
+empleado.DatosAdicionales()
 
 ```
+
+[Ejecutar código](https://play.golang.org/p/oW83TcMCzHp)
+
+Cada estructura incorpora los tipos de datos y comportamientos de la/s estructura/s incrustrada/s.
+
+#### Encapsulación:
+
+**Contenido en desarrollo.**
+
+#### Polimorfismo:
 
 **Contenido en desarrollo.**
 
