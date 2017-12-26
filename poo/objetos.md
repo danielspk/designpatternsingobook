@@ -1,7 +1,5 @@
 # Objetos en Go
 
-Este apartado tratará de dar respuesta a la siguiente pregunta: ***¿Es Go un lenguaje orientado a objetos?***.
-
 A diferencia de otros lenguajes orientados a objetos como *C++*, *Java*, *C#*, *Python* y *PHP*, entre otros, en *Go* no hay clases, ni objetos, ni excepciones, ni herencia.
 
 Rápidamente se podría inferir en que *Go* no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: ***¿Qué es la programación orientada a objetos?***.
