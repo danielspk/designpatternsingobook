@@ -10,7 +10,7 @@ _Policy_
 
 ## Motivación
 
-**Contenido en desarrollo.**
+Queremos disponer de algoritmos encapsulados (estrategias) que puedan realizar distintas operaciones matemáticas sin necesidad de que el cliente conozca como se resuelven dichas operaciones. El esquema propuesto es el siguiente:
 
 ![](/assets/uml/ejemplos/strategy.png)
 
