@@ -6,7 +6,7 @@ Rápidamente se podría inferir en que _Go_ no es un lenguaje orientado a objeto
 
 Los desarrolladores tenemos una tendencia natural a comprar las cosas. Entonces porque actualmente _Java_ es el rey indiscutido de la programación orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; si _Go_ no las tiene entonces no puede ser un lenguaje orientado a objetos.
 
-_¿Alguien alguna vez escucho decir que _Javascript_ es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma clásica como la que las hay en _Java_. _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
+_¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma clásica como la que las hay en _Java_. _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
