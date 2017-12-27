@@ -2,7 +2,8 @@
 
 ### ¿Qué es Gof?
 
-**Contenido en desarrollo.**
+En esta publicación se utilizarán los 23 patrones de diseño del libro "Patrones de Diseño: elementos de software orientado a objetos reutilizable" [\[29\]](recursos.md) escrito por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides.
+El término GoF proviene porque los autores del libro son conocidos por la comunidad como _Gang of Four_ (_La Banda de los Cuatro_).
 
 ### ¿Es posible implementar los patrones de diseño en Go?
 
@@ -17,6 +18,24 @@ A pesar de que parezca desalentador lo anteriormente dicho es importante remarca
 Un error que veo muy seguido es la adaptación de un patrón de un lenguaje a otro (como si se tratase de una traducción literal) cuando en realidad no se tienen en cuenta estás características, que hacen a cada lenguaje de programación único, ni el objetivo que intenta resolver el patrón de diseño. **Intentaré no caer yo mismo en este error**.
 
 > _Go_ por sus características particulares puede implementar también otros tipos de patrones distintos a los del libro de Gamma. Por ejemplo hay una gran cantidad de patrones de concurrencia.
+
+### ¿Cómo se clasifican los patrones?
+
+Los patrones de diseño se organizan en tres familias de acuerdo a su propósito:
+
+* **Creacionales:** tienen que ver con el proceso de creación de objetos.
+* **Estructurales:** tratan con la composición de clases u objetos.
+* **Comportamiento:** caracterizan el modo en el que las clases y objetos interactúan y se reparten la responsabilidad.
+
+Gamma [\[29\]](recursos.md), también propone otro criterio de clasificacion denominado *ambito*: "especifíca si el patrón se aplica principalmente a clases o a objetos. Los patrones de clases se ocupan de relaciones entre las clases y sus subclases. Esras relaciones se establecen a través de la herencia, de modo que son relaciones estáticas - fijadas en tiempo de compilación -. Los patrones de objetos tratan con las relaciones entre objetos, que pueden cambiarse en tiempo de ejecución y son más dinámicas".
+
+> Al no existir la ni clases, ni objetos, ni herencia en _Go_, la implementación de los patrones se verán muy diferentes. El desafío de esta publicación es respetar el propósito de cada patrón y su posible implementación en _Go_ en base a las características particulares del lenguaje.
+
+## Catálogo de patrones
+
+"Patrones de Diseño" [\[29\]](recursos.md) - Tabla 1.1 - Patrones de diseño
+
+![](/assets/gamma/tabla1-1.png)
 
 ### ¿Cómo se documenta un patrón?
 
@@ -39,5 +58,3 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 | **Patrones relacionados** | ¿Qué patrones de diseño están estrechamente relacionados con éste? ¿Cuáles son las principales diferencias? ¿con qué otros patrones debería usarse? |
 
 En esta publicación utilizaremos la misma estructura.
-
-**Contenido en desarrollo.**
