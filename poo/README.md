@@ -2,7 +2,7 @@
 
 ![](/assets/project.png)
 
-> Imagen - [\[38\]](recursos.md)
+> Imagen - [\[38\]](/recursos.md)
 
 Este apartado tratará de dar respuesta a la siguiente pregunta: _**¿Es Go un lenguaje orientado a objetos?**_.
 

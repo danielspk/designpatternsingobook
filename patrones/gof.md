@@ -2,12 +2,12 @@
 
 ### ¿Qué es Gof?
 
-En esta publicación se utilizarán los 23 patrones de diseño del libro "Patrones de Diseño: Elementos de software orientado a objetos reutilizable" [\[29\]](recursos.md) escrito por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides.
+En esta publicación se utilizarán los 23 patrones de diseño del libro "Patrones de Diseño: Elementos de software orientado a objetos reutilizable" [\[29\]](/recursos.md) escrito por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides.
 El término GoF proviene porque los autores del libro son conocidos por la comunidad como _Gang of Four_ (_La Banda de los Cuatro_).
 
 ### ¿Es posible implementar los patrones de diseño en Go?
 
-En el libro "Patrones de Diseño" [\[29\]](recursos.md) Gamma hace la siguiente aclaración respecto de los lenguajes utilizados para documentar los 23 patrones: "Aunque los patrones describen diseños orientados a objetos, están basados en soluciones prácticas que han sido implementadas en los lenguajes de programación orientados a objetos más usuales, como _Smalltalk_ y _C++_, en vez de mediante lenguajes procedimentales (_Pascal_, _C_, _Ada_) u otros lenguajes orientados a objetos más dinámicos (_CLOS_, _Dylan_, _Self_). Nosotros hemos elegido _Smalltalk_ y _C++_ por una cuestión pragmática: nuestra experiencia diaria ha sido con estos lenguajes, y éstos cada vez son más populares". "La elección del lenguaje de programación es importante, ya que influye en el punto de vista. Nuestros patrones presuponen características de _Smalltalk_ y _C++_, y esa elección determina lo que puede implementarse o no fácilmente. si hubieramos supuesto lenguajes procedimentales, tal vez, hubieramos incluido patrones llamados 'Herencia', 'Encapsulación' y 'Polimorfismo'. De manera similar, algunos de nuestros patrones están incluidos directamente en lenguajes orientados a objetos menos corrientes. _CLOS_, por ejemplo, tiene multi-métodos que reducen la necesidad de patrones como _Visitor_. De hecho, hay suficientes diferencias entre _Smalltalk_ y _C++_ como para que algunos patrones puedan expresarse más facilmente en un lenguaje que en otro (por ejemplo, el _Iterator_)"
+En el libro "Patrones de Diseño" [\[29\]](/recursos.md) Gamma hace la siguiente aclaración respecto de los lenguajes utilizados para documentar los 23 patrones: "Aunque los patrones describen diseños orientados a objetos, están basados en soluciones prácticas que han sido implementadas en los lenguajes de programación orientados a objetos más usuales, como _Smalltalk_ y _C++_, en vez de mediante lenguajes procedimentales (_Pascal_, _C_, _Ada_) u otros lenguajes orientados a objetos más dinámicos (_CLOS_, _Dylan_, _Self_). Nosotros hemos elegido _Smalltalk_ y _C++_ por una cuestión pragmática: nuestra experiencia diaria ha sido con estos lenguajes, y éstos cada vez son más populares". "La elección del lenguaje de programación es importante, ya que influye en el punto de vista. Nuestros patrones presuponen características de _Smalltalk_ y _C++_, y esa elección determina lo que puede implementarse o no fácilmente. si hubieramos supuesto lenguajes procedimentales, tal vez, hubieramos incluido patrones llamados 'Herencia', 'Encapsulación' y 'Polimorfismo'. De manera similar, algunos de nuestros patrones están incluidos directamente en lenguajes orientados a objetos menos corrientes. _CLOS_, por ejemplo, tiene multi-métodos que reducen la necesidad de patrones como _Visitor_. De hecho, hay suficientes diferencias entre _Smalltalk_ y _C++_ como para que algunos patrones puedan expresarse más facilmente en un lenguaje que en otro (por ejemplo, el _Iterator_)"
 
 > Es importante entender que el libro de Gamma fue publicado en 1994 - (Java 1 recién se publicó en 1996)
 
@@ -27,7 +27,7 @@ Los patrones de diseño se organizan en tres familias de acuerdo a su propósito
 * **Estructurales:** tratan con la composición de clases u objetos.
 * **Comportamiento:** caracterizan el modo en el que las clases y objetos interactúan y se reparten la responsabilidad.
 
-Gamma [\[29\]](recursos.md), también propone otro criterio de clasificacion denominado *ambito*: "especifíca si el patrón se aplica principalmente a clases o a objetos. Los patrones de clases se ocupan de relaciones entre las clases y sus subclases. Esras relaciones se establecen a través de la herencia, de modo que son relaciones estáticas - fijadas en tiempo de compilación -. Los patrones de objetos tratan con las relaciones entre objetos, que pueden cambiarse en tiempo de ejecución y son más dinámicas".
+Gamma [\[29\]](/recursos.md), también propone otro criterio de clasificacion denominado *ambito*: "especifíca si el patrón se aplica principalmente a clases o a objetos. Los patrones de clases se ocupan de relaciones entre las clases y sus subclases. Esras relaciones se establecen a través de la herencia, de modo que son relaciones estáticas - fijadas en tiempo de compilación -. Los patrones de objetos tratan con las relaciones entre objetos, que pueden cambiarse en tiempo de ejecución y son más dinámicas".
 
 > Al no existir en _Go_ ni clases, ni objetos, ni herencia, la implementación de los patrones se verán muy diferentes. El desafío de esta publicación es respetar el propósito de cada patrón y su posible implementación en _Go_ en base a las características particulares del lenguaje.
 
@@ -35,11 +35,11 @@ Gamma [\[29\]](recursos.md), también propone otro criterio de clasificacion den
 
 ![](/assets/gamma/tabla1-1.png)
 
-> "Patrones de Diseño" - Tabla 1.1 - Patrones de diseño - [\[29\]](recursos.md)
+> "Patrones de Diseño" - Tabla 1.1 - Patrones de diseño - [\[29\]](/recursos.md)
 
 ### ¿Cómo se documenta un patrón?
 
-Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la siguiente plantilla para especificar un Patrón.
+Los autores del libro "Patrones de Diseño" [\[29\]](/recursos.md) utilizan la siguiente plantilla para especificar un Patrón.
 
 | Sección | Detalle |
 | -- | -- |
@@ -59,6 +59,6 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 
 En esta publicación utilizaremos la misma estructura con las siguientes observaciones:
 
-* Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo (_creación de un editor de texto_) y no pueden ser ejecutados para el aprendizaje del lector. Se utilizarán escenarios de alguno de los siguientes links: [1](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), [2](http://java-design-patterns.com/), [3](https://www.tutorialspoint.com/design_pattern/)
+* Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo (_creación de un editor de texto_) y no pueden ser ejecutados para el aprendizaje del lector. Se utilizarán escenarios de alguno de los siguientes links: [\[8\]](/recursos.md), [\[40\]](/recursos.md), [\[41\]](/recursos.md), [\[42\]](/recursos.md)
 * Se reemplazarán los códigos de ejemplo por el lenguaje _Go_.
 * Se utilizará UML en reemplazo de OMT.

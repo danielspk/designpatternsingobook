@@ -2,7 +2,7 @@
 
 ![](/assets/doc.png)
 
-> Imagen - [\[38\]](recursos.md)
+> Imagen - [\[38\]](/recursos.md)
 
 **Contenido en desarrollo.**
 
@@ -12,4 +12,4 @@
 * [Builder](builder.md)
 * [Factory Method](factorymethod.md)
 * [Abstract Factory](abstractfactory.md)
-* [Prototype]prototype.md)
+* [Prototype](prototype.md)

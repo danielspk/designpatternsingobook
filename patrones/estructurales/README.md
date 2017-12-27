@@ -2,7 +2,7 @@
 
 ![](/assets/doc.png)
 
-> Imagen - [\[38\]](recursos.md)
+> Imagen - [\[38\]](/recursos.md)
 
 **Contenido en desarrollo.**
 

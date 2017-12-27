@@ -19,6 +19,9 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[6\] - Is Go An Object Oriented Language?](http://spf13.com/post/is-go-object-oriented/)
 * [\[7\] - Object Orientation In Go](https://katcipis.github.io/blog/object-orientation-go/)
 * [\[8\] - Design Patterns for Humans!](https://github.com/kamranahmedse/design-patterns-for-humans)
+* [\[40\] - Java Design Patterns - Example Tutorial](https://www.journaldev.com/1827/java-design-patterns-example-tutorial)
+* [\[41\] - Design patterns implemented in Java](http://java-design-patterns.com/)
+* [\[42\] - Design Patterns in Java Tutorial](https://www.tutorialspoint.com/design_pattern/)
 
 ## Papers
 
