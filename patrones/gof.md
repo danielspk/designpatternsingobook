@@ -2,7 +2,7 @@
 
 ### ¿Qué es Gof?
 
-En esta publicación se utilizarán los 23 patrones de diseño del libro "Patrones de Diseño: elementos de software orientado a objetos reutilizable" [\[29\]](recursos.md) escrito por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides.
+En esta publicación se utilizarán los 23 patrones de diseño del libro "Patrones de Diseño: Elementos de software orientado a objetos reutilizable" [\[29\]](recursos.md) escrito por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides.
 El término GoF proviene porque los autores del libro son conocidos por la comunidad como _Gang of Four_ (_La Banda de los Cuatro_).
 
 ### ¿Es posible implementar los patrones de diseño en Go?
