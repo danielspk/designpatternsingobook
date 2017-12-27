@@ -29,7 +29,7 @@ Los patrones de diseño se organizan en tres familias de acuerdo a su propósito
 
 Gamma [\[29\]](recursos.md), también propone otro criterio de clasificacion denominado *ambito*: "especifíca si el patrón se aplica principalmente a clases o a objetos. Los patrones de clases se ocupan de relaciones entre las clases y sus subclases. Esras relaciones se establecen a través de la herencia, de modo que son relaciones estáticas - fijadas en tiempo de compilación -. Los patrones de objetos tratan con las relaciones entre objetos, que pueden cambiarse en tiempo de ejecución y son más dinámicas".
 
-> Al no existir la ni clases, ni objetos, ni herencia en _Go_, la implementación de los patrones se verán muy diferentes. El desafío de esta publicación es respetar el propósito de cada patrón y su posible implementación en _Go_ en base a las características particulares del lenguaje.
+> Al no existir en _Go_ ni clases, ni objetos, ni herencia, la implementación de los patrones se verán muy diferentes. El desafío de esta publicación es respetar el propósito de cada patrón y su posible implementación en _Go_ en base a las características particulares del lenguaje.
 
 ## Catálogo de patrones
 
