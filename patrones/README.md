@@ -4,7 +4,7 @@
 
 > Imagen - [\[38\]](recursos.md)
 
-Este apartado tratará sobre los _**¿Qué es un Patron de Diseño?**_ y _**¿Qué es GoF?**_.
+Este apartado tratará sobre _**¿Qué es un Patron de Diseño?**_ y _**¿Qué es GoF?**_.
 
 ## Patrones de Diseño
 
