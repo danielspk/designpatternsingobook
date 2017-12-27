@@ -40,7 +40,8 @@ Use el patrón Strategy cuando:
 
 ## Colaboradores
 
-**Contenido en desarrollo.**
+* _Estrategia_ y _Contexto_ interactúan para implementar el algoritmo elegido. Un _Contexto_ puede pasar a la _Estrategia_ todos los datos requeridos por el algoritmo cada vez que se llama a éste. Otra alternativa es que el _Contexto_ se pase a sí mismo como argumento de las operaciones de _Estrategia_. Eso permite a la _Estrategia_ hacer llamadas al _Contexto_ cuando sea necesario.
+* Un _Contexto_ redirige peticiones de los clientes a su _Estrategia_. Los clientes normalmente crean una estructura con estado _EstrategiaConcreta_, la cual pasan al _Contexto_. Suele haber una familia de estructuras _EstrategiaConcreta_ a elegir  por el cliente.
 
 ## Consecuencias
 
