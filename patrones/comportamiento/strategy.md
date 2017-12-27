@@ -91,6 +91,21 @@ func (c *Contexto) EjecutarOperacion(num1 int, num2 int) int {
 }
 ```
 
+```go
+var contexto Contexto
+num1 := 10
+num2 := 5
+
+contexto = Contexto{EstrategiaSuma{}}
+fmt.Printf("%d + %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
+
+contexto = Contexto{EstrategiaResta{}}
+fmt.Printf("%d - %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
+
+contexto = Contexto{EstrategiaMultiplica{}}
+fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
+```
+
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/strategy) | [Ejecutar código](https://play.golang.org/p/OoMEcPgef7e)
 
 ## Usos conocidos
