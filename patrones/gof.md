@@ -62,3 +62,7 @@ En esta publicación utilizaremos la misma estructura con las siguientes observa
 * Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo (_creación de un editor de texto_) y no pueden ser ejecutados para el aprendizaje del lector. Se utilizarán escenarios de alguno de los siguientes links: [\[8\]](/recursos.md), [\[40\]](/recursos.md), [\[41\]](/recursos.md), [\[42\]](/recursos.md)
 * Se reemplazarán los códigos de ejemplo por el lenguaje _Go_.
 * Se utilizará UML en reemplazo de OMT.
+
+### Implicancias
+
+En las explicaciones de cada patrón de diseño Gamma [\[29\]](/recursos.md) utiliza constantemente las palabras _objeto_ y _clase_. Parte de la comunidad asume que en _Go_ la palabra _objeto_ es válida ya que se interpreta que es sinónimo de una estructura de datos con comportamiento. Sin embargo a fines de esta publicación cuando se requiera hablar de un _objeto_ utilizare la palabra _"estructura con estado"_ (_considero que se ajusta más al lenguaje_). Para la palabra _clase_ no existe una terminología comparable, por lo que utilizaré simplemente la palabra _"estructura"_.
