@@ -34,8 +34,8 @@ Use el patrón Strategy cuando:
 * **EstrategiaConcreta:**
   * **@TODO (el libro esta cortado)**
 * **Contexto:**
-  * se configura con una estructura _EstrategiaConcreta_.
-  * mantiene una referencia a una estructura _Estrategia_.
+  * se configura con una estructura con estado _EstrategiaConcreta_.
+  * mantiene una referencia a una estructura con estado _Estrategia_.
   * puede definir una interfaz que permita a la _Estrategia_ acceder a sus datos.
 
 ## Colaboradores
