@@ -33,9 +33,9 @@ Gamma [\[29\]](recursos.md), también propone otro criterio de clasificacion den
 
 ## Catálogo de patrones
 
-"Patrones de Diseño" [\[29\]](recursos.md) - Tabla 1.1 - Patrones de diseño
-
 ![](/assets/gamma/tabla1-1.png)
+
+> "Patrones de Diseño" - Tabla 1.1 - Patrones de diseño - [\[29\]](recursos.md)
 
 ### ¿Cómo se documenta un patrón?
 
