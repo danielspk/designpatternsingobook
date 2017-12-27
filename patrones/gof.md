@@ -48,7 +48,7 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 | **También conocido como** | Son otros nombres, si existen, por los que tambiñen se conoce al patrón |
 | **Motivación** | Un escenario que ilustra un problema de diseño y cómo las estructuras de clases y objetos del patrón resuelven el problema |
 | **Aplicabilidad** | ¿En qué situaciones se puede aplicar el patrón de diseño? ¿Qué ejemplos hay de malos diseños que el patrón puede resolver? ¿Cómo se puede reconocer dichas situaciones? |
-| **Estructura** | Una representación gráfica de las clases del patrón usando una notación basada en la Técnica de Modelado de Objetos (OMT) |
+| **Estructura** | Una representación gráfica de las clases del patrón |
 | **Participantes** | Las clases y objetos participantes en el patrón de diseño, junto con sus responsabilidades |
 | **Colaboradores** | Cómo colaboran los participantes para llevar a cabo sus responsabilidades |
 | **Consecuencias** | ¿Cómo consigue el patrón sus objetivos? ¿Cuáles son las ventajas e inconvenientes y los resultados de usar el patrón? |
@@ -57,4 +57,4 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 | **Usos conocidos** | Ejemplos del patrón en sistemas reales |
 | **Patrones relacionados** | ¿Qué patrones de diseño están estrechamente relacionados con éste? ¿Cuáles son las principales diferencias? ¿con qué otros patrones debería usarse? |
 
-En esta publicación utilizaremos la misma estructura.
+En esta publicación utilizaremos la misma estructura reemplazando los códigos de ejemplo por _Go_ y las representaciones gráficas por UML - (_los ejemplos de Gamma están representados por notación OMT_).
