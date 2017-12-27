@@ -11,7 +11,7 @@ En el libro "Patrones de Diseño" [\[29\]](recursos.md) Gamma hace la siguiente 
 
 > Es importante entender que el libro de Gamma fue publicado en 1994 - (Java 1 recién se publicó en 1996)
 
-También es importante entender que este trabajo intenta demostrar cómo pueden aplicarse los patrones de diseño en _Go_, aunque no es necesariamente imperativo su uso ni se lo promueve. Tal como expone Gamma, cada lenguaje tiene sus particularidades y en necesario entender el real problema a resolver, y no intentar adaptar formas de trabajo de un lenguaje a otro, sino entender esas particularidades que hacen diferente a un lenguaje respecto del otro, para potenciar sus características.
+También es importante entender que este trabajo intenta demostrar cómo pueden aplicarse los patrones de diseño en _Go_, aunque no es necesariamente imperativo su uso ni se lo promueve. Tal como expone Gamma, cada lenguaje tiene sus particularidades y en necesario entender el real problema a resolver, y no intentar adaptar formas de trabajo de un lenguaje a otro, sino entender esas particularidades que hacen diferente a un lenguaje respecto del otro para potenciar sus características.
 
 A pesar de que parezca desalentador lo anteriormente dicho es importante remarcarlo. Un error muy común cuando aprendemos algo nuevo es a querer utilizarlo en todos lados, sin analizar realmente la conveniencia de su uso. Cuando uno aprende un patrón de diseño nuevo se ve tentado a utilizarlo. **Los patrones de diseño resuelven problemas conocidos, y sólo deben usarse si se esta en precencia de dicho problema**.
 
