@@ -59,6 +59,6 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 
 En esta publicación utilizaremos la misma estructura con las siguientes observaciones:
 
-* Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo (_creación de un editor de texto_).
+* Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo (_creación de un editor de texto_) y no pueden ser ejecutados para el aprendizaje del lector. Se utilizarán escenarios de alguno de los siguientes links: [1](https://www.journaldev.com/1827/java-design-patterns-example-tutorial), [2](http://java-design-patterns.com/), [3](https://www.tutorialspoint.com/design_pattern/)
 * Se reemplazarán los códigos de ejemplo por el lenguaje _Go_.
 * Se utilizará UML en reemplazo de OMT.
