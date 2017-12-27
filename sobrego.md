@@ -12,8 +12,6 @@
 
 _Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y _Ken Thomson_.
 
-**Contenido en desarrollo.**
-
 ## Características:
 
 _Go_ esta inspirado en la sintaxis de _C_ como otros lenguajes: _C++_, _C#_, _Java_, _PHP_, _Javascript_, etc. Por sus características suele clasificarse como un lenguaje compilado que tiene carcaterísticas de lenguajes interpretados.
@@ -35,8 +33,6 @@ _Go_ se caracteriza por ser un lenguaje:
 * Rápido
 * Recolección de basura
 * Permite la programación orientada a objetos - _pero ¿es orientado a objetos?_
-
-**Contenido en desarrollo.**
 
 ### Ejemplo:
 

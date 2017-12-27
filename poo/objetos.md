@@ -141,8 +141,6 @@ Según Gigi Sayfan [\[4\]](recursos.md) "Go es una extraña mezcla de ideas anti
 
 Para Junade Ali [\[30\]](recursos.md) "La programación orientada a objetos es más que solo clases y objetos; es un paradigma de programación basado alrededor de objetos \(estructuras de datos\) que contienen campos de datos y métodos. Es esencial entender esto; el uso de clases para organizar un grupo de métodos no relacionados no es orientación a objetos".
 
-**Contenido en desarrollo.**
-
 ## Mi punto de vista:
 
 Ya que existen otros lenguajes que permiten programar orientado a objetos sin ser realmente orientados a objetos puedo decir que **"**_**Go**_** es un lenguaje no orientado a objetos que permite que permite la programación orientado a objetos - **_**aunque no de la forma tradicional**_**"**.

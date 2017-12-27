@@ -12,8 +12,6 @@ Para Erich Gamma, en su libro "Patrones de Diseño" [\[29\]](recursos.md), "Dise
 
 Como se puede observar Gamma usa términos como _clases_ y _objetos_ ya que los patrones de diseño están enfocados al desarrollo orientado a objetos. En las siguientes secciones se detallará como es posible implementar patrones de diseño en _Go_ a pesar de la no existencia de _clases_ y _objetos_.
 
-**Contenido en desarrollo.**
-
 ## Contenido
 
 * [Patrones de Diseño GoF](gof.md)

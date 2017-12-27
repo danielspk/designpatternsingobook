@@ -8,8 +8,6 @@
 
 "Definir el comportamiento correctamente es el último paso del buen diseño de software porque, en general, un buen diseño de software nos permite mejorar los algoritmos y corregir errores fácilmente, mientras que la mejor implementación de un algoritmo no nos salvará del mal diseño del software" [\[15\]](recursos.md)
 
-**Contenido en desarrollo.**
-
 ## Contenido
 
 * [Strategy](strategy.md)
