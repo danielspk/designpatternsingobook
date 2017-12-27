@@ -99,4 +99,4 @@ func (c *Contexto) EjecutarOperacion(num1 int, num2 int) int {
 
 ## Patrones relacionados
 
-[Flyweight](/patrones/estructurales/flyweight.md): los objetos Estrategia suelen ser buenos pesos ligeros.
+[Flyweight](/patrones/estructurales/flyweight.md): las estructuras con estado Estrategia suelen ser buenos pesos ligeros.
