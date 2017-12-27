@@ -10,13 +10,13 @@ _Policy_
 
 ## Motivación
 
-Queremos disponer de algoritmos encapsulados (estrategias) que puedan realizar distintas operaciones matemáticas sin necesidad de que el cliente conozca como se resuelven dichas operaciones. El esquema propuesto es el siguiente:
+Queremos disponer de algoritmos encapsulados (_estrategias_) que puedan realizar distintas operaciones matemáticas sin necesidad de que el cliente conozca como se resuelven dichas operaciones. El esquema propuesto es el siguiente:
 
 ![](/assets/uml/ejemplos/strategy.png)
 
 ## Aplicabilidad
 
-Use el patrón Strategy cuando:
+El patrón Strategy se debe usar cuando:
 
 * muchas estructuras relacionadas difieren sólo en su comportamiento. Las estrategias permiten configurar una estructura con un determinado comportamiento de entre muchos posibles.
 * se necesitan distintas variantes de un algoritmo.
@@ -49,11 +49,11 @@ Use el patrón Strategy cuando:
 
 ## Implementación
 
-**Contenido en desarrollo.**
+**Contenido en desarrollo. (analizar alternativa con composición)**
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo se definen tres estrategias concretas que pueden realizar distintas operaciones matemáticas. Cuando se crea el contexto se establece que estrategia deberá utilizar.
 
 ```go
 // Interface
@@ -92,6 +92,8 @@ func (c *Contexto) EjecutarOperacion(num1 int, num2 int) int {
 }
 ```
 
+Se puede probar la implementación del patrón de la siguiente forma:
+
 ```go
 var contexto Contexto
 num1 := 10
@@ -108,10 +110,6 @@ fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/strategy) | [Ejecutar código](https://play.golang.org/p/OoMEcPgef7e)
-
-## Usos conocidos
-
-**Contenido en desarrollo.**
 
 ## Patrones relacionados
 
