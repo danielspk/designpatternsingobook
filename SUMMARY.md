@@ -12,7 +12,7 @@
     * [Strategy](patrones/comportamiento/strategy.md)
     * [Chain of Responsability](patrones/comportamiento/chainofresponsability.md)
     * [Command](patrones/comportamiento/command.md)
-    * [Template](patrones/comportamiento/template.md)
+    * [Template Method](patrones/comportamiento/templatemethod.md)
     * [Memento](patrones/comportamiento/memento.md)
     * [Interpreter](patrones/comportamiento/interpreter.md)
     * [Iterator](patrones/comportamiento/iterator.md)

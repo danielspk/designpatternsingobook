@@ -27,18 +27,16 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 | **Nombre del patrón y clasificación** | El nombre del patrón transmite su esencia. El nombre es vital porque pasa a formar parte de nuestro vocabulario de diseño. Por ejemplo al decir _Singleton_ todos entenderán de que se habla, sin necesidad de explicar el objetivo y los participantes del patrón por ejemplo |
 | **Propósito** | Es una frase breve que responde a las siguientes cuestiones: ¿Qué hace este patrón de diseño?, ¿En que se basa? ¿Cuál es el problema concreto de diseño que resuelve? |
 | **También conocido como** | Son otros nombres, si existen, por los que tambiñen se conoce al patrón |
-| **Motivación** | |
-| **Aplicabilidad** | |
-| **Estructura** | |
-| **Participantes** | |
-| **Colaboradores** | |
-| **Consecuencias** | |
-| **Implementación** | |
-| **Código de ejemplo** | |
-| **Usos conocidos** | |
-| **Patrones relacionados** | |
-
-**Contenido en desarrollo.**
+| **Motivación** | Un escenario que ilustra un problema de diseño y cómo las estructuras de clases y objetos del patrón resuelven el problema |
+| **Aplicabilidad** | ¿En qué situaciones se puede aplicar el patrón de diseño? ¿Qué ejemplos hay de malos diseños que el patrón puede resolver? ¿Cómo se puede reconocer dichas situaciones? |
+| **Estructura** | Una representación gráfica de las clases del patrón usando una notación basada en la Técnica de Modelado de Objetos (OMT) |
+| **Participantes** | Las clases y objetos participantes en el patrón de diseño, junto con sus responsabilidades |
+| **Colaboradores** | Cómo colaboran los participantes para llevar a cabo sus responsabilidades |
+| **Consecuencias** | ¿Cómo consigue el patrón sus objetivos? ¿Cuáles son las ventajas e inconvenientes y los resultados de usar el patrón? |
+| **Implementación** | ¿Cúales son las dificultades, trucos o técnicas que deberíamos tener en cuenta a la hora de aplicar el patrón? ¿Hay cuestiones específicas del lenguaje? |
+| **Código de ejemplo** | Fragmentos de código que muestran cómo se puede implementar el patrón |
+| **Usos conocidos** | Ejemplos del patrón en sistemas reales |
+| **Patrones relacionados** | ¿Qué patrones de diseño están estrechamente relacionados con éste? ¿Cuáles son las principales diferencias? ¿con qué otros patrones debería usarse? |
 
 En esta publicación utilizaremos la misma estructura.
 
