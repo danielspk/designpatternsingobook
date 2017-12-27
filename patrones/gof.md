@@ -61,7 +61,9 @@ En esta publicación utilizaremos la misma estructura con las siguientes observa
 
 * Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo (_creación de un editor de texto_) y no pueden ser ejecutados para el aprendizaje del lector. Se utilizarán escenarios de alguno de los siguientes links: [\[8\]](/recursos.md), [\[40\]](/recursos.md), [\[41\]](/recursos.md), [\[42\]](/recursos.md)
 * Se reemplazarán los códigos de ejemplo por el lenguaje _Go_.
-* Se utilizará UML en reemplazo de OMT.
+* Se utilizará UML en reemplazo de OMT. 
+
+> Paradojicamente se utilizarán diagramas de clases de UML cuando en _Go_ no existen clases. Sin embargo, al ser UML una de las notaciones más extendidas en IT, la traducción de las _clases_ a estructuras de _Go_ considero que no presentará dificultades adicionales al lector.
 
 ### Implicancias
 
