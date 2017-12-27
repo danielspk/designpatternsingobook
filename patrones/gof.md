@@ -57,4 +57,4 @@ Los autores del libro "Patrones de Diseño" [\[29\]](recursos.md) utilizan la si
 | **Usos conocidos** | Ejemplos del patrón en sistemas reales |
 | **Patrones relacionados** | ¿Qué patrones de diseño están estrechamente relacionados con éste? ¿Cuáles son las principales diferencias? ¿con qué otros patrones debería usarse? |
 
-En esta publicación utilizaremos la misma estructura reemplazando los códigos de ejemplo por _Go_ y las representaciones gráficas por UML - (_los ejemplos de Gamma están representados por notación OMT_).
+En esta publicación utilizaremos la misma estructura y escenarios del libro de Gamma, sólo reemplazando los códigos de ejemplo por _Go_ y las representaciones gráficas por UML - (_los ejemplos de Gamma están representados por notación OMT_).
