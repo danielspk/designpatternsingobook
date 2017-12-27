@@ -32,7 +32,7 @@ Use el patrón Strategy cuando:
 * **Estrategia:**
   * declara la interfaz común a todos los algoritmos permitidos. El _Contexto_ usa esta interfaz para llamar al algoritmo definido por una _EstrategiaConcreta_.
 * **EstrategiaConcreta:**
-  * **@TODO (el libro esta cortado)**
+  * implementa el algoritmo usando la interfaz _Estrategia_.
 * **Contexto:**
   * se configura con una estructura con estado _EstrategiaConcreta_.
   * mantiene una referencia a una estructura con estado _Estrategia_.
