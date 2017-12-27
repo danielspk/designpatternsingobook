@@ -24,6 +24,18 @@ _Go_ esta inspirado en la sintaxis de _C_ como otros lenguajes: _C++_, _C#_, _Ja
 
 Según palabras de uno de sus creadores _Rob Pike_: "Go es un intento de combinar la seguridad y el rendimiento de un lenguaje de tipado estático con la expresividad y la comodidad de un lenguaje interpretado de tipo dinámico." [\[16\]](recursos.md)
 
+_Go_ se caracteriza por ser un lenguaje:
+
+* Compilado
+* Tipado estático
+* Diseño minimalista
+* Facilidad de aprendizaje
+* Uso de punteros - _sin aritmética_
+* Concurrente
+* Rápido
+* Recolección de basura
+* Permite la programación orientada a objetos - _pero ¿es orientado a objetos?_
+
 **Contenido en desarrollo.**
 
 ### Ejemplo:
