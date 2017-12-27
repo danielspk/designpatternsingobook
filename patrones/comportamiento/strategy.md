@@ -16,7 +16,12 @@ _Policy_
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Use el patrón Strategy cuando:
+
+* muchas estructuras relacionadas difieren sólo en su comportamiento. Las estrategias permiten configurar una estructura con un determinado comportamiento de entre muchos posibles.
+* se necesitan distintas variantes de un algoritmo.
+* un algoritmo usa datos que los clientes no deberían conocer.
+* una estructura define muchos comportamientos, y éstos se representan como múltiples sentencias condicionales en sus operaciones.
 
 ## Estructura
 
@@ -24,7 +29,14 @@ _Policy_
 
 ## Participantes
 
-**Contenido en desarrollo.**
+* **Estrategia:**
+  * declara la interfaz común a todos los algoritmos permitidos. El _Contexto_ usa esta interfaz para llamar al algoritmo definido por una _EstrategiaConcreta_.
+* **EstrategiaConcreta:**
+  * **@TODO (el libro esta cortado)**
+* **Contexto:**
+  * se configura con una estructura _EstrategiaConcreta_.
+  * mantiene una referencia a una estructura _Estrategia_.
+  * puede definir una interfaz que permita a la _Estrategia_ acceder a sus datos.
 
 ## Colaboradores
 
