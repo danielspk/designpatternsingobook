@@ -12,5 +12,8 @@
 ### Los porqué (Foco)
 
 ## Conclusión
+
+## Agradecimientos
+
 **Contenido en desarrollo.**
 
