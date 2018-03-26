@@ -34,4 +34,8 @@
     * [Decorator](patrones/estructurales/decorator.md)
     * [Facade](patrones/estructurales/facade.md)
     * [Flyweight](patrones/estructurales/flyweight.md)
+* [Conclusiones](conclusiones.md)
 * [Recursos de interes](recursos.md)
+
+
+
