@@ -10,11 +10,11 @@ Anteriormente decia que la elección de Node.js fue una paradoja porque quien al
 Esta es la razón principal de esta publicación, la de poder ayudar a un futuro equipo de tecnología a que puedan visualizar como es la Programación Orientada a Objetos en Go, partiendo de los ya clásicos Patrones de Diseño GoF.
 
 ### El trabajo
-El trabajo presentado se denomino:
+El trabajo presentado se denomina:
 
 > "Una perspectiva a la Programación Orientada a Objetos en Go en base a los Patrones de Diseño GoF"*
 
-El mismo se presentó como:
+El mismo se presenta como:
 
 > "El objetivo principal del presente trabajo será mostrar cómo pueden aplicarse los Patrones de Diseño GoF en un lenguaje de programación que no es completamente orientado a objetos. Para esto se utilizará como referencia el lenguaje de programación Go. Su propósito principal será servir de material de referencia para desarrolladores Go que deseen aplicar los patrones de Diseño GoF.
 Se analizará la viabilidad, los ajustes, y las adaptaciones necesarias para implementar los Patrones de Diseño en base a las características del lenguaje de programación Go. Para esto, previamente se abordarán y explicarán los atributos orientados a objetos que posee el lenguaje de programación Go.
