@@ -12,15 +12,13 @@ Esta es la razón principal de esta publicación, la de poder ayudar a un futuro
 ### El trabajo
 El trabajo presentado se denomino:
 
-**"Una perspectiva a la Programación Orientada a Objetos en Go en base a los Patrones de Diseño GoF"**
+> "Una perspectiva a la Programación Orientada a Objetos en Go en base a los Patrones de Diseño GoF"*
 
 El mismo se presentó como:
 
-*"El objetivo principal del presente trabajo será mostrar cómo pueden aplicarse los Patrones de Diseño GoF en un lenguaje de programación que no es completamente orientado a objetos. Para esto se utilizará como referencia el lenguaje de programación Go. Su propósito principal será servir de material de referencia para desarrolladores Go que deseen aplicar los patrones de Diseño GoF."*
-
-*"Se analizará la viabilidad, los ajustes, y las adaptaciones necesarias para implementar los Patrones de Diseño en base a las características del lenguaje de programación Go. Para esto, previamente se abordarán y explicarán los atributos orientados a objetos que posee el lenguaje de programación Go."*
-
-"*Adicionalmente el trabajo se publicará como ebook online mediante la realización de una página web, junto a ejemplos autoejecutables y un repositorio público con todo el código fuente, ejemplos y diagramas desarrollados."*
+> "El objetivo principal del presente trabajo será mostrar cómo pueden aplicarse los Patrones de Diseño GoF en un lenguaje de programación que no es completamente orientado a objetos. Para esto se utilizará como referencia el lenguaje de programación Go. Su propósito principal será servir de material de referencia para desarrolladores Go que deseen aplicar los patrones de Diseño GoF.
+Se analizará la viabilidad, los ajustes, y las adaptaciones necesarias para implementar los Patrones de Diseño en base a las características del lenguaje de programación Go. Para esto, previamente se abordarán y explicarán los atributos orientados a objetos que posee el lenguaje de programación Go.
+Adicionalmente el trabajo se publicará como ebook online mediante la realización de una página web, junto a ejemplos autoejecutables y un repositorio público con todo el código fuente, ejemplos y diagramas desarrollados."
 
 ### El camino recorrido
 
