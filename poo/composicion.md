@@ -102,6 +102,8 @@ class Manzana {
 
 ## Ejemplo de Composición en _Go_:
 
+Como veremos la composición en _Go_ se logra embebiendo estructuras unas dentro de otras:
+
 ```go
 import
 ```
