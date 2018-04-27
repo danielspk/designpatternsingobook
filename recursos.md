@@ -23,6 +23,7 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[40\] - Java Design Patterns - Example Tutorial](https://www.journaldev.com/1827/java-design-patterns-example-tutorial)
 * [\[41\] - Design patterns implemented in Java](http://java-design-patterns.com/)
 * [\[42\] - Design Patterns in Java Tutorial](https://www.tutorialspoint.com/design_pattern/)
+* [\[45\] - Why extends is evil](https://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html)
 
 ## Papers
 
