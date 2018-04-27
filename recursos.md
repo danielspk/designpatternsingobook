@@ -24,6 +24,7 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[41\] - Design patterns implemented in Java](http://java-design-patterns.com/)
 * [\[42\] - Design Patterns in Java Tutorial](https://www.tutorialspoint.com/design_pattern/)
 * [\[45\] - Why extends is evil](https://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html)
+* [\[46\] - Inheritance vs Composition](https://www.techjini.com/blog/inheritance-vs-composition/)
 
 ## Papers
 
