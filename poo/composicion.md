@@ -22,4 +22,12 @@ La composicion es una manera de defiinir obejtos dentro de otros objetos. De est
 
 > Esto en cierta medida es más similar al concepto de herencia múltiple que al de simple.
 
+## ¿Por qué _Go_ no tiene herencia?
+
+Seguramente no haya una respuesta única. No obstante en el faq de la documentación oficial de _Go_ responden a esta pregunta de la siguiente forma [\[44\]](/recursos.md):
+
+"**¿Por qué no hay herencia de tipo?**:
+
+"
+
 **Contenido en desarrollo.**
