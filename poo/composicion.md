@@ -1,8 +1,10 @@
 # Herencia vs Composición en Go
 
-Como se menciono previamente en _Go_ no existe el concepto de herencia típico de lenguajes orientados a objetos como _Java_, _C++_ y _Smalltalk_ entre otros.
+Como se indicó previamente en _Go_ no existe el concepto de herencia típico de lenguajes orientados a objetos como _Java_, _C++_ y _Smalltalk_ entre otros.
 
-Como menciona Steve Francia [\[6\]](/recursos.md) "Existen varios enfoques diferentes para definir relaciones entre objetos. Si bien difieren bastante entre sí, todos comparten un propósito común como mecanismo para la reutilización de código":
+En _Go_ existe otro concepto complementario que es la **composición**.
+
+Tal como menciona Steve Francia [\[6\]](/recursos.md) "Existen varios enfoques diferentes para definir relaciones entre objetos. Si bien difieren bastante entre sí, todos comparten un propósito común como mecanismo para la reutilización de código":
 
 - Herencia
 - Herencia múltiple
@@ -11,15 +13,13 @@ Como menciona Steve Francia [\[6\]](/recursos.md) "Existen varios enfoques difer
 
 ## Herencia:
 
-**Contenido en desarrollo.**
-
-En _Go_ existe otro concepto complementario que es la **composición**.
-
+Es el mecanismo por el que un objeto se basa en otro y justamente por esto hereda los comportamientos y los datos de el. No todos los lenguajes de programación implementan la herencia de la misma mandera. Algunos sólo permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.
+Asimismo los comportamientos y datos heredados pueden estar limitados al acceso con el que el objeto padre los definió, esto se denomina _visibilidad_.
 
 ## Composición:
 
-La composicion es una manera de incluir estructuras dentro de otras. De esta forma una estructura adquiere todos los comportamientos de las otras estructuras por las que esta compuesta.
+La composicion es una manera de defiinir obejtos dentro de otros objetos. De esta forma un objeto puede adquirir los comportamientos y datos de los otros objetos por los que esta compuesto.
 
-> Esto en alguna medida es similar al concepto de herencia múltiple.
+> Esto en cierta medida es más similar al concepto de herencia múltiple que al de simple.
 
 **Contenido en desarrollo.**
