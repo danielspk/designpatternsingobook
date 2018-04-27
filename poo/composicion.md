@@ -102,6 +102,12 @@ class Manzana {
 
 ## Ejemplo de Composición en _Go_:
 
-En resumen _Go_ permite la implementación implícita y la composición de tipos.
+```go
+
+```
 
 **Contenido en desarrollo.**
+
+## Conclusiónes:
+
+- Es posible reutilizar código en _Go_ gracias a la composición.
