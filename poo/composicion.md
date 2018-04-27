@@ -37,9 +37,9 @@ Al incursionar en _Go_ y leer sobre porque no existe la herencia me encontraba c
 
 "Una vez asistí a una reunión del grupo de usuarios de Java, donde James Gosling (el inventor de Java) fue el orador principal. Durante la memorable sesión de preguntas y respuestas, alguien le preguntó: 'Si pudieras volver a hacer Java, ¿qué cambiarías?' 'Suprimiría las clases', respondió. Después de que la risa se calmó, explicó que el verdadero problema no eran las clases en sí, sino la herencia de implementación (la relación  extends). La herencia de interfaz (la relación implements) es preferible. Debe evitar la herencia de implementación siempre que sea posible.".
 
-En mi opinión personal no entro en estos temas de que es mejor que otra cosa, simplemente veo que son formas diferentes de extender comportamientos y reutilizar código. Veamos un pequeño ejemplo con sus pros y contras (extraido de :
+En mi opinión personal no entro en estos temas de que es mejor que otra cosa, simplemente veo que son formas diferentes de extender comportamientos y reutilizar código. Veamos un pequeño ejemplo con algunos pros y contras (basado del siguiente artículo [\[46\]](/recursos.md)):
 
-
+**Contenido en desarrollo. https://www.techjini.com/blog/inheritance-vs-composition/**
 
 En resumen _Go_ permite la implementación implícita y la composición de tipos.
 
