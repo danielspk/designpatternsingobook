@@ -22,12 +22,19 @@ La composicion es una manera de defiinir obejtos dentro de otros objetos. De est
 
 > Esto en cierta medida es más similar al concepto de herencia múltiple que al de simple.
 
-## ¿Por qué _Go_ no tiene herencia?
+## ¿Por qué _Go_ no tiene herencia?:
 
 Seguramente no haya una respuesta única. No obstante en el faq de la documentación oficial de _Go_ responden a esta pregunta de la siguiente forma [\[44\]](/recursos.md):
 
-"**¿Por qué no hay herencia de tipo?**:
+"**¿Por qué no hay herencia?**:
+La programación orientada a objetos, al menos en los lenguajes más conocidos, implica demasiada discusión sobre las relaciones entre tipos, relaciones que a menudo podrían derivarse automáticamente. _Go_ toma un enfoque diferente.
 
-"
+En lugar de requerir que el programador declare de antemano que dos tipos están relacionados, en _Go_ un tipo satisface automáticamente cualquier interfaz que especifique un subconjunto de sus métodos. Además de reducir la administración *(la palabra original es bookkeeping)*, este enfoque tiene ventajas reales. Los tipos pueden satisfacer muchas interfaces a la vez, sin las complejidades de la herencia múltiple tradicional. Las interfaces pueden ser muy livianas - una interfaz con uno o incluso cero métodos puede expresar un concepto útil. Las interfaces se pueden agregar tardiamente si aparece una nueva idea o para probarla - sin anotar los tipos originales. Debido a que no existen relaciones explícitas entre los tipos y las interfaces, no hay una jerarquía de tipos para administrar o discutir.
+
+Es posible utilizar estas ideas para construir algo análogo a los type-safe de las pipes de Unix. Por ejemplo, vea cómo _fmt.Fprintf_ permite la impresión formateada de cualquier salida, no solo de un archivo, o cómo el paquete _bufio_ puede estar completamente separado de la E/S, o cómo el paquete _image_ genera archivos de imágenes comprimidas. Todas estas ideas se derivan de una única interfaz (_io.Writer_) que representa un único método (_Write_). Y esto sólo está arañando la superficie. Las interfaces en _Go_ tienen una profunda influencia sobre cómo se estructuran los programas.
+
+Toma un tiempo acostumbrarse, pero este estilo implícito de dependencia de tipos es una de las cosas más productivas sobre _Go_."
+
+## Ejemplo de Composición en _Go_:
 
 **Contenido en desarrollo.**
