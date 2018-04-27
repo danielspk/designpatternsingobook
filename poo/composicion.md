@@ -105,10 +105,30 @@ class Manzana {
 Como veremos la composición en _Go_ se logra embebiendo estructuras unas dentro de otras:
 
 ```go
-import
+package main
+
+import fmt
+
+type Usuario struct {
+    nombre   string
+    apellido string
+}
+
+func (u Usuario) getDatosPersonales() string {
+    return fmt.Sprintf("%s, %s", u.nombre, u.apellido);
+}
+
+type Administrador struct {
+    *Usuario
+    sector string
+}
+
+func (a Administrador) getDatosCompletos() string {
+    return fmt.Sprintf("%s - %s, a.getDatosPersonales(), a.sector);
+}
 ```
 
-**Contenido en desarrollo.**
+**Ejemplo en PlayGolang en desarrollo.**
 
 ## Conclusión:
 
