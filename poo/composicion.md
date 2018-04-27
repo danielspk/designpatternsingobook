@@ -63,7 +63,7 @@ class Manzana extends Fruta {
 ```
 
 **Pros:**
-- **Reutilización de código:** todo código definido en la clase Fruta puede ser reutilizado por cualquiera de sus subclases.
+- **Reutilización de código:** todo código definido en la clase _Fruta_ puede ser reutilizado por cualquiera de sus subclases.
 - **Polimorfismo:** una variable de tipo Fruta puede contener una referencia a un objeto de tipo superclase o cualquiera de sus subclases.
 - **Enlace dinámico:** en tiempo de ejecución se decidirá que método invocar en función del tipo de clase del objeto.
 - **Facilidad para agregar una nueva subclase:** simplemente se debe agregar una subclase que heredé de la superclase.
@@ -92,9 +92,9 @@ class Manzana {
 ```
 
 **Pros:**
-- **Bajo Acoplamiento:** Cualquier cambio en la clase Fruta no afecta a la clase Manzana. Incluso si se agrega un método en la clase Fruta con la misma firma de uno de la clase Manzana no afecta a ésta última.
-- **Reutilización de Código:** Se puede lograr de igual forma que con la herencia, aunque hay que llamar explicitamente al código que necesita ser reutilizado (**Nota:** esto último no es necesario en _Go_ **@TODO: validar!!!**).
-- **Encapsulación más fuerte:** en el ejemplo, si se cambia la firma del método pelar() en la clase Fruta, no hay necesidad de cambiar nada en la clase Manzana.
+- **Bajo Acoplamiento:** Cualquier cambio en la clase _Fruta_ no afecta a la clase _Manzana_. Incluso si se agrega un método en la clase _Fruta_ con la misma firma de uno de la clase Manzana no afecta a ésta última.
+- **Reutilización de Código:** Se puede lograr de igual forma que con la herencia, aunque hay que llamar explicitamente al código que necesita ser reutilizado (**Nota:** esto último no es necesario en _Go_**).
+- **Encapsulación más fuerte:** en el ejemplo, si se cambia la firma del método _pelar()_ en la clase _Fruta_, no hay necesidad de cambiar nada en la clase _Manzana_.
 
 **Contras:**
 - **Es más dificil agregar una nueva clase:** sintácticamente requiere de más código.
@@ -107,7 +107,7 @@ Como veremos la composición en _Go_ se logra embebiendo estructuras unas dentro
 ```go
 package main
 
-import fmt
+import "fmt"
 
 type Usuario struct {
     nombre   string
@@ -124,11 +124,18 @@ type Administrador struct {
 }
 
 func (a Administrador) getDatosCompletos() string {
-    return fmt.Sprintf("%s - %s, a.getDatosPersonales(), a.sector);
+    return fmt.Sprintf("%s - %s", a.getDatosPersonales(), a.sector);
+}
+
+func main() {
+    var administrador = Administrador{&Usuario{"Jose", "Luis"}, "Computos"};
+
+    fmt.Println(administrador.getDatosPersonales());
+    fmt.Println(administrador.getDatosCompletos());
 }
 ```
 
-**Ejemplo en PlayGolang en desarrollo.**
+[Ejecutar código](https://play.golang.org/p/7W89468lRhC)
 
 ## Conclusión:
 
