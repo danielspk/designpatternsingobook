@@ -103,11 +103,11 @@ class Manzana {
 ## Ejemplo de Composición en _Go_:
 
 ```go
-
+import
 ```
 
 **Contenido en desarrollo.**
 
-## Conclusiónes:
+## Conclusión:
 
-- Es posible reutilizar código en _Go_ gracias a la composición.
+El uso de interfaces (_es-un_) y de la composición (_tiene-un_) posibilitan la reutilización de código en _Go_ y la adopción de técnicas y de patrones orientados a objetos.
