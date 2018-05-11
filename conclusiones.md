@@ -30,9 +30,9 @@ Para esto tome como referencia el índice de popularidad de los lenguajes de pro
 
 ### El camino recorrido
 
-### Las Decisiones
+### Las decisiones
 
-### Las Herramientas utilizadas
+### Las herramientas utilizadas
 
 ### Los porqué (Foco)
 
