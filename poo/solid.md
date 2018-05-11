@@ -8,6 +8,6 @@ SOLID es un acrónimo introducido por Robert C. Martin en su libro "Agile Softwa
 - **I**: *(ISP - Interface segregation principle)* Principio de segregación de la interfaz.
 - **D**: *(DIP - Dependency inversion principle)* Principio de inversión de la dependencia.
 
-El objetivo de aplicar estos principios es objtener sistemas orientados a objetos con código de mayor calidad, facilidad es su mantenimiento y un buen uso del rehuso de código.
+El objetivo de aplicar estos principios es objtener sistemas orientados a objetos con código de mayor calidad, facilidad es su mantenimiento y un buen rehuso de código.
 
 **Contenido en desarrollo.**
