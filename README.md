@@ -1,8 +1,8 @@
 # Design Patterns in Go
 
-![](/assets/gopher.png)
+![](/assets/gologolightblue.png)
 
-> Imagen - [\[39\]](recursos.md)
+> Imagen - [\[47\]](recursos.md)
 
 Este trabajo tiene como objetivo discutir sobre la programación orientada a objetos en _Go_ y como pueden implementarse los 23 Patrones de Diseño GoF.
 
@@ -10,3 +10,6 @@ Los códigos de ejemplo de los patrones de diseño se encuentran en el siguiente
 
 **Autor:** [Daniel M. Spiridione](http://www.daniel-spiridione.com.ar)
 
+![](/assets/gopher.png)
+
+> Imagen - [\[39\]](recursos.md)
