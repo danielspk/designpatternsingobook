@@ -34,7 +34,7 @@ Para esto tome como referencia el índice de popularidad de los lenguajes de pro
 
 ### Las herramientas utilizadas
 
-### Los porqué (Foco)
+### Los porqué / foco
 
 # Conclusión
 
