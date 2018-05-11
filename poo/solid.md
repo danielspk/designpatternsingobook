@@ -1,6 +1,6 @@
 # Principios S.O.L.I.D. en Go
 
-SOLID es un acrónimo introducido por Robert C. Martin en su libro "Agile Software Development, Principles, Patterns and Practices"[]() y hace referencia a los siguientes cinco principios:
+SOLID es un acrónimo introducido por Robert C. Martin en su libro "Agile Software Development, Principles, Patterns and Practices" [\[48\]](/recursos.md) y hace referencia a los siguientes cinco principios:
 
 - **S**: *(SRP - Single responsibility principle)* Principio de responsabilidad única.
 - **O**: *(OCP - Open closed principle)* Principio de abierto cerrado.
