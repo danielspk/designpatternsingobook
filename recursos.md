@@ -69,4 +69,4 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[38\] - Gophers oficiales](https://golang.org/doc/gopher/)
 * [\[39\] - Gophers libres](https://github.com/golang-samples/gopher-vector)
 * [\[43\] - Índice Tiobe](https://www.tiobe.com/tiobe-index/)
-
+* [\[47\] - Go logos](https://golang.org/s/logos)
