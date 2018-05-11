@@ -10,26 +10,26 @@ SOLID es un acrónimo introducido por Robert C. Martin en su libro "Agile Softwa
 
 El objetivo de aplicar estos principios es objtener sistemas orientados a objetos con código de mayor calidad, facilidad es su mantenimiento y un buen rehuso de código.
 
-### Principio de responsabilidad única:
+### Principio de responsabilidad única
 
 **Contenido en desarrollo.**
 
-### Principio de abierto cerrado:
+### Principio de abierto cerrado
 
 **Contenido en desarrollo.**
 
-### Principio de substitución de Liskov:
+### Principio de substitución de Liskov
 
 **Contenido en desarrollo.**
 
-### Principio de segregación de la interfaz:
+### Principio de segregación de la interfaz
 
 **Contenido en desarrollo.**
 
-### Principio de inversión de la dependencia:
+### Principio de inversión de la dependencia
 
 **Contenido en desarrollo.**
 
-## Conclusión:
+## Conclusión
 
 **Contenido en desarrollo.**
