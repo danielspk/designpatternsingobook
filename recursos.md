@@ -63,7 +63,7 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[35\] - Dave Cheney - SOLID Go Design](https://www.youtube.com/watch?v=zzAdEt3xZ1M)
 * [\[36\] - William Kennedy - Golang OOP - Composition in Go](https://www.youtube.com/watch?v=194blNHDdd0)
 
-## Recursos
+## Otros Recursos
 
 * [\[37\] - Librerías, paquetes y framewoks](https://github.com/avelino/awesome-go)
 * [\[38\] - Gophers oficiales](https://golang.org/doc/gopher/)
