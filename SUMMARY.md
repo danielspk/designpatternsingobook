@@ -36,7 +36,5 @@
     * [Facade](patrones/estructurales/facade.md)
     * [Flyweight](patrones/estructurales/flyweight.md)
 * [Conclusiones](conclusiones.md)
+* [Acerca De](acercade.md)
 * [Recursos de interes](recursos.md)
-
-
-
