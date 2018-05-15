@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduccion](README.md)
-* [Publicacion](publicacion.md)
+* [Introducción](README.md)
+* [Publicación](publicacion.md)
 * [Sobre Go](sobrego.md)
 * [POO en Go](poo/README.md)
   * [Objetos](poo/objetos.md)
