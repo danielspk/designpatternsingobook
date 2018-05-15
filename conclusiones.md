@@ -70,6 +70,14 @@ Las herramientas utilizadas fueron:
 - **Go Playground**: plataforma para la publicación y ejecución de códigos de ejemplo de _Go_. - [https://play.golang.org/](https://play.golang.org/)
 - **Violet UML Editor**: software para la generación de diagramas UML. - [http://alexdp.free.fr/violetumleditor](http://alexdp.free.fr/violetumleditor)
 
+La motivación de la elección de estas y no otras herramientas fue la siguiente:
+- Para la generación de la publicación se analizaron otras alternativas a _GitBook_ como: **a)** hacer una web puramente en HTML/CSS, **b)** hacer una web con algún CMS como _Joomla_ o _WordPress_, y **c)** utilizar un generador de ebook como _Pandoc_ o similares. Sin embargo la elección fue _GitBook_ ya que integra varias características juntas como la publicación online, la redacción en markdown, la exportación a otros formatos (ePub, PDF, Mobi), y un entorno de colaboración con terceros mediante la publicación de comentarios y notas.
+- Para la publicación de códigos fuentes se analizaron otras plataformas a _Github_ como: **a)** _GitLab_, o **b)** _Bitbucket_. Sin embargo la elección fue _Github_ ya que, de las tres, en mi experiencia es la que más proyectos open source aloja.
+- Para el control de versiones de analizo también _SVN_. Sin embargo la elección fue _Git_ ya que a diferencia de _SVN_ no requiere de un repositorio central facilitando el trabajo de la redacción de la publicación en diferentes equipos y lugares.
+- Para el lenguaje de redacción de la publicación se analizaron otras alternativas a _Markdown_ como: **a)** _HTML_, **b)** _OpenDocument_, y **c)** _reStructuredText_. Sin embargo la elección fue _Markdown_ ya que resulta ser un lenguaje mucho más simple de aprender que los anteriores y existe una gran cantidad de herramientas para convertir el mismo en otros formatos. Este punto es muy importante para permitir una posterior colaboración y ampliación de la publicación mediante la comunidad interesada de _Go_.
+- Para la generación de diagramas UML se analizaron otras alternativas a _Viole UML_ como: **a)** _StarUML_, **b)** _Diagram Designer_, y **c)** _ModelioSoft_. Sin embargo la elección fue _Violet UML_ ya que se encuentra disponible para varios Sistemas Operativos y es muy simple de aprender.
+- Para la ejecución online de código de ejemplo de _Go_ no analice otras alternativas ya que _The Go Playgroung_ es la herramienta oficial de _Go_ y se encuentra muy popularizada en su comunidad.
+
 ### Los porqué / foco
 
 **Contenido en desarrollo.**
