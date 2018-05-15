@@ -26,7 +26,27 @@ Adicionalmente el trabajo se publicará como ebook online mediante la realizaci�
 Al momento de tomar la decisión sobre cuál de los dos lenguajes antes mencionados ([Go](https://golang.org/), [Rust](https://www.rust-lang.org/en-US/)) iba a basar mi trabajo, decidí hacer una pequeño análisis sobre la popularidad de ambos lenguajes en los últimos años.
 Para esto tome como referencia el índice de popularidad de los lenguajes de programación [\[43\]](recursos.md) de la Empresa [Tiobe](https://www.tiobe.com).
 
-**Contenido en desarrollo - Explicar que es Tiobe, mostrar gráficas de evolución de Go y rust, y dar conclusión de elección.**
+Tiobe es una empresa especializada en la evaluación y el seguimiento de la calidad del software que publica mensualmente un índice [\[43\]](recursos.md) de popularidad de lenguajes de programación. Este índice es conformado en base a la cantidad de resultados que arrojan varios motores de búsqueda. Los resultados deben cumplir ciertos requerimientos para calificar para el índice, por ejemplo el lenguaje de programación debe tener su propia entrada en Wikipedia, ser completo (poder simular una máquina de Turing) y tener al menor 5.000 visitas en búsquedas aplicadas desde Google. La empresa también utiliza filtros para evitar falsos positivos y otras reglas para valorar la calificación del resultado.
+
+> El proceso de como Tiobe confecciona el índice se encuentra bien detallado en el siguiente link: [https://www.tiobe.com/tiobe-index/programming-languages-definition/](https://www.tiobe.com/tiobe-index/programming-languages-definition/)
+
+Basándome en el índice antes mencionado realice una comparación de ambos lenguajes y _Go_ en su historia como actualmente, tiene mayor popularidad respecto de _Rust_.
+
+Como se puede apreciar en la siguiente gráfica _(Mayo/2018)_ _Go_ obtuve su mejor ubicación dentro del ranking en Julio de 2017 al ubicarse entre los primeros 10 lenguajes de programación. Desde mediados de 2016 a mediados de 2017 tuvo su mayor pico de popularidad, con un marcado descenso actualmente.
+
+![](/assets/stats/rankinggo.png)
+
+Actualmente _(Mayo/2018)_ _Go_ se ubica en la 14ª posición:
+
+![](/assets/stats/indextiobe201805.png)
+
+Por el contrario _Rust_ se ubica actualmente _(Mayo/2018)_ en la 91ª posición en una clara caida dentro del ranking. Si bien por su posición actual sus estadísticas ya no se publican dentro del índice Tiobe, al momento de su evaluación estaba dento del ranking de los 20ª a 50ª.
+
+> Las estadísticas registradas de Tiobe corresponden a Mayo del 2018. Consulte el Índice Tiobe [\[43\]](recursos.md) para tener datos más actualizados.
+
+Existen otros sitios especializados en medir la popularidad de los lenguajes de programación como [http://pypl.github.io/PYPL.html](http://pypl.github.io/PYPL.html), y [http://redmonk.com/sogrady/category/programming-languages/](http://redmonk.com/sogrady/category/programming-languages/), pero Tiobe es a mi entender el que más criterios de evaluación y filtros detalla para su ranking.
+
+En conclusión, el historial de popularidad de _Go_ respecto de _Rust_ fue lo que definió su selección para la publicación de este trabajo en ese lenguaje de programación.
 
 ### El camino recorrido
 
