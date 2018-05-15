@@ -1,6 +1,8 @@
 **Contenido en desarrollo - En esta sección se detallará que motivo la realización de esta publicación. Qué criterios se utilizaron. Cómo resulto la experiencia. Cúal fue el plan de trabajo, etc.**
 
-# Motivación
+# Acerca de esta publicación
+
+## Motivación
 
 Esta publicación fue motivada como trabajo final de mi Posgrado de Especialización en Ingeniería del Software que curse durante el año 2017 en la [UCA](http://www.uca.edu.ar) *(Pontificia Universidad Católica Argentina)*.
 
@@ -82,3 +84,6 @@ La motivación de la elección de estas y no otras herramientas fue la siguiente
 
 **Contenido en desarrollo.**
 
+## Agradecimientos
+
+**Contenido en desarrollo.**
