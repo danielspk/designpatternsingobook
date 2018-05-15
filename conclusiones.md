@@ -1,3 +1,3 @@
-# Conclusión
+# Conclusiones
 
 **Contenido en desarrollo.**
