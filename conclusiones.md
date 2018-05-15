@@ -1,4 +1,4 @@
-**Contenido en desarrollo - En esta sección se detallará que motivo la realización de esta publicación. Qué criterios se utilizaron. Se dará referencia a que es un Trabajo Final de Posgrado. Cómo resulto la experiencia. Cúal fue el plan de trabajo, etc.**
+**Contenido en desarrollo - En esta sección se detallará que motivo la realización de esta publicación. Qué criterios se utilizaron. Cómo resulto la experiencia. Cúal fue el plan de trabajo, etc.**
 
 # Motivación
 
@@ -50,13 +50,33 @@ En conclusión, el historial de popularidad de _Go_ respecto de _Rust_ fue lo qu
 
 ### El camino recorrido
 
+**Contenido en desarrollo.**
+
 ### Las decisiones
+
+**Contenido en desarrollo.**
 
 ### Las herramientas utilizadas
 
+Para esta publicación se priorizó la utilización de herramientas que cumplieran alguna de las siguientes premisas:
+- que fueran gratuitas y de libre acceso
+- que fueran open source
+
+Las herramientas utilizadas fueron:
+- **GitBook**: plataforma para la publicación online de este trabajo. - [https://www.gitbook.com/](https://www.gitbook.com/)
+- **Github**: plataforma para la publicación del código fuentes de esta publicación. - [https://github.com/](https://github.com/)
+- **Git**: software para el control de versiones del código fuente de esta publicación. - [https://git-scm.com/](https://git-scm.com/)
+- **Markdown**: lenguaje de marcado para la redacción de esta publicación. - [https://daringfireball.net/projects/markdown/](https://daringfireball.net/projects/markdown/)
+- **Go Playground**: plataforma para la publicación y ejecución de códigos de ejemplo de _Go_. - [https://play.golang.org/](https://play.golang.org/)
+- **Violet UML Editor**: software para la generación de diagramas UML. - [http://alexdp.free.fr/violetumleditor](http://alexdp.free.fr/violetumleditor)
+
 ### Los porqué / foco
 
+**Contenido en desarrollo.**
+
 # Conclusión
+
+**Contenido en desarrollo.**
 
 # Agradecimientos
 
