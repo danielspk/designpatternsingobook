@@ -6,7 +6,7 @@ La primera parte del trabajo estará destinada a la presentación del lenguaje d
 
 En la segunda se expondrá como se pueden aplicar los 23 patrones de diseño GoF en _Go_.
 
-Y la última parte estará destinada a las conclusiones generales.
+La última parte estará destinada a las conclusiones generales y a los motivos que me llevaron a realizar esta publicación.
 
 ![](/assets/gologofuchsia.png)
 
