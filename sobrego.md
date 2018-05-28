@@ -16,6 +16,8 @@ _Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y 
 
 > Imagen - [\[39\]](recursos.md)
 
+**Contenido en desarrollo.**
+
 ## Características
 
 _Go_ esta inspirado en la sintaxis de _C_ como otros lenguajes: _C++_, _C#_, _Java_, _PHP_, _Javascript_, etc. Por sus características suele clasificarse como un lenguaje compilado que tiene carcaterísticas de lenguajes interpretados.
@@ -56,3 +58,4 @@ func main() {
 
 Para Mark Summerfield [\[27\]](recursos.md) "Go es bastante parecido a C en su espíritu, ya que es un lenguaje pequeño y eficiente con convenientes facilidades de bajo nivel, como punteros. Sin embargo, Go también ofrece muchas características asociadas con lenguajes de alto o muy alto nivel, como cadenas Unicode, potentes estructuras de datos integradas, duck typing, recolección de basura y soporte de concurrencia de alto nivel que utiliza comunicaciones en lugar de datos compartidos y bloqueos. Go también tiene una gran biblioteca estándar de amplio rango".
 
+**Contenido en desarrollo.**
