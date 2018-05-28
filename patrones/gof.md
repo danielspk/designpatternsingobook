@@ -64,7 +64,7 @@ En esta publicación utilizaremos la misma estructura con las siguientes observa
 * Se utilizarán códigos de ejemplo en el lenguaje _Go_.
 * Se utilizará UML en reemplazo de OMT. 
 
-> Paradojicamente se utilizarán diagramas de clases de UML cuando en _Go_ no existen clases. Sin embargo, al ser UML una de las notaciones más extendidas en IT, la traducción de las _clases_ a estructuras de _Go_ considero que no presentará dificultades adicionales al lector.
+> Paradojicamente se utilizarán diagramas de clases de UML cuando en _Go_ no existen clases. Sin embargo, al ser UML una de las notaciones más extendidas en IT, considero que la traducción de las _clases_ a estructuras de _Go_ no presentará dificultades adicionales al lector.
 
 ### Implicancias
 
