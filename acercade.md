@@ -70,7 +70,7 @@ Para esta publicación se priorizó la utilización de herramientas que cumplier
 
 Las herramientas utilizadas fueron:
 - **GitBook**: plataforma para la publicación online de este trabajo. - [https://www.gitbook.com/](https://www.gitbook.com/)
-- **Github**: plataforma para la publicación del código fuentes de esta publicación. - [https://github.com/](https://github.com/)
+- **Github**: plataforma para la publicación del código fuente de esta publicación. - [https://github.com/](https://github.com/)
 - **Git**: software para el control de versiones del código fuente de esta publicación. - [https://git-scm.com/](https://git-scm.com/)
 - **Markdown**: lenguaje de marcado para la redacción de esta publicación. - [https://daringfireball.net/projects/markdown/](https://daringfireball.net/projects/markdown/)
 - **Go Playground**: plataforma para la publicación y ejecución de códigos de ejemplo de _Go_. - [https://play.golang.org/](https://play.golang.org/)
