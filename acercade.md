@@ -76,7 +76,7 @@ Las herramientas utilizadas fueron:
 - **Go Playground**: plataforma para la publicación y ejecución de códigos de ejemplo de _Go_. - [https://play.golang.org/](https://play.golang.org/)
 - **Violet UML Editor**: software para la generación de diagramas UML. - [http://alexdp.free.fr/violetumleditor](http://alexdp.free.fr/violetumleditor)
 
-La motivación de la elección de estas y no otras herramientas fue la siguiente:
+La motivación de la elección de estas, y no otras herramientas, fue la siguiente:
 - Para la generación de la publicación se analizaron otras alternativas a _GitBook_ como: **a)** hacer una web puramente en HTML/CSS, **b)** hacer una web con algún CMS como _Joomla_ o _WordPress_, y **c)** utilizar un generador de ebook como _Pandoc_ o similares. Sin embargo la elección fue _GitBook_ ya que integra varias características como la auto publicación online, la redacción en markdown, la exportación a otros formatos (ePub, PDF, Mobi), y un entorno de colaboración con terceros mediante la publicación de comentarios y notas.
 - Para la publicación de códigos fuentes se analizaron otras plataformas a _Github_ como: **a)** _GitLab_, o **b)** _Bitbucket_. Sin embargo la elección fue _Github_ ya que, de las tres, en mi experiencia es la que más proyectos open source aloja. Siendo mi deseo que esta publicación pueda ser el punto de partida para otros fork y discusiones en la comunidad de _Go_.
 - Para el control de versiones de analizo también _SVN_. Sin embargo la elección fue _Git_ ya que a diferencia de _SVN_ no requiere de un repositorio central facilitando el trabajo de la redacción de la publicación en diferentes equipos y lugares.
