@@ -55,6 +55,8 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[30\] - Mastering PHP Design Patterns - Junade Ali - Packt](https://www.packtpub.com/application-development/mastering-php-design-patterns)
 * [\[48\] - Agile Software Development, Principles, Patterns, and Practices - Robert C. Martin - Pearson](http://catalogue.pearsoned.co.uk/educator/product/Agile-Software-Development-Principles-Patterns-and-Practices-Pearson-New-International-Edition-PDF-eBook/9781292038360.page)
 
+**Contenido en desarrollo. Incluir año de publicación**
+
 ## Presentaciones
 
 * [\[31\] - Go for Javaneros](https://talks.golang.org/2014/go4java.slide#1)
