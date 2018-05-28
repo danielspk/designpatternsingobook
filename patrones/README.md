@@ -15,6 +15,6 @@ Como se puede observar Gamma usa términos como _clases_ y _objetos_ ya que los 
 ## Contenido
 
 * [Patrones de Diseño GoF](gof.md)
-* [Patrones de comportamiento](comportamiento/README.md)
+* [Patrones de Comportamiento](comportamiento/README.md)
 * [Patrones Creacionales](creacionales/README.md)
 * [Patrones Estructurales](estructurales/README.md)
