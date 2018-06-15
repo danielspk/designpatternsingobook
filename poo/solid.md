@@ -14,7 +14,12 @@ El objetivo de aplicar estos principios es objtener sistemas orientados a objeto
 
 > Una clase debe tener una, y sólo una, razón para cambiar, lo que significa que una clase debe tener un solo trabajo.
 
-**Contenido en desarrollo.**
+La primera observación respecto de este principio es que en _Go_ no existen clases. Sin embargo, como vimos, mediante la incorporación de comportamientos a estructuras de datos podemos llegar a un concepto equivalente.
+
+Este principio hace foco en que un objeto debe tener únicamente una responsabilidad encapsulada por la clase. Cuando se hace referencia a una responsabilidad es para referirse a una razón para cambiar.
+Mantener una clase que tiene múltiples objetivos o responsabilidades es mucho más complejo que una clase enfocada en una única responsabilidad.
+
+**Contenido y ejemplo en desarrollo.**
 
 Gracias a la organización en paquetes que permite _Go_ es posible crear estructuras, tipos, funciones y métodos empaquetados con propositos claros y bien definidos.
 
@@ -22,7 +27,9 @@ Gracias a la organización en paquetes que permite _Go_ es posible crear estruct
 
 > Los objetos o entidades deberían estar abiertos para la extensión, pero cerrados para su modificación.
 
-**Contenido en desarrollo.**
+Este principio hace mención a que una entidad permita extender su comportamiento pero sin que se modifique su código fuente. De esta forma la entidad puede ser extendida pero nunca modificada.
+
+**Contenido y ejemplo en desarrollo.**
 
 Gracias a la composición que permite _Go_ es posible componer tipos simples en más complejos.
 
@@ -30,7 +37,9 @@ Gracias a la composición que permite _Go_ es posible componer tipos simples en 
 
 > Los subtipos deben poder ser sustituidos por su tipo base.
 
-**Contenido en desarrollo.**
+Este principio ...
+
+**Contenido y ejemplo en desarrollo.**
 
 Gracias al modo de intefaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no tipos concretos.
 
@@ -38,16 +47,21 @@ Gracias al modo de intefaces que permite _Go_ es factible expresar las dependenc
 
 > Nunca se debe obligar a un cliente a implementar una interfaz que no utilice, o no se debe forzar a los clientes a depender de métodos que no usan.
 
-**Contenido en desarrollo.**
+Este principio hace foco en como deben definirse las interfaces. Las mismas deben ser pequeñas y específicas.
+Grandes y complejas interfaces obligan al cliente a implementar métodos que no necesita.
 
-En _Go_ puede aplicarse este concepto asilando el comportamiento requerido para que una función haga su trabajo.
+**Contenido y ejemplo en desarrollo.**
+
+En _Go_ puede aplicarse este concepto aislando el comportamiento requerido para que una función haga su trabajo.
 
 ### Principio de inversión de la dependencia
 
 > Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deberían depender de abstracciones.
 Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones. 
 
-**Contenido en desarrollo.**
+Este principio esta basado en reducir las dependencias entre los módulos del código.
+
+**Contenido y ejemplo en desarrollo.**
 
 La forma en la que compila _Go_ valida que este principio se cumpla. Caso contrario el programa no podría compilar.
 
