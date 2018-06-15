@@ -55,4 +55,4 @@ La forma en la que compila _Go_ valida que este principio se cumpla. Caso contra
 
 Si bien el libro de Robert C. Martin [\[48\]](/recursos.md) tiene más de una decada y media y hace referencia a lenguajes propiamente orientados a objetos, vimos como también pueden aplicarse esos principios en _Go_.
 
-Como se vio en el apartado anterior, el poder de la composición y de las interfaces implícitas le permiten a _Go_ implementar prácricas y conceptos propios de la programación orientada a objetos.
+Como se vio en el apartado anterior, el poder de la composición y de las interfaces implícitas le permiten a _Go_ implementar prácticas y conceptos propios de la programación orientada a objetos.
