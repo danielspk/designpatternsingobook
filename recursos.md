@@ -56,6 +56,7 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[29\] - Patrones de Diseño - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides - Addison Wesley](https://www.amazon.es/Patrones-diseño-Erich-Gamma/dp/8478290591)
 * [\[30\] - Mastering PHP Design Patterns - Junade Ali - Packt](https://www.packtpub.com/application-development/mastering-php-design-patterns)
 * [\[48\] - Agile Software Development, Principles, Patterns, and Practices - Robert C. Martin - Pearson](http://catalogue.pearsoned.co.uk/educator/product/Agile-Software-Development-Principles-Patterns-and-Practices-Pearson-New-International-Edition-PDF-eBook/9781292038360.page)
+* [\[52\] - Introducing Go - Caleb Doxsey - O'Reilly](http://shop.oreilly.com/product/0636920046516.do)
 
 **Contenido en desarrollo. Incluir año de publicación**
 

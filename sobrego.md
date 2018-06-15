@@ -10,13 +10,13 @@
 
 ## Orígenes
 
-_Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y _Ken Thomson_.
+_Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y _Ken Thomson_. _Go_ también es conocido como _Golang_.
 
 ![](/assets/gopher.png)
 
 > Imagen - [\[39\]](recursos.md)
 
-Su lanzamiento oficial fue en noviembre del año 2009, pero su primera versión estable se publicó en marzo de 2012.
+Su lanzamiento oficial fue en noviembre del año 2009, pero su primera versión estable - 1.0- se publicó en marzo de 2012.
 
 ## Características
 
@@ -56,9 +56,14 @@ func main() {
 
 ### Según otros autores
 
-Para Mark Summerfield [\[27\]](recursos.md) "Go es bastante parecido a C en su espíritu, ya que es un lenguaje pequeño y eficiente con convenientes facilidades de bajo nivel, como punteros. Sin embargo, Go también ofrece muchas características asociadas con lenguajes de alto o muy alto nivel, como cadenas Unicode, potentes estructuras de datos integradas, duck typing, recolección de basura y soporte de concurrencia de alto nivel que utiliza comunicaciones en lugar de datos compartidos y bloqueos. Go también tiene una gran biblioteca estándar de amplio rango".
+Para Mark Summerfield [\[27\]](recursos.md) "_Go_ es bastante parecido a C en su espíritu, ya que es un lenguaje pequeño y eficiente con convenientes facilidades de bajo nivel, como punteros. Sin embargo, _Go_ también ofrece muchas características asociadas con lenguajes de alto o muy alto nivel, como cadenas Unicode, potentes estructuras de datos integradas, duck typing, recolección de basura y soporte de concurrencia de alto nivel que utiliza comunicaciones en lugar de datos compartidos y bloqueos. _Go_ también tiene una gran biblioteca estándar de amplio rango".
 
-**Contenido en desarrollo.**
+Para Shiju Varghese [\[19\]](recursos.md) "El lenguaje de programación _Go_ se puede describir simplemente en tres palabras: simple, mínimo y pragmático.
+El objetivo del diseño de _Go_ es ser un lenguaje de programación simple, minimalista y expresivo que proporcione todas las características esenciales para crear sistemas de software confiables y eficientes. Cada idioma tiene su propio objetivo de diseño y una filosofía única. La simplicidad no se puede agregar más adelante en el idioma, por lo que debe ser construida con la simplicidad en mente. _Go_ está diseñado para ser simple. Al combinar la simplicidad y el pragmatismo de _Go_, puede construir sistemas de software altamente eficientes con un mayor nivel de productividad".
+
+Para Karl Seguin [\[11\]](recursos.md) "_Go_ tiene la naturaleza de simplificar la complejidad que hemos visto incluida en los lenguajes de programación en el último par de décadas mediante el uso de varios mecanismos".
+
+
 
 ## Controversias
 
