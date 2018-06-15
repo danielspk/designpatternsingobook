@@ -63,7 +63,7 @@ El objetivo del diseño de _Go_ es ser un lenguaje de programación simple, mini
 
 Para Karl Seguin [\[11\]](recursos.md) "_Go_ tiene la naturaleza de simplificar la complejidad que hemos visto incluida en los lenguajes de programación en el último par de décadas mediante el uso de varios mecanismos".
 
-
+Para Caleb Doxsey [\[52\]](recursos.md) "_Go_ es un lenguaje de programación de propósito general con características avanzadas y una sintaxis limpia. Debido a su amplia disponibilidad en una variedad de plataformas, su robusta biblioteca standard bien documentada y su enfoque en buenos principios de la ingeniería del software, _Go_ es un gran lenguaje de programación para aprender".
 
 ## Controversias
 
