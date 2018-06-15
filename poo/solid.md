@@ -14,7 +14,7 @@ El objetivo de aplicar estos principios es objtener sistemas orientados a objeto
 
 > Una clase debe tener una, y sólo una, razón para cambiar, lo que significa que una clase debe tener un solo trabajo.
 
-La primera observación respecto de este principio es que en _Go_ no existen clases. Sin embargo, como vimos, mediante la incorporación de comportamientos a estructuras de datos podemos llegar a un concepto equivalente.
+La primera observación respecto de este principio es que en _Go_ no existen clases. Sin embargo, como vimos mediante la incorporación de comportamientos a estructuras de datos, podemos llegar a un concepto equivalente.
 
 Este principio hace foco en que un objeto debe tener únicamente una responsabilidad encapsulada por la clase. Cuando se hace referencia a una responsabilidad es para referirse a una razón para cambiar.
 Mantener una clase que tiene múltiples objetivos o responsabilidades es mucho más complejo que una clase enfocada en una única responsabilidad.
