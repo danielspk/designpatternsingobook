@@ -6,6 +6,6 @@ Esta publicación se encuentra en constante evolución. Puede ver y/o descargar 
 
 Los códigos de ejemplo de los patrones de diseño utilizados en esta publicación se encuentran en el siguiente repositorio: [https://github.com/danielspk/designpatternsingo](https://github.com/danielspk/designpatternsingo)
 
-Los códigos fuentes de esta publicación se encuentran en el siguiente repositorio: [https://github.com/danielspk/designpatternsingobook](https://github.com/danielspk/designpatternsingobook)
+El código fuente de esta publicación se encuentra en el siguiente repositorio: [https://github.com/danielspk/designpatternsingobook](https://github.com/danielspk/designpatternsingobook)
 
-**Última actualización: ** 28 de Mayo de 2018 a las 12:07 hs.
+**Última actualización: ** 16 de Junio de 2018 a las 09:47 hs.
