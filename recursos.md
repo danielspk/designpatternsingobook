@@ -12,6 +12,7 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[2\] - Documentación oficial](https://golang.org/doc/)
 * [\[44\] - Preguntas frecuentes oficiales](https://golang.org/doc/faq)
 * [\[3\] - Consola interactiva](https://play.golang.org/)
+* [\[50\] - Blog oficial](https://blog.golang.org)
 
 ## Artículos Web
 
