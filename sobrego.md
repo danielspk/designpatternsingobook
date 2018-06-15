@@ -66,7 +66,7 @@ _Go_ como todos los lenguajes de programación presenta ciertas controversias. S
 - genéricos
 - excepciones
 - sobracarga de operadores
-- etc []
+- etc [\[51\]](recursos.md)
 
 No obstante los desarrolladores de _Go_ no son ajenos a estas críticas, y permiten que se propongan nuevas funcionalidades. Para esto se deben completar una serie de pasos que se encuentran documentados en el siguiente link: [https://github.com/golang/proposal](https://github.com/golang/proposal).
 
