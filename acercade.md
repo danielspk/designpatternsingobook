@@ -1,5 +1,3 @@
-**Contenido en desarrollo - En esta sección se detallará que motivo la realización de esta publicación. Qué criterios se utilizaron. Cómo resulto la experiencia. Cúal fue el plan de trabajo, etc.**
-
 # Acerca de esta publicación
 
 ## Motivación
@@ -56,11 +54,69 @@ En conclusión, el historial de popularidad de _Go_ respecto de _Rust_ fue lo qu
 
 ### El camino recorrido
 
-**Contenido en desarrollo.**
+Antes de formalizar la idea final de esta publicación me defini dos objetivos para evaluar la factibilidad de su realización:
 
-### Las decisiones
+- hacer un muestreo de cuatro o cinco patrones GoF aleatoriamente con el fin de analizar si se podían implementar "semanticamente" en _Go_.
+- analizar si esas implementaciones realmente podían aportar valor al software.
 
-**Contenido en desarrollo.**
+Mi primer objetivo fue muy facil de corroborar. Si bien la inexistencia de *"clases"* en _Go_ es un condicionante en la forma en que se expresan y documentan los patrones de diseño GoF; la semántica de estructuras de datos que implementan comportamientos fue, a mi entender, lo suficientemente análoga a las clases tradicionales. **Semanticamente los patrones son implementables en _Go_** - *con su sintaxis particular* -.
+
+El segundo objetivo fue más dificil de llevar a cabo: ¿Qué significa que la implementación de un patrón de diseño GoF aporte valor al software?.
+La mejor manera que encontre de dar respuesta a esta pregunta fue demostrar todo lo contrario: ¿Cómo una implementación semántica de un patrón de diseño GoF no aporta valor alguno al softwware?.
+
+El siguiente código de Javascript ES5 implementa el patrón de comportamiento *Strategy*:
+
+```javascript
+var Transportista = function() {
+    this.empresa = "";
+};
+
+Transportista.prototype = {
+    setStrategy: function(empresa) {
+        this.empresa = empresa;
+    },
+    calcularTasa: function() {
+        return this.empresa.calcularTasa();
+    }
+};
+
+var EmpresaA = function() {
+    this.calcularTasa = function() {
+        return 10;
+    }
+};
+
+var EmpresaB = function() {
+    this.calcularTasa = function() {
+        return 15;
+    }
+};
+
+var transportista = new Transportista;
+
+transportista.setStrategy(new EmpresaA())
+console.log("Tasa Empresa A: " + transportista.calcularTasa());
+
+transportista.setStrategy(new EmpresaB())
+console.log("Tasa Empresa B: " + transportista.calcularTasa());
+```
+
+Semanticamente la aplicación del patrón es correcta. El contexto es el *Transportista* y las estrategias son las *Empresas*. Sim embargo esta implementación es exclusivamente semantica, porque el lenguaje:
+- no tiene forma de validar que lo que se este pasando al *Transportista* séa una *Estrategia* válida.
+- no tiene forma de implementar una *interface Estrategia* o *heredar* de una *clase Estrategia*.
+- no permite generar código reutilizable en paquetes o namespaces.
+- el *Contexto* no es autodocumentable a nivel código fuente ya que su función *setStrategy* espera cualquier tipo de variable y no un *objeto* de tipo *Estrategia*.
+
+Como se puede ver la programación orientada a objetos en Javascript ES5 es muy limitada, y si bien semanticamente puede implementarse los patrones de diseño GoF, aportan valor al software sólo en cuanto a su funcionamiento final pero no así hacia la reutilización de código.
+
+> Aclaro ES5 de Javascript porque ES6 tiene un soporte más avanzado para la programación orientada a objetos.
+
+En contrapartida, en _Go_, la aplicación de patrones de diseño GoF aportan valor pleno al software como en otros lenguajes de programación orientados a objetos, ya que el lenguaje tiene características y comportamientos comparables.
+
+En conclusión mis objetivos iniciales fueron cumplimentados y los siguientes pasos fueron:
+- documentar los 23 patrones de diseño GoF en _Go_
+- analizar como se pueden implementar prácticas y conceptos propios de la programación orientada a objetos en _Go_.
+- y finalmente, redactar esta publicación.
 
 ### Las herramientas utilizadas
 
@@ -83,10 +139,6 @@ La motivación de la elección de estas, y no otras herramientas, fue la siguien
 - Para el lenguaje de redacción de la publicación se analizaron otras alternativas a _Markdown_ como: **a)** _HTML_, **b)** _OpenDocument_, y **c)** _reStructuredText_. Sin embargo la elección fue _Markdown_ ya que resulta ser un lenguaje mucho más simple de aprender que los anteriores y existe una gran cantidad de herramientas para convertir el mismo en otros formatos. Este punto es muy importante para facilitar una posterior colaboración y ampliación de la publicación mediante la comunidad interesada en _Go_.
 - Para la generación de diagramas UML se analizaron otras alternativas a _Violet UML_ como: **a)** _StarUML_, **b)** _Diagram Designer_, y **c)** _ModelioSoft_. Sin embargo la elección fue _Violet UML_ ya que se encuentra disponible para varios Sistemas Operativos y es muy simple de aprender dado que no tiene demasiadas opciones y tipos de diagramas disponibles.
 - Para la ejecución online de código de ejemplo en _Go_ no analice otras alternativas ya que _Go Playgroung_ es la herramienta oficial de _Go_ y se encuentra muy popularizada en su comunidad.
-
-### Los porqué / foco
-
-**Contenido en desarrollo.**
 
 ## Agradecimientos
 
