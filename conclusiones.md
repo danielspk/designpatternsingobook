@@ -2,7 +2,7 @@
 
 Tal como se pudo demostrar, es factible aplicar los 23 Patrones de Diseño GoF en _Go_.
 
-Su aplicación no es una simple traducción literal de un lenguaje a otro - *como he visto muchas veces por ejemplo en Javascript* - sino que el uso de estos patrones realmente pueden aportar coherencia y valor al software desarrollado en _Go_.
+Su aplicación no es una simple traducción literal de un lenguaje a otro - *como he visto muchas veces* - sino que el uso de estos patrones realmente pueden aportar coherencia y valor al software desarrollado en _Go_.
 
 Hemos visto que _Go_ no es realmente un lenguaje orientado a objetos, sin embargo se pudo demostrar que sus características permiten programar aplicando prácticas y patrones propios de la programación orientada a objetos.
 
