@@ -35,13 +35,13 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 
 ## Libros
 
-* [\[11\] - The Litte Go Book - Karl Seguin](https://github.com/karlseguin/the-little-go-book)
-* [\[12\] - Data Structures & Algorithms In Go - Hemant Jain](https://www.amazon.com/Data-Structures-Algorithms-Hemant-Jain-ebook/dp/B075TBM9KS)
-* [\[13\] - Go Bootcamp - Matt Aimoneaatti](http://www.golangbootcamp.com/)
-* [\[14\] - Go Cookbook - Aaron Torres - Packt](https://www.packtpub.com/application-development/go-cookbook)
-* [\[15\] - Go Design Patterns - Mario Castro Contreras - Packt](https://www.packtpub.com/application-development/go-design-patterns)
-* [\[16\] - Go: Design Patterns for Real-World Projects - Vladimir Vivien, Mario Castro Contreras, Mat Ryer - Packt](https://www.packtpub.com/application-development/go-design-patterns-real-world-projects)
-* [\[17\] - Go In Practice - Matt Butcher, Matt Farina - Manning](https://www.manning.com/books/go-in-practice)
+* [\[11\] - Karl Seguin, "The Litte Go Book", 2014](https://github.com/karlseguin/the-little-go-book)
+* [\[12\] - Hemant Jain, "Data Structures & Algorithms In Go" - WOW, 2017](https://www.amazon.com/Data-Structures-Algorithms-Hemant-Jain-ebook/dp/B075TBM9KS)
+* [\[13\] - Matt Aimoneaatti, "Go Bootcamp" - 2014 ](http://www.golangbootcamp.com/)
+* [\[14\] - Aaron Torres, "Go Cookbook" - Packt, 2017](https://www.packtpub.com/application-development/go-cookbook)
+* [\[15\] - Mario Castro Contreras, "Go Design Patterns" - Packt, 2017](https://www.packtpub.com/application-development/go-design-patterns)
+* [\[16\] - Vladimir Vivien, Mario Castro Contreras, Mat Ryer, "Go: Design Patterns for Real-World Projects" - Packt, 2017](https://www.packtpub.com/application-development/go-design-patterns-real-world-projects)
+* [\[17\] - Matt Butcher, Matt Farina, "Go In Practice" - Manning, 2016](https://www.manning.com/books/go-in-practice)
 * [\[18\] - Go Programming Blueprints Second Edition - Mat Ryer - Packt](https://www.packtpub.com/application-development/go-programming-blueprints-second-edition)
 * [\[19\] - Go Recipes - Shiju Varghese - Apress](https://www.apress.com/br/book/9781484211892)
 * [\[20\] - Go Systems Programming - Mihalis Tsoukalos - Packt](https://www.packtpub.com/networking-and-servers/go-systems-programming)
