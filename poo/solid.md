@@ -79,7 +79,7 @@ func (gdbd GuardadorDocumentoBaseDatos) Guardar(d model.Documento) {
 
 [Ejecutar código](https://play.golang.org/p/nxRPMtLbWP2)
 
-Gracias a la organización en paquetes que permite _Go_ es posible crear estructuras, tipos, funciones y métodos empaquetados con propositos claros y bien definidos.
+**¿Qué pasa en *Go*:** Gracias a la organización en paquetes que permite _Go_ es posible crear estructuras, tipos, funciones y métodos empaquetados con propositos claros y bien definidos.
 
 ### Principio de abierto cerrado
 
@@ -119,7 +119,7 @@ func (am AnimalModificado) Caminar() {
 
 [Ejecutar código](https://play.golang.org/p/Sf1WkRugRN3)
 
-Gracias a la composición que permite _Go_ es posible componer tipos simples en más complejos.
+**¿Qué pasa en *Go*:** Gracias a la composición que permite _Go_ es posible componer tipos simples en más complejos.
 
 ### Principio de substitución de Liskov
 
@@ -185,7 +185,7 @@ func (e Emision) Emitir(r Respuesta) {
 
 [Ejecutar código](https://play.golang.org/p/ZJ0iEXpWgt4)
 
-Gracias al modo de intefaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no mediante tipos concretos.
+**¿Qué pasa en *Go*:** Gracias al modo de intefaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no mediante tipos concretos.
 
 ### Principio de segregación de la interfaz
 
@@ -243,7 +243,7 @@ func (b BotonIcono) OnDobleClick() {
 
 [Ejecutar código](https://play.golang.org/p/umwCkd0_eKQ)
 
-En _Go_ puede aplicarse este concepto aislando el comportamiento requerido utilizando interfaces.
+**¿Qué pasa en *Go*:** En _Go_ puede aplicarse este concepto aislando el comportamiento requerido utilizando interfaces más pequeñas.
 
 ### Principio de inversión de la dependencia
 
@@ -252,12 +252,10 @@ Las abstracciones no deben depender de los detalles. Los detalles deben depender
 
 Este principio esta basado en reducir las dependencias entre los módulos del código para atacar el alto acoplamiento.
 
-**Contenido y ejemplo en desarrollo.**
-
-La forma en la que compila _Go_ valida que este principio se cumpla. Caso contrario el programa no podría compilar.
+**¿Qué pasa en *Go*:** La forma en la que compila _Go_ valida que este principio se cumpla. Caso contrario el programa no podría compilar.
 
 ## Conclusión
 
 Si bien el libro de Robert C. Martin [\[48\]](/recursos.md) tiene más de una decada y media y hace referencia a lenguajes propiamente orientados a objetos, vimos como también pueden aplicarse esos principios en _Go_.
 
-Como se vio en el apartado anterior, el poder de la composición y de las interfaces implícitas le permiten a _Go_ implementar prácticas y conceptos propios de la programación orientada a objetos.
+Como se vio en el apartado anterior, el poder de la composición y de las interfaces implícitas le permiten a _Go_ implementar buenas prácticas y conceptos propios de la programación orientada a objetos.
