@@ -147,4 +147,4 @@ Quisiera concluir agradeciendo a:
 - a la UCA por la excelente infraestructura y organización de la carrera.
 - al cuerpo docente por su alto nivel academico y la predisposición para transmitir sus conocimientos.
 - a mi tutor de trabajo final por su compromiso, sus consejos y acompañamiento durante la realización de este trabajo.
-- a mis seres queridos por apoyarme en este viaje a pesar del tiempo que no les pude decicar.
+- a mis seres queridos por apoyarme en este viaje a pesar del tiempo que no les pude decidar.
