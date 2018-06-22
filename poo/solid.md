@@ -52,14 +52,14 @@ Grandes y complejas interfaces obligan al cliente a implementar métodos que no 
 
 **Contenido y ejemplo en desarrollo.**
 
-En _Go_ puede aplicarse este concepto aislando el comportamiento requerido para que una función haga su trabajo.
+En _Go_ puede aplicarse este concepto aislando el comportamiento requerido utilizando interfaces.
 
 ### Principio de inversión de la dependencia
 
 > Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deberían depender de abstracciones.
 Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones. 
 
-Este principio esta basado en reducir las dependencias entre los módulos del código.
+Este principio esta basado en reducir las dependencias entre los módulos del código para atacar el alto acoplamiento.
 
 **Contenido y ejemplo en desarrollo.**
 
