@@ -127,7 +127,63 @@ Gracias a la composición que permite _Go_ es posible componer tipos simples en 
 
 Este principio aduce a que el contrato de una clase base debe ser honrado por sus clases derivadas.
 
-**Contenido y ejemplo en desarrollo.**
+Veamos el siguiente código:
+
+```go
+type RespuestaJSON struct {}
+
+func (r RespuestaJSON) Imprimir() {
+    // ...
+}
+
+type RespuestaHTML struct {}
+
+func (r RespuestaHTML) Imprimir() {
+    // ...
+}
+
+type Emision struct {}
+
+func (e Emision) EmitirJSON(r RespuestaJSON) {
+    // ...
+}
+
+func (e Emision) EmitirHTML(r RespuestaHTML) {
+    // ...
+}
+```
+
+[Ejecutar código](https://play.golang.org/p/4jwdJ0NUjOe)
+
+La estructura *Emision* debe implementar dos comportamientos ya que debe poder gestionar impresiones en HTML y JSON. Si a futuro se requiriera de otro tipo de impresión - *xml por ejemplo* - se debería modificar su código fuente.
+
+La siguiente modificación permite intercambiar cualquier tipo de respuesta para su impresion:
+
+```go
+type Respuesta interface {
+    Imprimir()
+}
+
+type RespuestaJSON struct {}
+
+func (r RespuestaJSON) Imprimir() {
+    // ...
+}
+
+type RespuestaHTML struct {}
+
+func (r RespuestaHTML) Imprimir() {
+    // ...
+}
+
+type Emision struct {}
+
+func (e Emision) Emitir(r Respuesta) {
+    // ...
+}
+```
+
+[Ejecutar código](https://play.golang.org/p/ZJ0iEXpWgt4)
 
 Gracias al modo de intefaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no mediante tipos concretos.
 
