@@ -35,13 +35,13 @@ Gracias a la composición que permite _Go_ es posible componer tipos simples en 
 
 ### Principio de substitución de Liskov
 
-> Los subtipos deben poder ser sustituidos por su tipo base.
+> Las subclases deberían poder ser sustituidas por sus clases base.
 
-Este principio ...
+Este principio aduce a que el contrato de una clase base debe ser honrado por sus clases derivadas.
 
 **Contenido y ejemplo en desarrollo.**
 
-Gracias al modo de intefaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no tipos concretos.
+Gracias al modo de intefaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no mediante tipos concretos.
 
 ### Principio de segregación de la interfaz
 
