@@ -62,7 +62,7 @@ Antes de formalizar la idea final de esta publicación me defini dos objetivos p
 Mi primer objetivo fue muy facil de corroborar. Si bien la inexistencia de *"clases"* en _Go_ es un condicionante en la forma en que se expresan y documentan los patrones de diseño GoF; la semántica de estructuras de datos que implementan comportamientos fue, a mi entender, lo suficientemente análoga a las clases tradicionales. **Semanticamente los patrones son implementables en _Go_** - *con su sintaxis particular* -.
 
 El segundo objetivo fue más dificil de llevar a cabo: ¿Qué significa que la implementación de un patrón de diseño GoF aporte valor al software?.
-La mejor manera que encontre de dar respuesta a esta pregunta fue demostrar todo lo contrario: ¿Cómo una implementación semántica de un patrón de diseño GoF no aporta valor alguno al softwware?.
+La mejor manera que encontre de dar respuesta a esta pregunta fue demostrar todo lo contrario: ¿Cómo una implementación semántica de un patrón de diseño GoF no aporta valor alguno al software?.
 
 El siguiente código de Javascript ES5 implementa el patrón de comportamiento *Strategy*:
 
@@ -101,7 +101,7 @@ transportista.setStrategy(new EmpresaB())
 console.log("Tasa Empresa B: " + transportista.calcularTasa());
 ```
 
-Semanticamente la aplicación del patrón es correcta. El contexto es el *Transportista* y las estrategias son las *Empresas*. Sim embargo esta implementación es exclusivamente semantica, porque el lenguaje:
+Semanticamente la aplicación del patrón es correcta. El contexto es el *Transportista* y las estrategias son las *Empresas*. Sin embargo esta implementación es exclusivamente semantica, porque el lenguaje:
 - no tiene forma de validar que lo que se este pasando al *Transportista* séa una *Estrategia* válida.
 - no tiene forma de implementar una *interface Estrategia* o *heredar* de una *clase Estrategia*.
 - no permite generar código reutilizable en paquetes o namespaces.
@@ -111,7 +111,7 @@ Como se puede ver la programación orientada a objetos en Javascript ES5 es muy 
 
 > Aclaro ES5 de Javascript porque ES6 tiene un soporte más avanzado para la programación orientada a objetos.
 
-En contrapartida, en _Go_, la aplicación de patrones de diseño GoF aportan valor pleno al software como en otros lenguajes de programación orientados a objetos, ya que el lenguaje tiene características y comportamientos comparables.
+En contrapartida, **en _Go_, la aplicación de patrones de diseño GoF aportan valor pleno al software** como en otros lenguajes de programación orientados a objetos, ya que el lenguaje tiene características y comportamientos comparables.
 
 En conclusión mis objetivos iniciales fueron cumplimentados y los siguientes pasos fueron:
 - documentar los 23 patrones de diseño GoF en _Go_
