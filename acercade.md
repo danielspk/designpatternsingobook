@@ -17,7 +17,7 @@ Esta es la razón principal de esta publicación, la de poder ayudar a un futuro
 
 El trabajo presentado se denomina:
 
-> "Una perspectiva a la Programación Orientada a Objetos en Go en base a los Patrones de Diseño GoF"*
+> "Una perspectiva a la Programación Orientada a Objetos en Go en base a los Patrones de Diseño GoF"
 
 El mismo se presenta como:
 
