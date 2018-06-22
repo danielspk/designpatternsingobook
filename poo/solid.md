@@ -194,7 +194,54 @@ Gracias al modo de intefaces que permite _Go_ es factible expresar las dependenc
 Este principio hace foco en como deben definirse las interfaces. Las mismas deben ser pequeñas y específicas.
 Grandes y complejas interfaces obligan al cliente a implementar métodos que no necesita.
 
-**Contenido y ejemplo en desarrollo.**
+Veamos la siguiente interface:
+
+```go
+type Boton interface {
+    OnClick()
+    OnDobleClick()
+}
+
+type BotonLogin struct {}
+
+func (b BotonLogin) OnClick() {
+    // ...
+}
+
+func (b BotonLogin) OnDobleClick() {
+    // vacio
+}
+```
+
+[Ejecutar código](https://play.golang.org/p/FHu4-lVUJ2D)
+
+Como puede verse la interface *Boton* obliga a implementar ambos comportamientos en sus clientes cuando es muy factible que no todos ellos deban implementar ambas opciones.
+
+Una solución podría ser la siguiente:
+
+```go
+type OnClickListener interface {
+    OnClick()
+}
+
+type OnDobleClickListener interface {
+    OnDobleClick()
+}
+
+type BotonLogin struct {}
+
+func (b BotonLogin) OnClick() {
+    // ...
+}
+
+type BotonIcono struct {}
+
+func (b BotonIcono) OnDobleClick() {
+    // ...
+}
+```
+
+[Ejecutar código](https://play.golang.org/p/umwCkd0_eKQ)
 
 En _Go_ puede aplicarse este concepto aislando el comportamiento requerido utilizando interfaces.
 
