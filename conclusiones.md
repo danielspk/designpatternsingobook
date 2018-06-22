@@ -13,5 +13,3 @@ Considero que _Go_ es un excelente lenguaje para realizar trabajos concurrentes.
 Estoy seguro que todo lo visto en este publicación es de valor para el desarrollador de _Go_, pero me gustaría cerrar esta conclusión con la siguiente recomendación:
 
 > No deberían programar como lo hacen en _Java_, _PHP_, _C#_, etc en _Go_. Deberían potenciar las características propias del lenguaje en sus desarrollos; esto es comprender a fondo como funcionan las _interfaces_, la _composición_ y la _concurrencia_ por ejemplo; y sobre esta base reutilizar conceptos o usos de patrones de diseño cuando realmente apliquen.
-
-**Ideas y contenido en desarrollo.**
