@@ -144,7 +144,7 @@ La motivación de la elección de estas, y no otras herramientas, fue la siguien
 
 Quisiera concluir agradeciendo a:
 - mis compañeros de cursada por los buenos momentos vividos y las experiencias compartidas.
-- a la UCA por la excelente infraestructura y organización de la carrera.
+- a la UCA por la excelente infraestructura y organización de la Carrera.
 - al cuerpo docente por su alto nivel academico y la predisposición para transmitir sus conocimientos.
 - a mi tutor de trabajo final por su compromiso, sus consejos y acompañamiento durante la realización de este trabajo.
 - a mis seres queridos por apoyarme en este viaje a pesar del tiempo que no les pude dedicar.
