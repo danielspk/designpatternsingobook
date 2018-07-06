@@ -61,7 +61,8 @@ En esta publicación utilizaremos la misma estructura con las siguientes observa
 
 * Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo (_creación de un editor de texto_) y no pueden ser ejecutados para el aprendizaje del lector. Los escenarios serán triviales y muy simples, la idea es orientar al lector en cómo se implementa el patrón de diseño y no en como resolver un problema puntual. Se utilizarán escenarios de alguno de los siguientes links: [\[8\]](/recursos.md), [\[40\]](/recursos.md), [\[41\]](/recursos.md), [\[42\]](/recursos.md)
 * Se omitirán los usos conocidos ya que son atemporales.
-* Se analizarán adicionalmente , si corresponden, las conseguencias desde el punto de vista de la concurrencia que permite implementar el lenguaje _Go_.
+* Se omitirán las consecuencias ya que no es el objetivo de esta publicación el analizar las ventajas y desventajas de utilizar cada patrón de diseño.
+* Se analizarán adicionalmente , sólo si corresponden, las alternativas de implementación desde el punto de vista de la concurrencia que caracteriza al lenguaje _Go_.
 * Se utilizarán códigos de ejemplo en el lenguaje _Go_.
 * Se utilizará UML en reemplazo de OMT. 
 
