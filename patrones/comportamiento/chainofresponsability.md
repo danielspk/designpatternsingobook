@@ -24,7 +24,15 @@ El patrón Chain of Responsability se debe usar cuando:
 
 ## Participantes
 
-**Contenido en desarrollo.**
+* **Manejador:**
+  * define una interfaz para tratar las peticiones.
+  * _(opcional)_ implementa el enlace al sucesor.
+* **ManejadorConcreto:**
+  * trata las peticiones de las que es responsable.
+  * puede acceder a su sucesor.
+  * si el ManejadorConcreto puede manejar la petición, lo hace; en caso contrario la reenvía a su sucesor.
+* **Cliente:**
+  * inicializa la petición a una estructura con estado ManejadorConcreto de la cadena.
 
 ## Colaboradores
 
