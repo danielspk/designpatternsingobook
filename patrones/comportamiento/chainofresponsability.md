@@ -36,7 +36,7 @@ El patrón Chain of Responsability se debe usar cuando:
 
 ## Colaboradores
 
-**Contenido en desarrollo.**
+Cuando un cliente envía una petición, ésta se propaga a través de la cadena hasta que una estructura con estado ManejadorConcreto se hace responsable de procesarla.
 
 ## Implementación
 
