@@ -84,4 +84,23 @@ _Go_ toma un enfoque diferente. Para el manejo simple de errores, los retornos m
 
 Esta filosofía para algunos controvertida es la que creo en mi opinión que hace a _Go_ tan interesante. En vez incorporar constantemente nuevas características y/o copiar otras de otros lenguajes de programación, _Go_ intenta mantener un lenguaje simple, mínimo y conciso.
 
-Se invita a los lectores a profundizar más sobre esta filosofía en base a la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](recursos.md)
+### Proverbios de Go
+Los proverbios de _Go_ invitan a los desarrolladores a reflexionar sobre la filosofía de _Go_ y a la enseñanza sobre el lenguaje.
+
+Se invita a los lectores a profundizar más sobre esta filosofía en base a la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](recursos.md).
+
+A continuación se exponen sólo algunos de estos proverbios:
+
+* No se comunique compartiendo memoria, comparta memoria comunicándose.
+* La concurrencia no es paralelismo.
+* Cuanto más grande es la interfaz, más débil es la abstracción.
+* Haz que el valorcero sea útil.
+* _interface{}_ no dice nada.
+* El estilo de _gofmt_ no es el favorito de nadie, sin embargo, _gofmt_ es el favorito de todos.
+* Copiar un poco es mejor que una pequeña dependencia.
+* Claro es mejor que inteligente.
+* La reflexión nunca es clara.
+* Los errores son valores
+* No solo revise los errores, trátelos con gracia.
+
+Puede acceder al listado completo y actualizado en [https://go-proverbs.github.io](https://go-proverbs.github.io/)
