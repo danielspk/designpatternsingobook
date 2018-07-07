@@ -45,7 +45,7 @@ El patrón Strategy se debe usar cuando:
 
 ## Implementación
 
-**Contenido en desarrollo. a) analizar otras alternativas, b) implicancias con concurrencia.**
+**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
 
 ## Código de ejemplo
 
