@@ -40,7 +40,7 @@ Cuando un cliente envía una petición, ésta se propaga a través de la cadena 
 
 ## Implementación
 
-**Contenido en desarrollo. a) analizar otras alternativas, b) implicancias con concurrencia.**
+**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
 
 ## Código de ejemplo
 
