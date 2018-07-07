@@ -20,7 +20,7 @@ El patrón Chain of Responsability se debe usar cuando:
 
 ## Estructura
 
-**Contenido en desarrollo.**
+![](/assets/uml/chainofresponsability.png)
 
 ## Participantes
 
