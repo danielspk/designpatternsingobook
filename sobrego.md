@@ -83,3 +83,5 @@ _Go_ trata de respetar su filosofía de mantener un lenguaje extremadamente simp
 _Go_ toma un enfoque diferente. Para el manejo simple de errores, los retornos multi-valor de _Go_ facilitan el reporte de un error sin sobrecargar el valor de retorno. Un tipo de error canónico, junto con otras características de _Go_, hace que el manejo de errores sea agradable, pero bastante diferente del de otros lenguajes." [\[44\]](recursos.md)
 
 Esta filosofía para algunos controvertida es la que creo en mi opinión que hace a _Go_ tan interesante. En vez incorporar constantemente nuevas características y/o copiar otras de otros lenguajes de programación, _Go_ intenta mantener un lenguaje simple, mínimo y conciso.
+
+Se invita a los lectores a profundizar más sobre esta filosofía en base a la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](recursos.md)
