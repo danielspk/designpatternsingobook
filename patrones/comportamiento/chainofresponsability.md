@@ -6,7 +6,7 @@ Evita acoplar el emisor de una petición a su receptor, dando a más de una estr
 
 ## Motivación
 
-Queremos desacoplar a los emisores de los receptores dándole a varias esructuras con estado la posibilidad de tratar un petición. El esquema propuesto es el siguiente:
+Queremos desacoplar a los emisores de mensajes de los receptores dándole a varias esructuras con estado la posibilidad de tratar el mensaje. El esquema propuesto es el siguiente:
 
 **Contenido en desarrollo.**
 
