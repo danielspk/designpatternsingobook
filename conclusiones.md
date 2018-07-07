@@ -1,6 +1,8 @@
 # Conclusiones
 
-Tal como se pudo demostrar, es factible aplicar los 23 Patrones de Diseño GoF en _Go_.
+_Go_ es un lenguaje que en muchos aspector parece "_retrazar_" o da la sensación de "_antiguo_". Esta visión puede ser correcta si se lo compara por ejemplo con la forma en la que programaríamos en _Java_. Esto es justamente lo que se debe evitar: "_la comparación_". _Go_ nace con una filosofía bien clara que todo programador de _Go_ debería conocer.
+
+Dicho esto, tal como se pudo demostrar, así y todo es factible aplicar los 23 Patrones de Diseño GoF en _Go_.
 
 Su aplicación no es una simple traducción literal de un lenguaje a otro - *como he visto muchas veces* - sino que el uso de estos patrones realmente pueden aportar coherencia y valor al software desarrollado en _Go_.
 
@@ -12,4 +14,4 @@ Considero que _Go_ es un excelente lenguaje para realizar trabajos concurrentes.
 
 Estoy seguro que todo lo visto en este publicación es de valor para el desarrollador de _Go_, pero me gustaría cerrar esta conclusión con la siguiente recomendación:
 
-> No deberían programar como lo hacen en _Java_, _PHP_, _C#_, etc en _Go_. Deberían potenciar las características propias del lenguaje en sus desarrollos; esto es comprender a fondo como funcionan las _interfaces_, la _composición_ y la _concurrencia_ por ejemplo; y sobre esta base reutilizar conceptos o usos de patrones de diseño cuando realmente apliquen.
+> No deberían programar como lo hacen en _Java_, _PHP_, _C#_, etc en _Go_. Deberían potenciar las características propias del lenguaje en sus desarrollos; esto es comprender a fondo como funcionan las _interfaces_, la _composición_ y la _concurrencia_ por ejemplo; y sobre esta base reutilizar conceptos o usos de patrones de diseño cuando realmente se justifiquen.
