@@ -6,9 +6,9 @@ Evita acoplar el emisor de una petición a su receptor, dando a más de una estr
 
 ## Motivación
 
-Queremos desacoplar a los emisores de mensajes de los receptores dándole a varias esructuras con estado la posibilidad de tratar el mensaje. El esquema propuesto es el siguiente:
+Queremos desacoplar a los emisores de mensajes de los distintos receptores disponibles. Delegango así, a dichos receptores la posibilidad de procesar o no los mensajes recepcionados. El esquema propuesto es el siguiente:
 
-**Contenido en desarrollo.**
+![](/assets/uml/ejemplos/chainofresponsability.png)
 
 ## Aplicabilidad
 
@@ -44,7 +44,64 @@ Cuando un cliente envía una petición, ésta se propaga a través de la cadena 
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo se definen dos receptores distintos de mensajes. Uno para mensajes de alta prioridad y otro para mensajes de baja prioridad. El mensaje enviado por el cliente es transmitido a través de la cadena de receptores y cada receptor trata o no el mensaje de acuerdo a su prioridad.
+
+```go
+// Interface
+type Receptor interface {
+    ProcesarMensaje(int, string) string
+}
+
+// Receptor de Alta Prioridad
+type ReceptorAltaPrioridad struct{
+    siguiente Receptor
+}
+
+func (rap ReceptorAltaPrioridad) ProcesarMensaje(prioridad int, mensaje string) string {
+    if prioridad >= 5 {
+       return "Procesando mensaje de alta prioridad: " + mensaje
+    }
+    
+    if rap.siguiente != nil {
+       return rap.siguiente.ProcesarMensaje(prioridad, mensaje)
+    }
+    
+    return ""
+}
+
+// Receptor de Baja Prioridad
+type ReceptorBajaPrioridad struct{
+    siguiente Receptor
+}
+
+func (rbp ReceptorBajaPrioridad) ProcesarMensaje(prioridad int, mensaje string) string {
+    if prioridad < 5 {
+       return "Procesando mensaje de baja prioridad: " + mensaje
+    }
+    
+    if rbp.siguiente != nil {
+       return rbp.siguiente.ProcesarMensaje(prioridad, mensaje)
+    }
+    
+    return ""
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+manejadores := ReceptorBajaPrioridad {
+    siguiente: ReceptorAltaPrioridad {},
+}
+
+fmt.Println(manejadores.ProcesarMensaje(4, "Mensaje 1"))
+
+fmt.Println(manejadores.ProcesarMensaje(5, "Mensaje 2"))
+
+fmt.Println(manejadores.ProcesarMensaje(10, "Mensaje 3"))
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/chainofresponsability) | [Ejecutar código](https://play.golang.org/p/TnwdRltyBds)
 
 ## Patrones relacionados
 
