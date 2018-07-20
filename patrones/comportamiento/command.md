@@ -10,7 +10,9 @@ _Action_, _Transaction_
 
 ## Motivación
 
-**Contenido en desarrollo.**
+A veces es necesario enviar peticiones a estructuras con estados sin saber nada acerca de la operación solicitada o de quien es el receptor de la petición. Deseamos querer prender y apagar un televisor utilizando un control remoto. El esquema propuesto es el siguiente:
+
+![](/assets/uml/ejemplos/command.png)
 
 ## Aplicabilidad
 
@@ -24,7 +26,7 @@ _Action_, _Transaction_
 
 ## Estructura
 
-**Contenido en desarrollo.**
+![](/assets/uml/command.png)
 
 ## Participantes
 
