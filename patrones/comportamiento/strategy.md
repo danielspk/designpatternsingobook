@@ -8,12 +8,6 @@ Define una familia de algoritmos, encapsula cada uno de ellos y los hace interca
 
 _Policy_
 
-## Motivación
-
-Queremos disponer de algoritmos encapsulados (_estrategias_) que puedan realizar distintas operaciones matemáticas sin necesidad de que el cliente conozca como se resuelven dichas operaciones. El esquema propuesto es el siguiente:
-
-![](/assets/uml/ejemplos/strategy.png)
-
 ## Aplicabilidad
 
 El patrón Strategy se debe usar cuando:
@@ -49,7 +43,11 @@ El patrón Strategy se debe usar cuando:
 
 ## Código de ejemplo
 
-En este ejemplo se definen tres estrategias concretas que pueden realizar distintas operaciones matemáticas. Cuando se crea el contexto se establece que estrategia deberá utilizar.
+Queremos disponer de algoritmos encapsulados (_estrategias_) que puedan realizar distintas operaciones matemáticas sin necesidad de que el cliente conozca como se resuelven dichas operaciones. Cuando se cree el contexto se establecerá que estrategia se deberá utilizar. El esquema propuesto es el siguiente:
+
+![](/assets/uml/ejemplos/strategy.png)
+
+Implementación:
 
 ```go
 // Interface
