@@ -14,7 +14,7 @@
 
 ## Estructura
 
-**Contenido en desarrollo.**
+![](/assets/uml/decorator.png)
 
 ## Participantes
 

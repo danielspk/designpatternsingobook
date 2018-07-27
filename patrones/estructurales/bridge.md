@@ -14,7 +14,7 @@
 
 ## Estructura
 
-**Contenido en desarrollo.**
+![](/assets/uml/bridge.png)
 
 ## Participantes
 
