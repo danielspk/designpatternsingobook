@@ -4,12 +4,6 @@
 
 Evita acoplar el emisor de una petición a su receptor, dando a más de una estructura con estado la posibilidad de responder a la petición. Encadena las estructuras con estado receptoras y pasa la petición a través de la cadena hasta que es procesada por alguna estructura con estado.
 
-## Motivación
-
-Queremos desacoplar a los emisores de mensajes de los distintos receptores disponibles. Delegango así, a dichos receptores la posibilidad de procesar o no los mensajes recepcionados. El esquema propuesto es el siguiente:
-
-![](/assets/uml/ejemplos/chainofresponsability.png)
-
 ## Aplicabilidad
 
 El patrón Chain of Responsability se debe usar cuando:
@@ -44,7 +38,11 @@ Cuando un cliente envía una petición, ésta se propaga a través de la cadena 
 
 ## Código de ejemplo
 
-En este ejemplo se definen dos receptores distintos de mensajes. Uno para mensajes de alta prioridad y otro para mensajes de baja prioridad. El mensaje enviado por el cliente es transmitido a través de la cadena de receptores y cada receptor trata o no el mensaje de acuerdo a su prioridad.
+En este ejemplo se definen dos receptores distintos de mensajes. Uno para mensajes de alta prioridad y otro para mensajes de baja prioridad. El mensaje enviado por el cliente es transmitido a través de la cadena de receptores y cada receptor trata o no el mensaje de acuerdo a su prioridad. El esquema propuesto es el siguiente:
+
+![](/assets/uml/ejemplos/chainofresponsability.png)
+
+Implementación:
 
 ```go
 // Interface
