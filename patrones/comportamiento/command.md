@@ -8,12 +8,6 @@ Encapsula una petición en una estructura con estado, permitiendo así parametri
 
 _Action_, _Transaction_
 
-## Motivación
-
-A veces es necesario enviar peticiones a estructuras con estados sin saber nada acerca de la operación solicitada o de quien es el receptor de la petición. Deseamos querer prender y apagar un televisor utilizando un control remoto. El esquema propuesto es el siguiente:
-
-![](/assets/uml/ejemplos/command.png)
-
 ## Aplicabilidad
 
 Úsese el patrón Command cuando se quiera
@@ -54,6 +48,12 @@ A veces es necesario enviar peticiones a estructuras con estados sin saber nada 
 **Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
 
 ## Código de ejemplo
+
+En este ejemplo queremos prender y apagar un televisor mediante un control remoto. El esquema propuesto es el siguiente:
+
+![](/assets/uml/ejemplos/command.png)
+
+Implementación:
 
 **Contenido en desarrollo.**
 
