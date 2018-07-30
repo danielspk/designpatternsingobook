@@ -104,3 +104,6 @@ fmt.Println(manejadores.ProcesarMensaje(10, "Mensaje 3"))
 ## Patrones relacionados
 
 Este patrón se suele aplicar conjuntamente con el patrón [Composite](/patrones/estructurales/composite.md). En él, los padres de los componentes pueden actuar como sucesores.
+
+##### Nota:
+> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Chain of Responsability_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

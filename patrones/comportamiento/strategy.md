@@ -108,3 +108,6 @@ fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
 ## Patrones relacionados
 
 [Flyweight](/patrones/estructurales/flyweight.md): las estructuras con estado Estrategia suelen ser buenos pesos ligeros.
+
+##### Nota:
+> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Strategy_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

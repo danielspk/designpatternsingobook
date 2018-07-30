@@ -62,3 +62,6 @@ Implementación:
 Se puede usar el patrón [Composite](/patrones/estructurales/composite.md) para implementar OrdenMacro.
 Un [Memento](/patrones/comportamiento/memento.md) puede mantener el estado que necesitan las órdenes para anular sus efectos.
 Una orden que debe ser copiada antes de ser guardada en el historial funciona como un [Prototype](/patrones/creacionales/prototype.md).
+
+##### Nota:
+> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Command_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

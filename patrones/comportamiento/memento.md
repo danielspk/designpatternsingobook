@@ -48,3 +48,6 @@ _Token_
 
 [Command](/patrones/comportamiento/command.md): las órdenes pueden usar mementos para guardar el estado de las operaciones que pueden deshacerse.
 [Iterator](/patrones/comportamiento/iterator.md): puede usar mementos para la iteración.
+
+##### Nota:
+> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Memento_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

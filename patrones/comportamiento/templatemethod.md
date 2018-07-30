@@ -40,3 +40,6 @@ ClaseConcreta se basa en ClaseAbstracta para implementar los pasos de un algorit
 
 Los [Factory Method](/patrones/creacionales/factorymethod.md) se llaman muchas veces desde Template Method.
 [Strategy](/patrones/comportamiento/strategy.md): Template Method usa la composición para modificar una parte de un algoritmo. Las estrategias usan delegación para variar el algoritmo completo.
+
+##### Nota:
+> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Template Method_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
