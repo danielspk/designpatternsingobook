@@ -71,4 +71,6 @@ En esta publicación utilizaremos la misma estructura pero con las siguientes ob
 
 ### Implicancias
 
-En las explicaciones de cada patrón de diseño Gamma [\[29\]](/recursos.md) utiliza constantemente las palabras _objeto_ y _clase_. Parte de la comunidad asume que en _Go_ la palabra _objeto_ es válida ya que se interpreta que es sinónimo de una estructura de datos con comportamiento. Sin embargo, a fines de esta publicación cuando se requiera hablar de un _objeto_ utilizare la frase _"estructura con estado"_ (_considero que se ajusta más al lenguaje_). Para la palabra _clase_ no existe una terminología comparable, por lo que utilizaré simplemente la palabra _"estructura"_.
+En las explicaciones de cada patrón de diseño Gamma [\[29\]](/recursos.md) utiliza constantemente las palabras _objeto_ y _clase_. Parte de la comunidad asume que en _Go_ la palabra _objeto_ es válida ya que se interpreta que es sinónimo de una estructura de datos con comportamiento. Sin embargo, a fines de esta publicación cuando se requiera hablar de un _objeto_ utilizare la frase _"estructura con estado"_ (_considero que se ajusta más al lenguaje_).
+Para la palabra _clase_ no existe una terminología comparable, por lo que utilizaré simplemente la palabra _"estructura"_.
+Por último para la palabra _método_ utilizaré la palabra "función".
