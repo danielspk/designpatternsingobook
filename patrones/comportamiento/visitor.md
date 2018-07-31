@@ -2,15 +2,18 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
-
-## También conocido como
-
-**Contenido en desarrollo.**
+Representa una operación sobre los elementos de una organización de estructuras con estado. Permite definir una nueva operación sin cambiar las estructuras de los elementos sobre los que opera.
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Úsese el patrón Visitor cuando
+
+* una organización de estructuras con estado contiene muchas clases de estructuras con estado con diferentes interfaces, y queremos realizar operaciones sobre esos elementos que dependen de su estructura concreta.
+* se necesitan realizar muchas operaciones distintas y no relacionadas sobre estructuras con estado de una organización de estructuras con estado, y queremos evitar "contaminar" sus estructuras con dichas operaciones. El patrón Visitor permite mantener juntas operaciones relacionadas definiéndolas en una estructura. Cuando la organización de estructuras con estado es compartida por varias aplicaciones, el patrón Visitor permite poner operaciones sólo en aquellas aplicaciones que las necesiten.
+* las estructuras que definen la organización de estructuras con estado rara vez cambian, pero muchas veces queremos definir nuevas operaciones sobre la organización. Cambiar las estructuras de la organización de estructuras con estado requiere redefinir la interfaz para todos los visitantes, lo que es potencialmente costoso. Si las estructuras de la organización cambian con frecuencia, probablemente sea mejor definir las operaciones en las propias estructuras.
+
+##### Nota:
+> "Estructura de Objeto" es sinónimo de "organización de estructuras con estado" para ésta publicación.
 
 ## Estructura
 
