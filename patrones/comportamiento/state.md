@@ -2,11 +2,11 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
+Permite que una estructura con estado modifique su comportamiento cada vez que cambie su estado interno. Parecerá que cambia la estructura de la estructura con estado.
 
 ## También conocido como
 
-**Contenido en desarrollo.**
+_Objects for states_ (Estados como Objetos)
 
 ## Aplicabilidad
 
