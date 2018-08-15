@@ -2,15 +2,18 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
+Define una dependencia de uno-a-muchos entre estructuras con estado, de forma que cuando una estructura con estado cambie de estado se notifique y se actualicen automáticamente todas las estructuras con estado que dependan de ellá.
 
 ## También conocido como
 
-**Contenido en desarrollo.**
+_Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Úsese el patrón Onserver en cualquiera de las siguientes situaciones:
+* Cuando una abstracción tiene dos aspectos y uno depende del otro. Encapsular estos aspectos en estructuras con estado separadas permite modificarlas y reutilizarlos de forma independiente.
+* cuando un cambio en una estructura con estado requiere cambiar otras, y no sabemos cuántas estructuras con estado necesitan cambiarse.
+* cuando una estructura con estado debería ser capaz de notificar a otras sin hacer suposiciones sobre quiénes son dichas estructuras con estado. En otras palabras, cuando no queremos que estas estructuras con estado estén fuertemente acopladas.
 
 ## Estructura
 
