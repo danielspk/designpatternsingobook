@@ -2,15 +2,13 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
-
-## También conocido como
-
-**Contenido en desarrollo.**
+Separa la construcción de una estructura con estado compleja de su representación, de forma que el mismo proceso de construcción pueda crear diferentes representaciones.
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Úsese el patrón Builder cuando:
+* el algoritmo para crear una estructura con estado compleja debiera ser independiente de las partes de que se compone dicha estructura con estado y de cómo se ensamblan.
+* el proceso de construcción debe permitir diferentes representaciones de la estructura con estado que está siendo construida.
 
 ## Estructura
 
