@@ -2,11 +2,11 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
+Define una interfaz para crear una estructura con estado, pero deja que sean las sub estructuras quienes decidan qué estructura instanciar. Permite que una estructura delegue a sus sub estructuras la creación de estructuras con estado.
 
 ## También conocido como
 
-**Contenido en desarrollo.**
+_Virtual Constructor_ (Constructor Virtual)
 
 ## Aplicabilidad
 
