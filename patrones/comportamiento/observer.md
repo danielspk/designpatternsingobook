@@ -21,15 +21,27 @@ _Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
 
 ## Participantes
 
-**Contenido en desarrollo.**
+* **Sujeto:**
+  * conoce a sus observadores. Un sujeto puede ser observado por cualquier número de estructuras con estado Observador.
+  * proporciona una interfaz para asignar y quitar estructuras con estado Observador.
+* **Observador:**
+  * define una interfaz para actualizar las estructuras con estado que deben ser notificadas ante cambios en un sujeto.
+* **SujetoConcreto:**
+  * almacena el estado de interés para las estructuras con estado ObservadorConcreto.
+  * envía una notificación a sus observadores cuando cambia su estado.
+* **ObservadorConcreto:**
+  * mantiene una referencia a una estructura con estado SujetoConcreto.
+  * guarda un estado que debería ser consistente con el del sujeto.
+  * implementa la interfaz de actualización del Observador para mantener su estado consistente.
 
 ## Colaboradores
 
-**Contenido en desarrollo.**
+* SujetoConcreto notifica a sus observadores cada vez que se produce un cambio que pudiera hacer que el estado de éstos fuera inconsistente con el suyo.
+* Después de ser informado de un cambio en el sujeto concreto, una estructura con estado ObservadorConcreto puede pedirle al sujeto más información. ObservadorConcreto usa esta información para sincronizar su estado con el del sujeto.
 
 ## Implementación
 
-**Contenido en desarrollo.**
+**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
 
 ## Código de ejemplo
 
@@ -37,7 +49,8 @@ _Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
 
 ## Patrones relacionados
 
-**Contenido en desarrollo.**
+[Mediator](/patrones/comportamiento/mediator.md): encapsulando semánticas de actualización complejas, se puede implementar un gestor de cambios que actue como mediador entre sujetos y observadores.
+[Singleton](/patrones/creacionales/singleton.md): este gestor de cambios puede usar el patrón Singleton para que sea único y globalmente accesible.
 
 ##### Nota:
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Observer_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
