@@ -10,6 +10,12 @@ _Kit_
 
 ## Aplicabilidad
 
+Úsese el patrón Abstract Factory cuando:
+* un sistema debe ser independiente de cómo se crean, componen y representan sus productos.
+* un sistema debe ser configurado con una familia de productos de entre varias.
+* una familia de estructuras con estado relacionadas esta diseñada para ser usada conjuntamente, y es necesario hacer cumplir esta restricción.
+
+
 **Contenido en desarrollo.**
 
 ## Estructura
