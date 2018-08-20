@@ -2,11 +2,11 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
+Proporciona una interfaz para crear familias de estructuras con estado relacionadas o que dependan entre sí, sin especificar sus estructuras concretas.
 
 ## También conocido como
 
-**Contenido en desarrollo.**
+_Kit_
 
 ## Aplicabilidad
 
