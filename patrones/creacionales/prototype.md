@@ -2,11 +2,7 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
-
-## También conocido como
-
-**Contenido en desarrollo.**
+Especifica los tipos de estructuras con estado a crear por medio de una instancia prototípica, y crea nuevas estructuras con estado copiando dicho prototipo.
 
 ## Aplicabilidad
 
