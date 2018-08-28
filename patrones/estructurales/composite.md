@@ -2,15 +2,13 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
-
-## También conocido como
-
-**Contenido en desarrollo.**
+Compone estructuras con estado en jerarquías de árbol para representar jerarquías de parte-todo. Permite que los clientes traten de manera uniforme a las estructuras con estado individuales y a las compuestas.
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Úsese el patrón Composite cuando:
+* quiera representar jerarquías de estructuras con estado parte-todo.
+* quiera que los clientes sean capaces de obviar las diferencias entre composiciones de estructuras con estados y las estructuras con estado individuales. Los clientes tratarán a todas las estructuras con estado de la jerarquía compuesta de manera uniforme.
 
 ## Estructura
 
