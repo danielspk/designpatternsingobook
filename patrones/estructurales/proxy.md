@@ -2,15 +2,19 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
+Proporciona un representante o sustituto de otra estructura estado para controlar el acceso a ésta.
 
 ## También conocido como
 
-**Contenido en desarrollo.**
+_Surrogate_ (Sustituto)
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Este patrón es aplicable cada vez que hay necesidad de una referencia a una estructura con estado más versátil o sofisticada que un simple puntero. Úsese el patrón Proxy cuando:
+* se requiere de un representante local de un objeto situado en otro espacio de direcciones (**proxy remoto**).
+* se requiere crear estructuras con estado costosas por encargo (** proxy virtual**).
+* se requiere controlar el acceso a la estructura con estado original en base a diferentes permisos (**proxy de protección**).
+* se requiere de un sustituto simple, como un puntero, que permita realizar operaciones adicionales (**referencia inteligente**).
 
 ## Estructura
 
