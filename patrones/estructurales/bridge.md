@@ -22,15 +22,23 @@ _Handle/Body_ (Manejador/Cuerpo)
 
 ## Participantes
 
-**Contenido en desarrollo.**
+* **Abstraccion:**
+  * define la interfaz de la abstracción.
+  * mantiene una referencia a una estructura con estado de tipo Implementador.
+* **AbstraccionRefinada:**
+  * extiende la interfaz definida por Abstraccion.
+* **Implementador:**
+  * define la interfaz de las estructuras de implemetación. Esta interfaz no tiene por qué corresponderse exactamente con la de Abstracción; de hecho, ambas interfaces pueden ser muy distintas. Normalmente la interfaz Implementador sólo proporciona operaciones primitivas, y Abstraccion define operaciones de más alto nivel basadas en dichas primitivas.
+* **ImplementadorConcreto:**
+  * implementa la interfaz Implementador y define su implementación concreta.
 
 ## Colaboradores
 
-**Contenido en desarrollo.**
+Abstracción redirige las peticiones del cliente a su estructura con estado Implementador.
 
 ## Implementación
 
-**Contenido en desarrollo.**
+**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
 
 ## Código de ejemplo
 
@@ -38,7 +46,8 @@ _Handle/Body_ (Manejador/Cuerpo)
 
 ## Patrones relacionados
 
-**Contenido en desarrollo.**
+El patrón [Abstract Factory](/patrones/creacionales/abstractfactory.md) puede Bridge.
+El patrón [Adapter](/patrones/estructurales/adapter.md) está orientado a conseguir que trabajen juntas estructuras que no están relacionadas. Normalmente se aplica a sistemas que ya han sido diseñados. El patrón Bridge, por otro lado, se usa al comenzar un diseño para permitir que abstracciones e implementaciones varíen independientemente unas de otras.
 
 ##### Nota:
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Bridge_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
