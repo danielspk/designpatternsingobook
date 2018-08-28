@@ -8,4 +8,4 @@ Los códigos de ejemplo de los patrones de diseño utilizados en esta publicaci�
 
 El código fuente de esta publicación se encuentra en el siguiente repositorio: [https://github.com/danielspk/designpatternsingobook](https://github.com/danielspk/designpatternsingobook)
 
-**Última actualización: ** 22 de Agosto de 2018 a las 19:44 hs.
+**Última actualización: ** 28 de Agosto de 2018 a las 18:29 hs.
