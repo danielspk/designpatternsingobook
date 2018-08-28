@@ -2,15 +2,18 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
+Asigna responsabilidades adicionales a una estructura con estado dinámicamente, proporcionando una alternativa flexible a la herencia _(composición)_ para extender la funcionalidad.
 
 ## También conocido como
 
-**Contenido en desarrollo.**
+_Wrapper_ (Envoltorio)
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Úsese el patrón Decorator cuando:
+* desea añadir estructuras con estado individuales de forma dinámica y transparente, es decir, sin afectar a otras estructuras con estado.
+* pueda requerir retirar responsabilidades.
+* la extensión mediante la composición no es viable.
 
 ## Estructura
 
