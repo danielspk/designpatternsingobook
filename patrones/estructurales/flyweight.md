@@ -6,7 +6,12 @@ Usa comportamiento para permitir un gran número de estructuras con estado de gr
 
 ## Aplicabilidad
 
-**Contenido en desarrollo.**
+Úsese el patrón Flyweight cuando se cumpla _todo_ lo siguiente:
+* una aplicación utiliza un gran número de estructuras con estado.
+* los costos de almacenamiento son elevados debido a la gran cantidad de estructuras con estado.
+* la mayor parte del estado de la estructura con estado puede hacerse extrínseco.
+* muchos grupos de estructuras con estado pueden reemplazarse por relaticamente pocas estructuras con estado compartidas, una vez que se ha eliminado el estado extrínseco.
+* la aplicación no depende de la identidad de una estructura con estado. Puesto que las estructuras con estado flyweight pueden ser compartidas, las comprobaciones de identidad devolverán verdadero para estructuras con estado conceptualmente distintas.
 
 ## Estructura
 
@@ -14,15 +19,27 @@ Usa comportamiento para permitir un gran número de estructuras con estado de gr
 
 ## Participantes
 
-**Contenido en desarrollo.**
+* **Flyweight:**
+  * declara una interfaz a travéz de la cual los flyweight concretos pueden recibir un estado extrínseco y actuar sobre él.
+* **FlyweightConcreto:**
+  * implementa la interfaz Flyweight y permite almacenar el estado intrínseco, en caso de que lo haya. Una estructura con estado FlyweightConcreto debe poder ser compartida, por lo que cualquier estado que almacene debe ser intrínseco, esto es, debe ser independiente del contexto de la estructura con estado FlyweightConcreto.
+* **FlyweightConcretoNoCompartido:**
+  * no todas las sub estructuras de Flyweight necesitan ser compartidas. La interfaz Flyweight permite el comportamiento, no fuerza a él. Las estructuras con estado FlyweightConcretoNoCompartido suelen tener estructuras con estado FlyweightConcreto como hijos en algún nivel de la jerarquía de estructuras con estado.
+* **FabricaFlyweight:**
+  * crea y controla estructuras con estado flyweight.
+  * garantiza  que los flyweight se compartan de manera adecuada. Cuando un cliente solicita un flyweight, la estructura con estado FabricaFlyweight proporciona una instancia concreta o crea una nueva, en caso de que no exista ninguna.
+* **Cliente:**
+  * mantiene una referencia a los flyweight.
+  * culcula o guarda el estado extrínseco de los flyweight.
 
 ## Colaboradores
 
-**Contenido en desarrollo.**
+* El estado que un flyweight necesita para funcionar debe ser caracterizado como intrínseco o extrínseco. El estado intrínseco se guarda en la estructura con estado FlyweightConcreto, mientras que el estado extrínseco lo guardan o lo calculan las estructuras con estado Cliente. Los clientes pasan este estado al flyweight cuando invocan sus operaciones.
+* Los clientes no deberían crear instancias FlyweightConcreto directamente, sino que deben obtener las estructuras con estado FlyweightConcreto sólo a partir de FabricaFlyweight para garantizar que se puedan compartir adecuadamente.
 
 ## Implementación
 
-**Contenido en desarrollo.**
+**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
 
 ## Código de ejemplo
 
@@ -30,7 +47,8 @@ Usa comportamiento para permitir un gran número de estructuras con estado de gr
 
 ## Patrones relacionados
 
-**Contenido en desarrollo.**
+El patrón flyweight suele combinarse con el patrón [Composite](/patrones/estructurales/composite.md) para implementar una jerarquía lógica en términos de un grafo dirigido acíclico con nodos hojas compartidos.
+Suele ser mejor implementar las estructuras con estado [State](/patrones/comportamiento/state.md) y [Strategy](/patrones/comportamiento/strategy.md) como flyweight.
 
 ##### Nota:
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Flyweight_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
