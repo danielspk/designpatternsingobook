@@ -2,11 +2,7 @@
 
 ## Propósito
 
-**Contenido en desarrollo.**
-
-## También conocido como
-
-**Contenido en desarrollo.**
+Usa comportamiento para permitir un gran número de estructuras con estado de grano fino de forma eficiente.
 
 ## Aplicabilidad
 
