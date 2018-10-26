@@ -49,11 +49,101 @@ _Action_, _Transaction_
 
 ## Código de ejemplo
 
-En este ejemplo queremos prender y apagar un televisor mediante un control remoto.
+En este ejemplo queremos poder prender y apagar un televisor mediante la invocación de comandos mediante un control remoto.
 
 Implementación:
 
-**Contenido en desarrollo.**
+```go
+// Interface Comando (Orden)
+type Comando interface {
+    Ejecutar() string
+}
+
+// Comando Prender (OrdenConcreta)
+type ComandoPrender struct {
+    receptor Receptor
+}
+
+func (cp ComandoPrender) Ejecutar() string {
+    return cp.receptor.Prender()
+}
+
+// Comando Apagar (OrdenConcreta)
+type ComandoApagar struct {
+    receptor Receptor
+}
+
+func (ca ComandoApagar) Ejecutar() string {
+    return ca.receptor.Apagar()
+}
+
+// Invocador
+type Invocador struct {
+    comandos []Comando
+}
+
+func (i *Invocador) GuardarComando(comando Comando) {
+    i.comandos = append(i.comandos, comando)
+}
+
+func (i *Invocador) EliminarUltimoComando() {
+    if len(i.comandos) != 0 {
+        i.comandos = i.comandos[:len(i.comandos)-1]
+    }
+}
+
+func (i *Invocador) Limpiar() {
+    i.comandos = []Comando{}
+}
+
+func (i *Invocador) Ejecutar() string {
+    var resultados string
+
+    for _, comando := range i.comandos {
+        resultados += comando.Ejecutar() + "\n"
+    }
+
+    return resultados
+}
+
+// Receptor
+type Receptor struct{}
+
+func (r Receptor) Prender() string {
+    return "- Prender Televisor"
+}
+
+func (r Receptor) Apagar() string {
+    return "- Apagar Televisor"
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+invocador := Invocador{comandos: []Comando{}}
+receptor := Receptor{}
+
+// se establecen dos comandos concretos y se los elimina
+// el invocador queda sin comandos que ejecutar
+invocador.GuardarComando(ComandoPrender{receptor: receptor})
+invocador.GuardarComando(ComandoApagar{receptor: receptor})
+invocador.Limpiar()
+
+// se establecen dos comandos concretos iguales y se elimina el último
+// el invocador queda con un único comando para ejecutar
+invocador.GuardarComando(ComandoPrender{receptor: receptor})
+invocador.GuardarComando(ComandoPrender{receptor: receptor})
+invocador.EliminarUltimoComando()
+
+// se establece un comando concreto más
+invocador.GuardarComando(ComandoApagar{receptor: receptor})
+
+// el invocador ejecuta los dos comandos
+fmt.Printf("Comandos ejecutados:\n%v\n", invocador.Ejecutar())
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/command) | [Ejecutar código](https://play.golang.org/p/BRtWoVLF5nB)
 
 ## Patrones relacionados
 
