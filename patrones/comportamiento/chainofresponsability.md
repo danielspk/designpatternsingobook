@@ -38,9 +38,7 @@ Cuando un cliente envía una petición, ésta se propaga a través de la cadena 
 
 ## Código de ejemplo
 
-En este ejemplo se definen dos receptores distintos de mensajes. Uno para mensajes de alta prioridad y otro para mensajes de baja prioridad. El mensaje enviado por el cliente es transmitido a través de la cadena de receptores y cada receptor trata o no el mensaje de acuerdo a su prioridad. El esquema propuesto es el siguiente:
-
-![](/assets/uml/ejemplos/chainofresponsability.png)
+En este ejemplo se definen dos receptores distintos de mensajes. Uno para mensajes de alta prioridad y otro para mensajes de baja prioridad. El mensaje enviado por el cliente es transmitido a través de la cadena de receptores y cada receptor trata o no el mensaje de acuerdo a su prioridad.
 
 Implementación:
 
@@ -92,11 +90,9 @@ manejadores := ReceptorBajaPrioridad {
     siguiente: ReceptorAltaPrioridad {},
 }
 
-fmt.Println(manejadores.ProcesarMensaje(4, "Mensaje 1"))
-
-fmt.Println(manejadores.ProcesarMensaje(5, "Mensaje 2"))
-
-fmt.Println(manejadores.ProcesarMensaje(10, "Mensaje 3"))
+fmt.Println(manejadores.ProcesarMensaje(4, "Mensaje 1 - Prioridad 4"))
+fmt.Println(manejadores.ProcesarMensaje(5, "Mensaje 2 - Prioridad 5"))
+fmt.Println(manejadores.ProcesarMensaje(10, "Mensaje 3 - Prioridad 10"))
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/chainofresponsability) | [Ejecutar código](https://play.golang.org/p/TnwdRltyBds)

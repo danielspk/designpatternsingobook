@@ -49,9 +49,7 @@ _Action_, _Transaction_
 
 ## Código de ejemplo
 
-En este ejemplo queremos prender y apagar un televisor mediante un control remoto. El esquema propuesto es el siguiente:
-
-![](/assets/uml/ejemplos/command.png)
+En este ejemplo queremos prender y apagar un televisor mediante un control remoto.
 
 Implementación:
 

@@ -43,9 +43,7 @@ El patrón Strategy se debe usar cuando:
 
 ## Código de ejemplo
 
-En este ejemplo queremos definir tres estrategias concretas que pueden realizar distintas operaciones matemáticas. Cuando se crea el contexto se establece que estrategia deberá utilizar. El esquema propuesto es el siguiente:
-
-![](/assets/uml/ejemplos/strategy.png)
+En este ejemplo queremos definir tres estrategias concretas que pueden realizar distintas operaciones matemáticas. Cuando se crea el contexto se establece que estrategia deberá utilizar.
 
 Implementación:
 
