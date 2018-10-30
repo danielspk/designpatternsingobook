@@ -12,7 +12,7 @@ _Policy_
 
 El patrón Strategy se debe usar cuando:
 
-* muchas estructuras [^1] relacionadas difieren sólo en su comportamiento. Las estrategias permiten configurar una estructura con un determinado comportamiento de entre muchos posibles.
+* muchas estructuras relacionadas difieren sólo en su comportamiento. Las estrategias permiten configurar una estructura con un determinado comportamiento de entre muchos posibles.
 * se necesitan distintas variantes de un algoritmo.
 * un algoritmo usa datos que los clientes no deberían conocer.
 * una estructura define muchos comportamientos, y éstos se representan como múltiples sentencias condicionales en sus operaciones.
@@ -35,7 +35,7 @@ El patrón Strategy se debe usar cuando:
 ## Colaboradores
 
 * _Estrategia_ y _Contexto_ interactúan para implementar el algoritmo elegido. Un _Contexto_ puede pasar a la _Estrategia_ todos los datos requeridos por el algoritmo cada vez que se llama a éste. Otra alternativa es que el _Contexto_ se pase a sí mismo como argumento de las operaciones de _Estrategia_. Eso permite a la _Estrategia_ hacer llamadas al _Contexto_ cuando sea necesario.
-* Un _Contexto_ redirige peticiones de los clientes a su _Estrategia_. Los clientes normalmente crean una estructura con estado [^2] _EstrategiaConcreta_, la cual pasan al _Contexto_. Suele haber una familia de estructuras _EstrategiaConcreta_ a elegir  por el cliente.
+* Un _Contexto_ redirige peticiones de los clientes a su _Estrategia_. Los clientes normalmente crean una estructura con estado _EstrategiaConcreta_, la cual pasan al _Contexto_. Suele haber una familia de estructuras _EstrategiaConcreta_ a elegir  por el cliente.
 
 ## Implementación
 
@@ -109,6 +109,3 @@ fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
 
 ##### Nota:
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Strategy_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
-
-[^1]: Sinónimo de _Clase_.
-[^2]: Sinónimo de _Objeto_.
