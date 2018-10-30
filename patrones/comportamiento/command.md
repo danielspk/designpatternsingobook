@@ -45,7 +45,7 @@ _Action_, _Transaction_
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
 
 ## Código de ejemplo
 
