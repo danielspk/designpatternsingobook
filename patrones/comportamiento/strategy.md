@@ -12,7 +12,7 @@ _Policy_
 
 El patrón Strategy se debe usar cuando:
 
-* muchas estructuras relacionadas difieren sólo en su comportamiento. Las estrategias permiten configurar una estructura con un determinado comportamiento de entre muchos posibles.
+* muchas estructuras [^1] relacionadas difieren sólo en su comportamiento. Las estrategias permiten configurar una estructura con un determinado comportamiento de entre muchos posibles.
 * se necesitan distintas variantes de un algoritmo.
 * un algoritmo usa datos que los clientes no deberían conocer.
 * una estructura define muchos comportamientos, y éstos se representan como múltiples sentencias condicionales en sus operaciones.
@@ -109,3 +109,5 @@ fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
 
 ##### Nota:
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Strategy_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
+
+[^1]: Test, [Link](https://google.com).
