@@ -34,6 +34,8 @@ ClaseConcreta se basa en ClaseAbstracta para implementar los pasos de un algorit
 
 ## Código de ejemplo
 
+En este ejemplo queremos cumplir con una serie de pasos formales _(método plantilla)_ para deployar diferentes aplicaciones mobile.
+
 **Contenido en desarrollo.**
 
 ## Patrones relacionados
