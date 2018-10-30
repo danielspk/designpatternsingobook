@@ -36,7 +36,7 @@ Cuando un cliente envía una petición, ésta se propaga a través de la cadena 
 
 - No se observan impedimentos para su implementación en _Go_.
 - La implementación de la clase abstracta _Manejador_ debe reemplazarse por una interface dado que no existe la herencia en _Go_.
-- Si fuese necesario que _Manejador_ implementase código común a los _ManejadoresConcretos_ se podría definir una estructura adicional (_ManejadorComun_) y la misma debería implementarse en cada _ManejadorConcreto_ mediante el uso de la composición.
+- Si fuese necesario que _Manejador_ implementase código común a los _ManejadoresConcretos_ se podrá definir una estructura adicional (_ManejadorComun_ por ejemplo) y la misma deberá implementarse en cada _ManejadorConcreto_ mediante el uso de la composición.
 
 ## Código de ejemplo
 
