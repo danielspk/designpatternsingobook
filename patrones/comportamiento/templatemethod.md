@@ -30,13 +30,86 @@ ClaseConcreta se basa en ClaseAbstracta para implementar los pasos de un algorit
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+- No se observan impedimentos para su implementación en _Go_.
+- En este caso, dado que no existe la herencia en _Go_, la _ClaseAbstracta_ sugerida por el patrón debe implementarse en dos partes: a) por un lado los comportamientos abstractos deben definirse en una _Interface_, y b) por otro lado los comportamientos concretos (_el método plantilla_) dentro de la propia estructura _ClaseAbstracta_.
+- Las _ClasesConcretas_ se componen (_en vez de heredar_) de una _ClaseConcreta_.
+- Las _ClasesConcretas_ implementan los comportamientos de la _Interface_.
+- La principal dificultad de implementar este patrón en _Go_ es que el comportamiento del método plantilla de la _ClaseAbstracta_ invoca a otros comportamientos que no están definidos dentro de la propia _ClaseAbstracta_ sino dentro de la _ClaseConcreta_. Esto obliga a que cuando se invoca el método plantilla desde una _ClaseConcreta_ se deba pasar una referencia de si misma para que el método plantilla pueda invocar los comportamientos definidos en la _Interface_.
+
+> Dada esta complejidad adicional léase esta forma de implementación junto al código de ejemplo del patrón.
 
 ## Código de ejemplo
 
 En este ejemplo queremos cumplir con una serie de pasos formales _(método plantilla)_ para deployar diferentes aplicaciones mobile.
 
-**Contenido en desarrollo.**
+Implementación:
+
+```go
+// Clase Abstracta - Interface
+type DeployInterface interface {
+    Testear()
+    Compilar()
+    Publicar()
+}
+
+// Clase Abstracta
+type Deploy struct{}
+
+// Método Plantilla
+func (d Deploy) Construir(di DeployInterface) {
+    fmt.Println("Ejecutando las siguientes acciones:")
+
+    di.Testear()
+    di.Compilar()
+    di.Publicar()
+}
+
+// Clase Concreta - Android
+type DeployAndroid struct {
+    Deploy
+}
+
+func (d DeployAndroid) Testear() {
+    fmt.Println("Android: Testeando")
+}
+
+func (d DeployAndroid) Compilar() {
+    fmt.Println("Android: Compilando")
+}
+
+func (d DeployAndroid) Publicar() {
+    fmt.Println("Android: Publicando")
+}
+
+// Clase Concreta - iOS
+type DeployiOS struct {
+    Deploy
+}
+
+func (d DeployiOS) Testear() {
+    fmt.Println("iOS: Testeando")
+}
+
+func (d DeployiOS) Compilar() {
+    fmt.Println("iOS: Compilando")
+}
+
+func (d DeployiOS) Publicar() {
+    fmt.Println("iOS: Publicando")
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+deployAndroid := DeployAndroid{Deploy{}}
+deployAndroid.Construir(&deployAndroid)
+
+deployiOS := DeployiOS{Deploy{}}
+deployiOS.Construir(&deployiOS)
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/templatemethod) | [Ejecutar código](https://play.golang.org/p/1J-MIDMaXi5)
 
 ## Patrones relacionados
 
