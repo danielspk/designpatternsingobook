@@ -38,11 +38,82 @@ _Token_
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos que un editor de texto tenga la posibilidad de volver atras su estado luego de una actualización de contenido.
+
+Implementación:
+
+```go
+// Interface
+type Memento interface {
+    SetContenido(string)
+    GetContenido() string
+}
+
+// Memento
+type EditorMemento struct {
+     contenido string
+}
+
+func (em *EditorMemento) SetContenido(contenido string) {
+    em.contenido = contenido
+}
+
+func (em *EditorMemento) GetContenido() string {
+    return em.contenido
+}
+
+// Originador
+type Editor struct {
+    contenido string
+}
+
+func (e *Editor) VerContenido() string {
+    return e.contenido
+}
+
+func (e *Editor) Escribir(texto string) {
+    e.contenido = e.contenido + " " + texto
+}
+
+func (e *Editor) Guardar() Memento {
+    editorMemento := &EditorMemento{}
+    editorMemento.SetContenido(e.contenido)
+
+    return editorMemento
+}
+
+func (e *Editor) Restaurar(memento Memento) {
+    e.contenido = memento.GetContenido()
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+editor := &Editor{}
+editor.Escribir("TextoA")
+editor.Escribir("TextoB")
+fmt.Printf("El editor contiene:%s\n", editor.VerContenido())
+
+fmt.Println("Se guarda el estado actual")
+memento := editor.Guardar()
+
+fmt.Println("Se escribe unnuevo contenido")
+editor.Escribir("TextoC")
+
+fmt.Printf("El editor ahora contiene:%s\n", editor.VerContenido())
+
+fmt.Println("Se restaura el contenido guardado")
+editor.Restaurar(memento)
+
+fmt.Printf("El editor nuevamente contiene:%s\n", editor.VerContenido())
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/memento) | [Ejecutar código](https://play.golang.org/p/4o78qJhd-h2)
 
 ## Patrones relacionados
 
