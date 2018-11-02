@@ -37,11 +37,73 @@ La eficiencia no es una preocupación crítica. Los intérpretes más eficientes
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+- No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
+- La _ExpresionAbstracta_ se define como una interfaz por simplificación.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos que interpretar distintas expresiones lógicas: AND y OR en base a palabras definidas en un contexto.
+
+Implementación:
+
+```go
+// Contexto
+type Contexto struct {
+    Palabra string
+}
+
+// Interface
+type ExpresionAbstracta interface {
+    Interpretar(Contexto) bool
+}
+
+// Expresion Terminal
+type ExpresionTerminal struct {
+    Palabra string
+}
+
+func (et *ExpresionTerminal) Interpretar(contexto Contexto) bool {
+    return contexto.Palabra == et.Palabra
+}
+
+// Expresion No Terminal
+type ExpresionOR struct {
+    expresionA ExpresionAbstracta
+    expresionB ExpresionAbstracta
+}
+
+func (eo *ExpresionOR) Interpretar(contexto Contexto) bool {
+    return eo.expresionA.Interpretar(contexto) || eo.expresionB.Interpretar(contexto)
+}
+
+// Expresion No Terminal
+type ExpresionAND struct {
+    expresionA ExpresionAbstracta
+    expresionB ExpresionAbstracta
+}
+
+func (ea *ExpresionAND) Interpretar(contexto Contexto) bool {
+    return ea.expresionA.Interpretar(contexto) && ea.expresionB.Interpretar(contexto)
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+expresionA := &ExpresionTerminal{"Perro"}
+expresionB := &ExpresionTerminal{"Gato"}
+expresionC := &ExpresionTerminal{"Perro"}
+
+contextoOR := Contexto{"Perro"}
+expresionOR := &ExpresionOR{expresionA, expresionB}
+fmt.Printf("La expresion OR contiene la palabra perro: %v\n", expresionOR.Interpretar(contextoOR))
+
+contextoAND := Contexto{"Perro"}
+expresionAND := &ExpresionAND{expresionA, expresionC}
+fmt.Printf("La expresion AND contiene dos palabras perro: %v\n", expresionAND.Interpretar(contextoAND))
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/interpreter) | [Ejecutar código](https://play.golang.org/p/zmXhDClx5k7)
 
 ## Patrones relacionados
 
