@@ -2,7 +2,7 @@
 
 _Go_ es un lenguaje que en muchos aspector parece "_retrazar_" o da la sensación de "_antiguo_". Esta visión puede ser correcta si se lo compara por ejemplo con la forma en la que programaríamos en _Java_. Esto es justamente lo que se debe evitar: "_la comparación_". _Go_ nace con una filosofía bien clara que todo programador de _Go_ debería conocer.
 
-Dicho esto, tal como se pudo demostrar, así y todo es factible aplicar los 23 Patrones de Diseño GoF en _Go_.
+Dicho esto, tal como se pudo demostrar, es factible implementar los 23 Patrones de Diseño GoF en _Go_ sin grandes modificaciones de las estructuras originales.
 
 Su aplicación no es una simple traducción literal de un lenguaje a otro - *como he visto muchas veces* - sino que el uso de estos patrones realmente pueden aportar coherencia y valor al software desarrollado en _Go_.
 

@@ -137,6 +137,19 @@ func main() {
 
 [Ejecutar código](https://play.golang.org/p/7W89468lRhC)
 
+## ¿Cómo afecta esto a la implementación de los Patrones de Diseño GoF?
+
+Como se detallará más adelante, en la implementación de cada patrón de diseño, la falta de herencia será suplida de dos formas diferentes y/o complementarias:
+
+ - la composición cuando exista un comportamiento que deba ser compartido entre estructuras
+ - mediante interfaces cuando se deba asegurar que una esructura es parte de una relación **es-un** y/o requiera implementar ciertos comportamientos.
+
+Estrictamente hablando de programación orientada a objetos, la mayor dificultad encontrada es cuando una _clase abstracta_ implementa un _método concreto_ con comportamiento que llama a _métodos abstractos_ también definidos en dicha _clase abstracta_ que luego serán implementados en las _clases hijas_.
+Para emular este comportamiento la estrategia utilizada en esta publicación será parar como un argumento del _método concreto_ de la _clase abstracta_ una referencia de una _interface_ que exponga cúales serán los _métodos abstractos_ que serán implementados por las _clases hijas_ que implementen esa _interface_.
+Veamos un ejemplo:
+
+> puede verse el uso de esta estrategia en el patrón [Template Method](/patrones/comportamiento/templatemethod.md).
+
 ## Conclusión
 
 El uso de interfaces (_es-un_) y de la composición (_tiene-un_) posibilitan la reutilización de código en _Go_ y la adopción de técnicas y de patrones orientados a objetos.
