@@ -146,7 +146,52 @@ Como se detallará más adelante, en la implementación de cada patrón de dise�
 
 Estrictamente hablando de programación orientada a objetos, la mayor dificultad encontrada es cuando una _clase abstracta_ implementa un _método concreto_ con comportamiento que llama a _métodos abstractos_ también definidos en dicha _clase abstracta_ que luego serán implementados en las _clases hijas_.
 Para emular este comportamiento la estrategia utilizada en esta publicación será parar como un argumento del _método concreto_ de la _clase abstracta_ una referencia de una _interface_ que exponga cúales serán los _métodos abstractos_ que serán implementados por las _clases hijas_ que implementen esa _interface_.
-Veamos un ejemplo:
+
+Veamos un ejemplo para entender la estrategia:
+
+###### Problema a resolver - código _Java_
+```java
+abstract class ClaseAbstracta {
+    public void metodoConcreto() {
+        this.metodoAbstracto();
+    }
+    
+    abstract public void metodoAbstracto();
+}
+
+class ClaseHija extends ClaseAbstracta {
+    @Override
+    public void metodoAbstracto() {
+        System.out.println("Soy metodo abstracto");
+    }
+}
+```
+
+###### Estrategia implementada en _Go_
+```go
+type InterfaceMetodosAbstractos interface {
+    MetodoAbstracto()
+}
+
+type ClaseAbstracta struct{}
+
+func (ca *ClaseAbstracta) MetodoConcreto(self *InterfaceMetodosAbstractos) {
+    self.MetodoAbstracto()
+}
+
+type ClaseHija struct {
+    *ClaseAbstracta
+}
+
+func (ch *ClaseHija) MetodoAbstracto() {
+    fmt.Println("Soy metodo abstracto")
+}
+
+claseHija := &ClaseHija{&ClaseAbstracta{}}
+claseHija.MetodoConcreto(&claseHija)
+```
+
+[Ejecutar código](https://play.golang.org/p/NnEeU5Z4XWI)
 
 > puede verse el uso de esta estrategia en el patrón [Template Method](/patrones/comportamiento/templatemethod.md).
 
