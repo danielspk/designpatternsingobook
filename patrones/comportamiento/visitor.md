@@ -41,11 +41,101 @@ Representa una operación sobre los elementos de una organización de estructura
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+- No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
+- Dado que _Go_ no soporta sobrecarga de método, y a fin de facilitar el ejemplo sin hacer uso de la [reflexión](https://golang.org/pkg/reflect/), los visitantes dispondan de diferentes comportamientos para cada tipo de elemento variando los nombres de sus funciones.
+- Se omite del código de ejemplo _EstructuraDeObjeto_ dado que sólo sería una colección que acepta elementos.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos recrear un juego de rol en donde algunos personajes tengan superpoderes y otros armas de batalla.
+
+Implementación:
+
+```go
+// Visitante
+type Visitante interface {
+    VisitarSuperpoder(*ElementoSuperpoder)
+    VisitarArma(*ElementoArma)
+}
+
+// Visitante Concreto
+type VisitanteNivel1 struct{}
+
+func (v *VisitanteNivel1) VisitarSuperpoder(elementoSuperpoder *ElementoSuperpoder) {
+    elementoSuperpoder.Poder = "Rayo superpoderoso"
+}
+
+func (v *VisitanteNivel1) VisitarArma(elementoArma *ElementoArma) {
+    elementoArma.Arma = "Espada de dos manos"
+}
+
+// Visitante Concreto
+type VisitanteNivel0 struct{}
+
+func (v *VisitanteNivel0) VisitarSuperpoder(elementoSuperpoder *ElementoSuperpoder) {
+    elementoSuperpoder.Poder = "Rayo simple"
+}
+
+func (v *VisitanteNivel0) VisitarArma(elementoArma *ElementoArma) {
+    elementoArma.Arma = "Espada de una mano"
+}
+
+// Elemento
+type Elemento interface {
+    Aceptar(Visitante)
+}
+
+// Elemento Concreto
+type ElementoSuperpoder struct {
+    Poder string
+}
+
+func (e *ElementoSuperpoder) Aceptar(visitante Visitante) {
+    visitante.VisitarSuperpoder(e)
+}
+
+// Elemento Concreto
+type ElementoArma struct {
+    Arma string
+}
+
+func (e *ElementoArma) Aceptar(visitante Visitante) {
+    visitante.VisitarArma(e)
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+// desde visitar
+elementoArma0 := &ElementoArma{}
+elementoSuperpoder0 := &ElementoSuperpoder{}
+
+visitanteNivel0 := &VisitanteNivel0{}
+visitanteNivel0.VisitarArma(elementoArma0)
+visitanteNivel0.VisitarSuperpoder(elementoSuperpoder0)
+
+fmt.Printf("El visitante Nivel 0 tiene la siguiente arma de batalla: %s\n", elementoArma0.Arma)
+fmt.Printf("El visitante Nivel 0 tiene el siguiente superpoder: %s\n", elementoSuperpoder0.Poder)
+
+elementoArma1 := &ElementoArma{}
+elementoSuperpoder1 := &ElementoSuperpoder{}
+
+visitanteNivel1 := &VisitanteNivel1{}
+visitanteNivel1.VisitarArma(elementoArma1)    visitanteNivel1.VisitarSuperpoder(elementoSuperpoder1)
+
+fmt.Printf("El visitante Nivel 1 tiene la siguiente arma de batalla: %s\n", elementoArma1.Arma)
+fmt.Printf("El visitante Nivel 1 tiene el siguiente superpoder: %s\n", elementoSuperpoder1.Poder)
+
+// desde aceptar
+visitanteNivel0 = &VisitanteNivel0{}
+elementoArma0 = &ElementoArma{}
+elementoArma0.Aceptar(visitanteNivel0)
+
+fmt.Printf("El elemento Arma aceptada por un visitante Nivel 0 es: %s\n", elementoArma0.Arma)
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/visitor) | [Ejecutar código](https://play.golang.org/p/WSPGvlwREuQ)
 
 ## Patrones relacionados
 
