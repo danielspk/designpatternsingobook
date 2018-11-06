@@ -45,6 +45,10 @@ _Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
 
 ## Código de ejemplo
 
+En este ejemplo queremos que postulantes a empleos sean notificados cuando se creen ofertas laborales.
+
+Implementación:
+
 **Contenido en desarrollo.**
 
 ## Patrones relacionados
