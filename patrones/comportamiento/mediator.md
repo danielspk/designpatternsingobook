@@ -32,11 +32,62 @@ Los Colegas envían y reciben peticiones a través de un Mediador. El mediador i
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+- No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
+- El _Mediador_ y _Colega_ se definen como interfaces por simplificación.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos montar una sala de chat en donde los usuarios puedan comunicarse entre sí. La sala de chat actua como mediador entre los usuarios.
+
+Implementación:
+
+```go
+// Interface Mediador
+type Mediador interface {
+    MostrarMensaje(Usuario, string)
+}
+
+// Mediador Concreto
+type ChatRoom struct{}
+
+func (cr *ChatRoom) MostrarMensaje(usuario Usuario, mensaje string) {
+    fmt.Printf("El mensaje de %s es: %s\n", usuario.GetNombre(), mensaje)
+}
+
+// Interface Colega
+type Usuario interface {
+    EnviarMensaje(string)
+    GetNombre() string
+}
+
+// Colega Concreto
+type UsuarioChat struct {
+    nombre   string
+    mediador Mediador
+}
+
+func (u *UsuarioChat) GetNombre() string {
+    return u.nombre
+}
+
+func (u *UsuarioChat) EnviarMensaje(mensaje string) {
+    u.mediador.MostrarMensaje(u, mensaje)
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+mediador := &ChatRoom{}
+
+usuarioA := &UsuarioChat{"Daniel", mediador}
+usuarioB := &UsuarioChat{"Pedro", mediador}
+
+usuarioA.EnviarMensaje("Hola como estas?")
+usuarioB.EnviarMensaje("Muy bien y vos?")
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/mediator) | [Ejecutar código](https://play.golang.org/p/PWO1HBJYjPx)
 
 ## Patrones relacionados
 
