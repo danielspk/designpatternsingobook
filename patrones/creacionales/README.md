@@ -10,7 +10,9 @@ Esta definición de Gamma es un desafio de representar en _Go_ ya que como hemos
 
 ### Concurrencia
 
-_Go_ es un lenguaje que permite la programación concurrente y los patrones de diseño creacionales asumen que se trabaja sobre un único hilo de ejecución. De ser requerido se analizará que implicancias tiene la concurrencia en dicho patrón.
+_Go_ es un lenguaje que permite la programación concurrente y los patrones de diseño creacionales asumen que se trabaja sobre un único hilo de ejecución.
+Dada la cantidad de estrategias y patrones de concurrencia existentes, sería muy dificultoso detallar como pueden verse afectadas las estructuras con estado transmitidas por canales en desarrollos concurrentes.
+Sin embargo, se realizará una mención especial en la explicación del patrón [Singleton](singleton.md) dado que como su proposito es crear una única instancia de una estructura con estado, será interesante ver que estrategía permite implementar el lenguaje _Go_ para cumplir con el propósito del patrón.
 
 ## Contenido
 
