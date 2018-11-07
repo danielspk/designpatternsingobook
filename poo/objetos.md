@@ -135,6 +135,32 @@ func (cc CuentaCorriente) calcularIntereses() double {
 
 En _Go_ es muy facil implementar el polimorfismo. Dado que las estructuras pueden componerse de otras estructuras, tan sólo se debe reescribir el comportamiento deseado. - _más información en el siguiente apartado - _[_link_](composicion.md)
 
+#### Método Estáticos
+
+Esta característica no es posible de replicar en _Go_ dado que cada comportamiento asociado a una estructura, sólo puede ser invocado cuando exista un referencia a dicha estructura.
+Se puede emular esta característica usando el paradigma procedimental del lenguaje. Si bien no es un comportamiento puramente orientado a objetos, se pueden lograr similares resultados.
+
+Ejemplo:
+
+```go
+package Modelos
+
+// estructura
+type CuentaCorriente struct {
+    //...
+}
+
+// emular propiedad estática
+// utilizando variable de paquete
+var banco = "Banco S.A."
+
+// emular método estático de CuentaCorriente 
+// utilizando una función de paquete
+func CuentaCorrienteGetBanco() string {
+    return banco
+}
+```
+
 ## Qué dicen otros autores
 
 Según Gigi Sayfan [\[4\]](/recursos.md) "Go es una extraña mezcla de ideas antiguas y nuevas.", y "Muchas personas ni siquiera están seguras de si Go es un lenguaje orientado a objetos", sin embargo para el "Go es un lenguaje de programación orientado a objetos de buena fe. Permite el modelado basado en objetos y promueve las mejores prácticas de usar interfaces en lugar de tipos concretos de jerarquías. Go tiene algunas elecciones sintácticas inusuales, pero el trabajo general con tipos, métodos e interfaces parece simple, ligero y natural. La incrustración no es muy pura, pero aparentemente estaba en juego el pragmatismo, y se proporcionó una incrustración en lugar de sólo la composición por nombre".
