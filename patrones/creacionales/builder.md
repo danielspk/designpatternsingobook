@@ -36,11 +36,76 @@ Separa la construcción de una estructura con estado compleja de su representaci
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+- No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
+- El _Constructor_ se define como interface por simplificación.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos que un local de comida pueda entregar distintos tipos de hamburguesas (simples y dobles) para lo que será necesario generar distintos constructores de hamburguesas.
+
+Implementación:
+
+```go
+// Interface Constructor
+type Constructor interface {
+    EstablecerTamanio()
+    Construir() *Hamburguesa
+}
+
+// Constructor Concreto
+type ConstructorHamburguesaSimple struct {
+    tamanio string
+}
+
+func (chs *ConstructorHamburguesaSimple) EstablecerTamanio() {
+    chs.tamanio = "Simple"
+}
+
+func (chs *ConstructorHamburguesaSimple) Construir() *Hamburguesa {
+    return &Hamburguesa{chs.tamanio}
+}
+
+// Constructor Concreto
+type ConstructorHamburguesaDoble struct {
+    tamanio string
+}
+
+func (chd *ConstructorHamburguesaDoble) EstablecerTamanio() {
+    chd.tamanio = "Doble"
+}
+
+func (chd *ConstructorHamburguesaDoble) Construir() *Hamburguesa {
+    return &Hamburguesa{chd.tamanio}
+}
+
+// Producto
+type Hamburguesa struct {
+    Tamanio string
+}
+
+// Director
+type LocalComida struct{}
+
+func (lc *LocalComida) ConstruirHamburguesa(constructor Constructor) *Hamburguesa {
+    constructor.EstablecerTamanio()
+
+    return constructor.Construir()
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+localComida := &LocalComida{}
+
+hamburguesaA := localComida.ConstruirHamburguesa(&ConstructorHamburguesaSimple{})
+hamburguesaB := localComida.ConstruirHamburguesa(&ConstructorHamburguesaDoble{})
+
+fmt.Printf("Se solicito una hamburguesa: %s\n", hamburguesaA.Tamanio)
+fmt.Printf("Se solicito una hamburguesa: %s\n", hamburguesaB.Tamanio)
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/creacionales/builder) | [Ejecutar código](https://play.golang.org/p/5dPp1a1Yaw_F)
 
 ## Patrones relacionados
 
