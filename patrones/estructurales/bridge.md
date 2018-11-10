@@ -38,11 +38,88 @@ Abstracción redirige las peticiones del cliente a su estructura con estado Impl
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+- No se observan impedimentos para su implementación en _Go_.
+- En este caso, dado que _Abstraccion_ se define como una interface pero a la vez también implementano comportamiento concreto para mantener la referencia de la estructura de tipo _Implementador_, se separará en dos partes en dos partes: a) por un lado los comportamientos abstractos deben definirse en una interface _Abstraccion Interface_, y b) por otro lado los comportamientos concretos (_el que mantiene una referencia del Implementador_) dentro de una estructura _Abstraccion Abstracta_.
+- Las _Abstracciones Refinadas_ se componen (_en vez de heredar_) de  _Abstraccion Abstracta_.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos desacoplar el protocolo de conexión a internet que pueden implementar distintos dispositivos.
+
+Implementación:
+
+```go
+// Abstraccion Interface
+type DispositivoInterface interface {
+    ConectarInternet() string
+    SetConexion(Conexion)
+}
+
+// Abstraccion Abstracta
+type Dispositivo struct {
+    conexion Conexion
+}
+
+func (d *Dispositivo) SetConexion(conexion Conexion) {
+    d.conexion = conexion
+}
+
+// Abstraccion Refinada
+type Telefono struct {
+    numero string
+    *Dispositivo
+}
+
+func (t *Telefono) ConectarInternet() string {
+    return "Teléfono N° " + t.numero + " conectado a internet mediante " + t.conexion.Conectar()
+}
+
+// Abstraccion Refinada
+type Tablet struct {
+    *Dispositivo
+}
+
+func (t *Tablet) ConectarInternet() string {
+    return "Tablet conectada a internet mediante " + t.conexion.Conectar()
+}
+
+// Implementador Interface
+type Conexion interface {
+    Conectar() string
+}
+
+// Implementador Concreto
+type Red4G struct{}
+
+func (r *Red4G) Conectar() string {
+    return "4G"
+}
+
+// Implementador Concreto
+type RedWiFi struct{}
+
+func (r *RedWiFi) Conectar() string {
+    return "WiFi"
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+telefonoA := &Telefono{"0115161", &Dispositivo{}}
+telefonoA.SetConexion(&Red4G{})
+fmt.Printf("%s\n", telefonoA.ConectarInternet())
+
+telefonoB := &Telefono{"0117854", &Dispositivo{}}
+telefonoB.SetConexion(&RedWiFi{})
+fmt.Printf("%s\n", telefonoB.ConectarInternet())
+
+tablet := &Tablet{&Dispositivo{}}
+tablet.SetConexion(&RedWiFi{})
+fmt.Printf("%s\n", tablet.ConectarInternet())
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/bridge) | [Ejecutar código](https://play.golang.org/p/PnQdNHLsrSc)
 
 ## Patrones relacionados
 
