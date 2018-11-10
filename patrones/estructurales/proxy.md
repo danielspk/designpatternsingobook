@@ -41,11 +41,52 @@ El Proxy  redirige peticiones al SujetoReal cuando sea necesario, dependiendo de
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos restringir los accesos a redes sociales en los navegadores de una escuela. Para esto realizaremos un proxy de protección.
+
+Implementación:
+
+```go
+// Sujeto Interface
+type NavegadorInterface interface {
+    Direccion(string) string
+}
+
+// Sujeto Real
+type Navegador struct{}
+
+func (n *Navegador) Direccion(url string) string {
+    return "Respuesta de la url " + url
+}
+
+// Proxy
+type NavegadorProxy struct {
+    navegador NavegadorInterface
+}
+
+func (n *NavegadorProxy) Direccion(url string) string {
+    if url == "http://twitter.com" || url == "http://facebook.com" {
+        return "Acceso restringido a " + url
+    }
+
+    return n.navegador.Direccion(url)
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+navegadorProxy := &NavegadorProxy{&Navegador{}}
+
+fmt.Printf("%s\n", navegadorProxy.Direccion("http://google.com"))
+fmt.Printf("%s\n", navegadorProxy.Direccion("http://twitter.com"))
+fmt.Printf("%s\n", navegadorProxy.Direccion("http://facebook.com"))
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/proxy) | [Ejecutar código](https://play.golang.org/p/7JSOE4GYByc)
 
 ## Patrones relacionados
 
