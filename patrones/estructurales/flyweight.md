@@ -39,11 +39,88 @@ Usa comportamiento para permitir un gran número de estructuras con estado de gr
 
 ## Implementación
 
-**Contenido en desarrollo.** a) analizar otras alternativas, b) implicancias con concurrencia.
+No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
 
 ## Código de ejemplo
 
-**Contenido en desarrollo.**
+En este ejemplo queremos que nuestro sistema sea capaz de dibujar controles en la pantalla haciendo un uso eficiente de los recursos ya que existen controles (los botones) que pueden ser reutilizados.
+
+Implementación:
+
+```go
+// Flyweight Interface
+type Control interface {
+    Dibujar(x string, y string) string
+    GetReferencia() string
+}
+
+// Flyweight Concreto
+type Boton struct {
+    referencia string
+}
+
+func (b *Boton) Dibujar(x string, y string) string {
+    return "Dibujando Botón #" + b.referencia + " en ejes " + x + ", " + y
+}
+
+func (b *Boton) GetReferencia() string {
+    return b.referencia
+}
+
+// Flyweight Concreto No Compartido
+type CampoPassword struct{}
+
+func (cp *CampoPassword) Dibujar(x string, y string) string {
+    return "Dibujando Campo de Password en ejes " + x + ", " + y
+}
+
+func (cp *CampoPassword) GetReferencia() string {
+    return ""
+}
+
+// Fabrica Flyweight
+type PantallaFabrica struct {
+    controles []Control
+}
+
+func (pb *PantallaFabrica) ObtenerControl(tipo string, referencia string, x string, y string) string {
+    for _, control := range pb.controles {
+        if control.GetReferencia() == referencia {
+            return control.Dibujar(x, y) + " || <control recuperado>"
+        }
+    }
+
+    if tipo == "BOTON" {
+        control := &Boton{referencia}
+
+        pb.controles = append(pb.controles, control)
+
+        return control.Dibujar(x, y)
+    }
+
+    if tipo == "PASSWORD" {
+        control := &CampoPassword{}
+
+        return control.Dibujar(x, y)
+    }
+
+    return ""
+}
+```
+
+Se puede probar la implementación del patrón de la siguiente forma:
+
+```go
+pantalla := &PantallaFabrica{}
+
+fmt.Printf("%s\n", pantalla.ObtenerControl("BOTON", "BTN1", "100", "300"))
+fmt.Printf("%s\n", pantalla.ObtenerControl("BOTON", "BTN2", "200", "300"))
+fmt.Printf("%s\n", pantalla.ObtenerControl("BOTON", "BTN3", "300", "300"))
+fmt.Printf("%s\n", pantalla.ObtenerControl("PASSWORD", "PWD1", "500", "300"))
+fmt.Printf("%s\n", pantalla.ObtenerControl("BOTON", "BTN1", "400", "300"))
+```
+
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/flyweight) | [Ejecutar código](https://play.golang.org/p/o1TA4FcaAmD)
 
 ## Patrones relacionados
 
