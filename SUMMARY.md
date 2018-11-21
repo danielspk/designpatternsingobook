@@ -39,4 +39,4 @@
 * [Conclusiones](conclusiones.md)
 * [Acerca De](acercade.md)
 * [Recursos de interes](recursos.md)
-
+* [Glosario](GLOSSARY.md)
