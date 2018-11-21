@@ -5,7 +5,7 @@
   "language": "es",
   "pdf.pageNumbers": true,
   "pdf.fontSize": 11,
-  "pdf.fontFamily": "serif",
+  "pdf.fontFamily": "Serif",
   "pdf.paperSize": "a4",
   "pdf.margin.top": 56,
   "pdf.margin.bottom": 56,
