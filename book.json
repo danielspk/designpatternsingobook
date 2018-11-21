@@ -1,3 +1,14 @@
 {
-
+  "title": "Design Patterns in Go",
+  "description": "Una perspectiva a la Programación Orientada a Objetos en Go en base a los Patrones de Diseño GoF",
+  "author": "Daniel M. Spiridione",
+  "language": "es",
+  "pdf.pageNumbers": true,
+  "pdf.fontSize": 11,
+  "pdf.fontFamily": "serif",
+  "pdf.paperSize": "a4",
+  "pdf.margin.top": 56,
+  "pdf.margin.bottom": 56,
+  "pdf.margin.right": 62,
+  "pdf.margin.left": 62
 }
