@@ -8,7 +8,7 @@ Su aplicación no es una simple traducción literal de un lenguaje a otro - *com
 
 Hemos visto que _Go_ no es realmente un lenguaje orientado a objetos, sin embargo se pudo demostrar que sus características permiten programar aplicando prácticas y patrones propios de la programación orientada a objetos.
 
-Dicho esto, creo que es muy importante destacar que cada lenguaje de programación nace con un proposito definido, y que si bien las experiencias previas que tenemos como desarrolladores de software nos pueden facilitar el aprendizaje de nuevos lenguajes de programación, es vital comprender cuales son las recomendaciones, usos, estilos y características propias del lenguaje que estamos aprendiendo, para no cometer el error común de querer hacer las cosas de igual manera como las hacemos en otros lenguajes.
+Dicho esto, creo que es muy importante destacar que cada lenguaje de programación nace con un proposito definido, y que si bien las experiencias previas que tenemos como desarrolladores de software nos pueden facilitar el aprendizaje de nuevos lenguajes de programación, es vital comprender cuales son las recomendaciones, usos, estilos y características propias del lenguaje que estamos aprendiendo, para no cometer el error común de querer hacer las cosas de igual manera como las hariamos en otros lenguajes.
 
 Considero que _Go_ es un excelente lenguaje para realizar trabajos concurrentes. Este tipo de programación hace que tengamos que buscar nuevas formas de reutilizar soluciones a problemas comunes. Por tal motivo, y haciendo alución a lo antes comentado, considero que un desarrollador de _Go_ debería invertir más tiempo en aprender como aplicar *patrones de concurrencia* que *patrones de diseño*.
 
