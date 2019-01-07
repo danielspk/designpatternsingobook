@@ -16,7 +16,7 @@ _Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y 
 
 > Imagen - [\[39\]](recursos.md)
 
-Su lanzamiento oficial fue en noviembre del año 2009, pero su primera versión estable - 1.0- recién se publicó en marzo de 2012.
+Su lanzamiento oficial fue en noviembre del año 2009, pero su primera versión estable - 1.0 - recién se publicó en marzo de 2012.
 
 ## Características
 
