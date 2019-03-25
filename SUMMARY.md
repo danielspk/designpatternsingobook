@@ -41,5 +41,5 @@
 * [Parte III](partes/parte3.md)
   * [Conclusiones](conclusiones.md)
   * [Acerca De](acercade.md)
-* [Recursos de interes](recursos.md)
+* [Recursos de interés](recursos.md)
 * [Glosario](GLOSSARY.md)

@@ -94,7 +94,7 @@ A continuación se exponen sólo algunos de estos proverbios:
 * No se comunique compartiendo memoria, comparta memoria comunicándose.
 * La concurrencia no es paralelismo.
 * Cuanto más grande es la interfaz, más débil es la abstracción.
-* Haz que el valorcero sea útil.
+* Haz que el valor cero sea útil.
 * _interface{}_ no dice nada.
 * El estilo de _gofmt_ no es el favorito de nadie, sin embargo, _gofmt_ es el favorito de todos.
 * Copiar un poco es mejor que una pequeña dependencia.

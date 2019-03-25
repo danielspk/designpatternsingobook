@@ -157,7 +157,7 @@ func (e Emision) EmitirHTML(r RespuestaHTML) {
 
 La estructura *Emision* debe implementar dos comportamientos ya que debe poder gestionar impresiones en HTML y JSON. Si a futuro se requiriera de otro tipo de impresión - *xml por ejemplo* - se debería modificar su código fuente.
 
-La siguiente modificación permite intercambiar cualquier tipo de respuesta para su impresion:
+La siguiente modificación permite intercambiar cualquier tipo de respuesta para su impresión:
 
 ```go
 type Respuesta interface {

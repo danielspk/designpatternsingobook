@@ -56,10 +56,10 @@ En conclusión, el historial de popularidad de _Go_ respecto de _Rust_ fue lo qu
 
 Antes de formalizar la idea final de esta publicación me defini dos objetivos para evaluar la factibilidad de su realización:
 
-- hacer un muestreo de cuatro o cinco patrones GoF aleatoriamente con el fin de analizar si se podían implementar "semanticamente" en _Go_.
+- hacer un muestreo de cuatro o cinco patrones GoF aleatoriamente con el fin de analizar si se podían implementar "semánticamente" en _Go_.
 - analizar si esas implementaciones realmente podían aportar valor al software.
 
-Mi primer objetivo fue muy facil de corroborar. Si bien la inexistencia de *"clases"* en _Go_ es un condicionante en la forma en que se expresan y documentan los patrones de diseño GoF; la semántica de estructuras de datos que implementan comportamientos fue, a mi entender, lo suficientemente análoga a las clases tradicionales. **Semanticamente los patrones son implementables en _Go_** - *con su sintaxis particular* -.
+Mi primer objetivo fue muy facil de corroborar. Si bien la inexistencia de *"clases"* en _Go_ es un condicionante en la forma en que se expresan y documentan los patrones de diseño GoF; la semántica de estructuras de datos que implementan comportamientos fue, a mi entender, lo suficientemente análoga a las clases tradicionales. **Semánticamente los patrones son implementables en _Go_** - *con su sintaxis particular* -.
 
 El segundo objetivo fue más dificil de llevar a cabo: ¿Qué significa que la implementación de un patrón de diseño GoF aporte valor al software?.
 La mejor manera que encontre de dar respuesta a esta pregunta fue demostrar todo lo contrario: ¿Cómo una implementación semántica de un patrón de diseño GoF no aporta valor alguno al software?.
@@ -101,7 +101,7 @@ transportista.setStrategy(new EmpresaB())
 console.log("Tasa Empresa B: " + transportista.calcularTasa());
 ```
 
-Semanticamente la aplicación del patrón es correcta. El contexto es el *Transportista* y las estrategias son las *Empresas*. Sin embargo esta implementación es exclusivamente semantica, porque el lenguaje:
+Semánticamente la aplicación del patrón es correcta. El contexto es el *Transportista* y las estrategias son las *Empresas*. Sin embargo esta implementación es exclusivamente semantica, porque el lenguaje:
 - no tiene forma de validar que lo que se este pasando al *Transportista* séa una *Estrategia* válida.
 - no tiene forma de implementar una *interface Estrategia* o *heredar* de una *clase Estrategia*.
 - no permite generar código reutilizable en paquetes o namespaces.
