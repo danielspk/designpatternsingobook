@@ -13,7 +13,7 @@ Tal como menciona Steve Francia [\[6\]](/recursos.md) "Existen varios enfoques d
 
 ## Herencia
 
-Es el mecanismo por el que un objeto se basa en otro y justamente por esto hereda los comportamientos y los datos de el. No todos los lenguajes de programación implementan la herencia de la misma mandera. Algunos sólo permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.
+Es el mecanismo por el que un objeto se basa en otro y justamente por esto hereda los comportamientos y los datos de el. No todos los lenguajes de programación implementan la herencia de la misma manera. Algunos sólo permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.
 Asimismo los comportamientos y datos heredados pueden estar limitados al acceso con el que el objeto padre los definió, esto se denomina _visibilidad_.
 Se expresa a la herencia como una relación **es-un/a**.
 
@@ -27,7 +27,7 @@ Se expresa a la composición como una relación **tiene-un/a**.
 
 ## ¿Por qué _Go_ no tiene herencia?
 
-Seguramente no haya una respuesta única. No obstante en el faq de la documentación oficial de _Go_ responden a esta pregunta de la siguiente forma [\[44\]](/recursos.md):
+Seguramente no haya una respuesta única. No obstante en el _faq_ de la documentación oficial de _Go_ responden a esta pregunta de la siguiente forma [\[44\]](/recursos.md):
 
 "**¿Por qué no hay herencia?**:
 La programación orientada a objetos, al menos en los lenguajes más conocidos, implica demasiada discusión sobre las relaciones entre tipos, relaciones que a menudo podrían derivarse automáticamente. _Go_ toma un enfoque diferente.

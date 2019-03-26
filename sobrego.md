@@ -10,13 +10,17 @@
 
 ## Orígenes
 
-_Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y _Ken Thomson_. _Go_ también es conocido como _Golang_.
+_Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y _Ken Thomson_.
 
 ![](/assets/gopher.png)
 
 > Imagen - [\[39\]](recursos.md)
 
 Su lanzamiento oficial fue en noviembre del año 2009, pero su primera versión estable - 1.0 - recién se publicó en marzo de 2012.
+
+Dado que la palabra _Go_ es parte del idioma ingles el lenguaje también es conocido como _Golang_.
+
+> Se recomienda utilizar el término _Golang_ para las búsquedas en internet referidas al lenguaje.
 
 ## Características
 

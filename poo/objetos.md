@@ -4,19 +4,19 @@ A diferencia de otros lenguajes orientados a objetos como _C++_, _Java_, _C\#_, 
 
 Rápidamente se podría inferir en que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
 
-Los desarrolladores tenemos una tendencia natural a comprar las cosas. Entonces porque _Java_ es el rey indiscutido de la programación orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; si _Go_ no las tiene entonces no puede ser un lenguaje orientado a objetos.
+Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, se podría decir que dado que _Java_ es academicamente reconocido como un lenguaje puramente orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; como _Go_ no las tiene entonces no puede ser un lenguaje orientado a objetos.
 
 _¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma clásica como la que las hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
-Al analizar a _Go_, debemos comparar que características de la programación orientada a objetos se pueden implementar y no simplemente hacer una comparación de un lenguaje respecto del otro.
+Al analizar a _Go_, debemos comparar que características de la programación orientada a objetos se pueden implementar y no simplemente hacer una comparación de un lenguaje respecto de otro.
 
 ## Cómo es la POO en Go
 
 ### Objetos
 
-En _Go_ no existen clases ni objetos. Existen estructuras que son tipos de datos definidos por el usuario que pueden incorporar comportamientos. En una analogía con una clase, las propiedades pudieran ser los tipos de datos de la estructura, y los métodos las funciones asociadas a la estructura.
+En _Go_ no existen clases ni objetos. Existen estructuras que son tipos de datos definidos por el usuario que los cuales pueden incorporar comportamientos. En una analogía con una clase, las propiedades pudieran ser los tipos de datos de la estructura, y los métodos las funciones o comportamientos asociados a la estructura.
 
 Ejemplo:
 
@@ -36,7 +36,7 @@ func (p *Persona) Saludar() {
 
 ### Interfaces
 
-Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación las interfaces en _Go_ son implícitas. No existen palabras reservadas como _implements_. Cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa.
+Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación, las interfaces en _Go_ son implícitas. No existen palabras reservadas como _implements_. Cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa.
 
 Ejemplo:
 
@@ -171,5 +171,5 @@ Incluso la propia gente que desarrolla _Go_ responde a esta pregunta [\[44\]](/r
 
 ## Mi punto de vista
 
-Ya que existen otros lenguajes que permiten programar orientado a objetos sin ser realmente orientados a objetos puedo decir que **"**_**Go**_** es un lenguaje no orientado a objetos que permite la programación orientada a objetos - **_**aunque no de la forma tradicional**_**"**.
+Ya que existen otros lenguajes que permiten programar orientado a objetos, sin ser realmente orientados a objetos, puedo decir que **"**_**Go**_** es un lenguaje no orientado a objetos que permite la programación orientada a objetos - **_**aunque no de la forma tradicional**_**"**.
 
