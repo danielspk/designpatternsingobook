@@ -18,31 +18,45 @@ _Go_ fue creado en Google en el año 2007 por _Robert Griesemer_, _Rob Pike_, y 
 
 Su lanzamiento oficial fue en noviembre del año 2009, pero su primera versión estable - 1.0 - recién se publicó en marzo de 2012.
 
+Originalmente fue concebido para resolver problemas propios de la infraestructura de software de Google. Según palabras de unos de sus creadores _Rob Pike_, "Los objetivos del proyecto _Go_ fueron eliminar la lentitud y la torpeza del desarrollo de software en Google y, por lo tanto, hacer que el proceso sea más productivo y escalable. El lenguaje fue diseñado por y para las personas que escriben, leen, depuran y mantienen sistemas de software grandes. Por lo tanto, el propósito de _Go_ no fue investigar el diseño de un lenguaje de programación; sino mejorar el entorno de trabajo para sus diseñadores y sus compañeros de trabajo. _Go_ tiene más que ver con la ingeniería del software que con la investigación en un lenguaje de programación" [\[53\]](recursos.md).
+
+Estre los principales problemas de Google que motivaron el desarrollo de _Go_ se pueden destacan:
+* los largos tiempos de compilación
+* las dependencias no controladas
+* las variaciones de uso de subconjuntos diferentes de un lenguaje por parte de los desarrolladores
+* los códigos difíciles de leer
+* los códigos mal documentados
+
+### Sobre su nombre
+
 Dado que la palabra _Go_ es parte del idioma ingles el lenguaje también es conocido como _Golang_.
 
 > Se recomienda utilizar el término _Golang_ para las búsquedas en internet referidas al lenguaje.
 
 ## Características
 
-_Go_ esta inspirado en la sintaxis de _C_ como otros lenguajes: _C++_, _C#_, _Java_, _PHP_, _Javascript_, etc. Por sus características suele clasificarse como un lenguaje compilado que tiene características de lenguajes interpretados.
+_Go_ está inspirado en la sintaxis de _C_ como otros lenguajes: _C++_, _C#_, _Java_, _PHP_, _Javascript_, etc.
+
+Su elección fue ser afin a la gran comunidad de desarrolladores de C++ de Google.
+
+Por sus características suele clasificarse como un lenguaje compilado que tiene características de lenguajes interpretados.
 
 ![](/assets/contreras/govsother.png)
 
 > Imagen - [\[16\]](recursos.md)
 
-Según palabras de uno de sus creadores, _Rob Pike_: "Go es un intento de combinar la seguridad y el rendimiento de un lenguaje de tipado estático con la expresividad y la comodidad de un lenguaje interpretado de tipo dinámico." [\[16\]](recursos.md)
+Para _Rob Pike_: "Go es un intento de combinar la seguridad y el rendimiento de un lenguaje de tipado estático con la expresividad y la comodidad de un lenguaje interpretado de tipo dinámico." [\[16\]](recursos.md)
 
 _Go_ se caracteriza por ser un lenguaje:
 
-* Compilado
-* Tipado estático
-* Diseño minimalista
-* Facilidad de aprendizaje
-* Uso de punteros - _sin aritmética_
-* Concurrente
-* Rápido
-* Recolección de basura
-* Permite la programación orientada a objetos - _pero ¿es orientado a objetos?_
+* compilado,
+* concurrente,
+* de tipado estático,
+* con recolector de basura,
+* con uso de punteros - _sin aritmética_
+* con cortos tiempos de compilación
+
+Se destaca también por su diseño minimalista y su facilidad para aprenderlo. A modo de comparación mientras otros lenguajes tienen muchas palabras reservadas, C++ 20 tiene 96, Java 11 tiene 55, C# tiene 78; _Go_ sólo tiene 25.
 
 ### Ejemplo
 
@@ -73,9 +87,10 @@ Para Caleb Doxsey [\[52\]](recursos.md) "_Go_ es un lenguaje de programación de
 
 _Go_ como todos los lenguajes de programación presenta ciertas controversias. Sus detractores por ejemplo manifiestan que el lenguaje no tiene:
 - genéricos
-- excepciones
+- manejo de excepciones
 - sobrecarga de operadores
-- etc [\[51\]](recursos.md)
+
+> En el siguiente link puede acceder a una serie de artículos, de diferentes autores, destinados a detallar y debatir sobre las debilidades que encuentran en el lenguaje _Go_ - [https://github.com/ksimka/go-is-not-good](https://github.com/ksimka/go-is-not-good) [\[51\]](recursos.md). Varios de los argumentos son bastantes graciosos desde mi puento de vista: por ejemplo algunos  critican la mascota del lenguaje, o se quejan de que es un lenguaje compilado, o que su sintaxis es del estilo de _C_.
 
 No obstante los desarrolladores de _Go_ no son ajenos a estas críticas, y permiten que se propongan nuevas funcionalidades. Para esto se deben completar una serie de pasos que se encuentran documentados en el siguiente link: [https://github.com/golang/proposal](https://github.com/golang/proposal).
 

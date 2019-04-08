@@ -27,6 +27,7 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[45\] - Why extends is evil](https://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html)
 * [\[46\] - Inheritance vs Composition](https://www.techjini.com/blog/inheritance-vs-composition/)
 * [\[51\] - Go is not good](https://github.com/ksimka/go-is-not-good)
+* [\[53\] - Go at Google: Language Design in the Service of Software Engineering](https://talks.golang.org/2012/splash.article)
 
 ## Papers
 
