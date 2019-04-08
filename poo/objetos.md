@@ -1,8 +1,8 @@
 # Objetos en Go
 
-A diferencia de otros lenguajes orientados a objetos como _C++_, _Java_, _C\#_, _Python_ y _PHP_ entre otros, en _Go_ no hay clases, ni objetos, ni excepciones, ni herencia.
+A diferencia de lenguajes explícitamente orientados a objetos como _C++_, _Java_, _C\#_, _Python_ y _PHP_ entre otros, en _Go_ no hay clases, ni objetos, ni excepciones, ni herencia.
 
-Rápidamente se podría inferir en que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
+Rápidamente se podría inferir que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
 
 Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, se podría decir que dado que _Java_ es academicamente reconocido como un lenguaje puramente orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; como _Go_ no las tiene entonces no puede ser un lenguaje orientado a objetos.
 
@@ -10,7 +10,7 @@ _¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a ob
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
-Al analizar a _Go_, debemos comparar que características de la programación orientada a objetos se pueden implementar y no simplemente hacer una comparación de un lenguaje respecto de otro.
+Al analizar a _Go_, debemos comparar qué características de la programación orientada a objetos se pueden implementar y no simplemente hacer una comparación de un lenguaje respecto de otro.
 
 ## Cómo es la POO en Go
 
