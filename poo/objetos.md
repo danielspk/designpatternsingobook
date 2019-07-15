@@ -4,13 +4,49 @@ A diferencia de lenguajes explícitamente orientados a objetos como _C++_, _Java
 
 Rápidamente se podría inferir que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
 
-Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, se podría decir que dado que _Java_ es academicamente reconocido como un lenguaje puramente orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; como _Go_ no las tiene entonces no puede ser un lenguaje orientado a objetos.
+Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, se podría decir que dado que _Java_ es academicamente reconocido como un lenguaje estrictamente orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; como _Go_ no las tiene entonces no puede ser un lenguaje orientado a objetos.
 
 _¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma clásica como la que las hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
-Al analizar a _Go_, debemos comparar qué características de la programación orientada a objetos se pueden implementar y no simplemente hacer una comparación de un lenguaje respecto de otro.
+>> Limitar el análisis de si un lenguaje es orientado a objetos o no por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo _Objective-c_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
+
+Cada lenguaje es único y permite implementar el paradigma orientado a objetos de diversas maneras. Algunas comparaciones de ejemplo:
+
+* Herencia
+  - Simple
+    - _Scala_
+    - _Smalltalk_
+  - Múltiple
+    - _Eifell_
+    - _C++_
+* Interfaces
+  - Explícitas
+    - _C++_ _(mediante clases abstractas y métodos virtuales)_
+  - Implícitas
+    - _Smalltalk_
+  - Ausencia
+    - _Scala_
+    - _Eifell_
+* Rasgos
+  - Presencia
+    - _Scala_
+    - _Smalltalk_
+    - _C++_ _(mediante templates)_
+  - Ausencia
+    - _Eiffel_
+* Sobrecarga de Métodos
+  - Presencia
+    - _Scala_
+    - _C++_
+  - Ausencia
+    - _Smalltalk_
+    - _Eiffel_
+
+Como se puede apreciar lenguajes como _Scala_, _Eiffel_, _C++_ y _Smalltalk_ son muy distintos entre sí, pero todos ellos respetan el paradigma orientado a objetos.
+
+Al analizar a _Go_, debemos comparar qué características propias de la programación orientada a objetos se pueden implementar y no simplemente hacer una comparación de un lenguaje respecto de otro sólamente por la falta o no de ciertos atributos o características individuales.
 
 ## Cómo es la POO en Go
 
