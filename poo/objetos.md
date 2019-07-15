@@ -77,7 +77,7 @@ Los tres pilares de la programación orientada a objetos son la _herencia_, el _
 
 #### Herencia
 
-Como ya se dijo, en _Go_ no existe la herencia. Las estructuras permiten ampliar/modificar su comportamiento incrustrando otras estructuras. - _más información en el siguiente apartado - _[_link_](composicion.md)
+Como ya se dijo, en _Go_ no existe la herencia. Las estructuras permiten ampliar/modificar su comportamiento incrustrando otras estructuras. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
 Ejemplo:
 
@@ -133,7 +133,42 @@ func (cc CuentaCorriente) calcularIntereses() double {
 
 #### Polimorfismo
 
-En _Go_ es muy facil implementar el polimorfismo. Dado que las estructuras pueden componerse de otras estructuras, tan sólo se debe reescribir el comportamiento deseado. - _más información en el siguiente apartado - _[_link_](composicion.md)
+En _Go_ el polimorfismo se comporta tal como se esperaría. Dado que las estructuras pueden componerse de otras estructuras, tan sólo se debe reescribir el o los comportamientos deseados. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+
+Ejemplo:
+
+```go
+type Empleado struct {
+   legajo string
+   ingreso string
+}
+
+func (e *Empleado) InformarIngreso() {
+   fmt.Printf("Mi legajo fue el %s.", e.ingreso)
+}
+
+func (e *Empleado) Presentarse() {
+   fmt.Printf("Mi legajo es %s.", e.legajo)
+}
+
+type Gerente struct {
+    Empleado
+}
+
+func (g *Gerente) Presentarse() {
+   g.Empleado.Presentarse()
+
+   fmt.Println(" Mi cargo es el de Gerente.")
+}
+
+gerente := Gerente{
+    Empleado{"A0001", "01-01-2020"},
+}
+gerente.Presentarse()
+gerente.InformarIngreso()
+```
+
+[Ejecutar código](https://play.golang.org/p/rBBwVyj9sjQ)
 
 #### Método Estáticos
 
