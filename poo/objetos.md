@@ -69,7 +69,7 @@ SaltarYCaminar(leon)
 
 [Ejecutar código](https://play.golang.org/p/MD6D893_1KB)
 
-Como se puede observar el método _SaltarYCaminar\(\)_ espera como argumento a un tipo _Felino_ pero se le pasa un tipo _Leon_. Como la estructura _Leon_ implementar los métodos _Caminar\(\)_ y _Saltar\(\)_ implícitamente también es un _Felino_.
+Como se puede observar el método _SaltarYCaminar\(\)_ espera una variable de tipo _Felino_ pero se le pasa una de tipo _Leon_. Como la estructura _Leon_ implementar los métodos _Caminar\(\)_ y _Saltar\(\)_ implícitamente también es un _Felino_.
 
 ### Los tres pilares de la programación orientada a objetos
 
