@@ -10,7 +10,7 @@ _¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a ob
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
->> Limitar el análisis de si un lenguaje es orientado a objetos o no por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo _Objective-c_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
+>> Limitar el análisis de si un lenguaje es orientado a objetos o no por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo _Objective-C_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
 
 Cada lenguaje es único y permite implementar el paradigma orientado a objetos de diversas maneras. Algunas comparaciones de ejemplo:
 
