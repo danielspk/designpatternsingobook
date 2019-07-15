@@ -36,7 +36,9 @@ func (p *Persona) Saludar() {
 
 ### Interfaces
 
-Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación, las interfaces en _Go_ son implícitas. No existen palabras reservadas como _implements_. Cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa.
+Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación como _Visual Basic .Net_ o _Kotlin_ donde la interfaces se implementan de forma explícita, en _Go_ la interfaces son implícitas ya que no existe ninguna palabra reservada o símbolo para tal fin (tal como _implements_ en _Groovy_ o _:_ en _C#_).
+
+En _Go_ cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa. Este comportamiento es análogo a otros lenguajes, como _Python_ o _Boo_, donde a esto se lo conoce como _Duck typing ("si camina como un pato y grazna como un pato, entonces debe ser un pato" [\[54\]](/recursos.md))_. En _Go_ el compilador chequea forzosamente que se si referencia un tipo de dato como una _interface_, este debe implementar todos sus comportamientos sin excepción.
 
 Ejemplo:
 
