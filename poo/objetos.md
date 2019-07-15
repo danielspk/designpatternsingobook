@@ -79,7 +79,9 @@ Los tres pilares de la programación orientada a objetos son la _herencia_, el _
 
 #### Herencia
 
-Como ya se dijo, en _Go_ no existe la herencia. Las estructuras permiten ampliar/modificar su comportamiento incrustrando otras estructuras. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+Como ya se dijo, en _Go_ no existe la herencia, o al menos no la herencia de implementación como se la conoce en otros lenguajes tales como _Scala_, _Swift_ o _Eiffel_ por ejemplo.
+
+Las estructuras en _Go_ permiten ampliar/modificar su comportamiento incrustrando otras estructuras. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
 Ejemplo:
 

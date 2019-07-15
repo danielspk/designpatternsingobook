@@ -1,6 +1,6 @@
 # Herencia vs Composición en Go
 
-Como se indicó previamente en _Go_ no existe el concepto de herencia típico de lenguajes orientados a objetos como _Java_, _C++_ y _Smalltalk_ entre otros.
+Como se indicó previamente en _Go_ no existe el concepto de herencia de implementación típico de lenguajes orientados a objetos como _Java_, _C++_ y _Smalltalk_ entre otros.
 
 En _Go_ existe otro concepto complementario que es la **composición**.
 
