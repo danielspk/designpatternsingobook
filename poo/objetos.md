@@ -16,7 +16,7 @@ Al analizar a _Go_, debemos comparar qué características de la programación o
 
 ### Objetos
 
-En _Go_ no existen clases ni objetos. Existen estructuras que son tipos de datos definidos por el usuario que los cuales pueden incorporar comportamientos. En una analogía con una clase, las propiedades pudieran ser los tipos de datos de la estructura, y los métodos las funciones o comportamientos asociados a la estructura.
+En _Go_ no existen clases ni objetos. Existen estructuras que son tipos de datos definidos por el usuario a los cuales se les pueden incorporar comportamientos. En una analogía con una clase, las propiedades pudieran ser los tipos de datos de la estructura, y los métodos las funciones o comportamientos asociados a la estructura.
 
 Ejemplo:
 
