@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Convierte la interfaz de una estructura en otra interfaz que es la que esperan los clientes. Permite que cooperen estructuras que de otra forma no podrían por tener interfaces incompatibles.
+Convierte la interfaz de un tipo de dato en otra interfaz que es la que esperan los clientes. Permite que cooperen tipos de datos que de otra forma no podrían por tener interfaces incompatibles.
 
 ## También conocido como
 
@@ -11,8 +11,8 @@ _Wrapper_ (Envoltorio)
 ## Aplicabilidad
 
 Úsese el patrón Adaptor cuando:
-* se quiere usar una estructura existente y su interfaz no concuerda con la que necesita.
-* se quiere crear una estructura reutilizable que coopere con estructuras no relacionadas o que no han sido previstas, es decir, estructuras que no tienen por qué tener interfaces compatibles.
+* se quiere usar un tipo de dato existente y su interfaz no concuerda con la que necesita.
+* se quiere crear un tipo de dato reutilizable que coopere con tipos de datos no relacionados o que no han sido previstos, es decir, tipos de datos que no tienen por qué tener interfaces compatibles.
 
 ## Estructura
 
@@ -23,7 +23,7 @@ _Wrapper_ (Envoltorio)
 * **Objetivo:**
   * define la interfaz específica del dominio que usa el Cliente.
 * **Cliente:**
-  * colabora con estructuras con estado que se ajustan a la interfaz Objetivo.
+  * colabora con variables que se ajustan a la interfaz Objetivo.
 * **Adaptable:**
   * define una interfaz existente que necesita ser adaptada.
 * **Adaptador:**
@@ -31,7 +31,7 @@ _Wrapper_ (Envoltorio)
 
 ## Colaboradores
 
-Los clientes llaman a operaciones de una instancia de Adaptador. A su vez, el adaptador llama a operaciones de Adaptable, que son las que satisfacen la petición.
+Los clientes llaman a operaciones de una variable de Adaptador. A su vez, el adaptador llama a operaciones de Adaptable, que son las que satisfacen la petición.
 
 ## Implementación
 
@@ -100,9 +100,9 @@ fmt.Printf("Jugador B: %s\n", jugadorB.Atacar())odos los desarrolladores de la G
 
 ## Patrones relacionados
 
-El patrón [Bridge](/patrones/estructurales/bridge.md) tiene una estructura similar a un Adapter, pero con un proposito diferente: está pensado para separar una interfaz de su implementación, de manera que ambos puedan cambiar facilmente y de forma independiente uno del otro, mientras que un adapter está pensado para cambiar la interfaz de una estructura con estado existente.
-El patrón [Decorator](/patrones/estructurales/decorator.md) decora otra estructura con estado sin cambiar su interfaz. Un decorador es por tanto más transparente a la aplicación que un adaptador. Como resultado, el patrpon Decorator permite la composición recursiva, lo que no es posible con adaptadores puros.
-El patrón [Proxy](/patrones/estructurales/proxy.md) define un representante o sustituto de otra estructura con estado sin cambiar su interfaz.
+El patrón [Bridge](/patrones/estructurales/bridge.md) tiene una estructura similar a un Adapter, pero con un proposito diferente: está pensado para separar una interfaz de su implementación, de manera que ambos puedan cambiar facilmente y de forma independiente uno del otro, mientras que un adapter está pensado para cambiar la interfaz de una variable existente.
+El patrón [Decorator](/patrones/estructurales/decorator.md) decora otra variable sin cambiar su interfaz. Un decorador es por tanto más transparente a la aplicación que un adaptador. Como resultado, el patrpon Decorator permite la composición recursiva, lo que no es posible con adaptadores puros.
+El patrón [Proxy](/patrones/estructurales/proxy.md) define un representante o sustituto de otra variable sin cambiar su interfaz.
 
 ##### Nota:
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Adapter_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

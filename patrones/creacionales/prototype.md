@@ -2,14 +2,14 @@
 
 ## Propósito
 
-Especifica los tipos de estructuras con estado a crear por medio de una instancia prototípica, y crea nuevas estructuras con estado copiando dicho prototipo.
+Especifica los tipos de variables a crear por medio de una creación prototípica, y crea nuevas variables copiando dicho prototipo.
 
 ## Aplicabilidad
 
 Úsese el patrón Prototype cuando un sistema deba ser independiente de cómo se crean, se componen y se representan sus productos; y
-* cuando las estructuras a instanciar sean especificas en tiempo de ejecución (por ejemplo, mediante carga dinámica); o
-* para evitar construir una jerarquía de estructuras de fábricas paralela a la jerarquía de estructuras de los productos; o
-* cuando las instancias de una estructura puedan tener uno de entre sólo unos pocos estados diferentes. Puede ser más adecuado tener un número equivalente de prototipos y clonarlos, en vez de crear manualmente instancias de la estructura cada vez con el estado apropiado.
+* cuando los tipos de datos a crear sean especificos en tiempo de ejecución (por ejemplo, mediante carga dinámica); o
+* para evitar construir una jerarquía de tipos de datos de fábricas paralelo a la jerarquía de tipos de datos de los productos; o
+* cuando las creaciones de un tipo de dato puedan tener uno de entre sólo unos pocos estados diferentes. Puede ser más adecuado tener un número equivalente de prototipos y clonarlos, en vez de crear manualmente variables del tipo de dato cada vez con el estado apropiado.
 
 ## Estructura
 
@@ -22,7 +22,7 @@ Especifica los tipos de estructuras con estado a crear por medio de una instanci
 * **PrototipoConcreto:**
   * implementa una operación para clonarse.
 * **Cliente:**
-  * crea una estructura con estado pidíendole a un prototipo que se clone.
+  * crea una variable pidíendole a un prototipo que se clone.
 
 ## Colaboradores
 
@@ -77,7 +77,7 @@ fmt.Printf("El elemento C es de %s y se clono %d veces\n", elementoC.Material, e
 
 ## Patrones relacionados
 
-Prototype y [Abstract Factory](/patrones/creacionales/abstractfactory.md) son patrones rivales en algunos aspectos. No obstante, también pueden usarse juntos. Una fábrica abstracta puede almacenar un conjunto de prototipos a partir de los cuales clonar y devolver estructuras con estado producto.
+Prototype y [Abstract Factory](/patrones/creacionales/abstractfactory.md) son patrones rivales en algunos aspectos. No obstante, también pueden usarse juntos. Una fábrica abstracta puede almacenar un conjunto de prototipos a partir de los cuales clonar y devolver variables producto.
 Los diseños que hacen un uso instensivo de los patrones [Composite](/patrones/estructurales/composite.md) y [Decorator](/patrones/estructurales/decorator.md) suelen beneficiarse también del Protopype.
 
 ##### Nota:

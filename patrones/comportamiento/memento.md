@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Representa y externaliza el estado interno de una estructura con estado sin violar la encapsulación, de forma que ésta pueda volver a dicho estado más tarde.
+Representa y externaliza el estado interno de una variable sin violar la encapsulación, de forma que ésta pueda volver a dicho estado más tarde.
 
 ## También conocido como
 
@@ -12,8 +12,8 @@ _Token_
 
 Úsese el patrón Memento cuando
 
-* hay que guardar una instantánea del estado de una estructura con estado (o parte de ésta) para que pueda volver posteriormente a ese estado.
-* o tenga una interfaz directa que para obtener el estado exponga detalles de implementación y rompa la encapsulación de la estructura con estado.
+* hay que guardar una instantánea del estado de una variable (o parte de ésta) para que pueda volver posteriormente a ese estado.
+* o tenga una interfaz directa que para obtener el estado exponga detalles de implementación y rompa la encapsulación de la variable.
 
 ## Estructura
 
@@ -22,8 +22,8 @@ _Token_
 ## Participantes
 
 * **Memento:**
-  * guarda el estado interno de la estructura con estado Creador. El memento puede guardar tanta información del estado interno del creador como sea necesario a discreción del creador.
-  * protege frente a accesos de otras estructuras con estado que no sean el creador. Los mementos tienen realmente dos interfaces. El Conserje va una interfaz _reducida_ del memento - sólo puede pasar el memento a otras estructuras con estado -. El Creador, por el contrario, ve una interfaz _amplia_, que le permite acceder a todos los datos necesarios para volver a su estado anterior. Idealmente, sólo el creador que produjo el memento estaría autorizado a acceder al estado interno de éste.
+  * guarda el estado interno de la variable Creador. El memento puede guardar tanta información del estado interno del creador como sea necesario a discreción del creador.
+  * protege frente a accesos de otras variables que no sean el creador. Los mementos tienen realmente dos interfaces. El Conserje va una interfaz _reducida_ del memento - sólo puede pasar el memento a otras variables -. El Creador, por el contrario, ve una interfaz _amplia_, que le permite acceder a todos los datos necesarios para volver a su estado anterior. Idealmente, sólo el creador que produjo el memento estaría autorizado a acceder al estado interno de éste.
 * **Creador:**
   * crea un memento que contiene una instantánea de su estado interno actual.
   * usa el memento para volver a su estado anterior.

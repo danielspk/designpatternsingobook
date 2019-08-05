@@ -31,7 +31,7 @@ Estre los principales problemas de Google que motivaron el desarrollo de _Go_ se
 
 Dado que la palabra _Go_ es parte del idioma ingles el lenguaje también es conocido como _Golang_.
 
-> Se recomienda utilizar el término _Golang_ para las búsquedas en internet referidas al lenguaje.
+> Se recomienda utilizar el término _Golang_ al realizar búsquedas en internet referidas al lenguaje.
 
 ## Características
 
@@ -90,11 +90,11 @@ _Go_ como todos los lenguajes de programación presenta ciertas controversias. S
 - manejo de excepciones
 - sobrecarga de operadores
 
-> En el siguiente link puede acceder a una serie de artículos, de diferentes autores, destinados a detallar y debatir sobre las debilidades que encuentran en el lenguaje _Go_ - [https://github.com/ksimka/go-is-not-good](https://github.com/ksimka/go-is-not-good) [\[51\]](recursos.md). Varios de los argumentos son bastantes graciosos desde mi puento de vista: por ejemplo algunos  critican la mascota del lenguaje, o se quejan de que es un lenguaje compilado, o que su sintaxis es del estilo de _C_.
+> En el siguiente link puede acceder a una serie de artículos, de diferentes autores, destinados a detallar y debatir sobre las debilidades que encuentran en el lenguaje _Go_ - [https://github.com/ksimka/go-is-not-good](https://github.com/ksimka/go-is-not-good) [\[51\]](recursos.md). Varios de los argumentos son bastantes graciosos desde mi puento de vista: por ejemplo algunos critican la mascota del lenguaje, o se quejan de que es un lenguaje compilado, o que su sintaxis es del estilo de _C_.
 
 No obstante los desarrolladores de _Go_ no son ajenos a estas críticas, y permiten que se propongan nuevas funcionalidades. Para esto se deben completar una serie de pasos que se encuentran documentados en el siguiente link: [https://github.com/golang/proposal](https://github.com/golang/proposal).
 
-_Go_ trata de respetar su filosofía de mantener un lenguaje extremadamente simple y rápido de compilar, por lo que la incorporación de nuevas características que pudieran afectar a uno de estos dos puntos debe poder justificarse claramente, y no debe existir forma alguna de poder llevar a cabo esa tarea con las características actuales del lenguaje. Por ejemplo estas son algunas respuesta que la documentación de _Go_ por la que no existen las excepciones:
+_Go_ trata de respetar su filosofía de mantener un lenguaje extremadamente simple y rápido de compilar, por lo que la incorporación de nuevas características que pudieran afectar a uno de estos dos puntos debe poder justificarse claramente, y no debe existir forma alguna de poder llevar a cabo esa tarea con las características actuales del lenguaje. Por ejemplo estas son algunas respuestas que la documentación de _Go_ da sobre la no existencia de excepciones:
 
 "En _Go_, el manejo de errores es importante. El diseño y las convenciones del idioma lo alientan a verificar explícitamente si ocurren errores (a diferencia de la convención en otros idiomas de arrojar excepciones y, a veces, capturarlas). En algunos casos, esto hace que código de _Go_ sea verboso, pero afortunadamente hay algunas técnicas que puede utilizar para minimizar el manejo de errores repetitivos." [\[50\]](recursos.md)
 

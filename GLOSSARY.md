@@ -1,11 +1,11 @@
 ## Clase
-Las _clases_ propias de la programación orientada a objetos se definirán como _estructuras_.
+Las _clases_ propias de la programación orientada a objetos se definirán como _tipos de datos_ o _tipos_.
 
 ## Objeto
-Los _objetos_ propios de la programación orientada a objetos se definirán como _estructuras con estado_.
+Los _objetos_ propios de la programación orientada a objetos se definirán como _variables_.
 
 ## Método
-Los _métodos de clases_ propios de la programación orientada a objetos se definirán como _comportamientos de una estructura_ o _funciones_.
+Los _métodos de clases_ propios de la programación orientada a objetos se definirán como _comportamientos de un tipo_ o _funciones_.
 
 ## Propiedad
 Las _propiedades de clases_ propias de la programación orientada a objetos se definirán como _atributos de una estructura_.

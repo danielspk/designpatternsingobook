@@ -67,13 +67,13 @@ En esta publicación utilizaremos la misma estructura pero con las siguientes ob
 * Se utilizarán códigos de ejemplo en el lenguaje _Go_.
 * Se utilizará UML en reemplazo de OMT. 
 
-> Paradojicamente se utilizarán diagramas de clases de UML cuando en _Go_ no existen clases. Sin embargo, al ser UML una de las notaciones más extendidas en IT, considero que la traducción de las _clases_ a estructuras de _Go_ no presentará dificultades adicionales al lector.
+> Paradojicamente se utilizarán diagramas de clases de UML cuando en _Go_ no existen clases. Sin embargo, al ser UML una de las notaciones más extendidas en IT, considero que la traducción de las _clases_ a tipos de datos de _Go_ no presentará dificultades adicionales al lector.
 
 ### Implicancias
 
-En las explicaciones de cada patrón de diseño Gamma [\[29\]](/recursos.md) utiliza constantemente las palabras _objeto_ y _clase_. Parte de la comunidad asume que en _Go_ la palabra _objeto_ es válida ya que se interpreta que es sinónimo de una estructura de datos con comportamiento. Sin embargo, a fines de esta publicación cuando se requiera hablar de un _objeto_ utilizare la frase _"estructura con estado"_ (_considero que se ajusta más al lenguaje_).
-Para la palabra _clase_ no existe una terminología comparable, por lo que utilizaré simplemente la palabra _"estructura"_.
-Por último para la palabra _método_ utilizaré la palabra "función".
+En las explicaciones de cada patrón de diseño Gamma [\[29\]](/recursos.md) utiliza constantemente las palabras _objeto_ y _clase_. Parte de la comunidad asume que en _Go_ la palabra _objeto_ es válida ya que se interpreta que es sinónimo de un tipo de dato con comportamiento. Sin embargo, a fines de esta publicación cuando se requiera hablar de un _objeto_ utilizare la frase _"variable"_ (_considero que se ajusta más al lenguaje_).
+Para la palabra _clase_ no existe una terminología comparable, por lo que utilizaré simplemente la frase _"tipo de dato"_ o la palabra _"tipo"_.
+Por último para la palabra _método_ utilizaré la palabra _"función"_.
 
 Dado que el libro original de Gamma [\[29\]](/recursos.md) utiliza OMT en lugar de UML, se hará el mayor esfuerzo en respetar la estructura original de cada patrón dado que cada lenguaje permite implementaciones levemente distintas en base a sus características particulares.
 Dicho esto se han observado pequeñas alteraciones/concesiones en implementaciones donde se reemplazan clases abstractas por interfaces y viceversa. Este tema es justamente una de las principales diferencias que pueden encontrarse en las implementaciones de un patrón de diseño GoF en _Go_, por lo que será dificultoso al lector diferenciar si una clase abstracta fue implementada como interface por _a)_ una necesidad exclusiva dada las limitaciones del lenguaje _Go_ en sus características orientadas a objetos; o _b)_ simplemente por una conceción válida entre los desarrolladores de otros lenguajes. Lo invito en esos caso a buscar implementaciones de código en otros lenguajes como _Java_ o _C#_.

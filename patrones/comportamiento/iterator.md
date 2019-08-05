@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Proporciona un modo de acceder secuencialmente a los elementos de una estructura con estado agregada sin exponer su representación interna.
+Proporciona un modo de acceder secuencialmente a los elementos de una variable agregada sin exponer su representación interna.
 
 ## También conocido como
 
@@ -12,8 +12,8 @@ _Cursor_
 
 Úsese el patrón Iterator
 
-* para acceder al contenido de una estructura con estado agregada sin exponer su representación interna.
-* para permitir varios recorridos sobre estructuras con estado agregadas.
+* para acceder al contenido de una variable agregada sin exponer su representación interna.
+* para permitir varios recorridos sobre variables agregadas.
 * para proporcionar una interfaz uniforme para recorrer diferentes estructuras agregadas (es decir, para permitir la iteración polimórfica).
 
 ## Estructura
@@ -28,13 +28,13 @@ _Cursor_
   * implementa la interfaz Iterador.
   * mantiene la posición actual en el recorrido del agregado.
 * **Agregado:**
-  * define una interfaz para crear una estructura con estado Iterador.
+  * define una interfaz para crear una variable Iterador.
 * **AgregadoConcreto:**
-  * implementa la interfaz de creación de Iterador para devolver una instancia del IteradorConcreto apropiado.
+  * implementa la interfaz de creación de Iterador para devolver una variable del IteradorConcreto apropiado.
 
 ## Colaboradores
 
-Un IteradorConcreto sabe cúal es la estructura con estado del agregado y puede calcular la estructura con estado siguiente en el recorrido.
+Un IteradorConcreto sabe cúal es la variable actual del agregado y puede calcular la variable siguiente en el recorrido.
 
 ## Implementación
 
@@ -119,7 +119,7 @@ fmt.Printf("Escuhando nuevamente la radio %s\n", iterador.Valor())
 ## Patrones relacionados
 
 [Composite](/patrones/estructurales/composite.md): los iteradores suelen aplicarse a estructuras recursivas como los Composite.
-[Factory Method](/patrones/creacionales/factorymethod.md): los iteradores polimórficos se basan en funciones de fabricación para crear instancias de las subestructuras apropiadas de Iterator.
+[Factory Method](/patrones/creacionales/factorymethod.md): los iteradores polimórficos se basan en funciones de fabricación para crear variables de los subtipos de datos apropiados de Iterator.
 El patrón [Memento](/patrones/comportamiento/memento.md) suele usarse conjuntamente con el patrón Iterator. Un iterador puede usar un memento para representar el estado de una iteración. El iterador almacena el memento internamente.
 
 ##### Nota:

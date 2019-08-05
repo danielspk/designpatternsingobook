@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Proporciona una interfaz para crear familias de estructuras con estado relacionadas o que dependan entre sí, sin especificar sus estructuras concretas.
+Proporciona una interfaz para crear familias de variables relacionadas o que dependan entre sí, sin especificar sus tipos de datos concretos.
 
 ## También conocido como
 
@@ -13,8 +13,8 @@ _Kit_
 Úsese el patrón Abstract Factory cuando:
 * un sistema debe ser independiente de cómo se crean, componen y representan sus productos.
 * un sistema debe ser configurado con una familia de productos de entre varias.
-* una familia de estructuras con estado relacionadas esta diseñada para ser usada conjuntamente, y es necesario hacer cumplir esta restricción.
-* quiere proporcionar una biblioteca de estructuras de productos, y sólo quiere revelar sus interfaces, no sus implementaciones.
+* una familia de variables relacionadas esta diseñada para ser usada conjuntamente, y es necesario hacer cumplir esta restricción.
+* quiere proporcionar una biblioteca de tipos de datos de productos, y sólo quiere revelar sus interfaces, no sus implementaciones.
 
 ## Estructura
 
@@ -23,21 +23,21 @@ _Kit_
 ## Participantes
 
 * **FabricaAbstracta:**
-  * declara una interfaz para operaciones que crean estructuras con estado producto abstractas.
+  * declara una interfaz para operaciones que crean variables producto abstractas.
 * **FabricaConcreta:**
-  * implementa las operaciones para crear estructuras con estado producto concretos.
+  * implementa las operaciones para crear variables producto concretos.
 * **ProductoAbstracto:**
-  * declara una interfaz para un tipo de estructura con estado producto.
+  * declara una interfaz para un tipo de variable producto.
 * **ProductoConcreto:**
-  * define una estructura con estado producto para que sea creado por la fábrica correspondiente.
+  * define una variable producto para que sea creado por la fábrica correspondiente.
   * implementa la interfaz ProductoAbstracto.
 * **Cliente:**
-  * sólo usa interfaces declaradas por las estructuras FabricaAbstracta y ProductoAbstracto.
+  * sólo usa interfaces declaradas por los tipos de datos FabricaAbstracta y ProductoAbstracto.
 
 ## Colaboradores
 
-* Normalmente sólo se crea una única instancia de una estructura FabricaConcreta en tiempo de ejecución. Esta fábrica concreta crea estructuras con estado producto que tienen una determinada implementación.
-* FabricaAbstracta delega la creación de estructuras con estado producto en su sub estructura FabricaConcreta.
+* Normalmente sólo se crea una única variable de un tipo de dato FabricaConcreta en tiempo de ejecución. Esta fábrica concreta crea variables producto que tienen una determinada implementación.
+* FabricaAbstracta delega la creación de variables producto en su subtipo de dato FabricaConcreta.
 
 ## Implementación
 
@@ -107,7 +107,7 @@ fmt.Printf("Se construyo un puerta de: %s\n", puertaMetal.VerMaterial())
 
 ## Patrones relacionados
 
-Las estructuras FabricaAbstracta suelen implementarse con métodos de fabricación (patrón [Factory Method](/patrones/creacionales/factorymethod.md)), pero también se pueden implementar usando [Prototype](/patrones/creacionales/prototype.md).
+Los tipos de datos FabricaAbstracta suelen implementarse con métodos de fabricación (patrón [Factory Method](/patrones/creacionales/factorymethod.md)), pero también se pueden implementar usando [Prototype](/patrones/creacionales/prototype.md).
 Una fábrica concreta suele ser un [Singleton](/patrones/creacionales/singleton.md).
 
 ##### Nota:

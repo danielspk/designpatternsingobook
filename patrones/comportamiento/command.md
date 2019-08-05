@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Encapsula una petición en una estructura con estado, permitiendo así parametrizar a los clientes con diferentes peticiones, hacer cola o llevar registro de las peticiones, y poder deshacer las operaciones.
+Encapsula una petición en una variable, permitiendo así parametrizar a los clientes con diferentes peticiones, hacer cola o llevar registro de las peticiones, y poder deshacer las operaciones.
 
 ## También conocido como
 
@@ -12,8 +12,8 @@ _Action_, _Transaction_
 
 Úsese el patrón Command cuando se quiera
 
-* parametrizar estructuras con estado con una acción a realizar. En un lenguaje de prodecimiento se puede expresar la parametrización mediante una función _callback_, es decir, con una función que esté registrada en algú sitio para que sea llamada más tarde.
-* especificar, poner en cola y ajecutar peticiones en diferentes instantes de tiempo. Si se puede representar el receptor de una petición en una forma independiente del espacio de direcciones, entonces se puede transferir una estructura orden con la petición a un proceso diferente y llevar a cabo la petición allí.
+* parametrizar variables con una acción a realizar. En un lenguaje de prodecimiento se puede expresar la parametrización mediante una función _callback_, es decir, con una función que esté registrada en algú sitio para que sea llamada más tarde.
+* especificar, poner en cola y ajecutar peticiones en diferentes instantes de tiempo. Si se puede representar el receptor de una petición en una forma independiente del espacio de direcciones, entonces se puede transferir un tipo de dato orden con la petición a un proceso diferente y llevar a cabo la petición allí.
 * permitir deshacer. Las órdenes ejecutadas se guardan en una lista que hace las veces de historial. Se pueden lograr niveles ilimitados de deshacer y repetir recorriendo dicha lista hacia atrás y hacia delante.
 * permitir registrar los cambios de manera que se puedan volver a aplicar en caso de una caída del sistema.
 * estructurar un sistema alrededor de operaciones de alto nivel construidas sobre operaciones básicas. Dicha estructura es común en los sistemas de información que permiten *transacciones*. El patrón Command ofrece un modo de modelar transacciones. Las órdenes tienen una interfaz común, permitiendo así invocar a todas las transacciones del mismo modo. El patrón también facilita extender el sistema con nuevas transacciones. Una transacción encapsula un conjunto de cambios sobre unos datos. El patrón *Command* ofrece un modo de modelar transacciones. Las órdenes tienen una interfaz común, permitiendo así invocar a todas las transacciones del mismo modo. El patrón también facilita extender el sistema con nuevas transacciones.
@@ -27,10 +27,10 @@ _Action_, _Transaction_
 * **Orden:**
   * declara una interfaz para ejecutar una operación.
 * **Orden Concreta:**
-  * define un enlace entre una estructura con estado Receptor y una acción.
+  * define un enlace entre una variable Receptor y una acción.
   * implementa Ejecutar invocando la correspondiente operación u operaciones del Receptor.
 * **Cliente:**
-  * crea una estructura con estado OrdenConcreta y establece su receptor.
+  * crea una variable OrdenConcreta y establece su receptor.
 * **Invocador:**
   * le pide a la orden que ejecute la petición.
 * **Receptor:**
@@ -38,10 +38,10 @@ _Action_, _Transaction_
 
 ## Colaboradores
 
-* El cliente crea una estructura con estado OrdenConcreta y especifica su receptor.
-* Una estructura con estado Invocador almacena la estructura con estado OrdenConcreta.
+* El cliente crea una variable OrdenConcreta y especifica su receptor.
+* Una variable Invocador almacena la variable OrdenConcreta.
 * El invocador envía una petición llamando a Ejecutar sobre la orden. Cuando las órdenes se pueden deshacer, OrdenConcreta guarda el estado para deshacer la orden antes de llamar a Ejecutar.
-* La estructura con estado OrdenConcreta invoca operaciones de su receptor para llevar a cabo la petición.
+* La variable OrdenConcreta invoca operaciones de su receptor para llevar a cabo la petición.
 
 ## Implementación
 

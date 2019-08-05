@@ -102,7 +102,7 @@ class Manzana {
 
 ## Ejemplo de Composición en _Go_
 
-Como veremos la composición en _Go_ se logra embebiendo estructuras unas dentro de otras:
+Como veremos la composición en _Go_ se logra embebiendo tipos de datos unos dentro de otros:
 
 ```go
 package main
@@ -141,7 +141,7 @@ func main() {
 
 Como se detallará más adelante, en la implementación de cada patrón de diseño, la falta de herencia será suplida de dos formas diferentes y/o complementarias:
 
- - la composición cuando exista un comportamiento que deba ser compartido entre estructuras
+ - la composición cuando exista un comportamiento que deba ser compartido entre tipos de datos
  - mediante interfaces cuando se deba asegurar que una esructura es parte de una relación **es-un** y/o requiera implementar ciertos comportamientos.
 
 Estrictamente hablando de programación orientada a objetos, la mayor dificultad encontrada es cuando una _clase abstracta_ implementa un _método concreto_ con comportamiento que llama a _métodos abstractos_ también definidos en dicha _clase abstracta_ que luego serán implementados en las _clases hijas_.

@@ -2,13 +2,13 @@
 
 ## Propósito
 
-Separa la construcción de una estructura con estado compleja de su representación, de forma que el mismo proceso de construcción pueda crear diferentes representaciones.
+Separa la construcción de una variable compleja de su representación, de forma que el mismo proceso de construcción pueda crear diferentes representaciones.
 
 ## Aplicabilidad
 
 Úsese el patrón Builder cuando:
-* el algoritmo para crear una estructura con estado compleja debiera ser independiente de las partes de que se compone dicha estructura con estado y de cómo se ensamblan.
-* el proceso de construcción debe permitir diferentes representaciones de la estructura con estado que está siendo construida.
+* el algoritmo para crear una variable compleja debiera ser independiente de las partes de que se compone dicha variable y de cómo se ensamblan.
+* el proceso de construcción debe permitir diferentes representaciones de la variable que está siendo construida.
 
 ## Estructura
 
@@ -17,19 +17,19 @@ Separa la construcción de una estructura con estado compleja de su representaci
 ## Participantes
 
 * **Constructor:**
-  * especifica una interfaz abstracta para crear las partes de una estructura con estado Producto.
+  * especifica una interfaz abstracta para crear las partes de una variable Producto.
 * **ConstructorConcreto:**
   * implementa la interfaz de Constructor para construir y ensamblar las partes del producto.
   * proporciona una interfaz para devolver el producto.
 * **Director:**
-  * construye una estructura con estado usando la interfaz Constructor.
+  * construye una variable usando la interfaz Constructor.
 * **Producto:**
-  * representa una estructura con estado compleja en construcción. El ConstructorConcreto construye la representación interna del producto y define el proceso de ensamble.
-  * incluye las estructuras que definen sus partes constituyentes, incluyendo interfaces para ensamblar las partes en el resultado final.
+  * representa una variable compleja en construcción. El ConstructorConcreto construye la representación interna del producto y define el proceso de ensamble.
+  * incluye los tipos de datos que definen sus partes constituyentes, incluyendo interfaces para ensamblar las partes en el resultado final.
 
 ## Colaboradores
 
-* El cliente crea la estructura con estado Director y la configura con la estructura con estado Constructor deseada.
+* El cliente crea la variable Director y la configura con la variable Constructor deseada.
 * El Director notifica al constructor cada vez que hay que construir una parte de un producto.
 * El Constructor maneja las peticiones del director y las añade al producto.
 * El cliente obtiene el producto del constructor.
@@ -109,7 +109,7 @@ fmt.Printf("Se solicito una hamburguesa: %s\n", hamburguesaB.Tamanio)
 
 ## Patrones relacionados
 
-El patrón [Abstract Factory](/patrones/creacionales/abstractfactory.md) se parece a un Builder en que también puede construir estructuras con estado complejas. La principal diferencia es que el patrón Builder se centra en construir una estructura con estado compleja paso a paso. El Abstract Factory hace hincapié en familias de estructuras con estado producto (simples o complejas). El Builder devuelve el producto como paso final, mientras que el Abstract Factory lo devuelve inmediatamente.
+El patrón [Abstract Factory](/patrones/creacionales/abstractfactory.md) se parece a un Builder en que también puede construir variables complejas. La principal diferencia es que el patrón Builder se centra en construir una variable compleja paso a paso. El Abstract Factory hace hincapié en familias de variables producto (simples o complejas). El Builder devuelve el producto como paso final, mientras que el Abstract Factory lo devuelve inmediatamente.
 Muchas veces lo que construye el constructor es un [Composite](/patrones/estructurales/composite.md).
 
 ##### Nota:

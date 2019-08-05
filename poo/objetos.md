@@ -1,20 +1,20 @@
 # Objetos en Go
 
-A diferencia de lenguajes explícitamente orientados a objetos como _C++_, _Java_, _C\#_, _Python_ y _PHP_ entre otros, en _Go_ no hay clases, ni objetos, ni excepciones, ni herencia.
+A diferencia de lenguajes explícitamente orientados a objetos como _C++_, _Java_, _Smalltalk_, y _Python_ entre otros, en _Go_ no existen las clases, ni los objetos, ni las excepciones, ni la herencia de clases.
 
-Rápidamente se podría inferir que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
+Algunos, rápidamente podrían inferir que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
 
-Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, se podría decir que dado que _Java_ es academicamente reconocido como un lenguaje estrictamente orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; como _Go_ no las tiene entonces no puede ser un lenguaje orientado a objetos.
+Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, se podría decir que dado que _Java_ es academicamente reconocido como un lenguaje estrictamente orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; entonces, como _Go_ no las tiene no podría ser un lenguaje orientado a objetos.
 
-_¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma clásica como la que las hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
+_¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma como la que la hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
->> Limitar el análisis de si un lenguaje es orientado a objetos o no por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo _Objective-C_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
+>> Limitar el análisis a si un lenguaje es orientado a objetos o no por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo, _Objective-C_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
 
 Cada lenguaje es único y permite implementar el paradigma orientado a objetos de diversas maneras. Algunas comparaciones de ejemplo:
 
-* Herencia
+* Herencia de clase
   - Simple
     - _Scala_
     - _Smalltalk_
@@ -29,7 +29,7 @@ Cada lenguaje es único y permite implementar el paradigma orientado a objetos d
   - Ausencia
     - _Scala_
     - _Eifell_
-* Rasgos
+* Rasgos _(Traists)_
   - Presencia
     - _Scala_
     - _Smalltalk_
@@ -50,11 +50,11 @@ Al analizar a _Go_, debemos comparar qué características propias de la program
 
 ## Cómo es la POO en Go
 
-### Objetos
+### Clases y Objetos
 
-En _Go_ no existen clases ni objetos. Existen estructuras, que son tipos de datos definidos por el usuario, a las cuales se les pueden incorporar comportamientos. En una analogía con una clase, las propiedades pudieran ser los tipos de datos de la estructura, y los métodos las funciones o comportamientos asociados a la estructura.
+En _Go_ no existen clases ni objetos. Existen tipos de datos definidos por el usuario a los cuales se les pueden incorporar comportamientos. En una analogía con una clase, las propiedades pudieran ser los tipos de datos de una estructura, y los métodos las funciones o comportamientos asociados al tipo de dato.
 
-Ejemplo:
+Ejemplo sobre una estructura:
 
 ```go
 type Persona struct {
@@ -70,11 +70,23 @@ func (p *Persona) Saludar() {
 
 [Ejecutar código](https://play.golang.org/p/3uoR7qRs9eV)
 
+Ejemplo sobre un tipo de dato especializado:
+
+```go
+type Int int
+
+func (n Int) EsMayorQue(n2 Int) bool {
+   return n > n2;
+}
+```
+
+[Ejecutar código](https://play.golang.org/p/5WXUHGRBfn4)
+
 ### Interfaces
 
 Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación como _Visual Basic .Net_ o _Kotlin_ donde la interfaces se implementan de forma explícita, en _Go_ la interfaces son implícitas ya que no existe ninguna palabra reservada o símbolo para tal fin (tal como _implements_ en _Groovy_ o _:_ en _C#_).
 
-En _Go_ cualquier estructura de datos que implemente todos los métodos de una interfaz, implícitamente la implementa. Este comportamiento es análogo a otros lenguajes, como _Python_ o _Boo_, donde a esto se lo conoce como _Duck typing ("si camina como un pato y grazna como un pato, entonces debe ser un pato" [\[54\]](/recursos.md))_. En _Go_ el compilador chequea forzosamente que se si referencia un tipo de dato como una _interface_, este debe implementar todos sus comportamientos sin excepción.
+En _Go_ cualquier tipo de dato que implemente todos los métodos de una interfaz, implícitamente la implementa. Este comportamiento es análogo al de algunos lenguajes de tipado dinámico, como _Python_ o _Boo_, donde a esto se lo conoce como _Duck typing ("si camina como un pato y grazna como un pato, entonces debe ser un pato" [\[54\]](/recursos.md))_. En _Go_ el compilador chequea forzosamente que se si referencia a un tipo de dato como una _interface_, este debe implementar todos sus comportamientos sin excepción.
 
 Ejemplo:
 
@@ -107,7 +119,7 @@ SaltarYCaminar(leon)
 
 [Ejecutar código](https://play.golang.org/p/MD6D893_1KB)
 
-Como se puede observar el método _SaltarYCaminar\(\)_ espera una variable de tipo _Felino_ pero se le pasa una de tipo _Leon_. Como la estructura _Leon_ implementar los métodos _Caminar\(\)_ y _Saltar\(\)_ implícitamente también es un _Felino_.
+Como se puede observar el método _SaltarYCaminar\(\)_ espera una variable de tipo _Felino_ pero se le pasa una de tipo _Leon_. Como el tipo _Leon_ implementar los métodos _Caminar\(\)_ y _Saltar\(\)_ implícitamente también es un _Felino_.
 
 ### Los tres pilares de la programación orientada a objetos
 
@@ -117,7 +129,7 @@ Los tres pilares de la programación orientada a objetos son la _herencia_, el _
 
 Como ya se dijo, en _Go_ no existe la herencia, o al menos no la herencia de implementación como se la conoce en otros lenguajes tales como _Scala_, _Swift_ o _Eiffel_ por ejemplo.
 
-Las estructuras en _Go_ permiten ampliar/modificar su comportamiento incrustrando otras estructuras. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustrando otros tipos. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
 Ejemplo:
 
@@ -155,9 +167,9 @@ Cada estructura incorpora los tipos de datos y comportamientos de la/s estructur
 
 #### Encapsulamiento
 
-En _Go_ no existen identificadores de privacidad tales como _public_, _protected_ y _private_ típicos de otros lenguajes de programación. _Go_ encapsula estructuras y funciones a nivel de paquete en base a convenciones de nombres.  
+En _Go_ no existen identificadores de privacidad tales como _public_, _protected_ y _private_ típicos de otros lenguajes de programación. _Go_ encapsula tipos de datos y funciones a nivel de paquete en base a convenciones de nombres.  
 Todos aquellos nombres que empiecen con mayúsculas serán accesibles \(visibles\) desde otros paquetes. Por el contrario, aquellos que comiencen con minúsculas serán _privados_.  
-Esta es la razón por la que en el código fuente de paquetes y bibliotecas de _Go_ hay estructuras y funciones que pueden comenzar con mayúsculas o minúsculas.
+Esta es la razón por la que en el código fuente de paquetes y bibliotecas de _Go_ hay tipos de datos y funciones que pueden comenzar con mayúsculas o minúsculas.
 
 ```go
 // estructura pública
@@ -173,7 +185,7 @@ func (cc CuentaCorriente) calcularIntereses() double {
 
 #### Polimorfismo
 
-En _Go_ el polimorfismo se comporta tal como se esperaría. Dado que las estructuras pueden componerse de otras estructuras, tan sólo se debe reescribir el o los comportamientos deseados. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+En _Go_ el polimorfismo se comporta tal como se esperaría. Dado que los tipos de datos pueden componerse de otros tipos, tan sólo se debe reescribir el o los comportamientos deseados. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
 Ejemplo:
 
@@ -212,7 +224,7 @@ gerente.InformarIngreso()
 
 #### Método Estáticos
 
-Esta característica no es posible de replicar en _Go_ dado que cada comportamiento asociado a una estructura, sólo puede ser invocado cuando exista un referencia a dicha estructura.
+Esta característica no es posible de replicar en _Go_ dado que cada comportamiento asociado a un tipo de datos, sólo puede ser invocado cuando exista un referencia a dicho tipo.
 Se puede emular esta característica usando el paradigma procedimental del lenguaje. Si bien no es un comportamiento puramente orientado a objetos, se pueden lograr similares resultados.
 
 Ejemplo:
@@ -247,4 +259,3 @@ Incluso la propia gente que desarrolla _Go_ responde a esta pregunta [\[44\]](/r
 ## Mi punto de vista
 
 Ya que existen otros lenguajes que permiten programar orientado a objetos, sin ser realmente orientados a objetos, puedo decir que **"**_**Go**_** es un lenguaje no orientado a objetos que permite la programación orientada a objetos - **_**aunque no de la forma tradicional**_**"**.
-

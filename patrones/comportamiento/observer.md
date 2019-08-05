@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Define una dependencia de uno-a-muchos entre estructuras con estado, de forma que cuando una estructura con estado cambie de estado se notifique y se actualicen automáticamente todas las estructuras con estado que dependan de ellá.
+Define una dependencia de uno-a-muchos entre variables, de forma que cuando una variable cambie de estado se notifique y se actualicen automáticamente todas las variables que dependan de ellá.
 
 ## También conocido como
 
@@ -11,9 +11,9 @@ _Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
 ## Aplicabilidad
 
 Úsese el patrón Onserver en cualquiera de las siguientes situaciones:
-* Cuando una abstracción tiene dos aspectos y uno depende del otro. Encapsular estos aspectos en estructuras con estado separadas permite modificarlas y reutilizarlos de forma independiente.
-* cuando un cambio en una estructura con estado requiere cambiar otras, y no sabemos cuántas estructuras con estado necesitan cambiarse.
-* cuando una estructura con estado debería ser capaz de notificar a otras sin hacer suposiciones sobre quiénes son dichas estructuras con estado. En otras palabras, cuando no queremos que estas estructuras con estado estén fuertemente acopladas.
+* Cuando una abstracción tiene dos aspectos y uno depende del otro. Encapsular estos aspectos en variables separadas permite modificarlas y reutilizarlos de forma independiente.
+* cuando un cambio en una variable requiere cambiar otras, y no sabemos cuántas variables necesitan cambiarse.
+* cuando una variable debería ser capaz de notificar a otras sin hacer suposiciones sobre quiénes son dichas variables. En otras palabras, cuando no queremos que estas variables estén fuertemente acopladas.
 
 ## Estructura
 
@@ -22,22 +22,22 @@ _Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
 ## Participantes
 
 * **Sujeto:**
-  * conoce a sus observadores. Un sujeto puede ser observado por cualquier número de estructuras con estado Observador.
-  * proporciona una interfaz para asignar y quitar estructuras con estado Observador.
+  * conoce a sus observadores. Un sujeto puede ser observado por cualquier número de variables Observador.
+  * proporciona una interfaz para asignar y quitar variables Observador.
 * **Observador:**
-  * define una interfaz para actualizar las estructuras con estado que deben ser notificadas ante cambios en un sujeto.
+  * define una interfaz para actualizar las variables que deben ser notificadas ante cambios en un sujeto.
 * **SujetoConcreto:**
-  * almacena el estado de interés para las estructuras con estado ObservadorConcreto.
+  * almacena el estado de interés para las variables ObservadorConcreto.
   * envía una notificación a sus observadores cuando cambia su estado.
 * **ObservadorConcreto:**
-  * mantiene una referencia a una estructura con estado SujetoConcreto.
+  * mantiene una referencia a una variable SujetoConcreto.
   * guarda un estado que debería ser consistente con el del sujeto.
   * implementa la interfaz de actualización del Observador para mantener su estado consistente.
 
 ## Colaboradores
 
 * SujetoConcreto notifica a sus observadores cada vez que se produce un cambio que pudiera hacer que el estado de éstos fuera inconsistente con el suyo.
-* Después de ser informado de un cambio en el sujeto concreto, una estructura con estado ObservadorConcreto puede pedirle al sujeto más información. ObservadorConcreto usa esta información para sincronizar su estado con el del sujeto.
+* Después de ser informado de un cambio en el sujeto concreto, una variable ObservadorConcreto puede pedirle al sujeto más información. ObservadorConcreto usa esta información para sincronizar su estado con el del sujeto.
 
 ## Implementación
 

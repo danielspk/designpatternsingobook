@@ -2,13 +2,13 @@
 
 ## Propósito
 
-Gerantiza que una estructura tenga una instancia, y proporciona un punto de acceso global a ella.
+Garantiza que un tipo de dato sólo tenga una variable de creación, y proporciona un punto de acceso global a ella.
 
 ## Aplicabilidad
 
 Úsese el patrón Singleton cuando:
-* deba haber exactamente una instancia de una estructura, y ésta deba ser accesible a los clientes desde un punto de acceso conocido.
-* la única instancia debería ser extensible mediante otra estructura que la componga, y los clientes deberían ser capaces de usar una instancia compuesta sin modificar su código.
+* deba haber exactamente un unica variable del tipo de dato, y ésta deba ser accesible a los clientes desde un punto de acceso conocido.
+* la única variable debería ser extensible mediante otro tipo de dato que lo componga, y los clientes deberían ser capaces de usar el tipo compuesto sin modificar su código.
 
 ## Estructura
 
@@ -17,18 +17,18 @@ Gerantiza que una estructura tenga una instancia, y proporciona un punto de acce
 ## Participantes
 
 * **Singleton:**
-  * define una operación instancia que permite que los clientes accedan a su única instancia.
-  * puede ser responsable de crear su única instancia.
+  * define una operación _instancia_ que permite que los clientes accedan a su única variable.
+  * puede ser responsable de crear su única variable en memoria.
 
 ## Colaboradores
 
-Los clientes acceden a la instancia de un Singleton exclusivamente a través de la operación instancia.
+Los clientes acceden a la variable de un Singleton exclusivamente a través de la operación _instancia_.
 
 ## Implementación
 
 - No se observan impedimentos para la implementación del patrón en _Go_.
 - Al no existir método y propiedades estáticas en _Go_ es necesario utilizar programación funcional para poder implementar el patrón.
-- Dado que _Go_ permite la programación concurrente en diferentes subprocesos de ejecución, no es posible garantizar una única instancia de la estructura si no se toman recaudos adicionales. Para asegurar que sólo existirá una instancia de la estructura se deberá hacer uso de la librería estándar [sync](https://golang.org/pkg/sync/) de _Go_. Concretamente el método [Do](https://golang.org/pkg/sync/#Once.Do) de la estructura [Once](https://golang.org/pkg/sync/#Once) garantiza que la función pasada como parámetro puede ser ejecutada una única vez mientra dure la ejecución del programa. Esta función será la encargada de crear la única instancia de la estructura _Singleton_.
+- Dado que _Go_ permite la programación concurrente en diferentes subprocesos de ejecución, no es posible garantizar una única variable del tipo de dato si no se toman recaudos adicionales. Para asegurar que sólo existirá una variable del tipo de dato se deberá hacer uso de la librería estándar [sync](https://golang.org/pkg/sync/) de _Go_. Concretamente el método [Do](https://golang.org/pkg/sync/#Once.Do) de la estructura [Once](https://golang.org/pkg/sync/#Once) garantiza que la función pasada como parámetro puede ser ejecutada una única vez mientra dure la ejecución del programa. Esta función será la encargada de crear la única variable del tipo de dato _Singleton_.
 
 ## Código de ejemplo
 

@@ -2,15 +2,15 @@
 
 ## Propósito
 
-Evita acoplar el emisor de una petición a su receptor, dando a más de una estructura con estado la posibilidad de responder a la petición. Encadena las estructuras con estado receptoras y pasa la petición a través de la cadena hasta que es procesada por alguna estructura con estado.
+Evita acoplar el emisor de una petición a su receptor, dando a más de una variable la posibilidad de responder a la petición. Encadena las variables receptoras y pasa la petición a través de la cadena hasta que es procesada por alguna variable.
 
 ## Aplicabilidad
 
 El patrón Chain of Responsability se debe usar cuando:
 
-* hay más de una estructura con estado que pueden manejar una petición, y el manejador no se conoce _a priori_, sino que debería determinarse automáticamente.
-* se quiere enviar una petición a una estructura con estado entre varias sin especificar explícitamente la receptora.
-* el conjunto de estructuras con estado que pueden tratar una petición debería ser especificado dinámicamente.
+* hay más de una variable que pueden manejar una petición, y el manejador no se conoce _a priori_, sino que debería determinarse automáticamente.
+* se quiere enviar una petición a una variable entre varias sin especificar explícitamente la receptora.
+* el conjunto de variables que pueden tratar una petición debería ser especificado dinámicamente.
 
 ## Estructura
 
@@ -26,17 +26,17 @@ El patrón Chain of Responsability se debe usar cuando:
   * puede acceder a su sucesor.
   * si el ManejadorConcreto puede manejar la petición, lo hace; en caso contrario la reenvía a su sucesor.
 * **Cliente:**
-  * inicializa la petición a una estructura con estado ManejadorConcreto de la cadena.
+  * inicializa la petición a una variable ManejadorConcreto de la cadena.
 
 ## Colaboradores
 
-Cuando un cliente envía una petición, ésta se propaga a través de la cadena hasta que una estructura con estado ManejadorConcreto se hace responsable de procesarla.
+Cuando un cliente envía una petición, ésta se propaga a través de la cadena hasta que una variable ManejadorConcreto se hace responsable de procesarla.
 
 ## Implementación
 
 - No se observan impedimentos para su implementación en _Go_.
-- La implementación de la clase abstracta _Manejador_ debe reemplazarse por una interface dado que no existe la herencia en _Go_.
-- Si fuese necesario que _Manejador_ implementase código común a los _ManejadoresConcretos_ se podrá definir una estructura adicional (_ManejadorComun_ por ejemplo) y la misma deberá implementarse en cada _ManejadorConcreto_ mediante el uso de la composición.
+- La implementación de la clase abstracta _Manejador_ debe reemplazarse por una interface dado que no existe la herencia de clase en _Go_.
+- Si fuese necesario que _Manejador_ implementase código común a los _ManejadoresConcretos_ se podrá definir un tipo de dato adicional (_ManejadorComun_ por ejemplo) y el mismo deberá implementarse en cada _ManejadorConcreto_ mediante el uso de la composición.
 
 ## Código de ejemplo
 

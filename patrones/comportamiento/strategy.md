@@ -12,10 +12,10 @@ _Policy_
 
 El patrón Strategy se debe usar cuando:
 
-* muchas estructuras relacionadas difieren sólo en su comportamiento. Las estrategias permiten configurar una estructura con un determinado comportamiento de entre muchos posibles.
+* muchos tipos de datos relacionados difieren sólo en su comportamiento. Las estrategias permiten configurar un tipo de dato con un determinado comportamiento de entre muchos posibles.
 * se necesitan distintas variantes de un algoritmo.
 * un algoritmo usa datos que los clientes no deberían conocer.
-* una estructura define muchos comportamientos, y éstos se representan como múltiples sentencias condicionales en sus operaciones.
+* un tipo de dato define muchos comportamientos, y éstos se representan como múltiples sentencias condicionales en sus operaciones.
 
 ## Estructura
 
@@ -28,14 +28,14 @@ El patrón Strategy se debe usar cuando:
 * **EstrategiaConcreta:**
   * implementa el algoritmo usando la interfaz _Estrategia_.
 * **Contexto:**
-  * se configura con una estructura con estado _EstrategiaConcreta_.
-  * mantiene una referencia a una estructura con estado _Estrategia_.
+  * se configura con una variable _EstrategiaConcreta_.
+  * mantiene una referencia a una variable _Estrategia_.
   * puede definir una interfaz que permita a la _Estrategia_ acceder a sus datos.
 
 ## Colaboradores
 
 * _Estrategia_ y _Contexto_ interactúan para implementar el algoritmo elegido. Un _Contexto_ puede pasar a la _Estrategia_ todos los datos requeridos por el algoritmo cada vez que se llama a éste. Otra alternativa es que el _Contexto_ se pase a sí mismo como argumento de las operaciones de _Estrategia_. Eso permite a la _Estrategia_ hacer llamadas al _Contexto_ cuando sea necesario.
-* Un _Contexto_ redirige peticiones de los clientes a su _Estrategia_. Los clientes normalmente crean una estructura con estado _EstrategiaConcreta_, la cual pasan al _Contexto_. Suele haber una familia de estructuras _EstrategiaConcreta_ a elegir  por el cliente.
+* Un _Contexto_ redirige peticiones de los clientes a su _Estrategia_. Los clientes normalmente crean una variable _EstrategiaConcreta_, la cual pasan al _Contexto_. Suele haber una familia de tipos de datos _EstrategiaConcreta_ a elegir  por el cliente.
 
 ## Implementación
 
@@ -105,7 +105,7 @@ fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
 
 ## Patrones relacionados
 
-[Flyweight](/patrones/estructurales/flyweight.md): las estructuras con estado Estrategia suelen ser buenos pesos ligeros.
+[Flyweight](/patrones/estructurales/flyweight.md): las variables Estrategia suelen ser buenos pesos ligeros.
 
 ##### Nota:
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Strategy_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

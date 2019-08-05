@@ -8,7 +8,7 @@
 
 "En vez de combinar interfaces o implementaciones, los patrones estructurales de *objetos* describen formas de componer objetos para obtener nueva funcionalidad." [\[29\]](/recursos.md)
 
-"El lenguaje _Go_, por naturaleza, fomenta el uso de la composición casi exclusivamente por su falta de herencia." [\[15\]](/recursos.md)
+"El lenguaje _Go_, por naturaleza, fomenta el uso de la composición casi exclusivamente por su falta de herencia de clase." [\[15\]](/recursos.md)
 
 ## Contenido
 
