@@ -4,13 +4,13 @@ A diferencia de lenguajes explícitamente orientados a objetos como _C++_, _Java
 
 Algunos, rápidamente podrían inferir que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
 
-Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, se podría decir que dado que _Java_ es academicamente reconocido como un lenguaje estrictamente orientado a objetos, y éste lenguaje tiene entre otras características clases y herencia; entonces, como _Go_ no las tiene no podría ser un lenguaje orientado a objetos.
+Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, algunos podrían decir que dado que _Java_ es academicamente reconocido como un lenguaje estrictamente orientado a objetos, y dado que ese lenguaje tiene entre otras características clases, objetos y herencia; como _Go_ no las tiene, entonces no podría ser un lenguaje orientado a objetos.
 
-_¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma como la que la hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
+_¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no lo es - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma como la que la hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
->> Limitar el análisis a si un lenguaje es orientado a objetos o no por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo, _Objective-C_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
+>> Limitar el análisis a si un lenguaje es o no orientado a objetos por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo, _Objective-C_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
 
 Cada lenguaje es único y permite implementar el paradigma orientado a objetos de diversas maneras. Algunas comparaciones de ejemplo:
 
@@ -84,9 +84,10 @@ func (n Int) EsMayorQue(n2 Int) bool {
 
 ### Interfaces
 
-Las interfaces en _Go_ son una característica distintiva del lenguaje. A diferencia de otros lenguajes de programación como _Visual Basic .Net_ o _Kotlin_ donde la interfaces se implementan de forma explícita, en _Go_ la interfaces son implícitas ya que no existe ninguna palabra reservada o símbolo para tal fin (tal como _implements_ en _Groovy_ o _:_ en _C#_).
-
-En _Go_ cualquier tipo de dato que implemente todos los métodos de una interfaz, implícitamente la implementa. Este comportamiento es análogo al de algunos lenguajes de tipado dinámico, como _Python_ o _Boo_, donde a esto se lo conoce como _Duck typing ("si camina como un pato y grazna como un pato, entonces debe ser un pato" [\[54\]](/recursos.md))_. En _Go_ el compilador chequea forzosamente que se si referencia a un tipo de dato como una _interface_, este debe implementar todos sus comportamientos sin excepción.
+"La interfaz de un objeto no dice nada acerca de su implementación - distintos objetos son libres de implementar las peticiones de forma diferente -. Eso significa que dos objetos con implementaciones completamente diferentes pueden tener interfaces idénticas". [\[29\]](/recursos.md). _Go_ cumple con esta característica de interfaces sin implementación.
+Lenguajes de programación tales como _Visual Basic .Net_ o _Kotlin_ definen sus interfaces de forma explícita. En _Go_ las interfaces son implícitas ya que no existe ninguna palabra reservada o símbolo para tal fin (tal como _implements_ en _Groovy_ o _:_ en _C#_).
+En _Go_ cualquier tipo de dato que implemente todos los métodos de una interfaz, implícitamente la implementa. Este comportamiento es análogo al de algunos lenguajes de tipado dinámico, como _Python_ o _Boo_, donde a esto se lo conoce como _Duck typing ("si camina como un pato y grazna como un pato, entonces debe ser un pato" [\[54\]](/recursos.md))_.
+En _Go_ el compilador chequea forzosamente que se si referencia a un tipo de dato como una _interface_, este debe implementar todos sus comportamientos sin excepción.
 
 Ejemplo:
 
@@ -119,7 +120,7 @@ SaltarYCaminar(leon)
 
 [Ejecutar código](https://play.golang.org/p/MD6D893_1KB)
 
-Como se puede observar el método _SaltarYCaminar\(\)_ espera una variable de tipo _Felino_ pero se le pasa una de tipo _Leon_. Como el tipo _Leon_ implementar los métodos _Caminar\(\)_ y _Saltar\(\)_ implícitamente también es un _Felino_.
+Como se puede observar la función _SaltarYCaminar\(\)_ espera una variable de tipo _Felino_ pero se le pasa una de tipo _Leon_. Como el tipo _Leon_ implementar los métodos _Caminar\(\)_ y _Saltar\(\)_ implícitamente también es un _Felino_.
 
 ### Los tres pilares de la programación orientada a objetos
 
@@ -127,9 +128,9 @@ Los tres pilares de la programación orientada a objetos son la _herencia_, el _
 
 #### Herencia
 
-Como ya se dijo, en _Go_ no existe la herencia, o al menos no la herencia de implementación como se la conoce en otros lenguajes tales como _Scala_, _Swift_ o _Eiffel_ por ejemplo.
+Como ya se dijo, en _Go_ no existe la herencia, o al menos no la herencia de clases como se la conoce en otros lenguajes tales como _Scala_, _Swift_ o _Eiffel_ por ejemplo.
 
-Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustrando otros tipos. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustrando otros tipos dentro de él. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
 Ejemplo:
 
@@ -185,7 +186,7 @@ func (cc CuentaCorriente) calcularIntereses() double {
 
 #### Polimorfismo
 
-En _Go_ el polimorfismo se comporta tal como se esperaría. Dado que los tipos de datos pueden componerse de otros tipos, tan sólo se debe reescribir el o los comportamientos deseados. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+_Go_ es polimórfico. Dado que los tipos de datos pueden componerse de otros tipos, tan sólo se debe reescribir el o los comportamientos deseados. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
 Ejemplo:
 

@@ -13,8 +13,11 @@ Tal como menciona Steve Francia [\[6\]](/recursos.md) "Existen varios enfoques d
 
 ## Herencia
 
-Es el mecanismo por el que un objeto se basa en otro y justamente por esto hereda los comportamientos y los datos de el. No todos los lenguajes de programación implementan la herencia de la misma manera. Algunos sólo permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.
+La herencia se puede puede expresar de dos maneras: _herencia de clases_ y _herencia de interfaces_. "La herencia de clases define la implementación de un objeto en términos de la implementación de otro objeto. En resumen, es un mecanismo para compartir código y representación. Por el contrario, la herencia de interfaces _(o subtipado)_ describe cuándo se puede usar un objeto en el lugar de otro." [\[29\]](/recursos.md)
+La herencia de clases y la de intefaces no son excluyentes entre sí, por ejemplo en _Eiffel_ se manifiestan ambas. 
+No todos los lenguajes de programación implementan la herencia de la misma manera. Algunos sólo permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.
 Asimismo los comportamientos y datos heredados pueden estar limitados al acceso con el que el objeto padre los definió, esto se denomina _visibilidad_.
+
 Se expresa a la herencia como una relación **es-un/a**.
 
 ## Composición
@@ -41,8 +44,6 @@ En nuestro rubro existen miles de afirmaciones poco fundadas del estilo _'esto e
 Al incursionar en _Go_ y leer sobre porque no existe la herencia me encontraba con frases del estilo "la herencia es mala", "la herencia simple no alcanza pero la herencia múltiple es aún peor", etc. En más de una oportunidad encontré una referencia a un artículo de JavaWorld [\[45\]](/recursos.md) donde el autor cuenta la siguiente anécdota:
 
 "Una vez asistí a una reunión del grupo de usuarios de Java, donde James Gosling (el inventor de Java) fue el orador principal. Durante la memorable sesión de preguntas y respuestas, alguien le preguntó: 'Si pudieras volver a hacer Java, ¿qué cambiarías?' 'Suprimiría las clases', respondió. Después de que la risa se calmó, explicó que el verdadero problema no eran las clases en sí, sino la herencia de implementación (la relación  extends). La herencia de interfaz (la relación implements) es preferible. Debe evitar la herencia de implementación siempre que sea posible.".
-
-En mi opinión personal no entro en estos temas de que es mejor que otra cosa, simplemente veo que son formas diferentes de extender comportamientos y reutilizar código.
 
 Veamos un pequeño ejemplo en _Java_ - _ya que permite ambas formas_ - con algunos pros y contras - basado del siguiente artículo [\[46\]](/recursos.md):
 
@@ -105,10 +106,6 @@ class Manzana {
 Como veremos la composición en _Go_ se logra embebiendo tipos de datos unos dentro de otros:
 
 ```go
-package main
-
-import "fmt"
-
 type Usuario struct {
     nombre   string
     apellido string
@@ -136,6 +133,35 @@ func main() {
 ```
 
 [Ejecutar código](https://play.golang.org/p/7W89468lRhC)
+
+## Composición e interfaces en _Go_
+
+```go
+type Primate interface {
+    Alimentar(string)
+}
+
+type Antropoide struct {}
+
+func (t Antropoide) Alimentar(fruta string) {
+   fmt.Printf("Comiendo %s", fruta)
+}
+
+type Gorila struct {
+    Antropoide	
+}
+
+func DarDeComer(primate Primate) {
+    primate.Alimentar("banana")
+}
+
+kong := Gorila{}
+DarDeComer(kong)
+```
+
+[Ejecutar código](https://play.golang.org/p/tZhaQwcvez9)
+
+Como se puede observar la función _DarDeComer\(\)_ espera una variable de tipo _Primate_ pero se le pasa una de tipo _Gorila_. Como el tipo _Gorila_ se compone de un _Antropoide_ que implementa el método _Alimentar\(\)_ implícitamente también es un _Primate_.
 
 ## ¿Cómo afecta esto a la implementación de los Patrones de Diseño GoF?
 
@@ -197,4 +223,4 @@ claseHija.MetodoConcreto(&claseHija)
 
 ## Conclusión
 
-El uso de interfaces (_es-un_) y de la composición (_tiene-un_) posibilitan la reutilización de código en _Go_ y la adopción de técnicas y de patrones orientados a objetos.
+_Go_ permite la _composición_ y la _herencia de interfaz_. El uso de interfaces (_es-un_) y de la composición (_tiene-un_) posibilitan la reutilización de código en _Go_ y la adopción de técnicas y de patrones orientados a objetos.
