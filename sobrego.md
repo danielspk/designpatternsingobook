@@ -37,7 +37,7 @@ Dado que la palabra _Go_ es parte del idioma ingles el lenguaje también es cono
 
 _Go_ está inspirado en la sintaxis de _C_ como otros lenguajes: _C++_, _C#_, _Java_, _PHP_, _Javascript_, etc.
 
-Su elección fue ser afin a la gran comunidad de desarrolladores de C++ de Google.
+Su elección fue ser afin a la gran comunidad de desarrolladores de _C++_ de Google.
 
 Por sus características suele clasificarse como un lenguaje compilado que tiene características de lenguajes interpretados.
 
