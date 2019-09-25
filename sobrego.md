@@ -85,7 +85,7 @@ Para Caleb Doxsey [\[52\]](recursos.md) "_Go_ es un lenguaje de programación de
 
 ## Controversias
 
-_Go_ como todos los lenguajes de programación presenta ciertas controversias. Sus detractores por ejemplo manifiestan que el lenguaje no tiene:
+_Go_ como todos los lenguajes de programación presenta ciertas controversias. Sus detractores por ejemplo manifiestan que el lenguaje carece de:
 - genéricos
 - manejo de excepciones
 - sobrecarga de operadores
