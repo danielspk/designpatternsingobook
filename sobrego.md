@@ -20,7 +20,7 @@ Su lanzamiento oficial fue en noviembre del año 2009, pero su primera versión 
 
 Originalmente fue concebido para resolver problemas propios de la infraestructura de software de Google. Según palabras de unos de sus creadores _Rob Pike_, "Los objetivos del proyecto _Go_ fueron eliminar la lentitud y la torpeza del desarrollo de software en Google y, por lo tanto, hacer que el proceso sea más productivo y escalable. El lenguaje fue diseñado por y para las personas que escriben, leen, depuran y mantienen sistemas de software grandes. Por lo tanto, el propósito de _Go_ no fue investigar el diseño de un lenguaje de programación; sino mejorar el entorno de trabajo para sus diseñadores y sus compañeros de trabajo. _Go_ tiene más que ver con la ingeniería del software que con la investigación en un lenguaje de programación" [\[53\]](recursos.md).
 
-Estre los principales problemas de Google que motivaron el desarrollo de _Go_ se pueden destacan:
+Entre los principales problemas de Google que motivaron el desarrollo de _Go_ se pueden destacan:
 * los largos tiempos de compilación
 * las dependencias no controladas
 * las variaciones de uso de subconjuntos diferentes de un lenguaje por parte de los desarrolladores
