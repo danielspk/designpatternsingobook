@@ -45,7 +45,7 @@ Por sus características suele clasificarse como un lenguaje compilado que tiene
 
 > Imagen - [\[16\]](recursos.md)
 
-Para _Rob Pike_: "Go es un intento de combinar la seguridad y el rendimiento de un lenguaje de tipado estático con la expresividad y la comodidad de un lenguaje interpretado de tipo dinámico." [\[16\]](recursos.md)
+Para _Rob Pike_: "_Go_ es un intento de combinar la seguridad y el rendimiento de un lenguaje de tipado estático con la expresividad y la comodidad de un lenguaje interpretado de tipo dinámico." [\[16\]](recursos.md)
 
 _Go_ se caracteriza por ser un lenguaje:
 
@@ -53,10 +53,10 @@ _Go_ se caracteriza por ser un lenguaje:
 * concurrente,
 * de tipado estático,
 * con recolector de basura,
-* con uso de punteros - _sin aritmética_
+* con uso de punteros - _pero sin aritmética_
 * con cortos tiempos de compilación
 
-Se destaca también por su diseño minimalista y su facilidad para aprenderlo. A modo de comparación mientras otros lenguajes tienen muchas palabras reservadas, C++ 20 tiene 96, Java 11 tiene 55, C# tiene 78; _Go_ sólo tiene 25.
+Se destaca también por su diseño minimalista y su facilidad para aprenderlo. A modo de comparación mientras otros lenguajes tienen muchas palabras reservadas, _C++ 20_ tiene 96, _C# 7_ tiene 78, _Java 13_ tiene 51; _Go_ sólo tiene 25.
 
 ### Ejemplo
 
