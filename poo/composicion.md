@@ -14,7 +14,7 @@ Tal como menciona Steve Francia [\[6\]](/recursos.md) "Existen varios enfoques d
 ## Herencia
 
 La herencia se puede puede expresar de dos maneras: _herencia de clases_ y _herencia de interfaces_. "La herencia de clases define la implementación de un objeto en términos de la implementación de otro objeto. En resumen, es un mecanismo para compartir código y representación. Por el contrario, la herencia de interfaces _(o subtipado)_ describe cuándo se puede usar un objeto en el lugar de otro." [\[29\]](/recursos.md)
-La herencia de clases y la de intefaces no son excluyentes entre sí, por ejemplo en _Eiffel_ se manifiestan ambas. 
+La herencia de clases y la de interfaces no son excluyentes entre sí, por ejemplo en _Eiffel_ se manifiestan ambas. 
 No todos los lenguajes de programación implementan la herencia de la misma manera. Algunos sólo permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.
 Asimismo los comportamientos y datos heredados pueden estar limitados al acceso con el que el objeto padre los definió, esto se denomina _visibilidad_.
 

@@ -29,7 +29,7 @@ Cada lenguaje es único y permite implementar el paradigma orientado a objetos d
   - Ausencia
     - _Scala_
     - _Eifell_
-* Rasgos _(Traists)_
+* Rasgos _(Traits)_
   - Presencia
     - _Scala_
     - _Smalltalk_

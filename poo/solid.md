@@ -185,7 +185,7 @@ func (e Emision) Emitir(r Respuesta) {
 
 [Ejecutar código](https://play.golang.org/p/ZJ0iEXpWgt4)
 
-**¿Qué pasa en *Go*:** Gracias al modo de intefaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no mediante tipos concretos.
+**¿Qué pasa en *Go*:** Gracias al modo de interfaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no mediante tipos concretos.
 
 ### Principio de segregación de la interfaz
 
