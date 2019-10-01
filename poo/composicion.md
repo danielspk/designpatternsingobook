@@ -22,7 +22,7 @@ Se expresa a la herencia como una relación **es-un/a**.
 
 ## Composición
 
-La composicion es una manera de defiinir obejtos dentro de otros objetos. De esta forma un objeto puede adquirir los comportamientos y datos de los otros objetos por los que esta compuesto.
+La composicion es una manera de definir objetos dentro de otros objetos. De esta forma un objeto puede adquirir los comportamientos y datos de los otros objetos por los que esta compuesto.
 
 > Esto en cierta medida es más similar al concepto de herencia múltiple que al de simple.
 
@@ -168,10 +168,10 @@ Como se puede observar la función _DarDeComer\(\)_ espera una variable de tipo 
 Como se detallará más adelante, en la implementación de cada patrón de diseño, la falta de herencia será suplida de dos formas diferentes y/o complementarias:
 
  - la composición cuando exista un comportamiento que deba ser compartido entre tipos de datos
- - mediante interfaces cuando se deba asegurar que una esructura es parte de una relación **es-un** y/o requiera implementar ciertos comportamientos.
+ - mediante interfaces cuando se deba asegurar que una estructura es parte de una relación **es-un** y/o requiera implementar ciertos comportamientos.
 
 Estrictamente hablando de programación orientada a objetos, la mayor dificultad encontrada es cuando una _clase abstracta_ implementa un _método concreto_ con comportamiento que llama a _métodos abstractos_ también definidos en dicha _clase abstracta_ que luego serán implementados en las _clases hijas_.
-Para emular este comportamiento la estrategia utilizada en esta publicación será parar como un argumento del _método concreto_ de la _clase abstracta_ una referencia de una _interface_ que exponga cúales serán los _métodos abstractos_ que serán implementados por las _clases hijas_ que implementen esa _interface_.
+Para emular este comportamiento la estrategia utilizada en esta publicación será pasar como un argumento del _método concreto_ de la _clase abstracta_ una referencia de una _interface_ que exponga cúales serán los _métodos abstractos_ que serán implementados por las _clases hijas_ que implementen esa _interface_.
 
 Veamos un ejemplo para entender la estrategia:
 
