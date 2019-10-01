@@ -260,6 +260,8 @@ dibujarFigura(&triangulo)
 
 [Ejecutar código](https://play.golang.org/p/yWlSrH_aXZg)
 
+En _Go_ el polimorfismo se logra con la ayuda de interfaces.
+
 #### Método Estáticos
 
 Esta característica no es posible de replicar en _Go_ dado que cada comportamiento asociado a un tipo de datos, sólo puede ser invocado cuando exista un referencia a dicho tipo.
