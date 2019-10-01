@@ -10,7 +10,9 @@ _¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a ob
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
->> Limitar el análisis a si un lenguaje es o no orientado a objetos por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo, _Objective-C_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
+Limitar el análisis a si un lenguaje es o no orientado a objetos por la sola existencia de la palabra reservada _"class"_ sería absolutamente simplista e incorrecto. A modo de ejemplo, _Objective-C_ define sus clases sin hacer uso de una palabra _"class"_ y el propio lenguaje se define a sí mismo como proveedor de características orientadas a objetos.
+
+Las _clases_ no caracterizan a los lenguajes orientados a objetos. Un lenguaje soporta el paradigma orientado a objetos si respeta los pilares propios de la programación orientada a objetos. - _se verán más adelante_ -.
 
 Cada lenguaje es único y permite implementar el paradigma orientado a objetos de diversas maneras. Algunas comparaciones de ejemplo:
 
@@ -21,7 +23,7 @@ Cada lenguaje es único y permite implementar el paradigma orientado a objetos d
   - Múltiple
     - _Eifell_
     - _C++_
-* Interfaces
+* Herencia de Interfaces
   - Explícitas
     - _C++_ _(mediante clases abstractas y métodos virtuales)_
   - Implícitas
@@ -132,6 +134,8 @@ Como ya se dijo, en _Go_ no existe la herencia, o al menos no la herencia de cla
 
 Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustrando otros tipos dentro de él. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
+Cada estructura incorpora los tipos de datos y comportamientos de la/s estructura/s incrustrada/s.
+
 Ejemplo:
 
 ```go
@@ -164,29 +168,7 @@ empleado.DatosAdicionales()
 
 [Ejecutar código](https://play.golang.org/p/oW83TcMCzHp)
 
-Cada estructura incorpora los tipos de datos y comportamientos de la/s estructura/s incrustrada/s.
-
-#### Encapsulamiento
-
-En _Go_ no existen identificadores de privacidad tales como _public_, _protected_ y _private_ típicos de otros lenguajes de programación. _Go_ encapsula tipos de datos y funciones a nivel de paquete en base a convenciones de nombres.  
-Todos aquellos nombres que empiecen con mayúsculas serán accesibles \(visibles\) desde otros paquetes. Por el contrario, aquellos que comiencen con minúsculas serán _privados_.  
-Esta es la razón por la que en el código fuente de paquetes y bibliotecas de _Go_ hay tipos de datos y funciones que pueden comenzar con mayúsculas o minúsculas.
-
-```go
-// estructura pública
-type CuentaCorriente struct {
-    //...
-}
-
-// método privado
-func (cc CuentaCorriente) calcularIntereses() double {
-    //...
-}
-```
-
-#### Polimorfismo
-
-_Go_ es polimórfico. Dado que los tipos de datos pueden componerse de otros tipos, tan sólo se debe reescribir el o los comportamientos deseados. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+También es posible extender/reemplazar el comportamiento de la/s estructura/s incrustrada/s reescribiendo el/los comportamiento/s deseado/s.
 
 Ejemplo:
 
@@ -222,6 +204,60 @@ gerente.InformarIngreso()
 ```
 
 [Ejecutar código](https://play.golang.org/p/rBBwVyj9sjQ)
+
+#### Encapsulamiento
+
+En _Go_ no existen identificadores de privacidad tales como _public_, _protected_ y _private_ típicos de otros lenguajes de programación. _Go_ encapsula tipos de datos y funciones a nivel de paquete en base a convenciones de nombres.  
+Todos aquellos nombres que empiecen con mayúsculas serán accesibles \(visibles\) desde otros paquetes. Por el contrario, aquellos que comiencen con minúsculas serán _privados_.  
+Esta es la razón por la que en el código fuente de paquetes y bibliotecas de _Go_ hay tipos de datos y funciones que pueden comenzar con mayúsculas o minúsculas.
+
+```go
+// estructura pública
+type CuentaCorriente struct {
+    //...
+}
+
+// método privado
+func (cc CuentaCorriente) calcularIntereses() double {
+    //...
+}
+```
+
+#### Polimorfismo
+
+_Go_ es polimórfico. Gracias a la herencia de interfaces se pueden asignar referencias en forma polimórfica. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+
+Ejemplo:
+
+```go
+type Figura interface {
+   Dibujar()
+}
+
+type Cuadrado struct {}
+
+func (c *Cuadrado) Dibujar() {
+   fmt.Println("Dibujando un Cuadrado.")
+}
+
+type Triangulo struct {}
+
+func (t *Triangulo) Dibujar() {
+    fmt.Println("Dibujando un Triángulo.")
+}
+
+func dibujarFigura(f Figura) {
+    f.Dibujar()
+}
+
+cuadrado := Cuadrado{}
+dibujarFigura(&cuadrado)
+
+triangulo := Triangulo{}
+dibujarFigura(&triangulo)
+```
+
+[Ejecutar código](https://play.golang.org/p/yWlSrH_aXZg)
 
 #### Método Estáticos
 
