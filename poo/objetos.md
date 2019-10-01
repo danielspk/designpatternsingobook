@@ -26,23 +26,22 @@ Cada lenguaje es único y permite implementar el paradigma orientado a objetos d
 * Herencia de Interfaces
   - Explícitas
     - _C++_ _(mediante clases abstractas y métodos virtuales)_
+    - _Scala_ _(mediante herencia simple de clase y/o traits)_
+    - _Eifell_ _(mediante herencia simple/múltiple de clase)_
   - Implícitas
     - _Smalltalk_
-  - Ausencia
-    - _Scala_
-    - _Eifell_
 * Rasgos _(Traits)_
-  - Presencia
+  - Permite
     - _Scala_
     - _Smalltalk_
     - _C++_ _(mediante templates)_
-  - Ausencia
+  - No Permite
     - _Eiffel_
 * Sobrecarga de Métodos
-  - Presencia
+  - Permite
     - _Scala_
     - _C++_
-  - Ausencia
+  - No Permite
     - _Smalltalk_
     - _Eiffel_
 
@@ -132,7 +131,7 @@ Los tres pilares de la programación orientada a objetos son la _herencia_, el _
 
 Como ya se dijo, en _Go_ no existe la herencia, o al menos no la herencia de clases como se la conoce en otros lenguajes tales como _Scala_, _Swift_ o _Eiffel_ por ejemplo.
 
-Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustrando otros tipos dentro de él. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
+Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustrando otros tipos dentro de él.
 
 Cada estructura incorpora los tipos de datos y comportamientos de la/s estructura/s incrustrada/s.
 
@@ -204,6 +203,8 @@ gerente.InformarIngreso()
 ```
 
 [Ejecutar código](https://play.golang.org/p/rBBwVyj9sjQ)
+
+En _Go_ entonces se manifiesta la herencia de interfaz. - _más información en el siguiente apartado de ["Herencia / Composición"](composicion.md)_
 
 #### Encapsulamiento
 
