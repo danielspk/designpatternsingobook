@@ -85,7 +85,7 @@ func (gdbd GuardadorDocumentoBaseDatos) Guardar(d model.Documento) {
 
 > Los objetos o entidades deberían estar abiertos para la extensión, pero cerrados para su modificación.
 
-Este principio hace mención a que una entidad permita extender su comportamiento pero sin que se modifique su código fuente. De esta forma la entidad puede ser extendida pero nunca modificada.
+Este principio propone que una entidad esté cerrada, lista para ser usada y estable en su calidad e interfaces, y al mismo tiempo abierta, es decir, que permita extender su comportamiento \(pero sin modificar su código fuente\).
 
 Imaginemos que se requiere cambiar el comportamiento de la siguiente estructura únicamente en uno de sus métodos:
 
@@ -119,13 +119,13 @@ func (am AnimalModificado) Caminar() {
 
 [Ejecutar código](https://play.golang.org/p/Sf1WkRugRN3)
 
-**¿Qué pasa en **_**Go**_**:** Gracias a la composición que permite _Go_ es posible componer tipos simples en más complejos.
+**¿Qué pasa en **_**Go**_**:** Gracias a la composición que permite _Go_ es posible componer tipos simples en más complejos manteniendo la interfaz del tipo original.
 
 ### Principio de substitución de Liskov
 
-> Las subclases deberían poder ser sustituidas por sus clases base.
+> Cada clase que herede de otra debe poder utilizarse como su clase padre sin necesidad de conocer las diferencias que pudieran existir entre ellas.
 
-Este principio aduce a que el contrato de una clase base debe ser honrado por sus clases derivadas.
+Este principio propone que el contrato de una clase base debe ser honrado por sus clases derivadas para que instancias de las clases derivadas puedan reeamplazar a instancias de la clase base.
 
 Veamos el siguiente código:
 
@@ -185,7 +185,7 @@ func (e Emision) Emitir(r Respuesta) {
 
 [Ejecutar código](https://play.golang.org/p/ZJ0iEXpWgt4)
 
-**¿Qué pasa en **_**Go**_**:** Gracias al modo de interfaces que permite _Go_ es factible expresar las dependencias entre paquetes a traves de interfaces y no mediante tipos concretos.
+**¿Qué pasa en **_**Go**_**:** Al definir firmas de métodos a traves de interfaces, y no mediante tipos concretos, es posible utilizar cualquier tipo que respete implícitamente la interfaz.
 
 ### Principio de segregación de la interfaz
 
@@ -252,7 +252,45 @@ func (b BotonIcono) OnDobleClick() {
 
 Este principio esta basado en reducir las dependencias entre los módulos del código para atacar el alto acoplamiento.
 
-**¿Qué pasa en **_**Go**_**:** La forma en la que compila _Go_ valida que este principio se cumpla. Caso contrario el programa no podría compilar.
+Veamos la siguiente ejemplo:
+
+```go
+type B struct {}
+
+func (b B) Saludar() {
+    // ...
+}
+
+type A struct {
+    B
+}
+```
+
+[Ejecutar código](https://play.golang.org/p/ANqhCiBv3Zr)
+
+Como puede verse el tipo A depende del tipo B por lo que si el tipo B es modificado afectará al tipo A.
+
+Una solución podría ser la siguiente:
+
+```go
+type Saludador interface {
+    Saludar()
+}
+
+type B struct {}
+
+func (b B) Saludar() {
+    // ...
+}
+
+type A struct {
+    Saludador
+}
+```
+
+[Ejecutar código](https://play.golang.org/p/pHDUY3VCNTI)
+
+**¿Qué pasa en **_**Go**_**:** Componer tipos mediante interfaces, y no mediante tipos concretos, permite evitar una fuerte dependencia entre tipos.
 
 ## Conclusión
 
