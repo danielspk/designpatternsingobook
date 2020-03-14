@@ -17,7 +17,7 @@ A pesar de que parezca desalentador lo anteriormente dicho es importante remarca
 
 Un error que veo muy seguido es la adaptación de un patrón de un lenguaje a otro \(como si se tratase de una traducción literal\) cuando en realidad no se tienen en cuenta sus características específicas, que hacen a cada lenguaje de programación único, ni el objetivo que intenta resolver el patrón de diseño. **Intentaré no caer yo mismo en este error**.
 
-> \_En Go \_pueden aprovecharse algunas de sus características particulares para implementar también otros tipos de patrones distintos a los del libro "Patrones de Diseño" [\[29\]](/recursos.md). Por ejemplo hay una gran cantidad de patrones de concurrencia
+> En _Go_ pueden aprovecharse algunas de sus características particulares para implementar también otros tipos de patrones distintos a los del libro "Patrones de Diseño" [\[29\]](/recursos.md). Por ejemplo hay una gran cantidad de patrones de concurrencia
 
 ### ¿Cómo se clasifican los patrones?
 
