@@ -11,7 +11,7 @@
 ## Contenido
 
 * [Strategy](strategy.md)
-* [Chain of Responsability](chainofresponsability.md)
+* [Chain of Responsibility](chainofresponsability.md)
 * [Command](command.md)
 * [Template Method](templatemethod.md)
 * [Memento](memento.md)
@@ -21,3 +21,6 @@
 * [State](state.md)
 * [Mediator](mediator.md)
 * [Observer](observer.md)
+
+
+

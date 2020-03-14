@@ -101,11 +101,15 @@ contexto = Contexto{EstrategiaMultiplica{}}
 fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
 ```
 
-[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/strategy) | [Ejecutar código](https://play.golang.org/p/OoMEcPgef7e)
+[Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/strategy) \| [Ejecutar código](https://play.golang.org/p/OoMEcPgef7e)
 
 ## Patrones relacionados
 
 [Flyweight](/patrones/estructurales/flyweight.md): las variables Estrategia suelen ser buenos pesos ligeros.
 
 ##### Nota:
+
 > A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Strategy_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
+
+
+

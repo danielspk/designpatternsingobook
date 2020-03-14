@@ -14,7 +14,7 @@
     * [GoF](patrones/gof.md)
     * [Patrones de Comportamiento](patrones/comportamiento/README.md)
       * [Strategy](patrones/comportamiento/strategy.md)
-      * [Chain of Responsability](patrones/comportamiento/chainofresponsability.md)
+      * [Chain of Responsibility](patrones/comportamiento/chainofresponsability.md)
       * [Command](patrones/comportamiento/command.md)
       * [Template Method](patrones/comportamiento/templatemethod.md)
       * [Memento](patrones/comportamiento/memento.md)
@@ -43,3 +43,4 @@
   * [Acerca De](acercade.md)
 * [Recursos de interés](recursos.md)
 * [Glosario](GLOSSARY.md)
+
