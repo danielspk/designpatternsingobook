@@ -33,6 +33,19 @@ Los autores del libro "Patrones de Diseño" [\[29\]](/recursos.md), también pro
 
 ## Catálogo de patrones
 
+Los patrones de diseño se catalogan de la siguiente forma:
+
+Según su _Propósito:_
+
+* _Creacionales_: resuelven problemas relativos a la creación de objetos.
+* _Estructurales_: resuelven problemas relativos a composición de objetos.
+* _Comportamiento_: resuleven problemas relativos a la interacción de objetos.
+
+Según su _Ámbito_:
+
+* _Clases_: respecto de las relaciones estáticas entre clases.
+* _Objetos_: respecto de las relaciones dinámicas entre objetos.
+
 ### Patrones de Clase
 
 | Creación | Estructurales | Comportamiento |
