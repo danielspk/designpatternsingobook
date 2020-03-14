@@ -17,7 +17,7 @@ A pesar de que parezca desalentador lo anteriormente dicho es importante remarca
 
 Un error que veo muy seguido es la adaptación de un patrón de un lenguaje a otro \(como si se tratase de una traducción literal\) cuando en realidad no se tienen en cuenta sus características específicas, que hacen a cada lenguaje de programación único, ni el objetivo que intenta resolver el patrón de diseño. **Intentaré no caer yo mismo en este error**.
 
-> _En Go _pueden aprovecharse algunas de sus características particulares para implementar también otros tipos de patrones distintos a los del libro "Patrones de Diseño" [\[29\]](/recursos.md). Por ejemplo hay una gran cantidad de patrones de concurrencia
+> \_En Go \_pueden aprovecharse algunas de sus características particulares para implementar también otros tipos de patrones distintos a los del libro "Patrones de Diseño" [\[29\]](/recursos.md). Por ejemplo hay una gran cantidad de patrones de concurrencia
 
 ### ¿Cómo se clasifican los patrones?
 
@@ -33,9 +33,30 @@ Los autores del libro "Patrones de Diseño" [\[29\]](/recursos.md), también pro
 
 ## Catálogo de patrones
 
-![](/assets/gamma/tabla1-1.png)
+### Patrones de Clase
 
-> "Patrones de Diseño" - Tabla 1.1 - Patrones de diseño - [\[29\]](/recursos.md)
+| Creación | Estructurales | Comportamiento |
+| :--- | :--- | :--- |
+| Factory Method | Adapter | Interpreter |
+|  |  | Template Method |
+
+> Extracto de "Patrones de Diseño" - Tabla 1.1 - Patrones de diseño - [\[29\]](/recursos.md)
+
+### Patrones de Objeto
+
+| Creación | Estructurales | Comportamiento |
+| :--- | :--- | :--- |
+| Abstract Factory | Adapter | Chain of Responsibility |
+| Builder | Bridge | Command |
+| Propotype | Composite | Iterator |
+| Singleton | Decorator | Mediator |
+|  | Facade | Memento |
+|  | Flyweight | Observer |
+|  | Proxy | State |
+|  |  | Strategy |
+|  |  | Visitor |
+
+> Extracto de "Patrones de Diseño" - Tabla 1.1 - Patrones de diseño - [\[29\]](/recursos.md)
 
 ### ¿Cómo se documenta un patrón?
 
