@@ -98,3 +98,57 @@ deployiOS.Construir(&deployiOS)
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/templatemethod) \| [Ejecutar código](https://play.golang.org/p/1J-MIDMaXi5)
+
+Implementación alternativa:
+
+En esta alternativa no es necesario pasar la propia referencia del tipo concreto en el método `Construir`.
+La construcción del tipo concreto se realiza componiendolo con un tipo abstracto compuesto con el mismo tipo concreto.
+
+```go
+// Clase Abstracta - Interface
+type DeployInterface interface {
+    Testear()
+    Compilar()
+    Publicar()
+}
+
+// Clase Abstracta
+type Deploy struct{
+    DeployInterface
+}
+
+// Método Plantilla
+func (d Deploy) Construir() {
+    fmt.Println("Ejecutando las siguientes acciones:")
+
+    d.Testear()
+    d.Compilar()
+    d.Publicar()
+}
+
+// Clase Concreta - Android
+type DeployAndroid struct {
+    Deploy
+}
+
+func (d DeployAndroid) Testear() {
+    fmt.Println("Android: Testeando")
+}
+
+func (d DeployAndroid) Compilar() {
+    fmt.Println("Android: Compilando")
+}
+
+func (d DeployAndroid) Publicar() {
+    fmt.Println("Android: Publicando")
+}
+```
+
+Se puede probar la implementación alternativa del patrón de la siguiente forma:
+
+```go
+deployAndroid := DeployAndroid{Deploy{DeployAndroid{}}}
+deployAndroid.Construir()
+```
+
+[Ejecutar código](https://play.golang.org/p/u5df18NIRI1)
