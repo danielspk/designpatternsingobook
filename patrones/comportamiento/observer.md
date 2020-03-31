@@ -8,13 +8,6 @@ Define una dependencia de uno-a-muchos entre variables, de forma que cuando una 
 
 _Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
 
-## Aplicabilidad
-
-Úsese el patrón Onserver en cualquiera de las siguientes situaciones:
-* Cuando una abstracción tiene dos aspectos y uno depende del otro. Encapsular estos aspectos en variables separadas permite modificarlas y reutilizarlos de forma independiente.
-* cuando un cambio en una variable requiere cambiar otras, y no sabemos cuántas variables necesitan cambiarse.
-* cuando una variable debería ser capaz de notificar a otras sin hacer suposiciones sobre quiénes son dichas variables. En otras palabras, cuando no queremos que estas variables estén fuertemente acopladas.
-
 ## Estructura
 
 ![](/assets/uml/observer.png)
@@ -33,11 +26,6 @@ _Dependents_ (Dependientes), _Publish-subscribe_ (Publicar-Suscribir)
   * mantiene una referencia a una variable SujetoConcreto.
   * guarda un estado que debería ser consistente con el del sujeto.
   * implementa la interfaz de actualización del Observador para mantener su estado consistente.
-
-## Colaboradores
-
-* SujetoConcreto notifica a sus observadores cada vez que se produce un cambio que pudiera hacer que el estado de éstos fuera inconsistente con el suyo.
-* Después de ser informado de un cambio en el sujeto concreto, una variable ObservadorConcreto puede pedirle al sujeto más información. ObservadorConcreto usa esta información para sincronizar su estado con el del sujeto.
 
 ## Implementación
 
@@ -107,11 +95,3 @@ agencia.IngresarOfertaLaboral("Programador C# Junior")
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/observer) | [Ejecutar código](https://play.golang.org/p/7CAEfYjM1lr)
-
-## Patrones relacionados
-
-[Mediator](/patrones/comportamiento/mediator.md): encapsulando semánticas de actualización complejas, se puede implementar un gestor de cambios que actue como mediador entre sujetos y observadores.
-[Singleton](/patrones/creacionales/singleton.md): este gestor de cambios puede usar el patrón Singleton para que sea único y globalmente accesible.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Observer_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

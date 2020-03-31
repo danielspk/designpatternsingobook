@@ -8,14 +8,6 @@ Proporciona un representante o sustituto de otra variable para controlar el acce
 
 _Surrogate_ (Sustituto)
 
-## Aplicabilidad
-
-Este patrón es aplicable cada vez que hay necesidad de una referencia a una variable más versátil o sofisticada que un simple puntero. Úsese el patrón Proxy cuando:
-* se requiere de un representante local de un objeto situado en otro espacio de direcciones (**proxy remoto**).
-* se requiere crear variables costosas por encargo (** proxy virtual**).
-* se requiere controlar el acceso a la variable original en base a diferentes permisos (**proxy de protección**).
-* se requiere de un sustituto simple, como un puntero, que permita realizar operaciones adicionales (**referencia inteligente**).
-
 ## Estructura
 
 ![](/assets/uml/proxy.png)
@@ -34,10 +26,6 @@ Este patrón es aplicable cada vez que hay necesidad de una referencia a una var
   * define una interfaz común para el SujetoReal y el Proxy, de modo que pueda usarse un Proxy en cualquier sitio en el que se espere un SujetoReal.
 * **SujetoReal:**
   * define la variable real representada.
-
-## Colaboradores
-
-El Proxy  redirige peticiones al SujetoReal cuando sea necesario, dependiendo del tipo de proxy.
 
 ## Implementación
 
@@ -87,12 +75,3 @@ fmt.Printf("%s\n", navegadorProxy.Direccion("http://facebook.com"))
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/proxy) | [Ejecutar código](https://play.golang.org/p/7JSOE4GYByc)
-
-## Patrones relacionados
-
-[Adapter](/patrones/estructurales/adapter.md): un adaptador proporciona una intefaz diferente para la variable que adapta. Por el contrario, un proxy tiene la misma interfaz que su sujeto. No obstante, un proxy utilizado para protección de acceso podría rechazar una operación que el sujeto sí realiza, de modo que su interfaz puede ser realmente un subconjunto de la del sujeto.
-[Decorator](/patrones/estructurales/decorator.md): si bien los decoradores pueden tener una implementación parecida a los proxies, tienen un proposito diferente. Un decorador añade una o más responsabilidades a una variable, mientras que un proxy controla el acceso a una variable.
-Los proxies difieren en el grado de similitud entre su implementación y la de un decorador. Un proxy de protección podría implementarse exactamente como un decorador. Por otro lado, un proxy remoto no contendrá una referencia directa a su sujeto real sino sólo una referencia indirecta, como un "ID" de máquina y la dirección local de dicha máquina. Un proxy virtual empezará teniendo una referencia indirecta como un nombre de fichero, pero podrá al final obtener y utilizar una referencia directa.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Proxy_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

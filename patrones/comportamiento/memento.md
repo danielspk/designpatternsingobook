@@ -8,13 +8,6 @@ Representa y externaliza el estado interno de una variable sin violar la encapsu
 
 _Token_
 
-## Aplicabilidad
-
-Úsese el patrón Memento cuando
-
-* hay que guardar una instantánea del estado de una variable (o parte de ésta) para que pueda volver posteriormente a ese estado.
-* o tenga una interfaz directa que para obtener el estado exponga detalles de implementación y rompa la encapsulación de la variable.
-
 ## Estructura
 
 ![](/assets/uml/memento.png)
@@ -30,11 +23,6 @@ _Token_
 * **Conserje:**
   * es responsable de guardar en lugar seguro el memento.
   * nunca examina los contenidos del memento, ni opera sobre ellos.
-
-## Colaboradores
-
-* Un conserje solicita un memento a un creador, lo almacena durante un tiempo y se lo devuelve a su creador. A veces el conserje no devolverá el memento a su creador, ya que el creador podría no necesitar nunca volver a su estado anterior.
-* Los mementos son pasivos. Sólo el creador que creó el memento asignará o recuperará su estado.
 
 ## Implementación
 
@@ -114,11 +102,3 @@ fmt.Printf("El editor nuevamente contiene:%s\n", editor.VerContenido())
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/memento) | [Ejecutar código](https://play.golang.org/p/4o78qJhd-h2)
-
-## Patrones relacionados
-
-[Command](/patrones/comportamiento/command.md): las órdenes pueden usar mementos para guardar el estado de las operaciones que pueden deshacerse.
-[Iterator](/patrones/comportamiento/iterator.md): puede usar mementos para la iteración.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Memento_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

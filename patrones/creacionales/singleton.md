@@ -4,12 +4,6 @@
 
 Garantiza que un tipo de dato sólo tenga una variable de creación, y proporciona un punto de acceso global a ella.
 
-## Aplicabilidad
-
-Úsese el patrón Singleton cuando:
-* deba haber exactamente un unica variable del tipo de dato, y ésta deba ser accesible a los clientes desde un punto de acceso conocido.
-* la única variable debería ser extensible mediante otro tipo de dato que lo componga, y los clientes deberían ser capaces de usar el tipo compuesto sin modificar su código.
-
 ## Estructura
 
 ![](/assets/uml/singleton.png)
@@ -19,10 +13,6 @@ Garantiza que un tipo de dato sólo tenga una variable de creación, y proporcio
 * **Singleton:**
   * define una operación _instancia_ que permite que los clientes accedan a su única variable.
   * puede ser responsable de crear su única variable en memoria.
-
-## Colaboradores
-
-Los clientes acceden a la variable de un Singleton exclusivamente a través de la operación _instancia_.
 
 ## Implementación
 
@@ -78,10 +68,3 @@ fmt.Printf("Instancia Singleton: %d\n", <-canalEspera)
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/creacionales/singleton) | [Ejecutar código](https://play.golang.org/p/Fae3WyvrdIf)
-
-## Patrones relacionados
-
-Hay muchos patrones que pueden implementarse usando el patrón singleton. Véase [Abstract Factory](/patrones/creacionales/abstractfactory.md), [Builder](/patrones/creacionales/builder.md) y [Prototype](/patrones/creacionales/prototype.md).
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Singleton_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

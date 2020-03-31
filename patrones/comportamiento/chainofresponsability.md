@@ -4,14 +4,6 @@
 
 Evita acoplar el emisor de una petición a su receptor, dando a más de una variable la posibilidad de responder a la petición. Encadena las variables receptoras y pasa la petición a través de la cadena hasta que es procesada por alguna variable.
 
-## Aplicabilidad
-
-El patrón Chain of Responsibility se debe usar cuando:
-
-* hay más de una variable que pueden manejar una petición, y el manejador no se conoce _a priori_, sino que debería determinarse automáticamente.
-* se quiere enviar una petición a una variable entre varias sin especificar explícitamente la receptora.
-* el conjunto de variables que pueden tratar una petición debería ser especificado dinámicamente.
-
 ## Estructura
 
 ![](/assets/uml/chainofresponsability.png)
@@ -27,10 +19,6 @@ El patrón Chain of Responsibility se debe usar cuando:
   * si el ManejadorConcreto puede manejar la petición, lo hace; en caso contrario la reenvía a su sucesor.
 * **Cliente:**
   * inicializa la petición a una variable ManejadorConcreto de la cadena.
-
-## Colaboradores
-
-Cuando un cliente envía una petición, ésta se propaga a través de la cadena hasta que una variable ManejadorConcreto se hace responsable de procesarla.
 
 ## Implementación
 
@@ -98,14 +86,3 @@ fmt.Println(manejadores.ProcesarMensaje(10, "Mensaje 3 - Prioridad 10"))
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/chainofresponsability) \| [Ejecutar código](https://play.golang.org/p/TnwdRltyBds)
-
-## Patrones relacionados
-
-Este patrón se suele aplicar conjuntamente con el patrón [Composite](/patrones/estructurales/composite.md). En él, los padres de los componentes pueden actuar como sucesores.
-
-##### Nota:
-
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Chain of Responsibility_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
-
-
-

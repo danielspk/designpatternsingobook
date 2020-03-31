@@ -4,15 +4,6 @@
 
 Usa comportamiento para permitir un gran número de variables de grano fino de forma eficiente.
 
-## Aplicabilidad
-
-Úsese el patrón Flyweight cuando se cumpla _todo_ lo siguiente:
-* una aplicación utiliza un gran número de variables.
-* los costos de almacenamiento son elevados debido a la gran cantidad de variables.
-* la mayor parte del estado de la variable puede hacerse extrínseco.
-* muchos grupos de variables pueden reemplazarse por relaticamente pocas variables compartidas, una vez que se ha eliminado el estado extrínseco.
-* la aplicación no depende de la identidad de una variable. Puesto que las variables flyweight pueden ser compartidas, las comprobaciones de identidad devolverán verdadero para variables conceptualmente distintas.
-
 ## Estructura
 
 ![](/assets/uml/flyweight.png)
@@ -31,11 +22,6 @@ Usa comportamiento para permitir un gran número de variables de grano fino de f
 * **Cliente:**
   * mantiene una referencia a los flyweight.
   * culcula o guarda el estado extrínseco de los flyweight.
-
-## Colaboradores
-
-* El estado que un flyweight necesita para funcionar debe ser caracterizado como intrínseco o extrínseco. El estado intrínseco se guarda en la variable FlyweightConcreto, mientras que el estado extrínseco lo guardan o lo calculan las variables Cliente. Los clientes pasan este estado al flyweight cuando invocan sus operaciones.
-* Los clientes no deberían crear variables FlyweightConcreto directamente, sino que deben obtener las variables FlyweightConcreto sólo a partir de FabricaFlyweight para garantizar que se puedan compartir adecuadamente.
 
 ## Implementación
 
@@ -121,11 +107,3 @@ fmt.Printf("%s\n", pantalla.ObtenerControl("BOTON", "BTN1", "400", "300"))
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/flyweight) | [Ejecutar código](https://play.golang.org/p/o1TA4FcaAmD)
-
-## Patrones relacionados
-
-El patrón flyweight suele combinarse con el patrón [Composite](/patrones/estructurales/composite.md) para implementar una jerarquía lógica en términos de un grafo dirigido acíclico con nodos hojas compartidos.
-Suele ser mejor implementar las variables [State](/patrones/comportamiento/state.md) y [Strategy](/patrones/comportamiento/strategy.md) como flyweight.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Flyweight_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

@@ -4,12 +4,6 @@
 
 Compone variables en jerarquías de árbol para representar jerarquías de parte-todo. Permite que los clientes traten de manera uniforme a las variables individuales y a las compuestas.
 
-## Aplicabilidad
-
-Úsese el patrón Composite cuando:
-* quiera representar jerarquías de variables parte-todo.
-* quiera que los clientes sean capaces de obviar las diferencias entre composiciones de variables y las variables individuales. Los clientes tratarán a todas las variables de la jerarquía compuesta de manera uniforme.
-
 ## Estructura
 
 ![](/assets/uml/composite.png)
@@ -30,10 +24,6 @@ Compone variables en jerarquías de árbol para representar jerarquías de parte
   * implementa las operaciones de la interfaz Componente relacionadas con los hijos.
 * **Cliente:**
   * manipula variables en la composición a través de la interfaz Componente.
-
-## Colaboradores
-
-Los Clientes usan la interfaz del tipo de dato Componente para interactuar con las variables de la jerarquía compuesta. Si el recipiente es una Hoja, la petición se trata correctamente. Si es un Compuesto, normalmente redirige las peticiones a sus componentes hijos, posiblemente realizando operaciones adicionales antes o después.
 
 ## Implementación
 
@@ -104,14 +94,3 @@ fmt.Printf("Los salarios de todos los desarrolladores de la Gerencia es de $%d\n
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/composite) | [Ejecutar código](https://play.golang.org/p/BR_zwXpOD0O)
-
-## Patrones relacionados
-
-Muchas veces se usa el enlace al componente padre para implementar el patrón [Chain of Responsability](/patrones/comportamiento/chainofresponsability.md).
-El patrón [Decorator](/patrones/estructurales/decorator.md) suele usarse junto con el Composite. Cuando se usan juntos decoradores y compuestos, normalmente ambos tendrán un tipo de dato común. Por tanto, los decoradores tendrán que admitir la interfaz Componente con operaciones de añadir, eliminar y obtenerHijo.
-El patrón [Flyweight](/patrones/estructurales/flyweight.md) permite compartir componentes, si bien en ese caso éstos ya no pueden referirse a sus padres.
-Se puede usar el patrón [Iterator](/patrones/comportamiento/iterator.md) para recorrer las estructuras definidas por el patrón Composite.
-El patrón [Visitor](/patrones/comportamiento/visitor.md) localiza operaciones y comportamiento que de otro modo estaría distribuido en varios tipos de datos Compuesto y Hoja.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Composite_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

@@ -8,13 +8,6 @@ Define una interfaz para crear una variable, pero deja que sean los subtipos de 
 
 _Virtual Constructor_ (Constructor Virtual)
 
-## Aplicabilidad
-
-Úsese el patrón Factory Method cuando:
-* un tipo de dato no puede prever la clase de variables que debe crear.
-* un tipo de dato quiere que sean sus subtipos de datos quienes especifiquen las variables que éste crea.
-* los tipos de datos delegan la responsabilidad en uno de entre varios tipos de datos auxiliares, y queremos localizar qué subtipo de dato de auxiliar concreto es en el que se delega.
-
 ## Estructura
 
 ![](/assets/uml/factorymethod.png)
@@ -30,10 +23,6 @@ _Virtual Constructor_ (Constructor Virtual)
   * puede llamar al método de fabricación para crear una variable Producto.
 * **CreadorConcreto:**
   * redefine el método de fabricación para devolver una variable de un ProductoConcreto.
-
-## Colaboradores
-
-El Creador se apoya en sus subtipos de datos para definir el método de fabricación de manera que éste devuelva una variable del ProductoConcreto apropiado.
 
 ## Implementación
 
@@ -114,12 +103,3 @@ recursosHumanosFinanzas.TomarEntrevista(recursosHumanosFinanzas)
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/creacionales/factorymethod) | [Ejecutar código](https://play.golang.org/p/1szkQi-rVUf)
-
-## Patrones relacionados
-
-El patrón [Abstract Factory](/patrones/creacionales/abstractfactory.md) suele implementarse como métodos de fabricación.
-Los métodos de fabricación generalmente son llamados desde el interior de [Template Method](/patrones/comportamiento/templatemethod.md).
-El [Prototype](/patrones/creacionales/prototype.md) no necesita implementar un Creador. Sin embargo, suele requerir una operación _inicializar_ en el tipo de dato Producto. El Creador usa _inicializar_ para iniciliazar la variable, mientras que el Factory Method no requiere de dicha operación.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Factory Method_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

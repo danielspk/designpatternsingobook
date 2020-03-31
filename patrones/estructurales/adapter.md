@@ -8,12 +8,6 @@ Convierte la interfaz de un tipo de dato en otra interfaz que es la que esperan 
 
 _Wrapper_ (Envoltorio)
 
-## Aplicabilidad
-
-Úsese el patrón Adaptor cuando:
-* se quiere usar un tipo de dato existente y su interfaz no concuerda con la que necesita.
-* se quiere crear un tipo de dato reutilizable que coopere con tipos de datos no relacionados o que no han sido previstos, es decir, tipos de datos que no tienen por qué tener interfaces compatibles.
-
 ## Estructura
 
 ![](/assets/uml/adapter.png)
@@ -28,10 +22,6 @@ _Wrapper_ (Envoltorio)
   * define una interfaz existente que necesita ser adaptada.
 * **Adaptador:**
   * adapta la interfaz de Adaptable a la interfaz Objetivo.
-
-## Colaboradores
-
-Los clientes llaman a operaciones de una variable de Adaptador. A su vez, el adaptador llama a operaciones de Adaptable, que son las que satisfacen la petición.
 
 ## Implementación
 
@@ -97,12 +87,3 @@ fmt.Printf("Jugador B: %s\n", jugadorB.Atacar())odos los desarrolladores de la G
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/adapter) | [Ejecutar código](https://play.golang.org/p/60tlY8la04W)
-
-## Patrones relacionados
-
-El patrón [Bridge](/patrones/estructurales/bridge.md) tiene una estructura similar a un Adapter, pero con un proposito diferente: está pensado para separar una interfaz de su implementación, de manera que ambos puedan cambiar facilmente y de forma independiente uno del otro, mientras que un adapter está pensado para cambiar la interfaz de una variable existente.
-El patrón [Decorator](/patrones/estructurales/decorator.md) decora otra variable sin cambiar su interfaz. Un decorador es por tanto más transparente a la aplicación que un adaptador. Como resultado, el patrpon Decorator permite la composición recursiva, lo que no es posible con adaptadores puros.
-El patrón [Proxy](/patrones/estructurales/proxy.md) define un representante o sustituto de otra variable sin cambiar su interfaz.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Adapter_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).

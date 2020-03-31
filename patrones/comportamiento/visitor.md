@@ -4,14 +4,6 @@
 
 Representa una operación sobre los elementos de una estructura de variables. Permite definir una nueva operación sin cambiar los tipos de datos de los elementos sobre los que opera.
 
-## Aplicabilidad
-
-Úsese el patrón Visitor cuando
-
-* una estructura de variables contiene muchas clases de variables con diferentes interfaces, y queremos realizar operaciones sobre esos elementos que dependen de su tipo de dato concreto.
-* se necesitan realizar muchas operaciones distintas y no relacionadas sobre variables de una estructura de variables, y queremos evitar "contaminar" sus tipos de datos con dichas operaciones. El patrón Visitor permite mantener juntas operaciones relacionadas definiéndolas en un tipo de dato. Cuando la estructura de variables es compartida por varias aplicaciones, el patrón Visitor permite poner operaciones sólo en aquellas aplicaciones que las necesiten.
-* los tipos de datos que definen la estructura de variables rara vez cambian, pero muchas veces queremos definir nuevas operaciones sobre la estructura. Cambiar los tipos de datos de la estructtura de variables requiere redefinir la interfaz para todos los visitantes, lo que es potencialmente costoso. Si los tipos de datos de la esttructura cambian con frecuencia, probablemente sea mejor definir las operaciones en los propios tipos de datos.
-
 ## Estructura
 
 ![](/assets/uml/visitor.png)
@@ -30,11 +22,6 @@ Representa una operación sobre los elementos de una estructura de variables. Pe
   * puede enumerar sus elementos.
   * puede proporcionar una interfaz de alto nivel para permitir al visitante visitar a sus elementos.
   * puede ser un [Composite](/patrones/estructurales/composite.md) o una colección, como una lista o un conjunto.
-
-## Colaboradores
-
-* Un cliente que usa el patrón Visitor debe crear una variable VisitanteConcreto y a continuación recorrer la estructura, visitando cada variable con el visitante.
-* Cada vez que se visita a un elemento, éste llama a la operación del Visitante que se corresponde con su tipo de dato. El elemento pasa a sí mismo como argumento de la operación para permitir al visitante acceder a su estado, en caso de que sea necesario.
 
 ## Implementación
 
@@ -133,11 +120,3 @@ fmt.Printf("El elemento Arma aceptada por un visitante Nivel 0 es: %s\n", elemen
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/visitor) | [Ejecutar código](https://play.golang.org/p/WSPGvlwREuQ)
-
-## Patrones relacionados
-
-[Composite](/patrones/estructurales/composite.md): los visitantes pueden usarse para aplicar una operación sobre una estructura de variables definida por el patrón composite.
-[Interpreter](/patrones/comportamiento/interpreter.md): se puede aplicar el patrón visitor para llevar a cabo la implementación.
-
-##### Nota:
-> A excepción de los apartados "_Estructura_", "Implementación" y "_Código de Ejemplo_", los téxtos utilizados para redactar el patrón _Visitor_ son transcripciones - en algunos casos brevemente alteradas - del libro "Patrones de Diseño" de Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides [\[29\]](/recursos.md).
