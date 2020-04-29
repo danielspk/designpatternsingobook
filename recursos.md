@@ -1,6 +1,6 @@
-# Recursos de interes
+# Recursos de interés
 
-![](/assets/ref.png)
+![](.gitbook/assets/ref.png)
 
 > Imagen - [\[38\]](recursos.md)
 
@@ -77,3 +77,4 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[47\] - Go logos](https://golang.org/s/logos)
 * [\[49\] - UCA - Pontificia Universidad Católica Argentina](http://uca.edu.ars)
 * [\[54\] - Python - Glosario](https://docs.python.org/3/glossary.html?highlight=duck#term-duck-typing)
+
