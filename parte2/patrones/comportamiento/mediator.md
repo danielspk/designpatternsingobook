@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Mediator_ "define una variable que encapsula cómo interactúan una serie de variables. Promueve un bajo acoplamiento al evitar que las variables se refieran unas a otras explícitamente, y permite variar la interacción entre ellas de forma independiente".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Mediator_ "define un objeto que encapsula cómo interactúan una serie de objetos. Promueve un bajo acoplamiento al evitar que los objetos se refieran unos a otros explícitamente, y permite variar la interacción entre ellos de forma independiente".
 
 ## Estructura
 

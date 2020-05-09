@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Prototype_ "especifica los tipos de variables a crear por medio de una creación prototípica, y crea nuevas variables copiando dicho prototipo".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Prototype_ "especifica los tipos de objetos a crear por medio de una instancia prototípica, y crea nuevos objetos copiando dicho prototipo".
 
 ## Estructura
 

@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Observer_ "define una dependencia de uno-a-muchos entre variables, de forma que cuando una variable cambie de estado se notifique y se actualicen automáticamente todas las variables que dependan de ellá".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Observer_ "define una dependencia de uno-a-muchos entre objetos, de forma que cuando un objeto cambie de estado se notifique y se actualicen automáticamente todos los objetos que depende de él".
 
 ## También conocido como
 

@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Visitor_ "representa una operación sobre los elementos de una estructura de variables. Permite definir una nueva operación sin cambiar los tipos de datos de los elementos sobre los que opera".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Visitor_ "representa una operación sobre los elementos de una estructura de objetos. Permite definir una nueva operación sin cambiar las clases de los elementos sobre los que opera".
 
 ## Estructura
 

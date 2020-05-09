@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Template Method_ "define en una operación el esqueleto de un algoritmo, delegando en los subtipos de datos algunos de sus pasos. Permite que los subtipos de datos definan ciertos pasos de un algoritmo sin cambiar su esquema".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Template Method_ "define en una operación el esqueleto de un algoritmo, delegando en las subclases algunos de sus pasos. Permite que las subclases redefinan ciertos pasos de un algoritmo sin cambiar su estructura".
 
 ## Estructura
 

@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Iterator_ "proporciona un modo de acceder secuencialmente a los elementos de una variable agregada sin exponer su representación interna".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Iterator_ "proporciona un modo de acceder secuencialmente a los elementos de un objeto agregado sin exponer su representación interna".
 
 ## También conocido como
 

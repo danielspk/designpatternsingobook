@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Abstract Factory_ "proporciona una interfaz para crear familias de variables relacionadas o que dependan entre sí, sin especificar sus tipos de datos concretos".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Abstract Factory_ "proporciona una interfaz para crear familias de objetos relacionados o que dependen entre sí, sin especificar sus clases concretas".
 
 ## También conocido como
 

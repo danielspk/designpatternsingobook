@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Memento_ "representa y externaliza el estado interno de una variable sin violar la encapsulación, de forma que ésta pueda volver a dicho estado más tarde".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Memento_ "representa y externaliza el estado interno de un objeto sin violar la encapsulación, de forma que éste puede volver a dicho estado más tarde".
 
 ## También conocido como
 
