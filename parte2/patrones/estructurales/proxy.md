@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Proporciona un representante o sustituto de otra variable para controlar el acceso a ésta.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Proxy_ "proporciona un representante o sustituto de otra variable para controlar el acceso a ésta".
 
 ## También conocido como
 

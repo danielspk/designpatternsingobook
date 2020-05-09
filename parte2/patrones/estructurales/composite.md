@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Compone variables en jerarquías de árbol para representar jerarquías de parte-todo. Permite que los clientes traten de manera uniforme a las variables individuales y a las compuestas.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Composite_ "compone variables en jerarquías de árbol para representar jerarquías de parte-todo. Permite que los clientes traten de manera uniforme a las variables individuales y a las compuestas".
 
 ## Estructura
 

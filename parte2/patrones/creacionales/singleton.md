@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Garantiza que un tipo de dato sólo tenga una variable de creación, y proporciona un punto de acceso global a ella.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Singleton_ "garantiza que un tipo de dato sólo tenga una variable de creación, y proporciona un punto de acceso global a ella".
 
 ## Estructura
 

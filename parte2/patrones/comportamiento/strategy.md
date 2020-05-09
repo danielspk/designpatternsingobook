@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Define una familia de algoritmos, encapsula cada uno de ellos y los hace intercambiables. Permite que un algoritmo varíe independientemente de los clientes que lo usan.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Strategy_ "define una familia de algoritmos, encapsula cada uno de ellos y los hace intercambiables. Permite que un algoritmo varíe independientemente de los clientes que lo usan".
 
 ## También conocido como
 

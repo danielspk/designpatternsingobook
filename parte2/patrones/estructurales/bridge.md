@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Desacopla una abstracción de su implementación, de modo que ambas puedan variar de forma independiente.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Bridge_ "desacopla una abstracción de su implementación, de modo que ambas puedan variar de forma independiente".
 
 ## También conocido como
 

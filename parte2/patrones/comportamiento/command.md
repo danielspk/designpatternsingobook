@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Encapsula una petición en una variable, permitiendo así parametrizar a los clientes con diferentes peticiones, hacer cola o llevar registro de las peticiones, y poder deshacer las operaciones.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Command_ "encapsula una petición en una variable, permitiendo así parametrizar a los clientes con diferentes peticiones, hacer cola o llevar registro de las peticiones, y poder deshacer las operaciones".
 
 ## También conocido como
 

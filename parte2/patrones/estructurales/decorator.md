@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Asigna responsabilidades adicionales a una variable dinámicamente, proporcionando una alternativa flexible a la herencia _\(composición\)_ para extender la funcionalidad.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Decorator_ "asigna responsabilidades adicionales a una variable dinámicamente, proporcionando una alternativa flexible a la herencia _\(composición\)_ para extender la funcionalidad".
 
 ## También conocido como
 

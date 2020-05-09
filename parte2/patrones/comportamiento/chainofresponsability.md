@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Evita acoplar el emisor de una petición a su receptor, dando a más de una variable la posibilidad de responder a la petición. Encadena las variables receptoras y pasa la petición a través de la cadena hasta que es procesada por alguna variable.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Chain of Responsibility_ "evita acoplar el emisor de una petición a su receptor, dando a más de una variable la posibilidad de responder a la petición. Encadena las variables receptoras y pasa la petición a través de la cadena hasta que es procesada por alguna variable".
 
 ## Estructura
 

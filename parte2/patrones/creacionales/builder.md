@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Separa la construcción de una variable compleja de su representación, de forma que el mismo proceso de construcción pueda crear diferentes representaciones.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Builder_ "separa la construcción de una variable compleja de su representación, de forma que el mismo proceso de construcción pueda crear diferentes representaciones".
 
 ## Estructura
 

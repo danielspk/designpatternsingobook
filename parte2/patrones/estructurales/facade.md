@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Proporciona una interfaz unificada para un conjunto de interfaces de un subsistema. Define una interfaz de alto nivel que hace que el subsistema sea más fácil de usar.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Facade_ "proporciona una interfaz unificada para un conjunto de interfaces de un subsistema. Define una interfaz de alto nivel que hace que el subsistema sea más fácil de usar".
 
 ## Estructura
 

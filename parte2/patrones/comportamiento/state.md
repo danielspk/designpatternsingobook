@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Permite que una variable modifique su comportamiento cada vez que cambie su estado interno. Parecerá que cambia el tipo de dato de la variable.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _State_ "permite que una variable modifique su comportamiento cada vez que cambie su estado interno. Parecerá que cambia el tipo de dato de la variable".
 
 ## También conocido como
 

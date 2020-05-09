@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Define una interfaz para crear una variable, pero deja que sean los subtipos de datos quienes decidan qué tipo de dato invocar. Permite que un tipo de dato delegue a sus subtipos de datos la creación de variables.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Factory Method_ "define una interfaz para crear una variable, pero deja que sean los subtipos de datos quienes decidan qué tipo de dato invocar. Permite que un tipo de dato delegue a sus subtipos de datos la creación de variables".
 
 ## También conocido como
 

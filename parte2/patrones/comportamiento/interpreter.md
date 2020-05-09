@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Dado un lenguaje, define una representación de su gramática junto con un intérprete que usa dicha representación para interpretar sentencias del lenguaje.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Interpreter_ "dado un lenguaje, define una representación de su gramática junto con un intérprete que usa dicha representación para interpretar sentencias del lenguaje".
 
 ## Estructura
 

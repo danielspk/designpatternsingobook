@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Convierte la interfaz de un tipo de dato en otra interfaz que es la que esperan los clientes. Permite que cooperen tipos de datos que de otra forma no podrían por tener interfaces incompatibles.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Adapter_ "convierte la interfaz de un tipo de dato en otra interfaz que es la que esperan los clientes. Permite que cooperen tipos de datos que de otra forma no podrían por tener interfaces incompatibles".
 
 ## También conocido como
 

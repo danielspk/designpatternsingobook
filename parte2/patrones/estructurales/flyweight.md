@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Usa comportamiento para permitir un gran número de variables de grano fino de forma eficiente.
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Flyweight_ "usa comportamiento para permitir un gran número de variables de grano fino de forma eficiente".
 
 ## Estructura
 
