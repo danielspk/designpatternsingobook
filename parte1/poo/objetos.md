@@ -223,7 +223,7 @@ func (cc CuentaCorriente) calcularIntereses() double {
 
 #### Polimorfismo
 
-_Go_ es polimórfico. Gracias a la herencia de interfaces se pueden asignar referencias en forma polimórfica. - _más información en el siguiente apartado de_ [_"Herencia / Composición"_](composicion.md)
+_Go_ es polimórfico. Gracias a la herencia de interfaces se pueden asignar referencias en forma polimórfica. - _más información en el siguiente apartado de_ [_"Herencia / Composición"_](composicion.md)_._
 
 Ejemplo:
 
