@@ -201,7 +201,7 @@ gerente.InformarIngreso()
 
 [Ejecutar código](https://play.golang.org/p/rBBwVyj9sjQ)
 
-En _Go_ entonces se manifiesta la herencia de interfaz. - _más información en el siguiente apartado de_ [_"Herencia / Composición"_](composicion.md)
+En _Go_ entonces se manifiesta la herencia de interfaz. - _más información en el siguiente apartado de_ [_"Herencia / Composición"_](composicion.md)_._
 
 #### Encapsulamiento
 
