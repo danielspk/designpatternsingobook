@@ -128,7 +128,7 @@ Los tres pilares de la programación orientada a objetos son la _herencia_, el _
 
 Como ya se dijo, en _Go_ no existe la herencia, o al menos no la herencia de clases como se la conoce en otros lenguajes tales como _Scala_, _Swift_ o _Eiffel_ por ejemplo.
 
-Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustrando otros tipos dentro de él.
+Los tipos de datos en _Go_ permiten ampliar/modificar su comportamiento incrustando otros tipos dentro de él.
 
 Cada estructura incorpora los tipos de datos y comportamientos de la/s estructura/s incrustrada/s.
 
