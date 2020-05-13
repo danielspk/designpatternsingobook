@@ -286,11 +286,11 @@ func CuentaCorrienteGetBanco() string {
 
 ## Qué dicen otros autores
 
-Según Gigi Sayfan [\[4\]](../../recursos.md) "Go es una extraña mezcla de ideas antiguas y nuevas.", y "Muchas personas ni siquiera están seguras de si Go es un lenguaje orientado a objetos", sin embargo para el "Go es un lenguaje de programación orientado a objetos de buena fe. Permite el modelado basado en objetos y promueve las mejores prácticas de usar interfaces en lugar de tipos concretos de jerarquías. Go tiene algunas elecciones sintácticas inusuales, pero el trabajo general con tipos, métodos e interfaces parece simple, ligero y natural. La incrustración no es muy pura, pero aparentemente estaba en juego el pragmatismo, y se proporcionó una incrustración en lugar de sólo la composición por nombre".
+Según Gigi Sayfan [\[4\]](../../recursos.md) "Go es una extraña mezcla de ideas antiguas y nuevas.", y "Muchas personas ni siquiera están seguras de si Go es un lenguaje orientado a objetos", sin embargo para el "Go es un lenguaje de programación orientado a objetos de buena fe. Permite el modelado basado en objetos y promueve las mejores prácticas de usar interfaces en lugar de tipos concretos de jerarquías. Go tiene algunas elecciones sintácticas inusuales, pero el trabajo general con tipos, métodos e interfaces parece simple, ligero y natural. La incrustación no es muy pura, pero aparentemente estaba en juego el pragmatismo, y se proporcionó una incrustación en lugar de sólo la composición por nombre".
 
 Para Junade Ali [\[30\]](../../recursos.md) "La programación orientada a objetos es más que solo clases y objetos; es un paradigma de programación basado alrededor de objetos \(estructuras de datos\) que contienen campos de datos y métodos. Es esencial entender esto; el uso de clases para organizar un grupo de métodos no relacionados no es orientación a objetos".
 
-Incluso la propia gente que desarrolla _Go_ responde a esta pregunta [\[44\]](../../recursos.md) como "Si y no."
+Incluso la propia gente que desarrolla _Go_ responde a esta pregunta [\[44\]](../../recursos.md) como "Si y no".
 
 ## Mi punto de vista
 
