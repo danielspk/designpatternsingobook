@@ -4,9 +4,9 @@ A diferencia de lenguajes explícitamente orientados a objetos como _C++_, _Java
 
 Algunos, rápidamente podrían inferir que _Go_ no es un lenguaje orientado a objetos. ¿Cómo puede existir un lenguaje orientado a objetos que no disponga de clases?. La pregunta que realmente debemos hacernos es: _**¿Qué es la programación orientada a objetos?**_.
 
-Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, algunos podrían decir que dado que _Java_ es academicamente reconocido como un lenguaje estrictamente orientado a objetos, y dado que ese lenguaje tiene entre otras características clases, objetos y herencia; como _Go_ no las tiene, entonces no podría ser un lenguaje orientado a objetos.
+Los desarrolladores tenemos una tendencia natural a comparar las cosas. Entonces, por ejemplo, algunos podrían decir que dado que _Java_ es académicamente reconocido como un lenguaje estrictamente orientado a objetos, y dado que ese lenguaje tiene entre otras características clases, objetos y herencia; como _Go_ no las tiene, entonces no podría ser un lenguaje orientado a objetos.
 
-_¿Alguien alguna vez escucho decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discución sobre si lo es o no lo es - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma como la que la hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
+_¿Alguien alguna vez escuchó decir que Javascript es un lenguaje orientado a objetos?_. Existe una gran discusión sobre si lo es o no lo es - a fin de cuentas en _Javascript_ tampoco hay clases ni herencia de la forma como la que la hay en _Java_. No obstante _Javascript_ suele ser considerado un lenguaje orientado a objetos. _¿Porqué?_. Porque permite implementar ciertas características de la programación orientada a objetos.
 
 > En ES6 se incorporan las clases en Javascript aunque con un soporte muy limitado en comparación con otros lenguajes orientados a objetos clásicos.
 
