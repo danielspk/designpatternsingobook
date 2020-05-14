@@ -31,7 +31,7 @@ No se observan impedimentos y/o modificaciones de la estructura original del pat
 
 ## Código de ejemplo
 
-En este ejemplo queremos acceder a los salarios de los empleados de una gerencia tanto de forma individual como grupal. De esta forma la compañía podría analizar el impacto de futuros bonos de productividad tanto para una gerencia completa o para alguno de sus empleados.
+En este ejemplo queremos acceder a los salarios de los empleados de una gerencia tanto de forma individual como grupal. De esta forma la compañia podría analizar el impacto de futuros bonos de productividad tanto para una gerencia completa o para alguno de sus empleados.
 
 Implementación:
 
