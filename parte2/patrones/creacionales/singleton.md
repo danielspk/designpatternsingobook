@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Singleton_ "garantiza que una clase sólo tenga una instancia, y proporciona un punto de acceso global a ella".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Singleton_ "garantiza que una clase solo tenga una instancia, y proporciona un punto de acceso global a ella".
 
 ## Estructura
 
@@ -18,7 +18,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 
 * No se observan impedimentos para la implementación del patrón en _Go_.
 * Al no existir método y propiedades estáticas en _Go_ es necesario utilizar programación funcional para poder implementar el patrón.
-* Dado que _Go_ permite la programación concurrente en diferentes subprocesos de ejecución, no es posible garantizar una única variable del tipo de dato si no se toman recaudos adicionales. Para asegurar que sólo existirá una variable del tipo de dato se deberá hacer uso de la librería estándar [sync](https://golang.org/pkg/sync/) de _Go_. Concretamente el método [Do](https://golang.org/pkg/sync/#Once.Do) de la estructura [Once](https://golang.org/pkg/sync/#Once) garantiza que la función pasada como parámetro puede ser ejecutada una única vez mientra dure la ejecución del programa. Esta función será la encargada de crear la única variable del tipo de dato _Singleton_.
+* Dado que _Go_ permite la programación concurrente en diferentes subprocesos de ejecución, no es posible garantizar una única variable del tipo de dato si no se toman recaudos adicionales. Para asegurar que solo existirá una variable del tipo de dato se deberá hacer uso de la librería estándar [sync](https://golang.org/pkg/sync/) de _Go_. Concretamente el método [Do](https://golang.org/pkg/sync/#Once.Do) de la estructura [Once](https://golang.org/pkg/sync/#Once) garantiza que la función pasada como parámetro puede ser ejecutada una única vez mientras dure la ejecución del programa. Esta función será la encargada de crear la única variable del tipo de dato _Singleton_.
 
 ## Código de ejemplo
 

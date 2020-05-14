@@ -26,7 +26,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 
 ## Código de ejemplo
 
-En este ejemplo queremos montar una sala de chat en donde los usuarios puedan comunicarse entre sí. La sala de chat actúa como mediador entre los usuarios.
+En este ejemplo queremos montar una sala de chat en donde los usuarios puedan comunicarse entre sí. La sala de chat actua como mediador entre los usuarios.
 
 Implementación:
 
