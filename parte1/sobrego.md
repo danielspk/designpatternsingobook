@@ -57,7 +57,7 @@ _Go_ se caracteriza por ser un lenguaje:
 * con uso de punteros - _pero sin aritmética_
 * con cortos tiempos de compilación
 
-Se destaca también por su diseño minimalista y su facilidad para aprenderlo. A modo de comparación mientras otros lenguajes tienen muchas palabras reservadas, _C++ 20_ tiene 96, _C\# 7_ tiene 78, _Java 13_ tiene 51; _Go_ sólo tiene 25.
+Se destaca también por su diseño minimalista y su facilidad para aprenderlo. A modo de comparación mientras otros lenguajes tienen muchas palabras reservadas, _C++ 20_ tiene 96, _C\# 7_ tiene 78, _Java 13_ tiene 51; _Go_ solo tiene 25.
 
 ### Ejemplo
 
@@ -107,7 +107,7 @@ Esta filosofía para algunos controvertida es la que creo en mi opinión que hac
 
 Los proverbios de _Go_ invitan a los desarrolladores a reflexionar sobre la filosofía de _Go_ y a la enseñanza sobre el lenguaje.
 
-Se invita a los lectores a profundizar más sobre esta filosofía en base a la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](../recursos.md)
+Se invita a los lectores a profundizar más sobre esta filosofía con base en la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](../recursos.md)
 
 A continuación se exponen sólo algunos de estos proverbios:
 
