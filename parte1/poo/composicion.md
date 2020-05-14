@@ -96,13 +96,13 @@ class Manzana {
 **Pros:**
 
 * **Bajo Acoplamiento:** Cualquier cambio en la clase _Fruta_ no afecta a la clase _Manzana_. Incluso si se agrega un método en la clase _Fruta_ con la misma firma de uno de la clase Manzana no afecta a ésta última.
-* **Reutilización de Código:** Se puede lograr de igual forma que con la herencia, aunque hay que llamar explícitamente al código que necesita ser reutilizado \(**Nota:** esto último no es necesario en _Go_\).
+* **Reutilización de Código:** Se puede lograr de igual forma que con la herencia, aunque hay que llamar explicitamente al código que necesita ser reutilizado \(**Nota:** esto último no es necesario en _Go_\*\*\).
 * **Encapsulamiento más fuerte:** en el ejemplo, si se cambia la firma del método _pelar\(\)_ en la clase _Fruta_, no hay necesidad de cambiar nada en la clase _Manzana_.
 
 **Contras:**
 
-* **Es más difícil agregar una nueva clase:** sintácticamente requiere de más código.
-* **Costo de rendimiento:** el método explícito de reenvío de llamadas tiene un costo de rendimiento en comparación con la invocación directa de la herencia.
+* **Es más dificil agregar una nueva clase:** sintácticamente requiere de más código.
+* **Costo de rendimiento:** el método explicito de reenvío de llamadas tiene un costo de rendimiento en comparación con la invocación directa de la herencia.
 
 ## Ejemplo de Composición en _Go_
 
