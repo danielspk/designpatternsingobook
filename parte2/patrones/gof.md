@@ -17,7 +17,7 @@ A pesar de que parezca desalentador lo anteriormente dicho es importante remarca
 
 Un error que veo muy seguido es la adaptación de un patrón de un lenguaje a otro \(como si se tratase de una traducción literal\) cuando en realidad no se tienen en cuenta sus características específicas, que hacen a cada lenguaje de programación único, ni el objetivo que intenta resolver el patrón de diseño. **Intentaré no caer yo mismo en este error**.
 
-> En _Go_ pueden aprovecharse algunas de sus características particulares para implementar también otros tipos de patrones distintos a los del libro "Patrones de Diseño" [\[29\]](../../recursos.md). Por ejemplo hay una gran cantidad de patrones de concurrencia.
+> En _Go_ pueden aprovecharse algunas de sus características particulares para implementar también otros tipos de patrones distintos a los del libro "Patrones de Diseño" [\[29\]](../../recursos.md). Por ejemplo hay una gran cantidad de patrones de concurrencia
 
 ### ¿Cómo se clasifican los patrones?
 
@@ -93,7 +93,7 @@ Los autores del libro "Patrones de Diseño" [\[29\]](../../recursos.md) utilizan
 
 En esta publicación utilizaremos la misma estructura pero con las siguientes observaciones:
 
-* Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo \(_creación de un editor de texto_\) y no pueden ser ejecutados para el aprendizaje del lector. Los escenarios serán triviales y muy simples, la idea es orientar al lector en cómo se implementa el patrón de diseño y no en como resolver un problema puntual. Se utilizarán escenarios de alguno de los siguientes recursos de interés: [\[8\]](../../recursos.md), [\[40\]](../../recursos.md), [\[41\]](../../recursos.md), [\[42\]](../../recursos.md).
+* Se reemplazarán los escenarios por ejemplos más simples ya que los del libro están basados en un caso de estudio complejo \(_creación de un editor de texto_\) y no pueden ser ejecutados para el aprendizaje del lector. Los escenarios serán triviales y muy simples, la idea es orientar al lector en cómo se implementa el patrón de diseño y no en como resolver un problema puntual. Se utilizarán escenarios de alguno de los siguientes recursos de interés: [\[8\]](../../recursos.md), [\[40\]](../../recursos.md), [\[41\]](../../recursos.md), [\[42\]](../../recursos.md)
 * Se omitirá las secciones aplicabilidad, colaboradores, consecuencias, usos conocidos y patrones relacionados           ya que no es el objetivo de esta publicación el explicar cada patrón de diseño. Se insta al lector a referirse al libro original para mayor información - [\[29\]](../../recursos.md).
 * Se unificará la motivación junto con el código de ejemplo.
 * Se analizarán adicionalmente , sólo si corresponden, las alternativas de implementación desde el punto de vista de la concurrencia que caracteriza al lenguaje _Go_.
