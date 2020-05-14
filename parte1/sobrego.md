@@ -109,7 +109,7 @@ Los proverbios de _Go_ invitan a los desarrolladores a reflexionar sobre la filo
 
 Se invita a los lectores a profundizar más sobre esta filosofía con base en la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](../recursos.md)
 
-A continuación se exponen sólo algunos de estos proverbios:
+A continuación se exponen solo algunos de estos proverbios:
 
 * No se comunique compartiendo memoria, comparta memoria comunicándose.
 * La concurrencia no es paralelismo.
