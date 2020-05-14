@@ -28,7 +28,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 
 ## Código de ejemplo
 
-En este ejemplo queremos cumplir con una serie de pasos formales _\(método plantilla\)_ para desplegar diferentes aplicaciones móviles.
+En este ejemplo queremos cumplir con una serie de pasos formales _\(método plantilla\)_ para desplegar diferentes aplicaciones mobile.
 
 Implementación:
 
@@ -101,7 +101,7 @@ deployiOS.Construir(&deployiOS)
 
 Implementación alternativa:
 
-En esta alternativa no es necesario pasar la propia referencia del tipo concreto en el método `Construir`. La construcción del tipo concreto se realiza componiéndolo con un tipo abstracto compuesto con el mismo tipo concreto.
+En esta alternativa no es necesario pasar la propia referencia del tipo concreto en el método `Construir`. La construcción del tipo concreto se realiza componiendolo con un tipo abstracto compuesto con el mismo tipo concreto.
 
 ```go
 // Clase Abstracta - Interface
