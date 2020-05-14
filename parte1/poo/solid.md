@@ -19,7 +19,7 @@ La primera observación respecto de este principio es que en _Go_ no existen cla
 Este principio hace foco en que un objeto debe tener únicamente una responsabilidad encapsulada por la clase. Cuando se hace referencia a una responsabilidad es para referirse a una razón para cambiar.  
 Mantener una clase que tiene múltiples objetivos o responsabilidades es mucho más complejo que una clase enfocada en una única responsabilidad.
 
-El siguiente ejemplo no cumple con éste principio ya que otorga a una estructura dos responsabilidades bien diferenciadas: _guardar en un archivo local_ y _guardar en una base de datos_.
+El siguiente ejemplo no cumple con este principio porque otorga a una estructura dos responsabilidades bien diferenciadas: _guardar en un archivo local_ y _guardar en una base de datos_.
 
 ```go
 package main
@@ -79,7 +79,7 @@ func (gdbd GuardadorDocumentoBaseDatos) Guardar(d model.Documento) {
 
 [Ejecutar código](https://play.golang.org/p/nxRPMtLbWP2)
 
-**¿Qué pasa en** _**Go**_**:** Gracias a la organización en paquetes que permite _Go_ es posible crear estructuras, tipos, funciones y métodos empaquetados con propositos claros y bien definidos.
+**¿Qué pasa en** _**Go**_**:** Gracias a la organización en paquetes que permite _Go_ es posible crear estructuras, tipos, funciones y métodos empaquetados con propósitos claros y bien definidos.
 
 ### Principio abierto cerrado
 
@@ -125,7 +125,7 @@ func (am AnimalModificado) Caminar() {
 
 > Cada clase que herede de otra debe poder utilizarse como su clase padre sin necesidad de conocer las diferencias que pudieran existir entre ellas.
 
-Este principio propone que el contrato de una clase base debe ser honrado por sus clases derivadas para que instancias de las clases derivadas puedan reeamplazar a instancias de la clase base.
+Este principio propone que el contrato de una clase base debe ser honrado por sus clases derivadas para que instancias de las clases derivadas puedan reemplazar a instancias de la clase base.
 
 Veamos el siguiente código:
 
@@ -155,7 +155,7 @@ func (e Emision) EmitirHTML(r RespuestaHTML) {
 
 [Ejecutar código](https://play.golang.org/p/4jwdJ0NUjOe)
 
-La estructura _Emision_ debe implementar dos comportamientos ya que debe poder gestionar impresiones en HTML y JSON. Si a futuro se requiriera de otro tipo de impresión - _xml por ejemplo_ - se debería modificar su código fuente.
+La estructura _Emision_ debe implementar dos comportamientos, ya que debe poder gestionar impresiones en HTML y JSON. Si a futuro se requiriera de otro tipo de impresión - _xml por ejemplo_ - se debería modificar su código fuente.
 
 La siguiente modificación permite intercambiar cualquier tipo de respuesta para su impresión:
 
@@ -185,7 +185,7 @@ func (e Emision) Emitir(r Respuesta) {
 
 [Ejecutar código](https://play.golang.org/p/ZJ0iEXpWgt4)
 
-**¿Qué pasa en** _**Go**_**:** Al definir firmas de métodos a traves de interfaces, y no mediante tipos concretos, es posible utilizar cualquier tipo que respete implícitamente la interfaz.
+**¿Qué pasa en** _**Go**_**:** Al definir firmas de métodos a través de interfaces, y no mediante tipos concretos, es posible utilizar cualquier tipo que respete implícitamente la interfaz.
 
 ### Principio de segregación de la interfaz
 
@@ -294,7 +294,7 @@ type A struct {
 
 ## Conclusión
 
-Si bien el libro de Robert C. Martin [\[48\]](../../recursos.md) tiene más de una decada y media y hace referencia a lenguajes propiamente orientados a objetos, vimos como también pueden aplicarse esos principios en _Go_.
+Si bien el libro de Robert C. Martin [\[48\]](../../recursos.md) tiene más de una década y media y hace referencia a lenguajes propiamente orientados a objetos, vimos como también pueden aplicarse esos principios en _Go_.
 
 Como se vio en el apartado anterior, el poder de la composición y de las interfaces implícitas le permiten a _Go_ implementar buenas prácticas y conceptos propios de la programación orientada a objetos.
 
