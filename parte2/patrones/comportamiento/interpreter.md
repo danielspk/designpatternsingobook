@@ -21,7 +21,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 * **Contexto:**
   * contiene información que es global al intérprete.
 * **Cliente:**
-  * construye \(o recibe\) un árbol sintáctico abstracto que representa una determinada sentencia del lenguaje definido por la gramática. Este árbol sintáctico abstracto está formado por variables del tipo de dato ExpresionNoTerminal y ExpresionTerminal.
+  * construye \(o recibe\) un árbol sintáctico abstracto que representa una determinada sentencia del lenguaje definido por la gramática. Este aŕbol sintáctico abstracto está formado por variables del tipo de dato ExpresionNoTerminal y ExpresionTerminal.
   * invoca a la operación _interpretar_.
 
 ## Implementación
@@ -31,7 +31,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 
 ## Código de ejemplo
 
-En este ejemplo queremos interpretar distintas expresiones lógicas: AND y OR en base a palabras definidas en un contexto.
+En este ejemplo queremos que interpretar distintas expresiones lógicas: AND y OR en base a palabras definidas en un contexto.
 
 Implementación:
 
