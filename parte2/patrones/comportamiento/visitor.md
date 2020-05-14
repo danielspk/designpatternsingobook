@@ -27,7 +27,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 
 * No se observan impedimentos y/o modificaciones de la estructura original del patrón para su implementación en _Go_.
 * Dado que _Go_ no soporta sobrecarga de método, y a fin de facilitar el ejemplo sin hacer uso de la [reflexión](https://golang.org/pkg/reflect/), los visitantes dispondan de diferentes comportamientos para cada tipo de elemento variando los nombres de sus funciones.
-* Se omite del código de ejemplo _EstructuraDeObjeto_ dado que solo sería una colección que acepta elementos.
+* Se omite del código de ejemplo _EstructuraDeObjeto_ dado que sólo sería una colección que acepta elementos.
 
 ## Código de ejemplo
 
