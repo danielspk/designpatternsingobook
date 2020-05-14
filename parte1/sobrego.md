@@ -38,7 +38,7 @@ Dado que la palabra _Go_ es parte del idioma ingles el lenguaje también es cono
 
 _Go_ está inspirado en la sintaxis de _C_ como otros lenguajes: _C++_, _C\#_, _Java_, _PHP_, _Javascript_, etc.
 
-Su elección fue ser afin a la gran comunidad de desarrolladores de _C++_ de Google.
+Su elección fue ser afín a la gran comunidad de desarrolladores de _C++_ de Google.
 
 Por sus características suele clasificarse como un lenguaje compilado que tiene características de lenguajes interpretados.
 
@@ -91,9 +91,9 @@ _Go_ como todos los lenguajes de programación presenta ciertas controversias. S
 * manejo de excepciones
 * sobrecarga de operadores
 
-> En el siguiente link puede acceder a una serie de artículos, de diferentes autores, destinados a detallar y debatir sobre las debilidades que encuentran en el lenguaje _Go_ - [https://github.com/ksimka/go-is-not-good](https://github.com/ksimka/go-is-not-good) [\[51\]](../recursos.md). Varios de los argumentos son bastantes graciosos desde mi puento de vista: por ejemplo algunos critican la mascota del lenguaje, o se quejan de que es un lenguaje compilado, o que su sintaxis es del estilo de _C_.
+> En el siguiente link puede acceder a una serie de artículos, de diferentes autores, destinados a detallar y debatir sobre las debilidades que encuentran en el lenguaje _Go_ - [https://github.com/ksimka/go-is-not-good](https://github.com/ksimka/go-is-not-good) [\[51\]](../recursos.md). Varios de los argumentos son bastantes graciosos desde mi punto de vista: por ejemplo algunos critican la mascota del lenguaje, o se quejan de que es un lenguaje compilado, o que su sintaxis es del estilo de _C_.
 
-No obstante los desarrolladores de _Go_ no son ajenos a estas críticas, y permiten que se propongan nuevas funcionalidades. Para esto se deben completar una serie de pasos que se encuentran documentados en el siguiente link: [https://github.com/golang/proposal](https://github.com/golang/proposal).
+No obstante el equipo de diseño de _Go_ no es ajeno a estas críticas, y permite que se propongan nuevas funcionalidades. Para esto se deben completar una serie de pasos que se encuentran documentados en el siguiente link: [https://github.com/golang/proposal](https://github.com/golang/proposal).
 
 _Go_ trata de respetar su filosofía de mantener un lenguaje extremadamente simple y rápido de compilar, por lo que la incorporación de nuevas características que pudieran afectar a uno de estos dos puntos debe poder justificarse claramente, y no debe existir forma alguna de poder llevar a cabo esa tarea con las características actuales del lenguaje. Por ejemplo estas son algunas respuestas que la documentación de _Go_ da sobre la no existencia de excepciones:
 
@@ -107,7 +107,7 @@ Esta filosofía para algunos controvertida es la que creo en mi opinión que hac
 
 Los proverbios de _Go_ invitan a los desarrolladores a reflexionar sobre la filosofía de _Go_ y a la enseñanza sobre el lenguaje.
 
-Se invita a los lectores a profundizar más sobre esta filosofía en base a la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](../recursos.md).
+Se invita a los lectores a profundizar más sobre esta filosofía en base a la charla de Rob Pike en el Gopherfest del año 2015: "Go Proverbs". [\[33\]](../recursos.md)
 
 A continuación se exponen sólo algunos de estos proverbios:
 
@@ -123,5 +123,5 @@ A continuación se exponen sólo algunos de estos proverbios:
 * Los errores son valores
 * No solo revise los errores, trátelos con gracia.
 
-Puede acceder al listado completo y actualizado en [https://go-proverbs.github.io](https://go-proverbs.github.io/)
+Puede acceder al listado completo y actualizado en [https://go-proverbs.github.io](https://go-proverbs.github.io/).
 
