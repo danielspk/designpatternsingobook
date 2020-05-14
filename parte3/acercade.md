@@ -18,7 +18,7 @@ El trabajo presentado se denomina:
 
 El mismo se presenta como:
 
-> "El objetivo principal del presente trabajo será mostrar cómo pueden aplicarse los Patrones de Diseño GoF en un lenguaje de programación que no es completamente orientado a objetos. Para esto se utilizará como referencia el lenguaje de programación Go. Su propósito principal será servir de material de referencia para desarrolladores Go que deseen aplicar los patrones de Diseño GoF. Se analizará la viabilidad, los ajustes, y las adaptaciones necesarias para implementar los Patrones de Diseño en base a las características del lenguaje de programación Go. Para esto, previamente se abordarán y explicarán los atributos orientados a objetos que posee el lenguaje de programación Go. Adicionalmente el trabajo se publicará como ebook online mediante la realización de una página web, junto a ejemplos autoejecutables y un repositorio público con todo el código fuente, ejemplos y diagramas desarrollados."
+> "El objetivo principal del presente trabajo será mostrar cómo pueden aplicarse los Patrones de Diseño GoF en un lenguaje de programación que no es completamente orientado a objetos. Para esto se utilizará como referencia el lenguaje de programación Go. Su propósito principal será servir de material de referencia para desarrolladores Go que deseen aplicar los patrones de Diseño GoF. Se analizará la viabilidad, los ajustes, y las adaptaciones necesarias para implementar los Patrones de Diseño en base a las características del lenguaje de programación Go. Para esto, previamente se abordarán y explicarán los atributos orientados a objetos que posee el lenguaje de programación Go. Adicionalmente el trabajo se publicará como e-book online mediante la realización de una página web, junto a ejemplos autoejecutables y un repositorio público con todo el código fuente, ejemplos y diagramas desarrollados."
 
 ### Porqué Go
 
@@ -38,7 +38,7 @@ Actualmente _\(Mayo/2018\)_ _Go_ se ubica en la 14ª posición:
 
 ![](../.gitbook/assets/indextiobe201805.png)
 
-Por el contrario _Rust_ se ubica actualmente _\(Mayo/2018\)_ en la 91ª posición en una clara caida dentro del ranking. Si bien por su posición actual sus estadísticas ya no se publican dentro del índice Tiobe, al momento de su evaluación estaba dento del ranking de los 20ª a 50ª.
+Por el contrario _Rust_ se ubica actualmente _\(Mayo/2018\)_ en la 91ª posición en una clara caida dentro del ranking. Si bien por su posición actual sus estadísticas ya no se publican dentro del índice Tiobe, al momento de su evaluación estaba dentro del ranking de los 20ª a 50ª.
 
 > Las estadísticas registradas de Tiobe corresponden a Mayo del 2018. Consulte el Índice Tiobe [\[43\]](../recursos.md) para tener datos más actualizados.
 
@@ -53,9 +53,9 @@ Antes de formalizar la idea final de esta publicación me defini dos objetivos p
 * hacer un muestreo de cuatro o cinco patrones GoF aleatoriamente con el fin de analizar si se podían implementar "semánticamente" en _Go_.
 * analizar si esas implementaciones realmente podían aportar valor al software.
 
-Mi primer objetivo fue muy facil de corroborar. Si bien la inexistencia de _"clases"_ en _Go_ es un condicionante en la forma en que se expresan y documentan los patrones de diseño GoF; la semántica de tipos de datos que implementan comportamientos fue, a mi entender, lo suficientemente análoga a las clases tradicionales. **Semánticamente los patrones son implementables en** _**Go**_ - _con su sintaxis particular_ -.
+Mi primer objetivo fue muy fácil de corroborar. Si bien la inexistencia de _"clases"_ en _Go_ es un condicionante en la forma en que se expresan y documentan los patrones de diseño GoF; la semántica de tipos de datos que implementan comportamientos fue, a mi entender, lo suficientemente análoga a las clases tradicionales. **Semánticamente los patrones son implementables en** _**Go**_ - _con su sintaxis particular_ -.
 
-El segundo objetivo fue más dificil de llevar a cabo: ¿Qué significa que la implementación de un patrón de diseño GoF aporte valor al software?. La mejor manera que encontre de dar respuesta a esta pregunta fue demostrar todo lo contrario: ¿Cómo una implementación semántica de un patrón de diseño GoF no aporta valor alguno al software?.
+El segundo objetivo fue más difícil de llevar a cabo: ¿Qué significa que la implementación de un patrón de diseño GoF aporte valor al software?. La mejor manera que encontré de dar respuesta a esta pregunta fue demostrar todo lo contrario: ¿Cómo una implementación semántica de un patrón de diseño GoF no aporta valor alguno al software?.
 
 El siguiente código de Javascript ES5 implementa el patrón de comportamiento _Strategy_:
 
@@ -101,7 +101,7 @@ Semánticamente la aplicación del patrón es correcta. El contexto es el _Trans
 * no permite generar código reutilizable en paquetes o namespaces.
 * el _Contexto_ no es autodocumentable a nivel código fuente ya que su función _setStrategy_ espera cualquier tipo de variable y no un _objeto_ de tipo _Estrategia_.
 
-Como se puede ver la programación orientada a objetos en Javascript ES5 es muy limitada, y si bien semanticamente puede implementarse los patrones de diseño GoF, aportan valor al software sólo en cuanto a su funcionamiento final pero no así respecto de la reutilización de código.
+Como se puede ver la programación orientada a objetos en Javascript ES5 es muy limitada, y si bien semánticamente puede implementarse los patrones de diseño GoF, aportan valor al software sólo en cuanto a su funcionamiento final pero no así respecto de la reutilización de código.
 
 > Aclaro ES5 de Javascript porque ES6 tiene un soporte más avanzado para la programación orientada a objetos.
 
@@ -117,7 +117,7 @@ En conclusión mis objetivos iniciales fueron cumplimentados y los siguientes pa
 
 Para esta publicación se priorizó la utilización de herramientas que cumplieran alguna de las siguientes premisas:
 
-* que fueran gratuitas y de libre acceso
+* que fueran gratuitas y/o de libre acceso
 * que fueran open source
 
 Las herramientas utilizadas fueron:
@@ -144,7 +144,7 @@ Quisiera concluir agradeciendo a:
 
 * mis compañeros de cursada por los buenos momentos vividos y las experiencias compartidas.
 * a la UCA por la excelente infraestructura y organización de la Carrera.
-* al cuerpo docente por su alto nivel academico y la predisposición para transmitir sus conocimientos.
+* al cuerpo docente por su alto nivel académico y la predisposición para transmitir sus conocimientos.
 * a mi tutor de trabajo final por su compromiso, sus consejos y acompañamiento durante la realización de este trabajo.
 * a mis seres queridos por apoyarme en este viaje a pesar del tiempo que no les pude dedicar.
 
