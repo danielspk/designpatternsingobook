@@ -29,7 +29,7 @@ No se observan impedimentos y/o modificaciones de la estructura original del pat
 
 ## Código de ejemplo
 
-En este ejemplo queremos agregarle dinámicamente ingredientes adicionales a un un cafe que por defecto viene simple.
+En este ejemplo queremos agregarle dinámicamente ingredientes adicionales a un café que por defecto viene simple.
 
 Implementación:
 
