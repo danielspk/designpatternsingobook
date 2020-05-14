@@ -20,7 +20,7 @@ _Handle/Body_ \(Manejador/Cuerpo\)
 * **AbstraccionRefinada:**
   * extiende la interfaz definida por Abstraccion.
 * **Implementador:**
-  * define la interfaz de los tipos de datos de implementación. Esta interfaz no tiene por qué corresponderse exactamente con la de Abstracción; de hecho, ambas interfaces pueden ser muy distintas. Normalmente la interfaz Implementador solo proporciona operaciones primitivas, y Abstraccion define operaciones de más alto nivel basadas en dichas primitivas.
+  * define la interfaz de los tipos de datos de implemetación. Esta interfaz no tiene por qué corresponderse exactamente con la de Abstracción; de hecho, ambas interfaces pueden ser muy distintas. Normalmente la interfaz Implementador sólo proporciona operaciones primitivas, y Abstraccion define operaciones de más alto nivel basadas en dichas primitivas.
 * **ImplementadorConcreto:**
   * implementa la interfaz Implementador y define su implementación concreta.
 
