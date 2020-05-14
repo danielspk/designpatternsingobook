@@ -24,7 +24,7 @@ _Kit_
   * define una variable producto para que sea creado por la fábrica correspondiente.
   * implementa la interfaz ProductoAbstracto.
 * **Cliente:**
-  * sólo usa interfaces declaradas por los tipos de datos FabricaAbstracta y ProductoAbstracto.
+  * solo usa interfaces declaradas por los tipos de datos FabricaAbstracta y ProductoAbstracto.
 
 ## Implementación
 

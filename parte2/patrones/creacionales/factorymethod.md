@@ -34,7 +34,7 @@ _Virtual Constructor_ \(Constructor Virtual\)
 
 ## Código de ejemplo
 
-En este ejemplo queremos contratar personas con diferentes perfiles profesionales. A medida que los postulantes lleguen a la oficina de recursos humanos serán entrevistados \(construidos\) por diferentes reclutadores especializados.
+En este ejemplo queremos contratar personas con diferentes perfiles profesionales. A medida que los postulantes lleguen a la oficina de recursos humanos serán entrevistados \(construidor\) por diferentes reclutadores especializados.
 
 Implementación:
 
