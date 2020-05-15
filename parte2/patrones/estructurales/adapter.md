@@ -82,7 +82,7 @@ jugadorA := &Jugador{&Elfo{}}
 fmt.Printf("Jugador A: %s\n", jugadorA.Atacar())
 
 jugadorB := &Jugador{&MagoAdaptador{&Mago{}}}
-fmt.Printf("Jugador B: %s\n", jugadorB.Atacar())odos los desarrolladores de la Gerencia es de $%d\n", gerenciaIT.ObtenerSalario())
+fmt.Printf("Jugador B: %s\n", jugadorB.Atacar())
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/adapter) \| [Ejecutar código](https://play.golang.org/p/60tlY8la04W)

@@ -11,7 +11,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 ## Participantes
 
 * **Flyweight:**
-  * declara una interfaz a través de la cual los flyweight concretos pueden recibir un estado extrínseco y actuar sobre él.
+  * declara una interfaz a travéz de la cual los flyweight concretos pueden recibir un estado extrínseco y actuar sobre él.
 * **FlyweightConcreto:**
   * implementa la interfaz Flyweight y permite almacenar el estado intrínseco, en caso de que lo haya. Una variable FlyweightConcreto debe poder ser compartida, por lo que cualquier estado que almacene debe ser intrínseco, esto es, debe ser independiente del contexto de la variable FlyweightConcreto.
 * **FlyweightConcretoNoCompartido:**
@@ -21,7 +21,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
   * garantiza  que los flyweight se compartan de manera adecuada. Cuando un cliente solicita un flyweight, la variable FabricaFlyweight proporciona una variable concreta o crea una nueva, en caso de que no exista ninguna.
 * **Cliente:**
   * mantiene una referencia a los flyweight.
-  * calcula o guarda el estado extrínseco de los flyweight.
+  * culcula o guarda el estado extrínseco de los flyweight.
 
 ## Implementación
 
@@ -29,7 +29,7 @@ No se observan impedimentos y/o modificaciones de la estructura original del pat
 
 ## Código de ejemplo
 
-En este ejemplo queremos que nuestro sistema sea capaz de dibujar controles en la pantalla haciendo un uso eficiente de los recursos, ya que existen controles \(los botones\) que pueden ser reutilizados.
+En este ejemplo queremos que nuestro sistema sea capaz de dibujar controles en la pantalla haciendo un uso eficiente de los recursos ya que existen controles \(los botones\) que pueden ser reutilizados.
 
 Implementación:
 
