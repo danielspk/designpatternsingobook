@@ -14,3 +14,5 @@ La tercera y última parte está destinada a las conclusiones generales y a los 
 
 > Imagen - [\[47\]](recursos.md)
 
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+
