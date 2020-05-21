@@ -8,7 +8,11 @@ Este apartado tratará de dar respuesta a la siguiente pregunta: _**¿Es Go un l
 
 ## Contenido
 
-* [Objetos en Go](objetos.md)
-* [Herencia vs Composición en Go](composicion.md)
-* [Principios S.O.L.I.D en Go](solid.md)
+* [Objetos en _Go_](objetos.md)\_\_
+* [Herencia vs Composición en _Go_](composicion.md)\_\_
+* [Principios S.O.L.I.D en _Go_](solid.md)\_\_
+
+\_\_
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

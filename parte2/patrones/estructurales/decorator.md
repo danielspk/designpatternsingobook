@@ -29,7 +29,7 @@ No se observan impedimentos y/o modificaciones de la estructura original del pat
 
 ## Código de ejemplo
 
-En este ejemplo queremos agregarle dinámicamente ingredientes adicionales a un un cafe que por defecto viene simple.
+En este ejemplo queremos agregarle dinámicamente ingredientes adicionales a un café que por defecto viene simple.
 
 Implementación:
 
@@ -105,4 +105,8 @@ fmt.Printf("Detalle: %s - Importe $%d\n", cafeConCremaConCanela.GetDetalle(), ca
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/decorator) \| [Ejecutar código](https://play.golang.org/p/62xDpf7XUv_m)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

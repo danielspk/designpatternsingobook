@@ -26,7 +26,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 
 ## Código de ejemplo
 
-En este ejemplo queremos montar una sala de chat en donde los usuarios puedan comunicarse entre sí. La sala de chat actua como mediador entre los usuarios.
+En este ejemplo queremos montar una sala de chat en donde los usuarios puedan comunicarse entre sí. La sala de chat actúa como mediador entre los usuarios.
 
 Implementación:
 
@@ -77,4 +77,8 @@ usuarioB.EnviarMensaje("Muy bien y vos?")
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/mediator) \| [Ejecutar código](https://play.golang.org/p/PWO1HBJYjPx)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

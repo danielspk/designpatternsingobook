@@ -4,7 +4,7 @@
 
 > Imagen - [\[38\]](../../../recursos.md)
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) los patrones de comportamiento "tienen que ver con algoritmos y con la asignación de responsabilidades a objetos. Los patrones de comportamiento describen no sólo patrones de clases y objetos, sino también patrones de comunicación entre ellos."
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) los patrones de comportamiento "tienen que ver con algoritmos y con la asignación de responsabilidades a objetos. Los patrones de comportamiento describen no solo patrones de clases y objetos, sino también patrones de comunicación entre ellos."
 
 ## Contenido
 
@@ -19,4 +19,8 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) los patrone
 * [State](state.md)
 * [Mediator](mediator.md)
 * [Observer](observer.md)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Memento_ "representa y externaliza el estado interno de un objeto sin violar la encapsulación, de forma que éste puede volver a dicho estado más tarde".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Memento_ "representa y externaliza el estado interno de un objeto sin violar la encapsulación, de forma que este puede volver a dicho estado más tarde".
 
 ## También conocido como
 
@@ -16,7 +16,7 @@ _Token_
 
 * **Memento:**
   * guarda el estado interno de la variable Creador. El memento puede guardar tanta información del estado interno del creador como sea necesario a discreción del creador.
-  * protege frente a accesos de otras variables que no sean el creador. Los mementos tienen realmente dos interfaces. El Conserje va una interfaz _reducida_ del memento - sólo puede pasar el memento a otras variables -. El Creador, por el contrario, ve una interfaz _amplia_, que le permite acceder a todos los datos necesarios para volver a su estado anterior. Idealmente, sólo el creador que produjo el memento estaría autorizado a acceder al estado interno de éste.
+  * protege frente a accesos de otras variables que no sean el creador. Los mementos tienen realmente dos interfaces. El Conserje va una interfaz _reducida_ del memento - solo puede pasar el memento a otras variables -. El Creador, por el contrario, ve una interfaz _amplia_, que le permite acceder a todos los datos necesarios para volver a su estado anterior. Idealmente, solo el creador que produjo el memento estaría autorizado a acceder al estado interno de este.
 * **Creador:**
   * crea un memento que contiene una instantánea de su estado interno actual.
   * usa el memento para volver a su estado anterior.
@@ -30,7 +30,7 @@ No se observan impedimentos y/o modificaciones de la estructura original del pat
 
 ## Código de ejemplo
 
-En este ejemplo queremos que un editor de texto tenga la posibilidad de volver atras su estado luego de una actualización de contenido.
+En este ejemplo queremos que un editor de texto tenga la posibilidad de volver atrás su estado luego de una actualización de contenido.
 
 Implementación:
 
@@ -102,4 +102,8 @@ fmt.Printf("El editor nuevamente contiene:%s\n", editor.VerContenido())
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/memento) \| [Ejecutar código](https://play.golang.org/p/4o78qJhd-h2)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

@@ -34,7 +34,7 @@ _Virtual Constructor_ \(Constructor Virtual\)
 
 ## Código de ejemplo
 
-En este ejemplo queremos contratar personas con diferentes perfiles profesionales. A medida que los postulantes lleguen a la oficina de recursos humanos serán entrevistados \(construidor\) por diferentes reclutadores especializados.
+En este ejemplo queremos contratar personas con diferentes perfiles profesionales. A medida que los postulantes lleguen a la oficina de recursos humanos serán entrevistados \(construidos\) por diferentes reclutadores especializados.
 
 Implementación:
 
@@ -103,4 +103,8 @@ recursosHumanosFinanzas.TomarEntrevista(recursosHumanosFinanzas)
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/creacionales/factorymethod) \| [Ejecutar código](https://play.golang.org/p/1szkQi-rVUf)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

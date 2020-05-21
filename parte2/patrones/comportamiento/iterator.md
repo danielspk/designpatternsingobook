@@ -104,3 +104,7 @@ fmt.Printf("Escuhando nuevamente la radio %s\n", iterador.Valor())
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/iterator) \| [Ejecutar código](https://play.golang.org/p/qpY_F7wrd6u)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+

@@ -128,3 +128,7 @@ fmt.Printf("Comandos ejecutados:\n%v\n", invocador.Ejecutar())
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/command) \| [Ejecutar código](https://play.golang.org/p/BRtWoVLF5nB)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+

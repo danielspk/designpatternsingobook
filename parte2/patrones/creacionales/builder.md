@@ -94,3 +94,7 @@ fmt.Printf("Se solicito una hamburguesa: %s\n", hamburguesaB.Tamanio)
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/creacionales/builder) \| [Ejecutar código](https://play.golang.org/p/5dPp1a1Yaw_F)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+

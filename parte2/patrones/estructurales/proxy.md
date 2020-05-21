@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Proxy_ "proporciona un representante o sustituto de otro objeto para controlar el acceso a éste".
+Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón _Proxy_ "proporciona un representante o sustituto de otro objeto para controlar el acceso a este".
 
 ## También conocido como
 
@@ -16,7 +16,7 @@ _Surrogate_ \(Sustituto\)
 
 * **Proxy:**
   * mantiene una referencia que permite al proxy acceder a la variable original. El proxy puede referirse a un Sujeto en caso de que las interfaces de SujetoReal y Sujeto sean la misma.
-  * proporciona una interfaz ientica a la de Sujeto, de manera que un proxy pueda ser sustituido por el sujeto real.
+  * proporciona una interfaz idéntica a la de Sujeto, de manera que un proxy pueda ser sustituido por el sujeto real.
   * controla el acceso al sujeto real, y puede ser responsable de su creación y borrado.
   * otras responsabilidades dependen del tipo de proxy:
     * los proxies remotos son responsables de codificar una petición y sus argumentos para enviar la petición codificada al sujeto real que se encuentra en un espacio de direcciones diferente.
@@ -75,4 +75,8 @@ fmt.Printf("%s\n", navegadorProxy.Direccion("http://facebook.com"))
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/proxy) \| [Ejecutar código](https://play.golang.org/p/7JSOE4GYByc)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

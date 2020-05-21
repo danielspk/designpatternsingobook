@@ -13,15 +13,15 @@ Tal como menciona Steve Francia [\[6\]](../../recursos.md) "Existen varios enfoq
 
 ## Herencia
 
-La herencia se puede puede expresar de dos maneras: _herencia de clases_ y _herencia de interfaces_. "La herencia de clases define la implementación de un objeto en términos de la implementación de otro objeto. En resumen, es un mecanismo para compartir código y representación. Por el contrario, la herencia de interfaces _\(o subtipado\)_ describe cuándo se puede usar un objeto en el lugar de otro." [\[29\]](../../recursos.md)  
-No todos los lenguajes de programación implementan la herencia de la misma manera. En algunos lenguajes la herencia de clases y la de interfaces existen como un mismo mecanismo \(_Eiffel_ por ejemplo\), mientras que en otros están separados \(_Java_ por ejemplo\). Algunos sólo permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.  
+La herencia se puede expresar de dos maneras: _herencia de clases_ y _herencia de interfaces_. "La herencia de clases define la implementación de un objeto en términos de la implementación de otro objeto. En resumen, es un mecanismo para compartir código y representación. Por el contrario, la herencia de interfaces _\(o subtipado\)_ describe cuándo se puede usar un objeto en el lugar de otro." [\[29\]](../../recursos.md)  
+No todos los lenguajes de programación implementan la herencia de la misma manera. En algunos lenguajes la herencia de clases y la de interfaces existen como un mismo mecanismo \(_Eiffel_ por ejemplo\), mientras que en otros están separados \(_Java_ por ejemplo\). Algunos solamente permiten heredar de un único objeto, esto se denomina _herencia simple_; mientras otros permiten heredar de varios objetos y a esto se lo denomina _herencia múltiple_.  
 Asimismo los comportamientos y datos heredados pueden estar limitados al acceso con el que el objeto padre los definió, esto se denomina _visibilidad_.
 
 Se expresa a la herencia como una relación **es-un/a**.
 
 ## Composición
 
-La composicion es una manera de definir objetos dentro de otros objetos. De esta forma un objeto puede adquirir los comportamientos y datos de los otros objetos por los que esta compuesto.
+La composición es una manera de definir objetos dentro de otros objetos. De esta forma un objeto puede adquirir los comportamientos y datos de los otros objetos por los que está compuesto.
 
 > Esto en cierta medida es más similar al concepto de herencia múltiple que al de simple.
 
@@ -33,8 +33,8 @@ Seguramente no haya una respuesta única. No obstante en el _faq_ de la document
 
 "**¿Por qué no hay herencia?**:  
 La programación orientada a objetos, al menos en los lenguajes más conocidos, implica demasiada discusión sobre las relaciones entre tipos, relaciones que a menudo podrían derivarse automáticamente. _Go_ toma un enfoque diferente.  
-En lugar de requerir que el programador declare de antemano que dos tipos están relacionados, en _Go_ un tipo satisface automáticamente cualquier interfaz que especifique un subconjunto de sus métodos. Además de reducir la administración _\(la palabra original es bookkeeping\)_, este enfoque tiene ventajas reales. Los tipos pueden satisfacer muchas interfaces a la vez, sin las complejidades de la herencia múltiple tradicional. Las interfaces pueden ser muy livianas - una interfaz con uno o incluso cero métodos puede expresar un concepto útil. Las interfaces se pueden agregar tardiamente si aparece una nueva idea o para probarla - sin anotar los tipos originales. Debido a que no existen relaciones explícitas entre los tipos y las interfaces, no hay una jerarquía de tipos para administrar o discutir.  
-Es posible utilizar estas ideas para construir algo análogo a los type-safe de las pipes de Unix. Por ejemplo, vea cómo _fmt.Fprintf_ permite la impresión formateada de cualquier salida, no solo de un archivo, o cómo el paquete _bufio_ puede estar completamente separado de la E/S, o cómo el paquete _image_ genera archivos de imágenes comprimidas. Todas estas ideas se derivan de una única interfaz \(_io.Writer_\) que representa un único método \(_Write_\). Y esto sólo está arañando la superficie. Las interfaces en _Go_ tienen una profunda influencia sobre cómo se estructuran los programas.  
+En lugar de requerir que el programador declare de antemano que dos tipos están relacionados, en _Go_ un tipo satisface automáticamente cualquier interfaz que especifique un subconjunto de sus métodos. Además de reducir la administración _\(la palabra original es bookkeeping\)_, este enfoque tiene ventajas reales. Los tipos pueden satisfacer muchas interfaces a la vez, sin las complejidades de la herencia múltiple tradicional. Las interfaces pueden ser muy livianas - una interfaz con uno o incluso cero métodos puede expresar un concepto útil. Las interfaces se pueden agregar tardíamente si aparece una nueva idea o para probarla - sin anotar los tipos originales. Debido a que no existen relaciones explícitas entre los tipos y las interfaces, no hay una jerarquía de tipos para administrar o discutir.  
+Es posible utilizar estas ideas para construir algo análogo a los type-safe de las pipes de Unix. Por ejemplo, vea cómo _fmt.Fprintf_ permite la impresión formateada de cualquier salida, no solo de un archivo, o cómo el paquete _bufio_ puede estar completamente separado de la E/S, o cómo el paquete _image_ genera archivos de imágenes comprimidas. Todas estas ideas se derivan de una única interfaz \(_io.Writer_\) que representa un único método \(_Write_\). Y esto solo está arañando la superficie. Las interfaces en _Go_ tienen una profunda influencia sobre cómo se estructuran los programas.  
 Toma un tiempo acostumbrarse, pero este estilo implícito de dependencia de tipos es una de las cosas más productivas sobre _Go_."
 
 ## ¿La composición es mejor que la herencia?
@@ -95,14 +95,14 @@ class Manzana {
 
 **Pros:**
 
-* **Bajo Acoplamiento:** Cualquier cambio en la clase _Fruta_ no afecta a la clase _Manzana_. Incluso si se agrega un método en la clase _Fruta_ con la misma firma de uno de la clase Manzana no afecta a ésta última.
-* **Reutilización de Código:** Se puede lograr de igual forma que con la herencia, aunque hay que llamar explicitamente al código que necesita ser reutilizado \(**Nota:** esto último no es necesario en _Go_\*\*\).
+* **Bajo Acoplamiento:** Cualquier cambio en la clase _Fruta_ no afecta a la clase _Manzana_. Incluso si se agrega un método en la clase _Fruta_ con la misma firma de uno de la clase Manzana no afecta a esta última.
+* **Reutilización de Código:** Se puede lograr de igual forma que con la herencia, aunque hay que llamar explícitamente al código que necesita ser reutilizado \(**Nota:** esto último no es necesario en _Go_\).
 * **Encapsulamiento más fuerte:** en el ejemplo, si se cambia la firma del método _pelar\(\)_ en la clase _Fruta_, no hay necesidad de cambiar nada en la clase _Manzana_.
 
 **Contras:**
 
-* **Es más dificil agregar una nueva clase:** sintácticamente requiere de más código.
-* **Costo de rendimiento:** el método explicito de reenvío de llamadas tiene un costo de rendimiento en comparación con la invocación directa de la herencia.
+* **Es más difícil agregar una nueva clase:** sintácticamente requiere de más código.
+* **Costo de rendimiento:** el método explícito de reenvío de llamadas tiene un costo de rendimiento en comparación con la invocación directa de la herencia.
 
 ## Ejemplo de Composición en _Go_
 
@@ -174,7 +174,7 @@ Como se detallará más adelante, en la implementación de cada patrón de dise�
 * mediante interfaces cuando se deba asegurar que una estructura es parte de una relación **es-un** y/o requiera implementar ciertos comportamientos.
 
 Estrictamente hablando de programación orientada a objetos, la mayor dificultad encontrada es cuando una _clase abstracta_ implementa un _método concreto_ con comportamiento que llama a _métodos abstractos_ también definidos en dicha _clase abstracta_ que luego serán implementados en las _clases hijas_.  
-Para emular este comportamiento la estrategia utilizada en esta publicación será pasar como un argumento del _método concreto_ de la _clase abstracta_ una referencia de una _interface_ que exponga cúales serán los _métodos abstractos_ que serán implementados por las _clases hijas_ que implementen esa _interface_.
+Para emular este comportamiento la estrategia utilizada en esta publicación será pasar como un argumento del _método concreto_ de la _clase abstracta_ una referencia de una _interface_ que exponga cuáles serán los _métodos abstractos_ que serán implementados por las _clases hijas_ que implementen esa _interface_.
 
 Veamos un ejemplo para entender la estrategia:
 
@@ -229,4 +229,8 @@ claseHija.MetodoConcreto(&claseHija)
 ## Conclusión
 
 _Go_ permite la _composición_ y la _herencia de interfaz_. El uso de interfaces \(_es-un_\) y de la composición \(_tiene-un_\) posibilitan la reutilización de código en _Go_ y la adopción de técnicas y de patrones orientados a objetos.
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

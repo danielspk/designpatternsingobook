@@ -87,3 +87,7 @@ fmt.Printf("Jugador B: %s\n", jugadorB.Atacar())
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/adapter) \| [Ejecutar código](https://play.golang.org/p/60tlY8la04W)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+

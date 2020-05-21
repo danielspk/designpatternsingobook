@@ -24,7 +24,7 @@ _Kit_
   * define una variable producto para que sea creado por la fábrica correspondiente.
   * implementa la interfaz ProductoAbstracto.
 * **Cliente:**
-  * sólo usa interfaces declaradas por los tipos de datos FabricaAbstracta y ProductoAbstracto.
+  * solo usa interfaces declaradas por los tipos de datos FabricaAbstracta y ProductoAbstracto.
 
 ## Implementación
 
@@ -90,4 +90,8 @@ fmt.Printf("Se construyo un puerta de: %s\n", puertaMetal.VerMaterial())
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/creacionales/abstractfactory) \| [Ejecutar código](https://play.golang.org/p/8yy8vp4cDD5)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

@@ -31,7 +31,7 @@ No se observan impedimentos y/o modificaciones de la estructura original del pat
 
 ## Código de ejemplo
 
-En este ejemplo queremos acceder a los salarios de los empleados de una gerencia tanto de forma individual como grupal. De esta forma la compañia podría analizar el impacto de futuros bonos de productividad tanto para una gerencia completa o para alguno de sus empleados.
+En este ejemplo queremos acceder a los salarios de los empleados de una gerencia tanto de forma individual como grupal. De esta forma la compañía podría analizar el impacto de futuros bonos de productividad tanto para una gerencia completa o para alguno de sus empleados.
 
 Implementación:
 
@@ -94,4 +94,8 @@ fmt.Printf("Los salarios de todos los desarrolladores de la Gerencia es de $%d\n
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/composite) \| [Ejecutar código](https://play.golang.org/p/BR_zwXpOD0O)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

@@ -8,5 +8,7 @@ Asimismo, el código fuente de esta publicación se encuentra en el siguiente re
 
 **Última actualización:**  14 de Mayo de 2020 a las 17:00 hs.
 
+
+
 > **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

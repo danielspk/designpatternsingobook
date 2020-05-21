@@ -15,7 +15,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) el patrón 
 * **PrototipoConcreto:**
   * implementa una operación para clonarse.
 * **Cliente:**
-  * crea una variable pidíendole a un prototipo que se clone.
+  * crea una variable pidiéndole a un prototipo que se clone.
 
 ## Implementación
 
@@ -23,7 +23,7 @@ No se observan impedimentos y/o modificaciones de la estructura original del pat
 
 ## Código de ejemplo
 
-En este ejemplo queremos que un elemento químico séa capaz de clonarse a sí mismo indicando cuantas veces fue clonado.
+En este ejemplo queremos que un elemento químico sea capaz de clonarse a sí mismo indicando cuantas veces fue clonado.
 
 Implementación:
 
@@ -63,4 +63,8 @@ fmt.Printf("El elemento C es de %s y se clono %d veces\n", elementoC.Material, e
 ```
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/creacionales/prototype) \| [Ejecutar código](https://play.golang.org/p/3OAK3-IzcTT)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

@@ -86,3 +86,7 @@ fmt.Printf("Texto redactado en cursiva: %s\n", editor.Redactar("Lorem ipsum"))
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/state) \| [Ejecutar código](https://play.golang.org/p/KsYfTyLBDVI)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+

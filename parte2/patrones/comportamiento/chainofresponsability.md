@@ -87,3 +87,7 @@ fmt.Println(manejadores.ProcesarMensaje(10, "Mensaje 3 - Prioridad 10"))
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/comportamiento/chainofresponsability) \| [Ejecutar código](https://play.golang.org/p/TnwdRltyBds)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+

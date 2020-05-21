@@ -16,3 +16,7 @@ Según el libro "Patrones de Diseño" [\[29\]](../../../recursos.md) los patrone
 * [Facade](facade.md)
 * [Flyweight](flyweight.md)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+

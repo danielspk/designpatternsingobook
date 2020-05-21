@@ -4,7 +4,7 @@
 
 > Imagen - [\[38\]](recursos.md)
 
-A continuación se exponen los recursos de interes que fueron utilizados como referencia para el desarrollo de esta publicación.
+A continuación se exponen los recursos de interés que fueron utilizados como referencia para el desarrollo de esta publicación.
 
 ## Golang
 
@@ -77,4 +77,8 @@ A continuación se exponen los recursos de interes que fueron utilizados como re
 * [\[47\] - Go logos](https://golang.org/s/logos)
 * [\[49\] - UCA - Pontificia Universidad Católica Argentina](http://uca.edu.ars)
 * [\[54\] - Python - Glosario](https://docs.python.org/3/glossary.html?highlight=duck#term-duck-typing)
+
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
 

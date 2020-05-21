@@ -86,3 +86,7 @@ fmt.Printf("%s\n", agencia.BuscarPaquete("2018-12-01", "2018-12-08"))
 
 [Código de ejemplo](https://github.com/danielspk/designpatternsingo/tree/master/patrones/estructurales/facade) \| [Ejecutar código](https://play.golang.org/p/JM-ZC-pmaxu)
 
+
+
+> **Atención**: Esta publicación se encuentra abandonada. Puede acceder a la versión vigente en [https://leanpub.com/designpatternsingo](https://leanpub.com/designpatternsingo)
+
